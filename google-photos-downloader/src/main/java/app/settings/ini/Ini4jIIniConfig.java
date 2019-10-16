@@ -6,13 +6,24 @@ import java.io.Reader;
 
 import org.ini4j.Config;
 import org.ini4j.Ini;
+import org.ini4j.Wini;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+/**
+ * Implements configuration file as INI format using ini4j library.
+ * 
+ * @author vitek
+ *
+ */
 public class Ini4jIIniConfig implements IIniConfig {
 
-    protected Ini ini;
+    private final Logger logger = LoggerFactory.getLogger(Ini4jIIniConfig.class);
+
+    protected Wini ini;
 
     public Ini4jIIniConfig() {
-        ini = new Ini();
+        ini = new Wini();
         Config iniConfig = ini.getConfig();
         iniConfig.setEmptyOption(true);
         iniConfig.setEscape(false); // do not change/escape "https://" to "https\://" etc.
@@ -29,7 +40,12 @@ public class Ini4jIIniConfig implements IIniConfig {
 
     @Override
     public String getValue(String sectionName, String key) {
-        return ini.get(sectionName, key);
+        String value = ini.get(sectionName, key);
+        logger.info("Returning value of \"{}.{}\" -> \"{}\"", sectionName, key, value);
+        if (value == null) {
+            logger.warn("The value \"{}.{}\" doesnt exist.", sectionName, key);
+        }
+        return value;
     }
 
     @Override
@@ -80,7 +96,5 @@ public class Ini4jIIniConfig implements IIniConfig {
     public String toString() {
         return ini.toString();
     }
-
-
 
 }

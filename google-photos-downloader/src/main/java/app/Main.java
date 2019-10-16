@@ -5,6 +5,8 @@ package app;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -13,13 +15,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import app.photos.GooglePhotos;
-import app.settings.ini.InvalidConfigFileFormatException;
 
 /**
- * @author vitek
- * This application downloads new photos from Google Photos library
- * according to the configuration file: settings.ini.
- * Should the error occur, an email is sent.
+ * @author vitek This application downloads new photos from Google Photos
+ *         library according to the configuration file: settings.ini. Should the
+ *         error occur, an email is sent.
  */
 public class Main {
 
@@ -38,9 +38,9 @@ public class Main {
             logErrorAndExit("Failed to parse CMD.");
         }
 
-        if (logger.isDebugEnabled()) {
+        if (logger.isInfoEnabled()) {
             // Arrays.toString(args) will always run even if logger.debug is not.
-            logger.debug("Application cmd parsing successfull: {}", Arrays.toString(args));
+            logger.info("Application cmd parsing successfull: {}", Arrays.toString(args));
         }
 
         CommandLine cmdLine = line.get();
@@ -62,12 +62,38 @@ public class Main {
 
         try {
             settings.load(new File(settingsFilePath));
-        } catch (IOException | InvalidConfigFileFormatException e) {
+        } catch (IOException e) {
             logErrorAndExit("Failed to load configuration file.", e);
         }
-        
-        GooglePhotos gPhotos = new GooglePhotos();
-        gPhotos.downloadPhotos(accessTokenString, lastDate, localPhotoFolder);
+
+        if (!settings.checkExistenceOfIniConfigValues()) {
+            logger.error("Please check your configuration for for any missing values.");
+            return;
+        } else {
+            GooglePhotos gPhotos;
+            try {
+                gPhotos = GooglePhotos.newBuilder()
+                        .setRefreshToken(
+                                settings.getValue("database", "remote_googlephotos_refreshtoken"))
+                        .setLocalPhotoFolder(
+                                Path.of(settings.getValue("configuration", "local_photos_folder")))
+                        .setStartDate(settings.getValue("database", "start_date"))
+                        .setClientId(settings.getValue("configuration", "client_id"))
+                        .setClientSecret(settings.getValue("configuration", "client_secret"))
+                        .build();
+
+            } catch (IllegalArgumentException | DateTimeParseException e) {
+                logger.error("Failed to create GooglePhotos object. ", e);
+                return;
+            } catch (IllegalStateException | NullPointerException e) {
+                logger.error("Failed to create GooglePhotos object. ", e);
+                return;
+            }
+
+            if (!gPhotos.downloadPhotos()) {
+                System.err.println(gPhotos.getLastError());
+            }
+        }
 
         logger.info("Application finished succesfully.");
     }
