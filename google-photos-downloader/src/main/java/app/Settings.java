@@ -100,7 +100,7 @@ public class Settings extends Ini4jIIniConfig implements IIniConfig {
                 "",
                 "[configuration]",
                 "# the location to download new photos to",
-                " = " + DefaultValues.SETTINGS_LOCAL_PHOTO_FOLDER,
+                "local_photos_folder = " + DefaultValues.SETTINGS_LOCAL_PHOTO_FOLDER,
                 "",
                 "# gmail account credentials",
                 "# this account is used to send emails with errors encoutered",
