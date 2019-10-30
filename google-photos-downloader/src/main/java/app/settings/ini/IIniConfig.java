@@ -1,8 +1,8 @@
 package app.settings.ini;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.Reader;
 
 import org.ini4j.InvalidFileFormatException;
 
@@ -63,24 +63,55 @@ public interface IIniConfig {
      */
     public void load(File file) throws IOException, InvalidConfigFileFormatException;
 
-    public void load(Reader reader) throws IOException, InvalidConfigFileFormatException;
+    public void load(BufferedReader reader) throws IOException, InvalidConfigFileFormatException;
 
     /**
-     * Adds the comment to the section
+     * Adds the comment to the section. If the section is null, the comment is used as a header for
+     * the whole ini configuration.
      *
-     * @param section section name
-     * @param comment comment to add
+     * @param sectionName section name
+     * @param comment     comment to add
      */
-    public void putComment(String section, String comment);
+    public void putComment(String sectionName, String comment);
 
     /**
-     * Adds the comment to the specified item in the section
+     * Adds the comment to the specified item in the section.
      *
-     * @param section
+     * If the section is null, the comment is used as a header for the whole ini configuration.
+     * If the key is null, the comment is used as a header for the specified section.
+     * If both the section and the key are null, than the comment is used as the header for the
+     * whole ini configuration.
+     *
+     * @param sectionName
      * @param key
      * @param comment
      */
-    public void putComment(String section, String key, String comment);
+    public void putComment(String sectionName, String key, String comment);
+
+    /**
+     * Simply replace/add header comment.
+     * 
+     * @param comment
+     */
+    public void putHeaderComment(String comment);
+
+    /**
+     * Returns the comment for the specific item, identified by sectionName and key of the item.
+     *
+     * @param sectionName
+     * @param key
+     * @return
+     */
+    public String getComment(String sectionName, String key);
+
+    public String getHeaderComment();
+
+    /**
+     * Creates the new section, if the section already exists ignore.
+     *
+     * @param sectionName
+     */
+    public void putSection(String sectionName);
 
     /**
      * Adds the new value with specified mapping (sectionName and key).

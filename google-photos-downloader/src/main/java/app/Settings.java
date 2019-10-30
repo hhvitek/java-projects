@@ -8,13 +8,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-import org.ini4j.Ini;
 import org.ini4j.InvalidFileFormatException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import app.settings.ini.IIniConfig;
-import app.settings.ini.Ini4jIIniConfig;
+import app.settings.ini.custom.CustomIIniConfig;
 
 /**
  * Abstraction for program configuration values.
@@ -24,7 +23,7 @@ import app.settings.ini.Ini4jIIniConfig;
  * @author vitek
  *
  */
-public class Settings extends Ini4jIIniConfig implements IIniConfig {
+public class Settings extends CustomIIniConfig implements IIniConfig {
     private static final Logger logger = LoggerFactory.getLogger(Settings.class);
 
     public Settings() {
@@ -70,18 +69,19 @@ public class Settings extends Ini4jIIniConfig implements IIniConfig {
      * @return true if every value is non-null. False if any value is null.
      */
     public boolean checkExistenceOfIniConfigValues() {
-        for (String section : ini.keySet()) { // for section
-            Ini.Section iniSection = ini.get(section);
-            for (String key : iniSection.keySet()) { // for section.key
-                String value = iniSection.get(key);
-                if (value == null) {
-                    logger.warn("The configuration parameter <{}.{}> hasnt been properly set!",
-                            section, key);
-                    return false;
-                }
-            }
-        }
-        return true;
+        // for (String section : ini.keySet()) { // for section
+        // Ini.Section iniSection = ini.get(section);
+        // for (String key : iniSection.keySet()) { // for section.key
+        // String value = iniSection.get(key);
+        // if (value == null) {
+        // logger.warn("The configuration parameter <{}.{}> hasnt been properly set!",
+        // section, key);
+        // return false;
+        // }
+        // }
+        // }
+        // return true;
+        return false;
     }
 
     /**
