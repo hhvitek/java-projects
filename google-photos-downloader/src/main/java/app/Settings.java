@@ -1,24 +1,27 @@
 package app;
 
+import app.settings.ini.IIniConfig;
+import app.settings.ini.InvalidConfigFileFormatException;
+import app.settings.ini.custom.CustomIIniConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
-// import java.io.BufferedWriter;
-// import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-import org.ini4j.InvalidFileFormatException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import app.settings.ini.IIniConfig;
-import app.settings.ini.custom.CustomIIniConfig;
+// import java.io.BufferedWriter;
+// import java.io.FileWriter;
 
 /**
+ * <p>
  * Abstraction for program configuration values.
  * The Settings class defines default values and can import values from the settings file.
- * If the settings file is used default values are overridden.
+ * If the settings file is loaded default values are overridden.
+ * <p>
+ * Inherits from CustomIIniConfig class
  *
  * @author vitek
  *
@@ -59,29 +62,8 @@ public class Settings extends CustomIIniConfig implements IIniConfig {
      * @throws InvalidFileFormatException
      * @throws IOException
      */
-    public void loadSettingsFile(File file) throws InvalidFileFormatException, IOException {
+    public void loadSettingsFile(File file) throws InvalidConfigFileFormatException, IOException {
         this.load(file);
-    }
-
-    /**
-     * This method checks if each and every value id non-null.
-     *
-     * @return true if every value is non-null. False if any value is null.
-     */
-    public boolean checkExistenceOfIniConfigValues() {
-        // for (String section : ini.keySet()) { // for section
-        // Ini.Section iniSection = ini.get(section);
-        // for (String key : iniSection.keySet()) { // for section.key
-        // String value = iniSection.get(key);
-        // if (value == null) {
-        // logger.warn("The configuration parameter <{}.{}> hasnt been properly set!",
-        // section, key);
-        // return false;
-        // }
-        // }
-        // }
-        // return true;
-        return false;
     }
 
     /**

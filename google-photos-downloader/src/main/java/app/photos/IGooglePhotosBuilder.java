@@ -6,9 +6,7 @@ import java.time.format.DateTimeParseException;
 import app.downloader.FactoryDownloader.FactoryDownloaderType;
 
 /**
- * Just to try-out builder pattern. IGooglePhotosDownloader library must be
- * created with exact specified parameters, to change parameters, create a
- * different object IGooglePhotosBuilder
+ * Just to try-out builder pattern.
  *
  * @author vitek
  *
@@ -23,10 +21,10 @@ public interface IGooglePhotosBuilder {
      * @param startDate. Only accepts the following format "yyyy-MM-DD".
      * @return
      */
-    public IGooglePhotosBuilder setStartDate(String startDate)
+    IGooglePhotosBuilder setStartDate(String startDate)
             throws IllegalArgumentException, DateTimeParseException;
 
-    public IGooglePhotosBuilder setRefreshToken(String refreshToken);
+    IGooglePhotosBuilder setRefreshToken(String refreshToken);
 
     /**
      * The local folder to download photos to.
@@ -34,19 +32,19 @@ public interface IGooglePhotosBuilder {
      * @param localPhotosFolder
      * @return
      */
-    public IGooglePhotosBuilder setLocalPhotoFolder(Path localPhotoFolder);
+    IGooglePhotosBuilder setLocalPhotoFolder(Path localPhotoFolder);
 
-    public IGooglePhotosBuilder setClientId(String clientId);
+    IGooglePhotosBuilder setClientId(String clientId);
 
-    public IGooglePhotosBuilder setClientSecret(String clientSecret);
+    IGooglePhotosBuilder setClientSecret(String clientSecret);
 
-    public IGooglePhotosBuilder setDownloaderType(FactoryDownloaderType type);
+    IGooglePhotosBuilder setDownloaderType(FactoryDownloaderType type);
 
     /**
-     * Created {@link IGooglePhotosDownloader} object
+     * Creates {@link GooglePhotos} object
      *
      * @return
      */
-    public GooglePhotos build() throws IllegalStateException, NullPointerException;
+    GooglePhotos build() throws IllegalStateException, NullPointerException;
 
 }

@@ -17,14 +17,14 @@ public interface IDownloader {
      *
      * @param replace true for yes and false for no (false is default).
      */
-    public void setReplaceExisting(boolean replace);
+    void setReplaceExisting(boolean replace);
 
     /**
      * Timeout. Unsupported mostly
-     * 
+     *
      * @param seconds
      */
-    public void setTimeout(int seconds);
+    void setTimeout(int seconds);
 
     /**
      * Downloads and stores one item (photo, video, ...)
@@ -36,6 +36,6 @@ public interface IDownloader {
      * @throws FileAlreadyExistsException if the targeted file already exists
      *                                    AND replaceExisting has been set to false
      */
-    public void downloadItem(String url, Path targetPath)
+    void downloadItem(String url, Path targetPath)
             throws IOException, FileAlreadyExistsException;
 }

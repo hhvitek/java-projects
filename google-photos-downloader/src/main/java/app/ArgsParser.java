@@ -21,13 +21,13 @@ import org.slf4j.LoggerFactory;
 public class ArgsParser {
 
     private final CommandLineParser parser = new DefaultParser();
-    private final Logger logger = LoggerFactory.getLogger(ArgsParser.class);
+    private static final Logger logger = LoggerFactory.getLogger(ArgsParser.class);
 
     private Options options;
 
     /**
      * The sole method of this class. Parse command line arguments.
-     * Prints help if any error encountered.
+     * Prints help if any error is encountered.
      *
      * @param args standard Java command line String array.
      * @return Optional<CommandLine> this is the type from the apache "commons-cli" library.

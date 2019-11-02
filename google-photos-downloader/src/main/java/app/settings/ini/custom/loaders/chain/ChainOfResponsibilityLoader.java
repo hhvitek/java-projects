@@ -13,11 +13,12 @@ import app.settings.ini.custom.loaders.ILoader;
  * For the detailed description of configuration file see:
  * {@link ILoader}
  *
+ * <p>
  * This is the concrete implementation of the above interface. It uses Chain-Of-Responsibility
  * design pattern to avoid if-else statements. The input line is passed to chain of
  * processors (implementation of AbstractProcessor). If the processor recognize the line,
  * it processes/swallows the line, otherwise it passes the line to the next Processor in the chain.
- *
+ * <p>
  * The stateful logic is still spread across all the methods...
  *
  * @author vitek

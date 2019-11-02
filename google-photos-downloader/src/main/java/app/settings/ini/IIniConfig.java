@@ -4,8 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 
-import org.ini4j.InvalidFileFormatException;
-
+/**
+ * Specifies all methods required by INI library.
+ */
 public interface IIniConfig {
 
     /**
@@ -17,7 +18,7 @@ public interface IIniConfig {
      *         or
      *         {@code null} if this map contains no mapping for the key
      */
-    public IIniSection getSection(String sectionName);
+    IIniSection getSection(String sectionName);
 
     /**
      * Returns the value to which the specified key is mapped,
@@ -29,7 +30,7 @@ public interface IIniConfig {
      * @return the value to which the specified key is mapped, or {@code null}
      *         if this map contains no mapping for the key
      */
-    public String getValue(String sectionName, String key);
+    String getValue(String sectionName, String key);
 
     /**
      * Returns {@code true} if the specified key (sectionName and key) is mapped
@@ -42,7 +43,7 @@ public interface IIniConfig {
      * @return Returns {@code true} if the specified key (sectionName and key) is mapped
      *         or returns {@code false}.
      */
-    public boolean containsKey(String sectionName, String key);
+    boolean containsKey(String sectionName, String key);
 
     /**
      * Returns {@code true} if the specified section (sectionName) is mapped
@@ -52,48 +53,48 @@ public interface IIniConfig {
      * @return Returns {@code true} if the specified section (sectionName) is mapped
      *         or returns {@code false}.
      */
-    public boolean containsSection(String sectionName);
+    boolean containsSection(String sectionName);
 
     /**
      * Loads the configuration file
      *
      * @param file the configuration file
      * @throws IOException
-     * @throws InvalidFileFormatException
+     * @throws InvalidConfigFileFormatException
      */
-    public void load(File file) throws IOException, InvalidConfigFileFormatException;
+    void load(File file) throws IOException, InvalidConfigFileFormatException;
 
-    public void load(BufferedReader reader) throws IOException, InvalidConfigFileFormatException;
+    void load(BufferedReader reader) throws IOException, InvalidConfigFileFormatException;
 
     /**
-     * Adds the comment to the section. If the section is null, the comment is used as a header for
+     * Adds the comment to the section. If the section is {@code null}, the comment is used as a header for
      * the whole ini configuration.
      *
      * @param sectionName section name
      * @param comment     comment to add
      */
-    public void putComment(String sectionName, String comment);
+    void putComment(String sectionName, String comment);
 
     /**
      * Adds the comment to the specified item in the section.
      *
-     * If the section is null, the comment is used as a header for the whole ini configuration.
-     * If the key is null, the comment is used as a header for the specified section.
-     * If both the section and the key are null, than the comment is used as the header for the
+     * If the section is {@code null}, the comment is used as a header for the whole ini configuration.
+     * If the key is {@code null}, the comment is used as a header for the specified section.
+     * If both the section and the key are {@code null}, than the comment is used as the header for the
      * whole ini configuration.
      *
      * @param sectionName
      * @param key
      * @param comment
      */
-    public void putComment(String sectionName, String key, String comment);
+    void putComment(String sectionName, String key, String comment);
 
     /**
      * Simply replace/add header comment.
-     * 
+     *
      * @param comment
      */
-    public void putHeaderComment(String comment);
+    void putHeaderComment(String comment);
 
     /**
      * Returns the comment for the specific item, identified by sectionName and key of the item.
@@ -102,16 +103,16 @@ public interface IIniConfig {
      * @param key
      * @return
      */
-    public String getComment(String sectionName, String key);
+    String getComment(String sectionName, String key);
 
-    public String getHeaderComment();
+    String getHeaderComment();
 
     /**
      * Creates the new section, if the section already exists ignore.
      *
      * @param sectionName
      */
-    public void putSection(String sectionName);
+    void putSection(String sectionName);
 
     /**
      * Adds the new value with specified mapping (sectionName and key).
@@ -120,7 +121,7 @@ public interface IIniConfig {
      * @param key
      * @param value
      */
-    public void putValue(String sectionName, String key, String value);
+    void putValue(String sectionName, String key, String value);
 
     /**
      * Stores the current object into the specified file.
@@ -129,7 +130,7 @@ public interface IIniConfig {
      * @throws IOException
      */
 
-    public void store(File file) throws IOException;
+    void store(File file) throws IOException;
 
-    public String toString();
+    String toString();
 }

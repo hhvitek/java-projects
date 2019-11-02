@@ -20,46 +20,51 @@ import app.settings.ini.custom.loaders.ILoader;
  * For the detailed description of configuration file see:
  * {@link ILoader}
  *
- * This is the concrete implementation of the above interface. This is one-file implementation.
- * Using as straight forward approach as possible
- * If-else is used to determine how the input line should be processed.
- * the state is spread across all the methods, which is the other downside.
+ * <p>
+ * This is the concrete implementation of the above {@code ILoader} interface. This is an one-file implementation.
+ * Using as straight forward approach as possible.
+ * <p>
+ * If-else statement is used to determine how the input line should be processed.
+ * <p>
+ * The state is spread across all methods.
  *
  * @author vitek
  *
  */
 public class LineLoader implements ILoader {
 
-    private final Logger logger = LoggerFactory.getLogger(LineLoader.class);
+    private static final Logger logger = LoggerFactory.getLogger(LineLoader.class);
 
+    // this configuration is gonna be modified.
     private IIniConfig ini;
 
     // ##### STATE VARIABLES
 
     // FSM last accumulated comments
-    // List... because it could be multiline comment
+    // List... because it could be a multiline comment
     private List<String> activeComment = new ArrayList<>();
 
     // FSM last section encountered
-    // Used for the item mapping -> section+key=value
+    // Used for an item mapping -> last_section+key_encountered=value
     private String activeSection = "";
 
     // FSM configuration file header comment...
-    // true until the blank line or the section encountered
-    private boolean isHeaderCommentPosible = true;
+    // true until the first blank line or section encountered.
+    private boolean isHeaderCommentPossible = true;
 
     // ##### END STATE VARIABLES
 
     // FSM patterns to parse encountered lines
-    private final Pattern commentPattern = Pattern.compile("#\\s*(.*)");
-    private final Pattern sectionPattern = Pattern.compile("\\[([a-zA-Z_0-9]+)\\]");
-    private final Pattern itemPattern = Pattern.compile("([a-zA-Z_0-9]+)\\s*=\\s*(.*)");
+    private static final Pattern commentPattern = Pattern.compile("#\\s*(.*)");
+    private static final Pattern sectionPattern = Pattern.compile("\\[([a-zA-Z_0-9]+)]");
+    private static final Pattern itemPattern = Pattern.compile("([a-zA-Z_0-9]+)\\s*=\\s*(.*)");
 
     // clear FSM state
+    // called at the beginning of an input parsing.
     private void init() {
         activeComment.clear();
         activeSection = "";
-        isHeaderCommentPosible = true;
+        isHeaderCommentPossible = true;
     }
 
     @Override
@@ -90,11 +95,11 @@ public class LineLoader implements ILoader {
     }
 
     /**
-     * Process the current line in the input. Expects either comment, blank line, section or
-     * item line {@link #LineLoader}
+     * Process the current line in the input. Expects either a comment, a blank line, a section or an
+     * item line. See {@link LineLoader}
      *
-     * @param line
-     * @return
+     * @param line The input configuration. Well just one line of it.
+     * @return false if parsing had failed. The input configuration is considered invalid.
      */
     private boolean processLine(String line) {
         if (line.isBlank()) {
@@ -118,17 +123,17 @@ public class LineLoader implements ILoader {
     }
 
     private boolean processEmptyLine() {
-        if (isHeaderCommentPosible && !activeComment.isEmpty()) {
+        if (isHeaderCommentPossible && !activeComment.isEmpty()) {
             ini.putHeaderComment(String.join(System.lineSeparator(), activeComment));
             activeComment.clear();
         }
 
-        isHeaderCommentPosible = false;
+        isHeaderCommentPossible = false;
         return true;
     }
 
     private boolean processSectionLine(String line) {
-        isHeaderCommentPosible = false;
+        isHeaderCommentPossible = false;
 
         Matcher m = sectionPattern.matcher(line);
         if (m.matches()) {
@@ -143,10 +148,10 @@ public class LineLoader implements ILoader {
     }
 
     private boolean processItemLine(String line) {
-        if (activeSection != null && !activeSection.isBlank()) { // item line have to be
-                                                                 // "inside" the section"
+        if (activeSection != null && !activeSection.isBlank()) { // the item line have to be
+                                                                 // "inside" the section [section1]item=value
             Matcher m = itemPattern.matcher(line);
-            if (m.matches()) { // it is "key = value" line
+            if (m.matches()) {
                 String key = m.group(1);
                 String value = m.group(2);
                 ini.putValue(activeSection, key, value);

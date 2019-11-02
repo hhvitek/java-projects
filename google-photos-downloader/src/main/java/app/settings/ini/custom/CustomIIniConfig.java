@@ -17,11 +17,17 @@ import app.settings.ini.InvalidConfigFileFormatException;
 import app.settings.ini.custom.loaders.ILoader;
 import app.settings.ini.custom.loaders.fsm.LineLoader;
 
+/**
+ * Base class for representation of INI configurations.
+ */
 public class CustomIIniConfig implements IIniConfig, Iterable<IIniSection> {
 
-    private final Logger logger = LoggerFactory.getLogger(CustomIIniConfig.class);
-    private String headerComment;
+    private static final Logger logger = LoggerFactory.getLogger(CustomIIniConfig.class);
+
+    // ready for extension, might be used by child class. Such as Setting.
     protected Map<String, IIniSection> sections = new LinkedHashMap<>();
+
+    private String headerComment;
     private ILoader loader = new LineLoader();
 
     @Override

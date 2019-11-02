@@ -1,19 +1,9 @@
 package app.photos;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.nio.file.FileAlreadyExistsException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import app.DefaultValues;
+import app.downloader.FactoryDownloader;
+import app.downloader.FactoryDownloader.FactoryDownloaderType;
+import app.downloader.IDownloader;
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.api.gax.rpc.ApiException;
 import com.google.auth.oauth2.UserCredentials;
@@ -27,14 +17,23 @@ import com.google.photos.types.proto.MediaItem;
 import com.google.photos.types.proto.MediaMetadata;
 import com.google.protobuf.Timestamp;
 import com.google.type.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import app.DefaultValues;
-import app.downloader.FactoryDownloader;
-import app.downloader.FactoryDownloader.FactoryDownloaderType;
-import app.downloader.IDownloader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 /**
  * Use the following code to construct an object of this class.
+ * <pre>
  * {@code
  * GooglePhotos gPhotos = GooglePhotos.newBuilder()
  *     .setClientId("clientId...")
@@ -44,6 +43,7 @@ import app.downloader.IDownloader;
  *     .setStartDate("2019-02-21")
  *     .build()
  * }
+ * </pre>
  *
  * @author vitek
  *
@@ -51,7 +51,7 @@ import app.downloader.IDownloader;
 
 public class GooglePhotos {
 
-    private final Logger logger = LoggerFactory.getLogger(GooglePhotos.class);
+    private static final Logger logger = LoggerFactory.getLogger(GooglePhotos.class);
 
     private String lastErrorText = "";
     private Date startDate;
@@ -62,18 +62,19 @@ public class GooglePhotos {
     private IDownloader downloader = FactoryDownloader.getDownloader(DefaultValues.DOWNLOADER_TYPE);
 
     /**
-     * Use at your own risk! Prefered method, recommended method is using Builder
+     * Use at your own risk! Preferred method, recommended method is using Builder
      * See {@link GooglePhotos}
      */
     public GooglePhotos() {
     }
 
     /**
-     * Use at your own risk! Prefered method, recommended method is using Builder
+     * Use at your own risk! Preferred method, recommended method is using Builder
      * See {@link GooglePhotos}
      */
     private GooglePhotos(UserCredentials credentials, String startDate, Path localPhotoFolder,
             FactoryDownloaderType type) throws IllegalArgumentException, DateTimeParseException {
+
         this.startDate = getDateFromString(startDate);
         this.localPhotoFolder = localPhotoFolder;
         this.credentials = credentials;
@@ -115,6 +116,7 @@ public class GooglePhotos {
 
     public static Date getDateFromString(String date)
             throws IllegalArgumentException, DateTimeParseException {
+
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate localDate = LocalDate.parse(date, dtf);
         return Date.newBuilder().setDay(localDate.getDayOfMonth())

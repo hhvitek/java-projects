@@ -10,7 +10,7 @@ import app.settings.ini.custom.loaders.chain.processors.SectionProcessor;
 public class ProcessorChain {
 
     // the last in the chain is InvalidStateProcessor(null)
-    // indicating the line wasnt recognized by any Processor
+    // indicating the line wasn't recognized by any Processor
     private final AbstractProcessor chainOfProcessors = new BlankProcessor(
             new CommentProcessor(
                     new SectionProcessor(

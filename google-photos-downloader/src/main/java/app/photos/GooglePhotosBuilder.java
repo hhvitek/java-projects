@@ -48,6 +48,7 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
 
     @Override
     public GooglePhotos build() throws IllegalStateException, NullPointerException {
+
         UserCredentials credentials = UserCredentials.newBuilder().setRefreshToken(refreshToken)
                 .setClientId(clientId).setClientSecret(clientSecret).build();
         gPhotos.setCredentials(credentials);

@@ -13,9 +13,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Uses:
+ * <pre>
  * {@code
  * Files.copy(InputStream in, Path target, StandardCopyOption opt);
  * }
+ * </pre>
  *
  * @author vitek
  *
@@ -45,7 +47,7 @@ public class IODownloader implements IDownloader {
         URI u = URI.create(url);
         logger.info("Copying file to: {}", targetPath);
 
-        try (InputStream in = u.toURL().openStream();) {
+        try (InputStream in = u.toURL().openStream()) {
             if (replaceExisting) {
                 Files.copy(in, targetPath, StandardCopyOption.REPLACE_EXISTING);
             } else {

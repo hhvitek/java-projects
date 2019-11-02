@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Uses:
+ * <pre>
  * {@code
  * URL u = new URL(url);
  * try (ReadableByteChannel readableByteChannel = Channels.newChannel(u.openStream());
@@ -23,6 +24,8 @@ import org.slf4j.LoggerFactory;
  *      fileChannel.transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
  * }
  * }
+ * </pre>
+ *
  *
  * @author vitek
  *
@@ -62,7 +65,7 @@ public class NIODownloader implements IDownloader {
         URL u = new URL(url);
         try (ReadableByteChannel readableByteChannel = Channels.newChannel(u.openStream());
                 FileOutputStream fileOutputStream = new FileOutputStream(targetPath.toString());
-                FileChannel fileChannel = fileOutputStream.getChannel();) {
+                FileChannel fileChannel = fileOutputStream.getChannel()) {
             fileChannel.transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
         }
     }

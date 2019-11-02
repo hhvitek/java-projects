@@ -3,9 +3,12 @@ package app.downloader;
 /**
  * Factory for Downloaders.
  * Usage:
+ * <pre>
  * {@code
  * private IDownloader downloader = FactoryDownloader.getDownloader(FactoryDownloaderType.IO);
+ * private IDownloader downloader = FactoryDownloader.getDownloader(FactoryDownloaderType.NIO);
  * }
+ * </pre>
  *
  * @author vitek
  *
@@ -28,9 +31,8 @@ public class FactoryDownloader {
         case ASYNC:
             throw new UnsupportedOperationException("Invalid operation.");
         default:
-            break;
+            throw new UnsupportedOperationException("Unknown parameter" + type);
         }
-        return null;
     }
 
 }

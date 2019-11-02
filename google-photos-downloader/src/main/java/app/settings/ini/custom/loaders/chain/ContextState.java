@@ -10,7 +10,7 @@ import app.settings.ini.IIniConfig;
 
 public class ContextState implements IContextState {
 
-    private final Logger logger = LoggerFactory.getLogger(ContextState.class);
+    private static final Logger logger = LoggerFactory.getLogger(ContextState.class);
 
     private String errorMessage = null;
 

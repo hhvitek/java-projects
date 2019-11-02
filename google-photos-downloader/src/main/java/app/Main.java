@@ -1,5 +1,10 @@
 package app;
 
+import app.photos.GooglePhotos;
+import org.apache.commons.cli.CommandLine;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -7,16 +12,10 @@ import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 import java.util.Optional;
 
-import org.apache.commons.cli.CommandLine;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import app.photos.GooglePhotos;
-
 /**
  * @author vitek This application downloads new photos from Google Photos
- *         library according to the configuration file: settings.ini. Should the
- *         error occur, an email is sent.
+ * library according to the configuration file: settings.ini. Should the
+ * error occur, an email is sent.
  */
 public class Main {
 
@@ -63,34 +62,31 @@ public class Main {
             logErrorAndExit("Failed to load configuration file.", e);
         }
 
-        if (!settings.checkExistenceOfIniConfigValues()) {
-            logger.error("Please check your configuration for for any missing values.");
+
+        GooglePhotos gPhotos;
+        try {
+            gPhotos = GooglePhotos.newBuilder()
+                    .setRefreshToken(
+                            settings.getValue("database", "remote_googlephotos_refreshtoken"))
+                    .setLocalPhotoFolder(
+                            Path.of(settings.getValue("configuration", "local_photos_folder")))
+                    .setStartDate(settings.getValue("database", "start_date"))
+                    .setClientId(settings.getValue("configuration", "client_id"))
+                    .setClientSecret(settings.getValue("configuration", "client_secret"))
+                    .build();
+
+        } catch (IllegalArgumentException | DateTimeParseException e) {
+            logger.error("Failed to create GooglePhotos object. ", e);
             return;
-        } else {
-            GooglePhotos gPhotos;
-            try {
-                gPhotos = GooglePhotos.newBuilder()
-                        .setRefreshToken(
-                                settings.getValue("database", "remote_googlephotos_refreshtoken"))
-                        .setLocalPhotoFolder(
-                                Path.of(settings.getValue("configuration", "local_photos_folder")))
-                        .setStartDate(settings.getValue("database", "start_date"))
-                        .setClientId(settings.getValue("configuration", "client_id"))
-                        .setClientSecret(settings.getValue("configuration", "client_secret"))
-                        .build();
-
-            } catch (IllegalArgumentException | DateTimeParseException e) {
-                logger.error("Failed to create GooglePhotos object. ", e);
-                return;
-            } catch (IllegalStateException | NullPointerException e) {
-                logger.error("Failed to create GooglePhotos object. ", e);
-                return;
-            }
-
-            if (!gPhotos.downloadPhotos()) {
-                System.err.println(gPhotos.getLastError());
-            }
+        } catch (IllegalStateException | NullPointerException e) {
+            logger.error("Failed to create GooglePhotos object. ", e);
+            return;
         }
+
+        if (!gPhotos.downloadPhotos()) {
+            System.err.println(gPhotos.getLastError());
+        }
+
 
         logger.info("Application finished succesfully.");
     }

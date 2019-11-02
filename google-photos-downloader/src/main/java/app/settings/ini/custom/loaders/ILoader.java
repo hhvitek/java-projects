@@ -10,6 +10,7 @@ import app.settings.ini.InvalidConfigFileFormatException;
 /**
  * Parses specific ini configuration file such as:
  *
+ * <pre>
  * {@code
  * # my header comment 1st line.
  * # my header comment 2nd line.
@@ -23,30 +24,39 @@ import app.settings.ini.InvalidConfigFileFormatException;
  * # the second section, first item comment.
  * first_ket = first_value_second_section
  * }
+ * </pre>
  *
+ * <p>
  * Reads the input line by line. The any line of the valid configuration file have to comfort to
  * the one of the following rules:
  *
- * 1] Comment
- * - Begins with the "#" character
- * - #[space]any characters to the end of line
- * 2] Empty line
- * 3] Section
- * - Begins with the "[" character
- * - [[a-zA-Z_0-9]+] -> word character \w+
- * 4] Item line defined by key and value
- * - Begins with any word character \w
- * - key = value
- * - \w+[space]=[space]\w+
- *
+ * <ol>
+ *     <li>Comment
+ *         <ul>
+ *             <li>Begins with the "#" character
+ *             <li>#[space] any characters to the end of line
+ *         </ul>
+ *     <li>Empty line
+ *     <li>Section
+ *         <ul>
+ *             <li>Begins with the "[" character
+ *             <li>[[a-zA-Z_0-9]+] -> word character \w+
+ *         </ul>
+ *     <li>Item line defined by key and value
+ *          <ul>
+ *             <li>Begins with any word character \w
+ *             <li>key = value
+ *             <li>\w+[space]=[space]\w+
+ *          </ul>
+ * </ol>
  *
  * @author vitek
  *
  */
 public interface ILoader {
-    public void load(IIniConfig ini, File file)
+    void load(IIniConfig ini, File file)
             throws IOException, InvalidConfigFileFormatException;
 
-    public void load(IIniConfig ini, BufferedReader reader)
+    void load(IIniConfig ini, BufferedReader reader)
             throws IOException, InvalidConfigFileFormatException;
 }
