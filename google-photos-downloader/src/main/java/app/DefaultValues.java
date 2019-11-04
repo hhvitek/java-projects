@@ -4,9 +4,6 @@ import app.downloader.FactoryDownloader.FactoryDownloaderType;
 
 /**
  * For simplicity default global values.
- * 
- * @author vitek
- *
  */
 public class DefaultValues {
 

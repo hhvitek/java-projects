@@ -1,4 +1,9 @@
 app
 app.downloader
+app.ini
+app.ini.custom
+app.ini.custom.loaders
+app.ini.custom.loaders.chain
+app.ini.custom.loaders.chain.processors
+app.ini.custom.loaders.fsm
 app.photos
-app.settings.ini

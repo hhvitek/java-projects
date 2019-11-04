@@ -9,9 +9,6 @@ package app.downloader;
  * private IDownloader downloader = FactoryDownloader.getDownloader(FactoryDownloaderType.NIO);
  * }
  * </pre>
- *
- * @author vitek
- *
  */
 public class FactoryDownloader {
 
@@ -24,15 +21,19 @@ public class FactoryDownloader {
 
     public static IDownloader getDownloader(FactoryDownloaderType type) {
         switch (type) {
-        case IO:
-            return new IODownloader();
-        case NIO:
-            return new NIODownloader();
-        case ASYNC:
-            throw new UnsupportedOperationException("Invalid operation.");
-        default:
-            throw new UnsupportedOperationException("Unknown parameter" + type);
+            case IO:
+                return new IODownloader();
+            case NIO:
+                return new NIODownloader();
+            case ASYNC:
+                throw new UnsupportedOperationException("Invalid operation.");
+            default:
+                throw new UnsupportedOperationException("Unknown parameter" + type);
         }
+    }
+
+    public static IDownloader getDefaultDownloader() {
+        return new IODownloader();
     }
 
 }

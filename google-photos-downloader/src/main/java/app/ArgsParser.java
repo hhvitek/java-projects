@@ -1,22 +1,13 @@
 package app;
 
-import java.util.Optional;
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Optional;
+
 /**
  * Parse command line arguments, prints help message if any parsing error encountered.
- *
- * @author vitek
- *
  */
 public class ArgsParser {
 
@@ -30,7 +21,8 @@ public class ArgsParser {
      * Prints help if any error is encountered.
      *
      * @param args standard Java command line String array.
-     * @return Optional<CommandLine> this is the type from the apache "commons-cli" library.
+     *
+     * @return Optional of CommandLine this is the type from the apache "commons-cli" library.
      */
     public Optional<CommandLine> parse(String[] args) {
         options = initArgsParseOptions();

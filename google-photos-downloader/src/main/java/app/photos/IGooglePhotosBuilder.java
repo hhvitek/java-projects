@@ -1,15 +1,11 @@
 package app.photos;
 
-import java.nio.file.Path;
-import java.time.format.DateTimeParseException;
-
 import app.downloader.FactoryDownloader.FactoryDownloaderType;
+
+import java.nio.file.Path;
 
 /**
  * Just to try-out builder pattern.
- *
- * @author vitek
- *
  */
 public interface IGooglePhotosBuilder {
 
@@ -18,18 +14,21 @@ public interface IGooglePhotosBuilder {
      * "yyyy-MM-DD" example: "2019-10-21". Only photos newer than this date will be
      * relevant.
      *
-     * @param startDate. Only accepts the following format "yyyy-MM-DD".
+     * @param startDate Only accepts the following format "yyyy-MM-DD".
+     *
      * @return
      */
-    IGooglePhotosBuilder setStartDate(String startDate)
-            throws IllegalArgumentException, DateTimeParseException;
+    IGooglePhotosBuilder setStartDate(String startDate);
+
+    IGooglePhotosBuilder setEndDate(String endDate);
 
     IGooglePhotosBuilder setRefreshToken(String refreshToken);
 
     /**
      * The local folder to download photos to.
      *
-     * @param localPhotosFolder
+     * @param localPhotoFolder
+     *
      * @return
      */
     IGooglePhotosBuilder setLocalPhotoFolder(Path localPhotoFolder);

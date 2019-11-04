@@ -1,5 +1,8 @@
 package app.downloader;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
@@ -8,19 +11,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
- * Uses:
+ * Uses buffering into the application memory:
  * <pre>
  * {@code
  * Files.copy(InputStream in, Path target, StandardCopyOption opt);
  * }
  * </pre>
- *
- * @author vitek
- *
  */
 public class IODownloader implements IDownloader {
 

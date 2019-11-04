@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="1332px"
+     preserveAspectRatio="none" style="width:3251px;height:1332px;" version="1.1"
+     viewBox="0 0 3251 1332" width="3251px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f16wny7rjjov67" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs"
+              textLength="181" x="1541" y="18.6855">"Downloader package"
+        </text><!--MD5=[d5ac3844f66b12d9e08170e47495e096]
+cluster app-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="22,47.1406,54,47.1406,61,70.75,3229,70.75,3229,1320.6406,22,1320.6406,22,47.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="61" y1="70.75" y2="70.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="26" x="26" y="63.6738">app
+        </text><!--MD5=[382eb6ada1e04da198f07371767cecd8]
+cluster downloader-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="2325,866.6406,2414,866.6406,2421,890.25,3076,890.25,3076,1116.6406,2325,1116.6406,2325,866.6406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="2325" x2="2421" y1="890.25"
+              y2="890.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="83" x="2329" y="883.1738">downloader
+        </text><!--MD5=[e64e40e2f8a522f5cd0ae1f446f20b5d]
+cluster photos-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="1935,146.1406,1990,146.1406,1997,169.75,3205,169.75,3205,842.6406,1935,842.6406,1935,146.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="1935" x2="1997" y1="169.75"
+              y2="169.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="49" x="1939" y="162.6738">photos
+        </text><!--MD5=[1a64855ba212241fff0ebcebc9eecbbd]
+cluster downloaders-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="2351,463.1406,2448,463.1406,2455,486.75,3181,486.75,3181,818.6406,2351,818.6406,2351,463.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="2351" x2="2455" y1="486.75"
+              y2="486.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="91" x="2355" y="479.6738">downloaders
+        </text><!--MD5=[5cfab5b04cdf05e5366f3e80dae1ecfc]
+cluster ini-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="46,91.1406,69,91.1406,76,114.75,1911,114.75,1911,1296.6406,46,1296.6406,46,91.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="46" x2="76" y1="114.75" y2="114.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="17" x="50" y="107.6738">ini
+        </text><!--MD5=[6a1f049cdbdae4e8b963fb8622b199ba]
+cluster custom-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="70,426.1406,127,426.1406,134,449.75,1887,449.75,1887,1272.6406,70,1272.6406,70,426.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="70" x2="134" y1="449.75" y2="449.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="51" x="74" y="442.6738">custom
+        </text><!--MD5=[26887be88ff6c281e1712b9fed7e8512]
+cluster loaders-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="471,470.1406,530,470.1406,537,493.75,1863,493.75,1863,1248.6406,471,1248.6406,471,470.1406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="471" x2="537" y1="493.75"
+              y2="493.75"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="53" x="475" y="486.6738">loaders
+        </text><!--MD5=[3f899d52d11b7656dc9e443a799940cc]
+cluster fsm-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="495,697.6406,526,697.6406,533,721.25,623,721.25,623,797.6406,495,797.6406,495,697.6406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="495" x2="533" y1="721.25"
+              y2="721.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="25" x="499" y="714.1738">fsm
+        </text><!--MD5=[a3e4aa106f01c4c098e3d144bb240ff1]
+cluster chain-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="647,632.6406,691,632.6406,698,656.25,1839,656.25,1839,1224.6406,647,1224.6406,647,632.6406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="647" x2="698" y1="656.25"
+              y2="656.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="38" x="651" y="649.1738">chain
+        </text><!--MD5=[10ae9c7cefa47ac2b1a2ba4b3caf6618]
+cluster processors-->
+        <polygon fill="#FFFFFF" filter="url(#f16wny7rjjov67)"
+                 points="983,676.6406,1069,676.6406,1076,700.25,1815,700.25,1815,987.6406,983,987.6406,983,676.6406"
+                 style="stroke: #000000; stroke-width: 1.5;"/>
+        <line style="stroke: #000000; stroke-width: 1.5;" x1="983" x2="1076" y1="700.25"
+              y2="700.25"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold"
+              lengthAdjust="spacingAndGlyphs" textLength="80" x="987" y="693.1738">processors
+        </text><!--MD5=[45c0001ce5995c23f9d9508d7103aad7]
+class FactoryDownloaderType-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="75.6719"
+              id="FactoryDownloaderType" style="stroke: #A80036; stroke-width: 1.5;" width="164"
+              x="2896" y="909.6406"/>
+        <ellipse cx="2911" cy="925.6406" fill="#EB937F" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2909.5,926.6406 L2909.5,928.6406 L2913.5,928.6406 L2913.5,927.6406 L2913.5,927.1563 L2914.125,926.6406 L2914.5,926.6406 L2914.875,926.6406 L2915.5,927.1563 L2915.5,927.6406 L2915.5,930.6406 L2907.5,930.6406 L2907.0156,930.6406 L2906.5,930.0156 L2906.5,929.6406 L2906.5,929.2656 L2907.0156,928.6406 L2907.5,928.6406 L2907.5,928.6406 L2907.5,922.6406 L2907.5,922.6406 L2907.0156,922.6406 L2906.5,922.0156 L2906.5,921.6406 L2906.5,921.2656 L2907.0156,920.6406 L2907.5,920.6406 L2915.5,920.6406 L2915.5,923.6406 L2915.5,924.125 L2914.875,924.6406 L2914.5,924.6406 L2914.125,924.6406 L2913.5,924.125 L2913.5,923.6406 L2913.5,922.6406 L2909.5,922.6406 L2909.5,924.6406 L2910.5,924.6406 L2910.5,924.1563 L2910.5,924.1563 L2911.125,923.6406 L2911.5,923.6406 L2911.875,923.6406 L2912.5,924.1563 L2912.5,924.6406 L2912.5,926.6406 L2912.5,927.125 L2911.875,927.6406 L2911.875,927.6406 L2911.5,927.6406 L2911.125,927.6406 L2910.5,927.125 L2910.5,927.125 L2910.5,926.6406 L2909.5,926.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="132" x="2925" y="930.5508">FactoryDownloaderType
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2897" x2="3059" y1="941.6406"
+              y2="941.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="13" x="2902" y="957.0596">IO,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="17" x="2902" y="970.8955">NIO
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2897" x2="3059" y1="977.3125"
+              y2="977.3125"/><!--MD5=[624d6d7b11f64a9471f8bb41c5ec3569]
+class IDownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078" id="IDownloader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="189" x="2671.5" y="902.6406"/>
+        <ellipse cx="2726.75" cy="918.6406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2727.75,915.6406 L2727.75,921.6406 L2729.75,921.6406 L2730.2344,921.6406 L2730.75,922.2656 L2730.75,922.6406 L2730.75,923.0156 L2730.2344,923.6406 L2729.75,923.6406 L2723.75,923.6406 L2723.2656,923.6406 L2722.75,923.0156 L2722.75,922.6406 L2722.75,922.2656 L2723.2656,921.6406 L2723.75,921.6406 L2725.75,921.6406 L2725.75,915.6406 L2723.75,915.6406 L2723.2656,915.6406 L2722.75,915.0156 L2722.75,914.6406 L2722.75,914.2656 L2723.2656,913.6406 L2723.75,913.6406 L2729.75,913.6406 L2730.2344,913.6406 L2730.75,914.2656 L2730.75,914.6406 L2730.75,915.0156 L2730.2344,915.6406 L2729.75,915.6406 L2727.75,915.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="70" x="2747.25" y="923.5508">IDownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2672.5" x2="2859.5" y1="934.6406"
+              y2="934.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2672.5" x2="2859.5" y1="942.6406"
+              y2="942.6406"/>
+        <ellipse cx="2682.5" cy="953.6406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="163" x="2691.5" y="958.0596">setReplaceExisting(boolean): void
+        </text>
+        <ellipse cx="2682.5" cy="967.4766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="97" x="2691.5" y="971.8955">setTimeout(int): void
+        </text>
+        <ellipse cx="2682.5" cy="981.3125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="156" x="2691.5" y="985.7314">downloadItem(String, Path): void
+        </text><!--MD5=[c1aa7c0c1c4b189b099b179ea400c01e]
+class FactoryDownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="61.8359" id="FactoryDownloader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="295" x="2341.5" y="916.6406"/>
+        <ellipse cx="2431.75" cy="932.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2433.75,929.1406 Q2433.9531,928.6406 2434.1875,928.3906 Q2434.4219,928.1406 2434.6875,928.1406 Q2435.1563,928.1406 2435.4531,928.4219 Q2435.75,928.7031 2435.75,929.3594 L2435.75,930.9219 Q2435.75,931.5781 2435.4688,931.8594 Q2435.1875,932.1406 2434.75,932.1406 Q2434.3594,932.1406 2434.1094,931.9688 Q2433.8594,931.7969 2433.75,931.3438 Q2433.7031,931.0313 2433.5313,930.8594 Q2433.2188,930.5313 2432.6563,930.3438 Q2432.0938,930.1406 2431.5313,930.1406 Q2430.8281,930.1406 2430.2344,930.4219 Q2429.6563,930.7031 2429.2031,931.3281 Q2428.75,931.9531 2428.75,932.8125 L2428.75,933.7344 Q2428.75,934.7656 2429.5938,935.4531 Q2430.4375,936.1406 2431.9375,936.1406 Q2432.8281,936.1406 2433.4531,935.9375 Q2433.8125,935.8281 2434.2188,935.4688 Q2434.4844,935.2656 2434.625,935.2031 Q2434.7656,935.1406 2434.9375,935.1406 Q2435.2656,935.1406 2435.5,935.4063 Q2435.75,935.6563 2435.75,936.0156 Q2435.75,936.3594 2435.4063,936.7656 Q2434.9063,937.3594 2434.1094,937.6875 Q2433.0625,938.1406 2431.7813,938.1406 Q2430.2813,938.1406 2429.0781,937.5469 Q2428.1094,937.0781 2427.4219,936.0625 Q2426.75,935.0469 2426.75,933.8438 L2426.75,932.75 Q2426.75,931.5 2427.3438,930.4063 Q2427.9531,929.3125 2429,928.7344 Q2430.0625,928.1406 2431.25,928.1406 Q2431.9688,928.1406 2432.5938,928.3906 Q2433.2188,928.6406 2433.75,929.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="106" x="2452.25" y="937.5508">FactoryDownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2342.5" x2="2635.5" y1="948.6406"
+              y2="948.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2342.5" x2="2635.5" y1="956.6406"
+              y2="956.6406"/>
+        <ellipse cx="2352.5" cy="967.6406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="269" x="2361.5" y="972.0596">
+            getDownloader(FactoryDownloaderType): IDownloader
+        </text><!--MD5=[62192bef55f50e1821e565fcdb9cebae]
+class IODownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="IODownloader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="111" x="2900.5" y="1052.6406"/>
+        <ellipse cx="2915.5" cy="1068.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2917.5,1065.1406 Q2917.7031,1064.6406 2917.9375,1064.3906 Q2918.1719,1064.1406 2918.4375,1064.1406 Q2918.9063,1064.1406 2919.2031,1064.4219 Q2919.5,1064.7031 2919.5,1065.3594 L2919.5,1066.9219 Q2919.5,1067.5781 2919.2188,1067.8594 Q2918.9375,1068.1406 2918.5,1068.1406 Q2918.1094,1068.1406 2917.8594,1067.9688 Q2917.6094,1067.7969 2917.5,1067.3438 Q2917.4531,1067.0313 2917.2813,1066.8594 Q2916.9688,1066.5313 2916.4063,1066.3438 Q2915.8438,1066.1406 2915.2813,1066.1406 Q2914.5781,1066.1406 2913.9844,1066.4219 Q2913.4063,1066.7031 2912.9531,1067.3281 Q2912.5,1067.9531 2912.5,1068.8125 L2912.5,1069.7344 Q2912.5,1070.7656 2913.3438,1071.4531 Q2914.1875,1072.1406 2915.6875,1072.1406 Q2916.5781,1072.1406 2917.2031,1071.9375 Q2917.5625,1071.8281 2917.9688,1071.4688 Q2918.2344,1071.2656 2918.375,1071.2031 Q2918.5156,1071.1406 2918.6875,1071.1406 Q2919.0156,1071.1406 2919.25,1071.4063 Q2919.5,1071.6563 2919.5,1072.0156 Q2919.5,1072.3594 2919.1563,1072.7656 Q2918.6563,1073.3594 2917.8594,1073.6875 Q2916.8125,1074.1406 2915.5313,1074.1406 Q2914.0313,1074.1406 2912.8281,1073.5469 Q2911.8594,1073.0781 2911.1719,1072.0625 Q2910.5,1071.0469 2910.5,1069.8438 L2910.5,1068.75 Q2910.5,1067.5 2911.0938,1066.4063 Q2911.7031,1065.3125 2912.75,1064.7344 Q2913.8125,1064.1406 2915,1064.1406 Q2915.7188,1064.1406 2916.3438,1064.3906 Q2916.9688,1064.6406 2917.5,1065.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="79" x="2929.5" y="1073.5508">IODownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2901.5" x2="3010.5" y1="1084.6406"
+              y2="1084.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2901.5" x2="3010.5" y1="1092.6406"
+              y2="1092.6406"/>
+        <path d="M2764.5,1063.6406 L2764.5,1089.9922 A0,0 0 0 0 2764.5,1089.9922 L2865.5,1089.9922 A0,0 0 0 0 2865.5,1089.9922 L2865.5,1081.6406 L2900.25,1076.6406 L2865.5,1073.6406 L2865.5,1073.6406 L2855.5,1063.6406 L2764.5,1063.6406 A0,0 0 0 0 2764.5,1063.6406 "
+              fill="#FBFB77" filter="url(#f16wny7rjjov67)"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2855.5,1063.6406 L2855.5,1073.6406 L2865.5,1073.6406 L2855.5,1063.6406 "
+              fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs"
+              textLength="80" x="2770.5" y="1082.1357">Files.copy(...)
+        </text><!--MD5=[36cef5e9238173e5999e145666c4f478]
+class NIODownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="NIODownloader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="120" x="2609" y="1052.6406"/>
+        <ellipse cx="2624" cy="1068.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2626,1065.1406 Q2626.2031,1064.6406 2626.4375,1064.3906 Q2626.6719,1064.1406 2626.9375,1064.1406 Q2627.4063,1064.1406 2627.7031,1064.4219 Q2628,1064.7031 2628,1065.3594 L2628,1066.9219 Q2628,1067.5781 2627.7188,1067.8594 Q2627.4375,1068.1406 2627,1068.1406 Q2626.6094,1068.1406 2626.3594,1067.9688 Q2626.1094,1067.7969 2626,1067.3438 Q2625.9531,1067.0313 2625.7813,1066.8594 Q2625.4688,1066.5313 2624.9063,1066.3438 Q2624.3438,1066.1406 2623.7813,1066.1406 Q2623.0781,1066.1406 2622.4844,1066.4219 Q2621.9063,1066.7031 2621.4531,1067.3281 Q2621,1067.9531 2621,1068.8125 L2621,1069.7344 Q2621,1070.7656 2621.8438,1071.4531 Q2622.6875,1072.1406 2624.1875,1072.1406 Q2625.0781,1072.1406 2625.7031,1071.9375 Q2626.0625,1071.8281 2626.4688,1071.4688 Q2626.7344,1071.2656 2626.875,1071.2031 Q2627.0156,1071.1406 2627.1875,1071.1406 Q2627.5156,1071.1406 2627.75,1071.4063 Q2628,1071.6563 2628,1072.0156 Q2628,1072.3594 2627.6563,1072.7656 Q2627.1563,1073.3594 2626.3594,1073.6875 Q2625.3125,1074.1406 2624.0313,1074.1406 Q2622.5313,1074.1406 2621.3281,1073.5469 Q2620.3594,1073.0781 2619.6719,1072.0625 Q2619,1071.0469 2619,1069.8438 L2619,1068.75 Q2619,1067.5 2619.5938,1066.4063 Q2620.2031,1065.3125 2621.25,1064.7344 Q2622.3125,1064.1406 2623.5,1064.1406 Q2624.2188,1064.1406 2624.8438,1064.3906 Q2625.4688,1064.6406 2626,1065.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="2638" y="1073.5508">NIODownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2610" x2="2728" y1="1084.6406"
+              y2="1084.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2610" x2="2728" y1="1092.6406"
+              y2="1092.6406"/>
+        <path d="M2388.5,1063.6406 L2388.5,1089.9922 A0,0 0 0 0 2388.5,1089.9922 L2573.5,1089.9922 A0,0 0 0 0 2573.5,1089.9922 L2573.5,1081.6406 L2608.96,1076.6406 L2573.5,1073.6406 L2573.5,1073.6406 L2563.5,1063.6406 L2388.5,1063.6406 A0,0 0 0 0 2388.5,1063.6406 "
+              fill="#FBFB77" filter="url(#f16wny7rjjov67)"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2563.5,1063.6406 L2563.5,1073.6406 L2573.5,1073.6406 L2563.5,1063.6406 "
+              fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs"
+              textLength="164" x="2394.5" y="1082.1357">fileChannel.transferFrom(...);
+        </text><!--MD5=[50598971e603e7c1e5cf3683f0ecfff4]
+class IGooglePhotosBuilder-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="144.8516"
+              id="IGooglePhotosBuilder" style="stroke: #A80036; stroke-width: 1.5;" width="381"
+              x="1951.5" y="471.6406"/>
+        <ellipse cx="2077.25" cy="487.6406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2078.25,484.6406 L2078.25,490.6406 L2080.25,490.6406 L2080.7344,490.6406 L2081.25,491.2656 L2081.25,491.6406 L2081.25,492.0156 L2080.7344,492.6406 L2080.25,492.6406 L2074.25,492.6406 L2073.7656,492.6406 L2073.25,492.0156 L2073.25,491.6406 L2073.25,491.2656 L2073.7656,490.6406 L2074.25,490.6406 L2076.25,490.6406 L2076.25,484.6406 L2074.25,484.6406 L2073.7656,484.6406 L2073.25,484.0156 L2073.25,483.6406 L2073.25,483.2656 L2073.7656,482.6406 L2074.25,482.6406 L2080.25,482.6406 L2080.7344,482.6406 L2081.25,483.2656 L2081.25,483.6406 L2081.25,484.0156 L2080.7344,484.6406 L2080.25,484.6406 L2078.25,484.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="121" x="2097.75" y="492.5508">
+            IGooglePhotosBuilder
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1952.5" x2="2331.5" y1="503.6406"
+              y2="503.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1952.5" x2="2331.5" y1="511.6406"
+              y2="511.6406"/>
+        <ellipse cx="1962.5" cy="522.6406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="251" x="1971.5" y="527.0596">setStartDate(String startDate):
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="536.4766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="295" x="1971.5" y="540.8955">setRefreshToken(String refreshToken):
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="550.3125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="317" x="1971.5" y="554.7314">setLocalPhotoFolder(Path localPhotoFolder):
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="564.1484" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="229" x="1971.5" y="568.5674">setClientId(String clientId):
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="577.9844" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="277" x="1971.5" y="582.4033">setClientSecret(String clientSecret):
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="591.8203" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="355" x="1971.5" y="596.2393">setDownloaderType(FactoryDownloaderType
+            type):IGooglePhotosBuilder
+        </text>
+        <ellipse cx="1962.5" cy="605.6563" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="103" x="1971.5" y="610.0752">build(): GooglePhotos
+        </text><!--MD5=[b2f3338862e555e0429aee959b4f7589]
+class GooglePhotosBuilder-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="61.8359" id="GooglePhotosBuilder"
+              style="stroke: #A80036; stroke-width: 1.5;" width="150" x="2067" y="726.6406"/>
+        <ellipse cx="2082" cy="742.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2084,739.1406 Q2084.2031,738.6406 2084.4375,738.3906 Q2084.6719,738.1406 2084.9375,738.1406 Q2085.4063,738.1406 2085.7031,738.4219 Q2086,738.7031 2086,739.3594 L2086,740.9219 Q2086,741.5781 2085.7188,741.8594 Q2085.4375,742.1406 2085,742.1406 Q2084.6094,742.1406 2084.3594,741.9688 Q2084.1094,741.7969 2084,741.3438 Q2083.9531,741.0313 2083.7813,740.8594 Q2083.4688,740.5313 2082.9063,740.3438 Q2082.3438,740.1406 2081.7813,740.1406 Q2081.0781,740.1406 2080.4844,740.4219 Q2079.9063,740.7031 2079.4531,741.3281 Q2079,741.9531 2079,742.8125 L2079,743.7344 Q2079,744.7656 2079.8438,745.4531 Q2080.6875,746.1406 2082.1875,746.1406 Q2083.0781,746.1406 2083.7031,745.9375 Q2084.0625,745.8281 2084.4688,745.4688 Q2084.7344,745.2656 2084.875,745.2031 Q2085.0156,745.1406 2085.1875,745.1406 Q2085.5156,745.1406 2085.75,745.4063 Q2086,745.6563 2086,746.0156 Q2086,746.3594 2085.6563,746.7656 Q2085.1563,747.3594 2084.3594,747.6875 Q2083.3125,748.1406 2082.0313,748.1406 Q2080.5313,748.1406 2079.3281,747.5469 Q2078.3594,747.0781 2077.6719,746.0625 Q2077,745.0469 2077,743.8438 L2077,742.75 Q2077,741.5 2077.5938,740.4063 Q2078.2031,739.3125 2079.25,738.7344 Q2080.3125,738.1406 2081.5,738.1406 Q2082.2188,738.1406 2082.8438,738.3906 Q2083.4688,738.6406 2084,739.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="118" x="2096" y="747.5508">GooglePhotosBuilder
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2068" x2="2216" y1="758.6406"
+              y2="758.6406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2075"
+              y="766.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="115" x="2087" y="774.0596">gPhotos : GooglePhotos
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2068" x2="2216" y1="780.4766"
+              y2="780.4766"/><!--MD5=[1ea58fff2cde8031bd0163350fa7cf9d]
+class GooglePhotos-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="172.5234" id="GooglePhotos"
+              style="stroke: #A80036; stroke-width: 1.5;" width="261" x="2423.5" y="182.1406"/>
+        <ellipse cx="2510.25" cy="198.1406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2512.25,194.6406 Q2512.4531,194.1406 2512.6875,193.8906 Q2512.9219,193.6406 2513.1875,193.6406 Q2513.6563,193.6406 2513.9531,193.9219 Q2514.25,194.2031 2514.25,194.8594 L2514.25,196.4219 Q2514.25,197.0781 2513.9688,197.3594 Q2513.6875,197.6406 2513.25,197.6406 Q2512.8594,197.6406 2512.6094,197.4688 Q2512.3594,197.2969 2512.25,196.8438 Q2512.2031,196.5313 2512.0313,196.3594 Q2511.7188,196.0313 2511.1563,195.8438 Q2510.5938,195.6406 2510.0313,195.6406 Q2509.3281,195.6406 2508.7344,195.9219 Q2508.1563,196.2031 2507.7031,196.8281 Q2507.25,197.4531 2507.25,198.3125 L2507.25,199.2344 Q2507.25,200.2656 2508.0938,200.9531 Q2508.9375,201.6406 2510.4375,201.6406 Q2511.3281,201.6406 2511.9531,201.4375 Q2512.3125,201.3281 2512.7188,200.9688 Q2512.9844,200.7656 2513.125,200.7031 Q2513.2656,200.6406 2513.4375,200.6406 Q2513.7656,200.6406 2514,200.9063 Q2514.25,201.1563 2514.25,201.5156 Q2514.25,201.8594 2513.9063,202.2656 Q2513.4063,202.8594 2512.6094,203.1875 Q2511.5625,203.6406 2510.2813,203.6406 Q2508.7813,203.6406 2507.5781,203.0469 Q2506.6094,202.5781 2505.9219,201.5625 Q2505.25,200.5469 2505.25,199.3438 L2505.25,198.25 Q2505.25,197 2505.8438,195.9063 Q2506.4531,194.8125 2507.5,194.2344 Q2508.5625,193.6406 2509.75,193.6406 Q2510.4688,193.6406 2511.0938,193.8906 Q2511.7188,194.1406 2512.25,194.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="79" x="2530.75" y="203.0508">GooglePhotos
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2424.5" x2="2683.5" y1="214.1406"
+              y2="214.1406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6"
+              x="2431.5" y="222.1406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="235" x="2443.5" y="229.5596">gPhotosDownloader : IGooglePhotosDownloader
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6"
+              x="2431.5" y="235.9766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="82" x="2443.5" y="243.3955">errorText : String
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2424.5" x2="2683.5" y1="249.8125"
+              y2="249.8125"/>
+        <ellipse cx="2434.5" cy="260.8125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              text-decoration="underline" textLength="171" x="2443.5" y="265.2314">newBuilder():
+            IGooglePhotosBuilder
+        </text>
+        <ellipse cx="2434.5" cy="274.6484" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="228" x="2443.5" y="279.0674">setDownloader(FactoryDownloaderType): void
+        </text>
+        <ellipse cx="2434.5" cy="288.4844" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="133" x="2443.5" y="292.9033">downloadPhotos(): boolean
+        </text>
+        <ellipse cx="2434.5" cy="302.3203" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="113" x="2443.5" y="306.7393">countDownloaded(): int
+        </text>
+        <ellipse cx="2434.5" cy="316.1563" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="111" x="2443.5" y="320.5752">itemsToDownload(): int
+        </text>
+        <ellipse cx="2434.5" cy="329.9922" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="102" x="2443.5" y="334.4111">getLastError(): String
+        </text>
+        <ellipse cx="2434.5" cy="343.8281" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="94" x="2443.5" y="348.2471">hasError(): boolean
+        </text><!--MD5=[1bb650c15a2cc620739a6861215ee150]
+class IGooglePhotosDownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078"
+              id="IGooglePhotosDownloader" style="stroke: #A80036; stroke-width: 1.5;" width="398"
+              x="2767" y="499.1406"/>
+        <ellipse cx="2887.75" cy="515.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2888.75,512.1406 L2888.75,518.1406 L2890.75,518.1406 L2891.2344,518.1406 L2891.75,518.7656 L2891.75,519.1406 L2891.75,519.5156 L2891.2344,520.1406 L2890.75,520.1406 L2884.75,520.1406 L2884.2656,520.1406 L2883.75,519.5156 L2883.75,519.1406 L2883.75,518.7656 L2884.2656,518.1406 L2884.75,518.1406 L2886.75,518.1406 L2886.75,512.1406 L2884.75,512.1406 L2884.2656,512.1406 L2883.75,511.5156 L2883.75,511.1406 L2883.75,510.7656 L2884.2656,510.1406 L2884.75,510.1406 L2890.75,510.1406 L2891.2344,510.1406 L2891.75,510.7656 L2891.75,511.1406 L2891.75,511.5156 L2891.2344,512.1406 L2890.75,512.1406 L2888.75,512.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="148" x="2908.25" y="520.0508">
+            IGooglePhotosDownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2768" x2="3164" y1="531.1406"
+              y2="531.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2768" x2="3164" y1="539.1406"
+              y2="539.1406"/>
+        <ellipse cx="2778" cy="550.1406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="240" x="2787" y="554.5596">downloadPhotos(String startDate, String
+            endDate,
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="372" x="2787" y="568.3955">Path localFolder, String clientId, String
+            clientSecret, String refreshToken): void
+        </text>
+        <ellipse cx="2778" cy="577.8125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="247" x="2787" y="582.2314">setItemDownloader(FactoryDownloaderType): void
+        </text><!--MD5=[cae37de34803c9ae29e20419f25cb99c]
+class GooglePhotosDownloader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078"
+              id="GooglePhotosDownloader" style="stroke: #A80036; stroke-width: 1.5;" width="273"
+              x="2629.5" y="712.6406"/>
+        <ellipse cx="2688.75" cy="728.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2690.75,725.1406 Q2690.9531,724.6406 2691.1875,724.3906 Q2691.4219,724.1406 2691.6875,724.1406 Q2692.1563,724.1406 2692.4531,724.4219 Q2692.75,724.7031 2692.75,725.3594 L2692.75,726.9219 Q2692.75,727.5781 2692.4688,727.8594 Q2692.1875,728.1406 2691.75,728.1406 Q2691.3594,728.1406 2691.1094,727.9688 Q2690.8594,727.7969 2690.75,727.3438 Q2690.7031,727.0313 2690.5313,726.8594 Q2690.2188,726.5313 2689.6563,726.3438 Q2689.0938,726.1406 2688.5313,726.1406 Q2687.8281,726.1406 2687.2344,726.4219 Q2686.6563,726.7031 2686.2031,727.3281 Q2685.75,727.9531 2685.75,728.8125 L2685.75,729.7344 Q2685.75,730.7656 2686.5938,731.4531 Q2687.4375,732.1406 2688.9375,732.1406 Q2689.8281,732.1406 2690.4531,731.9375 Q2690.8125,731.8281 2691.2188,731.4688 Q2691.4844,731.2656 2691.625,731.2031 Q2691.7656,731.1406 2691.9375,731.1406 Q2692.2656,731.1406 2692.5,731.4063 Q2692.75,731.6563 2692.75,732.0156 Q2692.75,732.3594 2692.4063,732.7656 Q2691.9063,733.3594 2691.1094,733.6875 Q2690.0625,734.1406 2688.7813,734.1406 Q2687.2813,734.1406 2686.0781,733.5469 Q2685.1094,733.0781 2684.4219,732.0625 Q2683.75,731.0469 2683.75,729.8438 L2683.75,728.75 Q2683.75,727.5 2684.3438,726.4063 Q2684.9531,725.3125 2686,724.7344 Q2687.0625,724.1406 2688.25,724.1406 Q2688.9688,724.1406 2689.5938,724.3906 Q2690.2188,724.6406 2690.75,725.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="146" x="2709.25" y="733.5508">GooglePhotosDownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2630.5" x2="2901.5" y1="744.6406"
+              y2="744.6406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6"
+              x="2637.5" y="752.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="148" x="2649.5" y="760.0596">itemDownloader : IDownloader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2630.5" x2="2901.5" y1="766.4766"
+              y2="766.4766"/>
+        <ellipse cx="2640.5" cy="777.4766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="247" x="2649.5" y="781.8955">setItemDownloader(FactoryDownloaderType):
+            void
+        </text>
+        <ellipse cx="2640.5" cy="791.3125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="115" x="2649.5" y="795.7314">downloadPhotos(): void
+        </text><!--MD5=[4a297d7cc079299fc3e58f4cc0874618]
+class IObservable-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078" id="IObservable"
+              style="stroke: #A80036; stroke-width: 1.5;" width="190" x="2542" y="499.1406"/>
+        <ellipse cx="2598.25" cy="515.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2599.25,512.1406 L2599.25,518.1406 L2601.25,518.1406 L2601.7344,518.1406 L2602.25,518.7656 L2602.25,519.1406 L2602.25,519.5156 L2601.7344,520.1406 L2601.25,520.1406 L2595.25,520.1406 L2594.7656,520.1406 L2594.25,519.5156 L2594.25,519.1406 L2594.25,518.7656 L2594.7656,518.1406 L2595.25,518.1406 L2597.25,518.1406 L2597.25,512.1406 L2595.25,512.1406 L2594.7656,512.1406 L2594.25,511.5156 L2594.25,511.1406 L2594.25,510.7656 L2594.7656,510.1406 L2595.25,510.1406 L2601.25,510.1406 L2601.7344,510.1406 L2602.25,510.7656 L2602.25,511.1406 L2602.25,511.5156 L2601.7344,512.1406 L2601.25,512.1406 L2599.25,512.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="69" x="2618.75" y="520.0508">IObservable
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2543" x2="2731" y1="531.1406"
+              y2="531.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2543" x2="2731" y1="539.1406"
+              y2="539.1406"/>
+        <ellipse cx="2553" cy="550.1406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="158" x="2562" y="554.5596">attachObserver(IObserver): void
+        </text>
+        <ellipse cx="2553" cy="563.9766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="164" x="2562" y="568.3955">dettachObserver(IObserver): void
+        </text>
+        <ellipse cx="2553" cy="577.8125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="113" x="2562" y="582.2314">notifyObservers(): void
+        </text><!--MD5=[1dcf94be89f1d1c6c4f8f797da90f5fa]
+class IObserver-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="61.8359" id="IObserver"
+              style="stroke: #A80036; stroke-width: 1.5;" width="139" x="2367.5" y="513.1406"/>
+        <ellipse cx="2405.9" cy="529.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M2406.9,526.1406 L2406.9,532.1406 L2408.9,532.1406 L2409.3844,532.1406 L2409.9,532.7656 L2409.9,533.1406 L2409.9,533.5156 L2409.3844,534.1406 L2408.9,534.1406 L2402.9,534.1406 L2402.4156,534.1406 L2401.9,533.5156 L2401.9,533.1406 L2401.9,532.7656 L2402.4156,532.1406 L2402.9,532.1406 L2404.9,532.1406 L2404.9,526.1406 L2402.9,526.1406 L2402.4156,526.1406 L2401.9,525.5156 L2401.9,525.1406 L2401.9,524.7656 L2402.4156,524.1406 L2402.9,524.1406 L2408.9,524.1406 L2409.3844,524.1406 L2409.9,524.7656 L2409.9,525.1406 L2409.9,525.5156 L2409.3844,526.1406 L2408.9,526.1406 L2406.9,526.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="55" x="2425.1" y="534.0508">IObserver
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2368.5" x2="2505.5" y1="545.1406"
+              y2="545.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="2368.5" x2="2505.5" y1="553.1406"
+              y2="553.1406"/>
+        <ellipse cx="2378.5" cy="564.1406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="113" x="2387.5" y="568.5596">updateObserver(): void
+        </text><!--MD5=[9826c328e339e3f4dc89c4faad8a7582]
+class IIniConfig-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="283.2109" id="IIniConfig"
+              style="stroke: #A80036; stroke-width: 1.5;" width="329" x="330.5" y="127.1406"/>
+        <ellipse cx="463.75" cy="143.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M464.75,140.1406 L464.75,146.1406 L466.75,146.1406 L467.2344,146.1406 L467.75,146.7656 L467.75,147.1406 L467.75,147.5156 L467.2344,148.1406 L466.75,148.1406 L460.75,148.1406 L460.2656,148.1406 L459.75,147.5156 L459.75,147.1406 L459.75,146.7656 L460.2656,146.1406 L460.75,146.1406 L462.75,146.1406 L462.75,140.1406 L460.75,140.1406 L460.2656,140.1406 L459.75,139.5156 L459.75,139.1406 L459.75,138.7656 L460.2656,138.1406 L460.75,138.1406 L466.75,138.1406 L467.2344,138.1406 L467.75,138.7656 L467.75,139.1406 L467.75,139.5156 L467.2344,140.1406 L466.75,140.1406 L464.75,140.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="54" x="484.25" y="148.0508">IIniConfig
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="331.5" x2="658.5" y1="159.1406"
+              y2="159.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="331.5" x2="658.5" y1="167.1406"
+              y2="167.1406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="203" x="336.5" y="182.5596">IIniSection getSection(String sectionName)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="229" x="336.5" y="196.3955">String getValue(String sectionName, String
+            key)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="256" x="336.5" y="210.2314">boolean containsKey(String sectionName, String
+            key)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="219" x="336.5" y="224.0674">boolean containsSection(String sectionName)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="0" x="339.5" y="237.9033"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="84" x="336.5" y="251.7393">void load(File file)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="164" x="336.5" y="265.5752">void load(BufferedReader reader)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="89" x="336.5" y="279.4111">void store(File file)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="0" x="339.5" y="293.2471"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="263" x="336.5" y="307.083">void putComment(String sectionName, String
+            comment)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="317" x="336.5" y="320.9189">void putComment(String sectionName, String
+            key, String comment)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="199" x="336.5" y="334.7549">void putHeaderComment(String comment)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="245" x="336.5" y="348.5908">String getComment(String sectionName, String
+            key)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="133" x="336.5" y="362.4268">String getHeaderComment()
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="175" x="336.5" y="376.2627">void putSection(String sectionName)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="284" x="336.5" y="390.0986">void putValue(String sectionName, String key,
+            String value)
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="76" x="336.5" y="403.9346">String toString()
+        </text><!--MD5=[af56c6377b5ff70590ebecd3f82ae568]
+class IIniSection-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="131.0156" id="IIniSection"
+              style="stroke: #A80036; stroke-width: 1.5;" width="233" x="62.5" y="203.1406"/>
+        <ellipse cx="145.25" cy="219.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M146.25,216.1406 L146.25,222.1406 L148.25,222.1406 L148.7344,222.1406 L149.25,222.7656 L149.25,223.1406 L149.25,223.5156 L148.7344,224.1406 L148.25,224.1406 L142.25,224.1406 L141.7656,224.1406 L141.25,223.5156 L141.25,223.1406 L141.25,222.7656 L141.7656,222.1406 L142.25,222.1406 L144.25,222.1406 L144.25,216.1406 L142.25,216.1406 L141.7656,216.1406 L141.25,215.5156 L141.25,215.1406 L141.25,214.7656 L141.7656,214.1406 L142.25,214.1406 L148.25,214.1406 L148.7344,214.1406 L149.25,214.7656 L149.25,215.1406 L149.25,215.5156 L148.7344,216.1406 L148.25,216.1406 L146.25,216.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="59" x="165.75" y="224.0508">IIniSection
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="63.5" x2="294.5" y1="235.1406"
+              y2="235.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="63.5" x2="294.5" y1="243.1406"
+              y2="243.1406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="133" x="68.5" y="258.5596">String getValue(String key);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="160" x="68.5" y="272.3955">boolean containsKey(String key);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="188" x="68.5" y="286.2314">void putValue(String key, String value);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="221" x="68.5" y="300.0674">void putComment(String key, String comment);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="149" x="68.5" y="313.9033">String getComment(String key);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="79" x="68.5" y="327.7393">String toString();
+        </text><!--MD5=[350af372f3784007dff2b460e61f1774]
+class CustomIIniConfig-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078" id="CustomIIniConfig"
+              style="stroke: #A80036; stroke-width: 1.5;" width="190" x="265" y="499.1406"/>
+        <ellipse cx="307.9" cy="515.1406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M309.9,511.6406 Q310.1031,511.1406 310.3375,510.8906 Q310.5719,510.6406 310.8375,510.6406 Q311.3063,510.6406 311.6031,510.9219 Q311.9,511.2031 311.9,511.8594 L311.9,513.4219 Q311.9,514.0781 311.6188,514.3594 Q311.3375,514.6406 310.9,514.6406 Q310.5094,514.6406 310.2594,514.4688 Q310.0094,514.2969 309.9,513.8438 Q309.8531,513.5313 309.6813,513.3594 Q309.3688,513.0313 308.8063,512.8438 Q308.2438,512.6406 307.6813,512.6406 Q306.9781,512.6406 306.3844,512.9219 Q305.8063,513.2031 305.3531,513.8281 Q304.9,514.4531 304.9,515.3125 L304.9,516.2344 Q304.9,517.2656 305.7438,517.9531 Q306.5875,518.6406 308.0875,518.6406 Q308.9781,518.6406 309.6031,518.4375 Q309.9625,518.3281 310.3688,517.9688 Q310.6344,517.7656 310.775,517.7031 Q310.9156,517.6406 311.0875,517.6406 Q311.4156,517.6406 311.65,517.9063 Q311.9,518.1563 311.9,518.5156 Q311.9,518.8594 311.5563,519.2656 Q311.0563,519.8594 310.2594,520.1875 Q309.2125,520.6406 307.9313,520.6406 Q306.4313,520.6406 305.2281,520.0469 Q304.2594,519.5781 303.5719,518.5625 Q302.9,517.5469 302.9,516.3438 L302.9,515.25 Q302.9,514 303.4938,512.9063 Q304.1031,511.8125 305.15,511.2344 Q306.2125,510.6406 307.4,510.6406 Q308.1188,510.6406 308.7438,510.8906 Q309.3688,511.1406 309.9,511.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="96" x="328.1" y="520.0508">CustomIIniConfig
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="266" x2="454" y1="531.1406"
+              y2="531.1406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="273"
+              y="539.1406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="115" x="285" y="546.5596">headerComment : String
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="273"
+              y="552.9766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="164" x="285" y="560.3955">sections : Map&lt;String, IIniSection&gt;
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="273"
+              y="566.8125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="75" x="285" y="574.2314">loader : ILoader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="266" x2="454" y1="580.6484"
+              y2="580.6484"/><!--MD5=[0b0ebba5c4db3ebb7d1860c7d4d6d2e0]
+class CustomIIniSection-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078" id="CustomIIniSection"
+              style="stroke: #A80036; stroke-width: 1.5;" width="144" x="86" y="499.1406"/>
+        <ellipse cx="105.95" cy="515.1406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M107.95,511.6406 Q108.1531,511.1406 108.3875,510.8906 Q108.6219,510.6406 108.8875,510.6406 Q109.3563,510.6406 109.6531,510.9219 Q109.95,511.2031 109.95,511.8594 L109.95,513.4219 Q109.95,514.0781 109.6688,514.3594 Q109.3875,514.6406 108.95,514.6406 Q108.5594,514.6406 108.3094,514.4688 Q108.0594,514.2969 107.95,513.8438 Q107.9031,513.5313 107.7313,513.3594 Q107.4188,513.0313 106.8563,512.8438 Q106.2938,512.6406 105.7313,512.6406 Q105.0281,512.6406 104.4344,512.9219 Q103.8563,513.2031 103.4031,513.8281 Q102.95,514.4531 102.95,515.3125 L102.95,516.2344 Q102.95,517.2656 103.7938,517.9531 Q104.6375,518.6406 106.1375,518.6406 Q107.0281,518.6406 107.6531,518.4375 Q108.0125,518.3281 108.4188,517.9688 Q108.6844,517.7656 108.825,517.7031 Q108.9656,517.6406 109.1375,517.6406 Q109.4656,517.6406 109.7,517.9063 Q109.95,518.1563 109.95,518.5156 Q109.95,518.8594 109.6063,519.2656 Q109.1063,519.8594 108.3094,520.1875 Q107.2625,520.6406 105.9813,520.6406 Q104.4813,520.6406 103.2781,520.0469 Q102.3094,519.5781 101.6219,518.5625 Q100.95,517.5469 100.95,516.3438 L100.95,515.25 Q100.95,514 101.5438,512.9063 Q102.1531,511.8125 103.2,511.2344 Q104.2625,510.6406 105.45,510.6406 Q106.1688,510.6406 106.7938,510.8906 Q107.4188,511.1406 107.95,511.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="101" x="121.05" y="520.0508">CustomIIniSection
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="87" x2="229" y1="531.1406"
+              y2="531.1406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="94"
+              y="539.1406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="63" x="106" y="546.5596">name : String
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="94"
+              y="552.9766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="80" x="106" y="560.3955">comment : String
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="94"
+              y="566.8125"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="118" x="106" y="574.2314">items : List&lt;CustomItem&gt;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="87" x2="229" y1="580.6484"
+              y2="580.6484"/><!--MD5=[a549058687a7269f0dd581b3a7bb3fb6]
+class ILoader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="75.6719" id="ILoader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="255" x="578.5" y="506.1406"/>
+        <ellipse cx="680.25" cy="522.1406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M681.25,519.1406 L681.25,525.1406 L683.25,525.1406 L683.7344,525.1406 L684.25,525.7656 L684.25,526.1406 L684.25,526.5156 L683.7344,527.1406 L683.25,527.1406 L677.25,527.1406 L676.7656,527.1406 L676.25,526.5156 L676.25,526.1406 L676.25,525.7656 L676.7656,525.1406 L677.25,525.1406 L679.25,525.1406 L679.25,519.1406 L677.25,519.1406 L676.7656,519.1406 L676.25,518.5156 L676.25,518.1406 L676.25,517.7656 L676.7656,517.1406 L677.25,517.1406 L683.25,517.1406 L683.7344,517.1406 L684.25,517.7656 L684.25,518.1406 L684.25,518.5156 L683.7344,519.1406 L683.25,519.1406 L681.25,519.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="43" x="700.75" y="527.0508">ILoader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="579.5" x2="832.5" y1="538.1406"
+              y2="538.1406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="579.5" x2="832.5" y1="546.1406"
+              y2="546.1406"/>
+        <ellipse cx="589.5" cy="557.1406" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="149" x="598.5" y="561.5596">load(IIniConfig ini, File file): void
+        </text>
+        <ellipse cx="589.5" cy="570.9766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="229" x="598.5" y="575.3955">load(IIniConfig ini, BufferedReader reader):
+            void
+        </text><!--MD5=[9173276afa5c394efff1f295af4b461f]
+class LineLoader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="LineLoader"
+              style="stroke: #A80036; stroke-width: 1.5;" width="95" x="511.5" y="733.6406"/>
+        <ellipse cx="526.5" cy="749.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M528.5,746.1406 Q528.7031,745.6406 528.9375,745.3906 Q529.1719,745.1406 529.4375,745.1406 Q529.9063,745.1406 530.2031,745.4219 Q530.5,745.7031 530.5,746.3594 L530.5,747.9219 Q530.5,748.5781 530.2188,748.8594 Q529.9375,749.1406 529.5,749.1406 Q529.1094,749.1406 528.8594,748.9688 Q528.6094,748.7969 528.5,748.3438 Q528.4531,748.0313 528.2813,747.8594 Q527.9688,747.5313 527.4063,747.3438 Q526.8438,747.1406 526.2813,747.1406 Q525.5781,747.1406 524.9844,747.4219 Q524.4063,747.7031 523.9531,748.3281 Q523.5,748.9531 523.5,749.8125 L523.5,750.7344 Q523.5,751.7656 524.3438,752.4531 Q525.1875,753.1406 526.6875,753.1406 Q527.5781,753.1406 528.2031,752.9375 Q528.5625,752.8281 528.9688,752.4688 Q529.2344,752.2656 529.375,752.2031 Q529.5156,752.1406 529.6875,752.1406 Q530.0156,752.1406 530.25,752.4063 Q530.5,752.6563 530.5,753.0156 Q530.5,753.3594 530.1563,753.7656 Q529.6563,754.3594 528.8594,754.6875 Q527.8125,755.1406 526.5313,755.1406 Q525.0313,755.1406 523.8281,754.5469 Q522.8594,754.0781 522.1719,753.0625 Q521.5,752.0469 521.5,750.8438 L521.5,749.75 Q521.5,748.5 522.0938,747.4063 Q522.7031,746.3125 523.75,745.7344 Q524.8125,745.1406 526,745.1406 Q526.7188,745.1406 527.3438,745.3906 Q527.9688,745.6406 528.5,746.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="63" x="540.5" y="754.5508">LineLoader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="512.5" x2="605.5" y1="765.6406"
+              y2="765.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="512.5" x2="605.5" y1="773.6406"
+              y2="773.6406"/><!--MD5=[715d8ad266501f4ccd09c79dc21be3ba]
+class ChainOfResponsibilityLoader-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="75.6719"
+              id="ChainOfResponsibilityLoader" style="stroke: #A80036; stroke-width: 1.5;"
+              width="194" x="698" y="719.6406"/>
+        <ellipse cx="713" cy="735.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M715,732.1406 Q715.2031,731.6406 715.4375,731.3906 Q715.6719,731.1406 715.9375,731.1406 Q716.4063,731.1406 716.7031,731.4219 Q717,731.7031 717,732.3594 L717,733.9219 Q717,734.5781 716.7188,734.8594 Q716.4375,735.1406 716,735.1406 Q715.6094,735.1406 715.3594,734.9688 Q715.1094,734.7969 715,734.3438 Q714.9531,734.0313 714.7813,733.8594 Q714.4688,733.5313 713.9063,733.3438 Q713.3438,733.1406 712.7813,733.1406 Q712.0781,733.1406 711.4844,733.4219 Q710.9063,733.7031 710.4531,734.3281 Q710,734.9531 710,735.8125 L710,736.7344 Q710,737.7656 710.8438,738.4531 Q711.6875,739.1406 713.1875,739.1406 Q714.0781,739.1406 714.7031,738.9375 Q715.0625,738.8281 715.4688,738.4688 Q715.7344,738.2656 715.875,738.2031 Q716.0156,738.1406 716.1875,738.1406 Q716.5156,738.1406 716.75,738.4063 Q717,738.6563 717,739.0156 Q717,739.3594 716.6563,739.7656 Q716.1563,740.3594 715.3594,740.6875 Q714.3125,741.1406 713.0313,741.1406 Q711.5313,741.1406 710.3281,740.5469 Q709.3594,740.0781 708.6719,739.0625 Q708,738.0469 708,736.8438 L708,735.75 Q708,734.5 708.5938,733.4063 Q709.2031,732.3125 710.25,731.7344 Q711.3125,731.1406 712.5,731.1406 Q713.2188,731.1406 713.8438,731.3906 Q714.4688,731.6406 715,732.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="162" x="727" y="740.5508">ChainOfResponsibilityLoader
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="699" x2="891" y1="751.6406"
+              y2="751.6406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="706"
+              y="759.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="163" x="718" y="767.0596">processorChain : ProcessorChain
+        </text>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="706"
+              y="773.4766"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="134" x="718" y="780.8955">contextState : IContextState
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="699" x2="891" y1="787.3125"
+              y2="787.3125"/><!--MD5=[df75b8422f2dd350dd9b990f6eb45890]
+class ProcessorChain-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="75.6719" id="ProcessorChain"
+              style="stroke: #A80036; stroke-width: 1.5;" width="264" x="663" y="909.6406"/>
+        <ellipse cx="745.75" cy="925.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M747.75,922.1406 Q747.9531,921.6406 748.1875,921.3906 Q748.4219,921.1406 748.6875,921.1406 Q749.1563,921.1406 749.4531,921.4219 Q749.75,921.7031 749.75,922.3594 L749.75,923.9219 Q749.75,924.5781 749.4688,924.8594 Q749.1875,925.1406 748.75,925.1406 Q748.3594,925.1406 748.1094,924.9688 Q747.8594,924.7969 747.75,924.3438 Q747.7031,924.0313 747.5313,923.8594 Q747.2188,923.5313 746.6563,923.3438 Q746.0938,923.1406 745.5313,923.1406 Q744.8281,923.1406 744.2344,923.4219 Q743.6563,923.7031 743.2031,924.3281 Q742.75,924.9531 742.75,925.8125 L742.75,926.7344 Q742.75,927.7656 743.5938,928.4531 Q744.4375,929.1406 745.9375,929.1406 Q746.8281,929.1406 747.4531,928.9375 Q747.8125,928.8281 748.2188,928.4688 Q748.4844,928.2656 748.625,928.2031 Q748.7656,928.1406 748.9375,928.1406 Q749.2656,928.1406 749.5,928.4063 Q749.75,928.6563 749.75,929.0156 Q749.75,929.3594 749.4063,929.7656 Q748.9063,930.3594 748.1094,930.6875 Q747.0625,931.1406 745.7813,931.1406 Q744.2813,931.1406 743.0781,930.5469 Q742.1094,930.0781 741.4219,929.0625 Q740.75,928.0469 740.75,926.8438 L740.75,925.75 Q740.75,924.5 741.3438,923.4063 Q741.9531,922.3125 743,921.7344 Q744.0625,921.1406 745.25,921.1406 Q745.9688,921.1406 746.5938,921.3906 Q747.2188,921.6406 747.75,922.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="90" x="766.25" y="930.5508">ProcessorChain
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="664" x2="926" y1="941.6406"
+              y2="941.6406"/>
+        <rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="671"
+              y="949.6406"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="151" x="683" y="957.0596">processor : AbstractProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="664" x2="926" y1="963.4766"
+              y2="963.4766"/>
+        <ellipse cx="674" cy="974.4766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="238" x="683" y="978.8955">processLine(IContextState state, String line):
+            void
+        </text><!--MD5=[70f9ef3d5706e94503c562422b5ef37e]
+class IContextState-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="IContextState"
+              style="stroke: #A80036; stroke-width: 1.5;" width="106" x="826" y="1052.6406"/>
+        <ellipse cx="841" cy="1068.6406" fill="#B4A7E5" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M842,1065.6406 L842,1071.6406 L844,1071.6406 L844.4844,1071.6406 L845,1072.2656 L845,1072.6406 L845,1073.0156 L844.4844,1073.6406 L844,1073.6406 L838,1073.6406 L837.5156,1073.6406 L837,1073.0156 L837,1072.6406 L837,1072.2656 L837.5156,1071.6406 L838,1071.6406 L840,1071.6406 L840,1065.6406 L838,1065.6406 L837.5156,1065.6406 L837,1065.0156 L837,1064.6406 L837,1064.2656 L837.5156,1063.6406 L838,1063.6406 L844,1063.6406 L844.4844,1063.6406 L845,1064.2656 L845,1064.6406 L845,1065.0156 L844.4844,1065.6406 L844,1065.6406 L842,1065.6406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="74" x="855" y="1073.5508">IContextState
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="827" x2="931" y1="1084.6406"
+              y2="1084.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="827" x2="931" y1="1092.6406"
+              y2="1092.6406"/><!--MD5=[48ef30ae669ae7c6267650a3a5d7ee80]
+class ContextState-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="ContextState"
+              style="stroke: #A80036; stroke-width: 1.5;" width="101" x="828.5" y="1160.6406"/>
+        <ellipse cx="843.5" cy="1176.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M845.5,1173.1406 Q845.7031,1172.6406 845.9375,1172.3906 Q846.1719,1172.1406 846.4375,1172.1406 Q846.9063,1172.1406 847.2031,1172.4219 Q847.5,1172.7031 847.5,1173.3594 L847.5,1174.9219 Q847.5,1175.5781 847.2188,1175.8594 Q846.9375,1176.1406 846.5,1176.1406 Q846.1094,1176.1406 845.8594,1175.9688 Q845.6094,1175.7969 845.5,1175.3438 Q845.4531,1175.0313 845.2813,1174.8594 Q844.9688,1174.5313 844.4063,1174.3438 Q843.8438,1174.1406 843.2813,1174.1406 Q842.5781,1174.1406 841.9844,1174.4219 Q841.4063,1174.7031 840.9531,1175.3281 Q840.5,1175.9531 840.5,1176.8125 L840.5,1177.7344 Q840.5,1178.7656 841.3438,1179.4531 Q842.1875,1180.1406 843.6875,1180.1406 Q844.5781,1180.1406 845.2031,1179.9375 Q845.5625,1179.8281 845.9688,1179.4688 Q846.2344,1179.2656 846.375,1179.2031 Q846.5156,1179.1406 846.6875,1179.1406 Q847.0156,1179.1406 847.25,1179.4063 Q847.5,1179.6563 847.5,1180.0156 Q847.5,1180.3594 847.1563,1180.7656 Q846.6563,1181.3594 845.8594,1181.6875 Q844.8125,1182.1406 843.5313,1182.1406 Q842.0313,1182.1406 840.8281,1181.5469 Q839.8594,1181.0781 839.1719,1180.0625 Q838.5,1179.0469 838.5,1177.8438 L838.5,1176.75 Q838.5,1175.5 839.0938,1174.4063 Q839.7031,1173.3125 840.75,1172.7344 Q841.8125,1172.1406 843,1172.1406 Q843.7188,1172.1406 844.3438,1172.3906 Q844.9688,1172.6406 845.5,1173.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="69" x="857.5" y="1181.5508">ContextState
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="829.5" x2="928.5" y1="1192.6406"
+              y2="1192.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="829.5" x2="928.5" y1="1200.6406"
+              y2="1200.6406"/><!--MD5=[5fef5e4f35f84722c9edf52d5aa95e18]
+class AbstractProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="89.5078" id="AbstractProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="292" x="1244" y="712.6406"/>
+        <ellipse cx="1335.75" cy="728.6406" fill="#A9DCDF" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1337.5,730.1406 L1334.2031,730.1406 L1333.7656,731.1406 L1333.7656,731.1406 L1334.2344,731.1406 L1334.75,731.7656 L1334.75,732.1406 L1334.75,732.5156 L1334.2344,733.1406 L1333.7656,733.1406 L1331.875,733.1406 L1331.2656,733.1406 L1330.75,732.5156 L1330.75,732.1406 L1330.75,731.7656 L1331.2656,731.1406 L1331.875,731.1406 L1334.1875,725.1406 L1333.3125,725.1406 L1332.2656,725.1406 L1331.75,724.5156 L1331.75,724.1406 L1331.75,723.7656 L1332.2656,723.1406 L1333.3125,723.1406 L1336.9844,723.1406 L1339.6719,731.1406 L1340.2344,731.1406 L1340.2344,731.1406 L1340.75,731.7656 L1340.75,732.1406 L1340.75,732.5156 L1340.2344,733.1406 L1339.6719,733.1406 L1337.7813,733.1406 L1337.2656,733.1406 L1336.75,732.5156 L1336.75,732.1406 L1336.75,731.7656 L1337.2656,731.1406 L1337.7813,731.1406 L1337.7813,731.1406 L1337.5,730.1406 Z M1336.9531,728.1406 L1335.75,724.5625 L1334.7188,728.1406 L1336.9531,728.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="100" x="1356.25" y="733.5508">
+            AbstractProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1245" x2="1535" y1="744.6406"
+              y2="744.6406"/>
+        <polygon fill="none" points="1255,750.6406,1259,754.6406,1255,758.6406,1251,754.6406"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="172" x="1264" y="760.0596">nextProcessor : AbstractProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1245" x2="1535" y1="766.4766"
+              y2="766.4766"/>
+        <ellipse cx="1255" cy="777.4766" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs"
+              textLength="266" x="1264" y="781.8955">AbstractProcessor(AbstractProcessor
+            nextProcessor)
+        </text>
+        <ellipse cx="1255" cy="791.3125" fill="#84BE84" rx="3" ry="3"
+                 style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic"
+              lengthAdjust="spacingAndGlyphs" textLength="145" x="1264" y="795.7314">
+            processLine(String line): void
+        </text><!--MD5=[6a15394b06daa9685b3c35b7d32c7402]
+class BlankProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="BlankProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="120" x="999" y="923.6406"/>
+        <ellipse cx="1014" cy="939.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1016,936.1406 Q1016.2031,935.6406 1016.4375,935.3906 Q1016.6719,935.1406 1016.9375,935.1406 Q1017.4063,935.1406 1017.7031,935.4219 Q1018,935.7031 1018,936.3594 L1018,937.9219 Q1018,938.5781 1017.7188,938.8594 Q1017.4375,939.1406 1017,939.1406 Q1016.6094,939.1406 1016.3594,938.9688 Q1016.1094,938.7969 1016,938.3438 Q1015.9531,938.0313 1015.7813,937.8594 Q1015.4688,937.5313 1014.9063,937.3438 Q1014.3438,937.1406 1013.7813,937.1406 Q1013.0781,937.1406 1012.4844,937.4219 Q1011.9063,937.7031 1011.4531,938.3281 Q1011,938.9531 1011,939.8125 L1011,940.7344 Q1011,941.7656 1011.8438,942.4531 Q1012.6875,943.1406 1014.1875,943.1406 Q1015.0781,943.1406 1015.7031,942.9375 Q1016.0625,942.8281 1016.4688,942.4688 Q1016.7344,942.2656 1016.875,942.2031 Q1017.0156,942.1406 1017.1875,942.1406 Q1017.5156,942.1406 1017.75,942.4063 Q1018,942.6563 1018,943.0156 Q1018,943.3594 1017.6563,943.7656 Q1017.1563,944.3594 1016.3594,944.6875 Q1015.3125,945.1406 1014.0313,945.1406 Q1012.5313,945.1406 1011.3281,944.5469 Q1010.3594,944.0781 1009.6719,943.0625 Q1009,942.0469 1009,940.8438 L1009,939.75 Q1009,938.5 1009.5938,937.4063 Q1010.2031,936.3125 1011.25,935.7344 Q1012.3125,935.1406 1013.5,935.1406 Q1014.2188,935.1406 1014.8438,935.3906 Q1015.4688,935.6406 1016,936.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="88" x="1028" y="944.5508">BlankProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1000" x2="1118" y1="955.6406"
+              y2="955.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1000" x2="1118" y1="963.6406"
+              y2="963.6406"/><!--MD5=[91d272e5492bc932b72fbdde976c6c82]
+class CommentProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="CommentProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="144" x="1154" y="923.6406"/>
+        <ellipse cx="1169" cy="939.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1171,936.1406 Q1171.2031,935.6406 1171.4375,935.3906 Q1171.6719,935.1406 1171.9375,935.1406 Q1172.4063,935.1406 1172.7031,935.4219 Q1173,935.7031 1173,936.3594 L1173,937.9219 Q1173,938.5781 1172.7188,938.8594 Q1172.4375,939.1406 1172,939.1406 Q1171.6094,939.1406 1171.3594,938.9688 Q1171.1094,938.7969 1171,938.3438 Q1170.9531,938.0313 1170.7813,937.8594 Q1170.4688,937.5313 1169.9063,937.3438 Q1169.3438,937.1406 1168.7813,937.1406 Q1168.0781,937.1406 1167.4844,937.4219 Q1166.9063,937.7031 1166.4531,938.3281 Q1166,938.9531 1166,939.8125 L1166,940.7344 Q1166,941.7656 1166.8438,942.4531 Q1167.6875,943.1406 1169.1875,943.1406 Q1170.0781,943.1406 1170.7031,942.9375 Q1171.0625,942.8281 1171.4688,942.4688 Q1171.7344,942.2656 1171.875,942.2031 Q1172.0156,942.1406 1172.1875,942.1406 Q1172.5156,942.1406 1172.75,942.4063 Q1173,942.6563 1173,943.0156 Q1173,943.3594 1172.6563,943.7656 Q1172.1563,944.3594 1171.3594,944.6875 Q1170.3125,945.1406 1169.0313,945.1406 Q1167.5313,945.1406 1166.3281,944.5469 Q1165.3594,944.0781 1164.6719,943.0625 Q1164,942.0469 1164,940.8438 L1164,939.75 Q1164,938.5 1164.5938,937.4063 Q1165.2031,936.3125 1166.25,935.7344 Q1167.3125,935.1406 1168.5,935.1406 Q1169.2188,935.1406 1169.8438,935.3906 Q1170.4688,935.6406 1171,936.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="112" x="1183" y="944.5508">CommentProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1155" x2="1297" y1="955.6406"
+              y2="955.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1155" x2="1297" y1="963.6406"
+              y2="963.6406"/><!--MD5=[e873b9cf33adbd0fdfdcf803530782e0]
+class ItemProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="ItemProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="113" x="1333.5" y="923.6406"/>
+        <ellipse cx="1348.5" cy="939.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1350.5,936.1406 Q1350.7031,935.6406 1350.9375,935.3906 Q1351.1719,935.1406 1351.4375,935.1406 Q1351.9063,935.1406 1352.2031,935.4219 Q1352.5,935.7031 1352.5,936.3594 L1352.5,937.9219 Q1352.5,938.5781 1352.2188,938.8594 Q1351.9375,939.1406 1351.5,939.1406 Q1351.1094,939.1406 1350.8594,938.9688 Q1350.6094,938.7969 1350.5,938.3438 Q1350.4531,938.0313 1350.2813,937.8594 Q1349.9688,937.5313 1349.4063,937.3438 Q1348.8438,937.1406 1348.2813,937.1406 Q1347.5781,937.1406 1346.9844,937.4219 Q1346.4063,937.7031 1345.9531,938.3281 Q1345.5,938.9531 1345.5,939.8125 L1345.5,940.7344 Q1345.5,941.7656 1346.3438,942.4531 Q1347.1875,943.1406 1348.6875,943.1406 Q1349.5781,943.1406 1350.2031,942.9375 Q1350.5625,942.8281 1350.9688,942.4688 Q1351.2344,942.2656 1351.375,942.2031 Q1351.5156,942.1406 1351.6875,942.1406 Q1352.0156,942.1406 1352.25,942.4063 Q1352.5,942.6563 1352.5,943.0156 Q1352.5,943.3594 1352.1563,943.7656 Q1351.6563,944.3594 1350.8594,944.6875 Q1349.8125,945.1406 1348.5313,945.1406 Q1347.0313,945.1406 1345.8281,944.5469 Q1344.8594,944.0781 1344.1719,943.0625 Q1343.5,942.0469 1343.5,940.8438 L1343.5,939.75 Q1343.5,938.5 1344.0938,937.4063 Q1344.7031,936.3125 1345.75,935.7344 Q1346.8125,935.1406 1348,935.1406 Q1348.7188,935.1406 1349.3438,935.3906 Q1349.9688,935.6406 1350.5,936.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="81" x="1362.5" y="944.5508">ItemProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1445.5" y1="955.6406"
+              y2="955.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1334.5" x2="1445.5" y1="963.6406"
+              y2="963.6406"/><!--MD5=[55afbca7675f352bfcb2742fd71cf3ef]
+class SectionProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="SectionProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="130" x="1482" y="923.6406"/>
+        <ellipse cx="1497" cy="939.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1499,936.1406 Q1499.2031,935.6406 1499.4375,935.3906 Q1499.6719,935.1406 1499.9375,935.1406 Q1500.4063,935.1406 1500.7031,935.4219 Q1501,935.7031 1501,936.3594 L1501,937.9219 Q1501,938.5781 1500.7188,938.8594 Q1500.4375,939.1406 1500,939.1406 Q1499.6094,939.1406 1499.3594,938.9688 Q1499.1094,938.7969 1499,938.3438 Q1498.9531,938.0313 1498.7813,937.8594 Q1498.4688,937.5313 1497.9063,937.3438 Q1497.3438,937.1406 1496.7813,937.1406 Q1496.0781,937.1406 1495.4844,937.4219 Q1494.9063,937.7031 1494.4531,938.3281 Q1494,938.9531 1494,939.8125 L1494,940.7344 Q1494,941.7656 1494.8438,942.4531 Q1495.6875,943.1406 1497.1875,943.1406 Q1498.0781,943.1406 1498.7031,942.9375 Q1499.0625,942.8281 1499.4688,942.4688 Q1499.7344,942.2656 1499.875,942.2031 Q1500.0156,942.1406 1500.1875,942.1406 Q1500.5156,942.1406 1500.75,942.4063 Q1501,942.6563 1501,943.0156 Q1501,943.3594 1500.6563,943.7656 Q1500.1563,944.3594 1499.3594,944.6875 Q1498.3125,945.1406 1497.0313,945.1406 Q1495.5313,945.1406 1494.3281,944.5469 Q1493.3594,944.0781 1492.6719,943.0625 Q1492,942.0469 1492,940.8438 L1492,939.75 Q1492,938.5 1492.5938,937.4063 Q1493.2031,936.3125 1494.25,935.7344 Q1495.3125,935.1406 1496.5,935.1406 Q1497.2188,935.1406 1497.8438,935.3906 Q1498.4688,935.6406 1499,936.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="98" x="1511" y="944.5508">SectionProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1483" x2="1611" y1="955.6406"
+              y2="955.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1483" x2="1611" y1="963.6406"
+              y2="963.6406"/><!--MD5=[c5273d06a5953da4381cfb15822289c8]
+class InvalidStateProcessor-->
+        <rect fill="#FEFECE" filter="url(#f16wny7rjjov67)" height="48" id="InvalidStateProcessor"
+              style="stroke: #A80036; stroke-width: 1.5;" width="152" x="1647" y="923.6406"/>
+        <ellipse cx="1662" cy="939.6406" fill="#ADD1B2" rx="11" ry="11"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M1664,936.1406 Q1664.2031,935.6406 1664.4375,935.3906 Q1664.6719,935.1406 1664.9375,935.1406 Q1665.4063,935.1406 1665.7031,935.4219 Q1666,935.7031 1666,936.3594 L1666,937.9219 Q1666,938.5781 1665.7188,938.8594 Q1665.4375,939.1406 1665,939.1406 Q1664.6094,939.1406 1664.3594,938.9688 Q1664.1094,938.7969 1664,938.3438 Q1663.9531,938.0313 1663.7813,937.8594 Q1663.4688,937.5313 1662.9063,937.3438 Q1662.3438,937.1406 1661.7813,937.1406 Q1661.0781,937.1406 1660.4844,937.4219 Q1659.9063,937.7031 1659.4531,938.3281 Q1659,938.9531 1659,939.8125 L1659,940.7344 Q1659,941.7656 1659.8438,942.4531 Q1660.6875,943.1406 1662.1875,943.1406 Q1663.0781,943.1406 1663.7031,942.9375 Q1664.0625,942.8281 1664.4688,942.4688 Q1664.7344,942.2656 1664.875,942.2031 Q1665.0156,942.1406 1665.1875,942.1406 Q1665.5156,942.1406 1665.75,942.4063 Q1666,942.6563 1666,943.0156 Q1666,943.3594 1665.6563,943.7656 Q1665.1563,944.3594 1664.3594,944.6875 Q1663.3125,945.1406 1662.0313,945.1406 Q1660.5313,945.1406 1659.3281,944.5469 Q1658.3594,944.0781 1657.6719,943.0625 Q1657,942.0469 1657,940.8438 L1657,939.75 Q1657,938.5 1657.5938,937.4063 Q1658.2031,936.3125 1659.25,935.7344 Q1660.3125,935.1406 1661.5,935.1406 Q1662.2188,935.1406 1662.8438,935.3906 Q1663.4688,935.6406 1664,936.1406 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs"
+              textLength="120" x="1676" y="944.5508">InvalidStateProcessor
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1648" x2="1798" y1="955.6406"
+              y2="955.6406"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="1648" x2="1798" y1="963.6406"
+              y2="963.6406"/><!--MD5=[c607a4095095b236a35e5fc7e30f1947]
+reverse link IDownloader to IODownloader-->
+        <path d="M2848.86,1004.0256 C2874.36,1021.0716 2901.05,1038.9106 2921.41,1052.5206 "
+              fill="none" id="IDownloader&lt;-IODownloader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="2844.66,1009.6366,2831.92,992.7026,2852.44,997.9976,2844.66,1009.6366"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2546d1c85902f10635ab297781279fc1]
+reverse link IDownloader to NIODownloader-->
+        <path d="M2720.18,1008.6326 C2708.32,1024.1656 2696.24,1039.9806 2686.79,1052.3426 "
+              fill="none" id="IDownloader&lt;-NIODownloader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="2714.64,1004.3476,2732.35,992.7026,2725.77,1012.8456,2714.64,1004.3476"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[874877737a11816f525234921bcd66ce]
+reverse link IGooglePhotosBuilder to GooglePhotosBuilder-->
+        <path d="M2142,636.9356 C2142,669.0506 2142,702.9126 2142,726.3936 " fill="none"
+              id="IGooglePhotosBuilder&lt;-GooglePhotosBuilder"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none" points="2135,636.7446,2142,616.7446,2149,636.7446,2135,636.7446"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b4f7891173edf17519dec8d0b96c8c10]
+reverse link IGooglePhotosDownloader to GooglePhotosDownloader-->
+        <path d="M2910.44,603.8946 C2877.88,638.3246 2837.43,681.0996 2807.63,712.6176 " fill="none"
+              id="IGooglePhotosDownloader&lt;-GooglePhotosDownloader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="2905.49,598.9426,2924.32,589.2206,2915.66,608.5616,2905.49,598.9426"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0b1278fcd1a2eb11102a7aaab872f6ba]
+reverse link IObservable to GooglePhotosDownloader-->
+        <path d="M2674.54,606.6906 C2695.23,640.6186 2720.44,681.9476 2739.15,712.6176 " fill="none"
+              id="IObservable&lt;-GooglePhotosDownloader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="2668.32,609.9406,2663.89,589.2206,2680.28,602.6496,2668.32,609.9406"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[024529a6250887f37738cde029b2e64c]
+reverse link GooglePhotosDownloader to IDownloader-->
+        <path d="M2766,815.9166 C2766,843.7456 2766,876.6696 2766,902.5136 " fill="none"
+              id="GooglePhotosDownloader&lt;-IDownloader"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#FFFFFF"
+                 points="2766,802.7186,2762,808.7186,2766,814.7186,2770,808.7186,2766,802.7186"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e704d4411337b5228400c9cc3d29932b]
+reverse link GooglePhotos to IGooglePhotosDownloader-->
+        <path d="M2694,362.5806 C2763.54,408.7376 2844.28,462.3406 2899.63,499.0806 " fill="none"
+              id="GooglePhotos&lt;-IGooglePhotosDownloader"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="2682.95,355.2396,2685.7385,361.8898,2692.9496,361.8735,2690.1611,355.2234,2682.95,355.2396"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[def55a669d41b049296b917bb1300fa5]
+reverse link GooglePhotos to IGooglePhotosBuilder-->
+        <path d="M2414.06,362.5366 C2360.39,398.1656 2300.03,438.2356 2249.82,471.5636 " fill="none"
+              id="GooglePhotos&lt;-IGooglePhotosBuilder"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="2425.05,355.2396,2417.8389,355.2234,2415.0504,361.8735,2422.2615,361.8898,2425.05,355.2396"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5eac61a2d94cbc579982f053dcb6f991]
+reverse link IIniConfig to CustomIIniConfig-->
+        <path d="M416.622,428.4296 C403.854,454.2956 391.619,479.0816 381.811,498.9536 " fill="none"
+              id="IIniConfig&lt;-CustomIIniConfig"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="410.393,425.2326,425.523,410.3966,422.947,431.4286,410.393,425.2326"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[af557095fde8c57060aac0fcd00bcf30]
+reverse link IIniSection to CustomIIniSection-->
+        <path d="M172.479,354.5726 C168.812,402.3246 164.386,459.9696 161.4,498.8536 " fill="none"
+              id="IIniSection&lt;-CustomIIniSection"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="165.513,353.8616,174.023,334.4606,179.472,354.9336,165.513,353.8616"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7a4b6606c39bac8d62a782fb15df2660]
+reverse link ILoader to LineLoader-->
+        <path d="M665.744,598.6146 C659.399,607.2626 652.967,616.1606 647,624.6406 C620.529,662.2556 591.146,706.9676 573.915,733.5106 "
+              fill="none" id="ILoader&lt;-LineLoader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="660.171,594.3786,677.696,582.4666,671.424,602.7066,660.171,594.3786"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[07ad103642c8e1c3cd99657350a6b252]
+reverse link ILoader to ChainOfResponsibilityLoader-->
+        <path d="M729.57,601.1516 C745.29,638.5106 765.524,686.5936 779.301,719.3336 " fill="none"
+              id="ILoader&lt;-ChainOfResponsibilityLoader"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none"
+                 points="723.012,603.6156,721.707,582.4656,735.916,598.1846,723.012,603.6156"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e913199b3290fc7f5eabed4b4948f17e]
+reverse link ProcessorChain to IContextState-->
+        <path d="M826.755,996.6516 C839.361,1015.7106 853.279,1036.7526 863.577,1052.3226 "
+              fill="none" id="ProcessorChain&lt;-IContextState"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#FFFFFF"
+                 points="819.522,985.7156,819.4956,992.9267,826.1418,995.7245,826.1682,988.5135,819.522,985.7156"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6837c2f870cc19424049e7a48eeef218]
+reverse link ChainOfResponsibilityLoader to ProcessorChain-->
+        <path d="M795,808.7846 C795,840.4826 795,880.7566 795,909.5746 " fill="none"
+              id="ChainOfResponsibilityLoader&lt;-ProcessorChain"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="795,795.7836,791,801.7836,795,807.7836,799,801.7836,795,795.7836"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[414e12173a6c7cd2a812177c71669275]
+reverse link ChainOfResponsibilityLoader to IContextState-->
+        <path d="M891.138,803.0986 C912.29,817.6586 931.955,836.0506 944,858.6406 C972.648,912.3696 964.372,938.2606 944,995.6406 C936.216,1017.5636 919.576,1037.8516 905.082,1052.5106 "
+              fill="none" id="ChainOfResponsibilityLoader&lt;-IContextState"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="879.973,795.8316,882.8192,802.4573,890.0298,802.3784,887.1837,795.7527,879.973,795.8316"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[acf08c02252875bcdcd83e318bc46ba1]
+reverse link IContextState to ContextState-->
+        <path d="M879,1120.6646 C879,1134.2196 879,1148.6786 879,1160.3186 " fill="none"
+              id="IContextState&lt;-ContextState"
+              style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/>
+        <polygon fill="none" points="872,1120.6406,879,1100.6406,886,1120.6406,872,1120.6406"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[12f43abeade175a000d7dd0deb42bc23]
+reverse link AbstractProcessor to BlankProcessor-->
+        <path d="M1315.61,813.8056 C1292.49,828.2596 1266.17,842.1576 1240,850.6406 C1217.95,857.7886 1156.72,848.2596 1136,858.6406 C1107.68,872.8236 1085.29,902.3986 1072.11,923.3406 "
+              fill="none" id="AbstractProcessor&lt;-BlankProcessor"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none"
+                 points="1312.04,807.7786,1332.62,802.7246,1319.68,819.5086,1312.04,807.7786"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[dd5e26734c07053b2e7b56ef344c2fb5]
+reverse link AbstractProcessor to CommentProcessor-->
+        <path d="M1338.22,817.9976 C1307.03,853.7486 1269.07,897.2726 1246.25,923.4266 " fill="none"
+              id="AbstractProcessor&lt;-CommentProcessor"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none"
+                 points="1333.13,813.1876,1351.55,802.7186,1343.68,822.3916,1333.13,813.1876"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ef337c2a688412db1061cfb4fdda518f]
+reverse link AbstractProcessor to ItemProcessor-->
+        <path d="M1390,822.8516 C1390,857.6166 1390,898.4456 1390,923.4266 " fill="none"
+              id="AbstractProcessor&lt;-ItemProcessor" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="1383,822.7186,1390,802.7186,1397,822.7186,1383,822.7186"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7fe82bf22c8d062cab5bd75aec734ba9]
+reverse link AbstractProcessor to SectionProcessor-->
+        <path d="M1439.97,818.4786 C1469.75,854.1386 1505.87,897.3896 1527.61,923.4266 " fill="none"
+              id="AbstractProcessor&lt;-SectionProcessor"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none"
+                 points="1434.26,822.5566,1426.81,802.7186,1445,813.5826,1434.26,822.5566"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7c62abe109013d1f04bb9085d92e8a52]
+reverse link AbstractProcessor to InvalidStateProcessor-->
+        <path d="M1537.68,810.7276 C1568.9,824.3716 1600.88,840.4436 1629,858.6406 C1657.34,876.9796 1684.95,904.3016 1702.83,923.6276 "
+              fill="none" id="AbstractProcessor&lt;-InvalidStateProcessor"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none"
+                 points="1534.58,817.0176,1518.9,802.7646,1540.05,804.1286,1534.58,817.0176"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[33d4225b2b438908b12073b0675567ca]
+@startuml
+
+title "Downloader package"
+
+package "app" {
+
+package "downloader" {
+    enum FactoryDownloaderType {
+        IO,
+        NIO
+    }
+
+    interface IDownloader {
+        +setReplaceExisting(boolean): void
+        +setTimeout(int): void
+        +downloadItem(String, Path): void
+    }
+
+    class FactoryDownloader {
+        {static} +getDownloader(FactoryDownloaderType): IDownloader
+    }
+
+    class IODownloader implements IDownloader
+    note left of IODownloader: Files.copy(...)
+
+    class NIODownloader implements IDownloader
+    note left of NIODownloader
+        fileChannel.transferFrom(...);
+    end note
+}
+
+package "photos" {
+    interface IGooglePhotosBuilder {
+        +setStartDate(String startDate): IGooglePhotosBuilder
+        +setRefreshToken(String refreshToken): IGooglePhotosBuilder
+        +setLocalPhotoFolder(Path localPhotoFolder): IGooglePhotosBuilder
+        +setClientId(String clientId): IGooglePhotosBuilder
+        +setClientSecret(String clientSecret): IGooglePhotosBuilder
+        +setDownloaderType(FactoryDownloaderType type):IGooglePhotosBuilder
+        +build(): GooglePhotos
+    }
+
+    class GooglePhotosBuilder implements IGooglePhotosBuilder {
+        -gPhotos : GooglePhotos
+    }
+
+    class GooglePhotos {
+        - gPhotosDownloader : IGooglePhotosDownloader
+        - errorText : String
+
+        {static}+ newBuilder(): IGooglePhotosBuilder
+        + setDownloader(FactoryDownloaderType): void
+        + downloadPhotos(): boolean
+        + countDownloaded(): int
+        + itemsToDownload(): int
+        + getLastError(): String
+        + hasError(): boolean
+    }
+
+    package downloaders {
+        interface IGooglePhotosDownloader {
+            +downloadPhotos(String startDate, String endDate,
+            Path localFolder, String clientId, String clientSecret, String refreshToken): void
+            +setItemDownloader(FactoryDownloaderType): void
+        }
+
+        class GooglePhotosDownloader implements IGooglePhotosDownloader, IObservable {
+            - itemDownloader : IDownloader
+
+            + setItemDownloader(FactoryDownloaderType): void
+            + downloadPhotos(): void
+        }
+        GooglePhotosDownloader o- - IDownloader
+        interface IObservable {
+            +attachObserver(IObserver): void
+            +dettachObserver(IObserver): void
+            +notifyObservers(): void
+        }
+        interface IObserver {
+            +updateObserver(): void
+        }
+    }
+
+
+    GooglePhotos *- - IGooglePhotosDownloader
+    GooglePhotos *- - IGooglePhotosBuilder
+
+
+}
+
+
+
+package ini {
+    interface IIniConfig {
+        IIniSection getSection(String sectionName)
+        String getValue(String sectionName, String key)
+        boolean containsKey(String sectionName, String key)
+        boolean containsSection(String sectionName)
+
+        void load(File file)
+        void load(BufferedReader reader)
+        void store(File file)
+
+        void putComment(String sectionName, String comment)
+        void putComment(String sectionName, String key, String comment)
+        void putHeaderComment(String comment)
+        String getComment(String sectionName, String key)
+        String getHeaderComment()
+        void putSection(String sectionName)
+        void putValue(String sectionName, String key, String value)
+        String toString()
+    }
+
+    interface IIniSection {
+        String getValue(String key);
+        boolean containsKey(String key);
+        void putValue(String key, String value);
+        void putComment(String key, String comment);
+        String getComment(String key);
+        String toString();
+    }
+
+    package custom {
+        class CustomIIniConfig implements IIniConfig {
+            - headerComment : String
+            - sections : Map<String, IIniSection>
+            - loader : ILoader
+
+        }
+        class CustomIIniSection implements IIniSection {
+            - name : String
+            - comment : String
+            - items : List<CustomItem>
+        }
+
+        package loaders {
+            interface ILoader {
+                + load(IIniConfig ini, File file): void
+                + load(IIniConfig ini, BufferedReader reader): void
+            }
+
+            package fsm {
+                class LineLoader implements ILoader {
+                }
+            }
+
+            package chain {
+                class ChainOfResponsibilityLoader implements ILoader {
+                    - processorChain : ProcessorChain
+                    - contextState : IContextState
+                }
+                class ProcessorChain {
+                    - processor : AbstractProcessor
+                    + processLine(IContextState state, String line): void
+                }
+
+                ProcessorChain o- - IContextState
+                ChainOfResponsibilityLoader *- - ProcessorChain
+                ChainOfResponsibilityLoader *- - IContextState
+
+                interface IContextState {
+                }
+
+                class ContextState implements IContextState {
+                }
+
+                package processors {
+                    abstract class AbstractProcessor {
+                        #nextProcessor : AbstractProcessor
+                        +AbstractProcessor(AbstractProcessor nextProcessor)
+                        +{abstract} processLine(String line): void
+                    }
+                    class BlankProcessor extends AbstractProcessor {
+                    }
+                    class CommentProcessor extends AbstractProcessor {
+                    }
+                    class ItemProcessor extends AbstractProcessor {
+                    }
+                    class SectionProcessor extends AbstractProcessor {
+                    }
+                    class InvalidStateProcessor extends AbstractProcessor {
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
+
+}
+
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 12:02:15 CEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.4+10-b304.77
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: en
+Country: US
+-->
+    </g>
+</svg>

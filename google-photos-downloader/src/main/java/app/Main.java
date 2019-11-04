@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.Optional;
 
 /**
- * @author vitek This application downloads new photos from Google Photos
+ * This application downloads new photos from Google Photos
  * library according to the configuration file: settings.ini. Should the
  * error occur, an email is sent.
  */
@@ -36,7 +36,7 @@ public class Main {
 
         if (logger.isInfoEnabled()) {
             // Arrays.toString(args) will always run even if logger.debug is not.
-            logger.info("Application cmd parsing successfull: {}", Arrays.toString(args));
+            logger.info("Application cmd parsing successful: {}", Arrays.toString(args));
         }
 
         CommandLine cmdLine = line.get();
@@ -49,7 +49,7 @@ public class Main {
             try {
                 settings.createDefaultSettingsFile(settingsFilePath);
                 logger.info("Settings file created successfully: {}", settingsFilePath);
-                logger.info("Application finished succesfully.");
+                logger.info("Application finished successfully.");
                 return;
             } catch (IOException e) {
                 logErrorAndExit("IOException cannot create setting file.", e);
@@ -84,11 +84,12 @@ public class Main {
         }
 
         if (!gPhotos.downloadPhotos()) {
-            System.err.println(gPhotos.getLastError());
+            logger.error(gPhotos.getLastError());
+            return;
         }
 
 
-        logger.info("Application finished succesfully.");
+        logger.info("Application finished successfully.");
     }
 
     private static void logErrorAndExit(String errorText) {

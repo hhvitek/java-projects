@@ -1,8 +1,8 @@
 package app;
 
-import app.settings.ini.IIniConfig;
-import app.settings.ini.InvalidConfigFileFormatException;
-import app.settings.ini.custom.CustomIIniConfig;
+import app.ini.IIniConfig;
+import app.ini.InvalidConfigFileFormatException;
+import app.ini.custom.CustomIIniConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,9 +12,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-// import java.io.BufferedWriter;
-// import java.io.FileWriter;
-
 /**
  * <p>
  * Abstraction for program configuration values.
@@ -22,9 +19,6 @@ import java.nio.file.StandardOpenOption;
  * If the settings file is loaded default values are overridden.
  * <p>
  * Inherits from CustomIIniConfig class
- *
- * @author vitek
- *
  */
 public class Settings extends CustomIIniConfig implements IIniConfig {
     private static final Logger logger = LoggerFactory.getLogger(Settings.class);
@@ -38,20 +32,13 @@ public class Settings extends CustomIIniConfig implements IIniConfig {
      * Beware it will truncate any existing file first!
      *
      * @param filePath the file-path for the configuration file.
+     *
      * @throws IOException
      */
     public void createDefaultSettingsFile(String filePath) throws IOException {
 
         Files.writeString(Path.of(filePath), getDefaultSettingsAsText(),
                 StandardOpenOption.TRUNCATE_EXISTING);
-        // BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
-        // try {
-        // writer.write(getDefaultSettingsAsText());
-        // } catch(IOException e) {
-        // throw e;
-        // } finally {
-        // writer.close();
-        // }
     }
 
     /**
@@ -59,7 +46,8 @@ public class Settings extends CustomIIniConfig implements IIniConfig {
      * with those from the configuration file.
      *
      * @param file the configuration file
-     * @throws InvalidFileFormatException
+     *
+     * @throws InvalidConfigFileFormatException
      * @throws IOException
      */
     public void loadSettingsFile(File file) throws InvalidConfigFileFormatException, IOException {

@@ -1,24 +1,35 @@
 package app.photos;
 
+import app.downloader.FactoryDownloader.FactoryDownloaderType;
+import app.photos.downloaders.GooglePhotosCommons;
+import com.google.auth.oauth2.UserCredentials;
+import com.google.type.Date;
+
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.format.DateTimeParseException;
 
-import com.google.auth.oauth2.UserCredentials;
-
-import app.downloader.FactoryDownloader.FactoryDownloaderType;
-
 public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
 
-    private final GooglePhotos gPhotos = new GooglePhotos();
+    private String startDate;
+    private String endDate;
+    private Path localPhotoFolder;
+
+    private FactoryDownloaderType type;
 
     private String refreshToken;
     private String clientId;
     private String clientSecret;
 
     @Override
-    public IGooglePhotosBuilder setStartDate(String startDate)
-            throws IllegalArgumentException, DateTimeParseException {
-        gPhotos.setStartDate(GooglePhotos.getDateFromString(startDate));
+    public IGooglePhotosBuilder setStartDate(String startDate) {
+        this.startDate = startDate;
+        return this;
+    }
+
+    @Override
+    public IGooglePhotosBuilder setEndDate(String endDate) {
+        this.endDate = endDate;
         return this;
     }
 
@@ -30,7 +41,7 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
 
     @Override
     public IGooglePhotosBuilder setLocalPhotoFolder(Path localPhotoFolder) {
-        gPhotos.setLocalPhotoFolder(localPhotoFolder);
+        this.localPhotoFolder = localPhotoFolder;
         return this;
     }
 
@@ -47,18 +58,64 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
     }
 
     @Override
-    public GooglePhotos build() throws IllegalStateException, NullPointerException {
-
-        UserCredentials credentials = UserCredentials.newBuilder().setRefreshToken(refreshToken)
-                .setClientId(clientId).setClientSecret(clientSecret).build();
-        gPhotos.setCredentials(credentials);
-        return gPhotos;
+    public IGooglePhotosBuilder setDownloaderType(FactoryDownloaderType type) {
+        this.type = type;
+        return this;
     }
 
     @Override
-    public IGooglePhotosBuilder setDownloaderType(FactoryDownloaderType type) {
-        gPhotos.setDownloader(type);
-        return this;
+    public GooglePhotos build() throws IllegalArgumentException {
+
+        if (!checkParameters()) {
+            throw new IllegalArgumentException("Missing arguments. Ensure all arguments are passed.");
+        }
+
+        UserCredentials credentials = UserCredentials.newBuilder()
+                .setRefreshToken(refreshToken)
+                .setClientId(clientId)
+                .setClientSecret(clientSecret)
+                .build();
+
+        if (!Files.isDirectory(localPhotoFolder)) {
+            throw new IllegalArgumentException(
+                    "Passed localPhotoFolder argument is not an existing folder: "
+                            + localPhotoFolder
+            );
+        }
+
+        Date startDateDate;
+        try {
+            startDateDate = GooglePhotosCommons.getDateFromString(startDate);
+        } catch (DateTimeParseException e) {
+            throw new IllegalArgumentException(
+                    "Passed startDate argument is in the incorrect format. Should be yyyy-MM-HH: "
+                            + startDate);
+        }
+
+        GooglePhotos gPhotos = new GooglePhotos(credentials, startDateDate, localPhotoFolder);
+
+        if (this.type != null) {
+            gPhotos.setDownloader(type);
+        }
+
+        if (this.endDate != null) {
+            throw new IllegalArgumentException("endDate is not yet supported.");
+        }
+
+        return gPhotos;
     }
+
+    private boolean checkParameters() {
+        if (!GooglePhotosCommons.isAnyStringNullOrBlank(
+                startDate,
+                refreshToken,
+                clientId,
+                clientSecret
+        )) {
+            return localPhotoFolder != null;
+        }
+        return false;
+    }
+
 
 }

@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>java-projects</groupId>
     <artifactId>google-photos</artifactId>
@@ -16,6 +16,8 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
+        <maven-javadoc-plugin-version>3.1.1</maven-javadoc-plugin-version>
+        <umldoclet-version>2.0.5</umldoclet-version>
     </properties>
 
     <dependencies>
@@ -76,17 +78,45 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+            <scope>compile</scope>
+        </dependency>
 
-     </dependencies>
+    </dependencies>
 
-    <!--
-    to run junit 5 test
-    -->
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-plugin-version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet>
+                            <docletArtifact>
+                                <groupId>nl.talsmasoftware</groupId>
+                                <artifactId>umldoclet</artifactId>
+                                <version>${umldoclet-version}</version>
+                            </docletArtifact>
+                            <additionalOptions>
+                                <!--<additionalOption>...</additionalOption>-->
+                            </additionalOptions>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
