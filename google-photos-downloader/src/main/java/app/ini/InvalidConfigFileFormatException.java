@@ -1,8 +1,6 @@
 package app.ini;
 
-import java.io.IOException;
-
-public class InvalidConfigFileFormatException extends IOException {
+public class InvalidConfigFileFormatException extends Exception {
 
     /*
      * Because of The serializable class InvalidConfigFileFormatException
@@ -13,4 +11,5 @@ public class InvalidConfigFileFormatException extends IOException {
     public InvalidConfigFileFormatException(String message) {
         super(message);
     }
+
 }

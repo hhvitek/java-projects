@@ -1,7 +1,7 @@
 package app.photos;
 
+import app.MyCommons;
 import app.downloader.FactoryDownloader.FactoryDownloaderType;
-import app.photos.downloaders.GooglePhotosCommons;
 import com.google.auth.oauth2.UserCredentials;
 import com.google.type.Date;
 
@@ -13,7 +13,7 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
 
     private String startDate;
     private String endDate;
-    private Path localPhotoFolder;
+    private Path   localPhotoFolder;
 
     private FactoryDownloaderType type;
 
@@ -64,23 +64,24 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
     }
 
     @Override
-    public GooglePhotos build() throws IllegalArgumentException {
+    public GooglePhotos build()
+            throws IllegalArgumentException {
 
         if (!checkParameters()) {
-            throw new IllegalArgumentException("Missing arguments. Ensure all arguments are passed.");
+            throw new IllegalArgumentException(
+                    "Missing arguments. Ensure all arguments are passed.");
         }
 
         UserCredentials credentials = UserCredentials.newBuilder()
-                .setRefreshToken(refreshToken)
-                .setClientId(clientId)
-                .setClientSecret(clientSecret)
-                .build();
+                                                     .setRefreshToken(refreshToken)
+                                                     .setClientId(clientId)
+                                                     .setClientSecret(clientSecret)
+                                                     .build();
 
         if (!Files.isDirectory(localPhotoFolder)) {
             throw new IllegalArgumentException(
-                    "Passed localPhotoFolder argument is not an existing folder: "
-                            + localPhotoFolder
-            );
+                    "Passed localPhotoFolder argument is not an existing folder: " +
+                    localPhotoFolder);
         }
 
         Date startDateDate;
@@ -88,34 +89,34 @@ public final class GooglePhotosBuilder implements IGooglePhotosBuilder {
             startDateDate = GooglePhotosCommons.getDateFromString(startDate);
         } catch (DateTimeParseException e) {
             throw new IllegalArgumentException(
-                    "Passed startDate argument is in the incorrect format. Should be yyyy-MM-HH: "
-                            + startDate);
+                    "Passed startDate argument is in the incorrect format. Should be yyyy-MM-HH: " +
+                    startDate);
         }
 
-        GooglePhotos gPhotos = new GooglePhotos(credentials, startDateDate, localPhotoFolder);
-
-        if (this.type != null) {
-            gPhotos.setDownloader(type);
+        Date endDateDate = null;
+        if (endDate != null) {
+            try {
+                endDateDate = GooglePhotosCommons.getDateFromString(endDate);
+            } catch (DateTimeParseException e) {
+                throw new IllegalArgumentException(
+                        "Passed endDate argument is in the incorrect format. Should be " +
+                        "yyyy-MM-HH: " + endDate);
+            }
         }
 
-        if (this.endDate != null) {
-            throw new IllegalArgumentException("endDate is not yet supported.");
-        }
+        GooglePhotos gPhotos =
+                new GooglePhotos(credentials, startDateDate, endDateDate, localPhotoFolder, type);
 
         return gPhotos;
     }
 
     private boolean checkParameters() {
-        if (!GooglePhotosCommons.isAnyStringNullOrBlank(
-                startDate,
-                refreshToken,
-                clientId,
-                clientSecret
+        if (MyCommons.areAllStringsNotNullAndNotBlank(startDate, refreshToken, clientId,
+                                                      clientSecret
         )) {
             return localPhotoFolder != null;
         }
         return false;
     }
-
 
 }

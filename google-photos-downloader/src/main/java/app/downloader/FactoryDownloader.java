@@ -10,10 +10,11 @@ package app.downloader;
  * }
  * </pre>
  */
-public class FactoryDownloader {
+public final class FactoryDownloader {
 
     public enum FactoryDownloaderType {
-        IO, NIO, ASYNC
+        IO,
+        NIO
     }
 
     private FactoryDownloader() {
@@ -25,10 +26,8 @@ public class FactoryDownloader {
                 return new IODownloader();
             case NIO:
                 return new NIODownloader();
-            case ASYNC:
-                throw new UnsupportedOperationException("Invalid operation.");
             default:
-                throw new UnsupportedOperationException("Unknown parameter" + type);
+                throw new UnsupportedOperationException("Unknown parameter: " + type);
         }
     }
 

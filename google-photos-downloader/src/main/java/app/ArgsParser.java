@@ -11,8 +11,8 @@ import java.util.Optional;
  */
 public class ArgsParser {
 
-    private final CommandLineParser parser = new DefaultParser();
-    private static final Logger logger = LoggerFactory.getLogger(ArgsParser.class);
+    private final        CommandLineParser parser = new DefaultParser();
+    private static final Logger            logger = LoggerFactory.getLogger(ArgsParser.class);
 
     private Options options;
 
@@ -54,11 +54,16 @@ public class ArgsParser {
     private Options initArgsParseOptions() {
         Options options = new Options();
         options.addOption("c", "create-configfile", false,
-                "Creates the default " + "config file and exits the program.");
+                          "Creates the default " + "config file and exits the program."
+        );
         options.addOption("h", "help", false, "Shows this message.");
 
-        options.addOption(Option.builder("p").longOpt("settings-filepath").hasArg().argName("path")
-                .desc("Path to the settings file.").build());
+        options.addOption(Option.builder("p")
+                                .longOpt("settings-filepath")
+                                .hasArg()
+                                .argName("path")
+                                .desc("Path to the settings file.")
+                                .build());
         return options;
     }
 

@@ -17,7 +17,7 @@
 
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
         <maven-javadoc-plugin-version>3.1.1</maven-javadoc-plugin-version>
-        <umldoclet-version>2.0.5</umldoclet-version>
+        <umldoclet-version>2.0.6</umldoclet-version>
     </properties>
 
     <dependencies>
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.28</version>
+            <version>1.7.29</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -81,7 +81,7 @@
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>13.0</version>
+            <version>18.0.0</version>
             <scope>compile</scope>
         </dependency>
 
@@ -114,6 +114,7 @@
                             <additionalOptions>
                                 <!--<additionalOption>...</additionalOption>-->
                             </additionalOptions>
+                            <useStandardDocletOptions>true</useStandardDocletOptions>
                         </configuration>
                     </execution>
                 </executions>

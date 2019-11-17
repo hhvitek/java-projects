@@ -23,19 +23,11 @@ public class IODownloader implements IDownloader {
 
     private static final Logger logger = LoggerFactory.getLogger(IODownloader.class);
 
-    private boolean replaceExisting = false;
-
-    public IODownloader() {
-    }
+    private boolean replaceExisting;
 
     @Override
     public void setReplaceExisting(boolean replace) {
-        this.replaceExisting = replace;
-    }
-
-    @Override
-    public void setTimeout(int seconds) {
-        throw new UnsupportedOperationException("Invalid operation.");
+        replaceExisting = replace;
     }
 
     @Override
@@ -44,7 +36,9 @@ public class IODownloader implements IDownloader {
         URI u = URI.create(url);
         logger.info("Copying file to: {}", targetPath);
 
-        try (InputStream in = u.toURL().openStream()) {
+        try (InputStream in = u.toURL()
+                               .openStream()
+        ) {
             if (replaceExisting) {
                 Files.copy(in, targetPath, StandardCopyOption.REPLACE_EXISTING);
             } else {

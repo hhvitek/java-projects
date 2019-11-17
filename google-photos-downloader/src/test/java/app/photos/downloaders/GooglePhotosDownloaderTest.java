@@ -1,7 +1,9 @@
 package app.photos.downloaders;
 
 import app.ini.IIniConfig;
-import app.ini.custom.CustomIIniConfig;
+import app.ini.InvalidConfigFileFormatException;
+import app.ini.myini.CustomIIniConfig;
+import app.photos.GooglePhotosCommons;
 import com.google.auth.oauth2.UserCredentials;
 import org.junit.jupiter.api.Test;
 
@@ -10,10 +12,12 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 class GooglePhotosDownloaderTest {
+
     static final String LOCAL_FOLDER_PATH = "src/test/resources/app/ini/input.ini";
 
     @Test
-    void downloadPhotos() throws IOException {
+    void downloadPhotos()
+            throws IOException, InvalidConfigFileFormatException {
         IIniConfig ini = new CustomIIniConfig();
         ini.load(new File(LOCAL_FOLDER_PATH));
 
@@ -27,16 +31,14 @@ class GooglePhotosDownloaderTest {
         IGooglePhotosDownloader gPhotosDownloader = new GooglePhotosDownloader();
 
         UserCredentials credentials = UserCredentials.newBuilder()
-                .setClientId(clientId)
-                .setClientSecret(clientSecret)
-                .setRefreshToken(refreshToken)
-                .build();
+                                                     .setClientId(clientId)
+                                                     .setClientSecret(clientSecret)
+                                                     .setRefreshToken(refreshToken)
+                                                     .build();
 
-        gPhotosDownloader.downloadPhotos(
-                GooglePhotosCommons.getDateFromString(startDate),
-                GooglePhotosCommons.getDateFromString(endDate),
-                Path.of(localFolderPath),
-                credentials
+        gPhotosDownloader.downloadPhotos(GooglePhotosCommons.getDateFromString(startDate),
+                                         GooglePhotosCommons.getDateFromString(endDate),
+                                         Path.of(localFolderPath), credentials
         );
     }
 

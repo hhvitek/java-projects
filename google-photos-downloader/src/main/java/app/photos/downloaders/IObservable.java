@@ -1,10 +1,13 @@
 package app.photos.downloaders;
 
+import org.jetbrains.annotations.NotNull;
+
 public interface IObservable {
 
-    void attachObserver(IObserver observer);
+    void attachObserver(@NotNull IObserver observer);
 
-    void detachObserver(IObserver observer);
+    void detachObserver(@NotNull IObserver observer);
 
-    void notifyObservers();
+    //void notifyObservers();
+
 }

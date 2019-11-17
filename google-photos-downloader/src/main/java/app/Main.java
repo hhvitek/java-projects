@@ -1,14 +1,17 @@
 package app;
 
-import app.photos.GooglePhotos;
+import app.ini.InvalidConfigFileFormatException;
+import app.view.ConsoleView;
+import app.view.Controller;
+import app.view.IView;
+import app.view.SwingView;
 import org.apache.commons.cli.CommandLine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -21,10 +24,9 @@ public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+            throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException,
+                   IllegalAccessException {
 
         logger.info("Application has started.");
 
@@ -42,8 +44,8 @@ public class Main {
         CommandLine cmdLine = line.get();
 
         Settings settings = new Settings();
-        String settingsFilePath = cmdLine.getOptionValue("settings-filepath",
-                DefaultValues.SETTINGS_FILEPATH);
+        String settingsFilePath =
+                cmdLine.getOptionValue("settings-filepath", DefaultValues.SETTINGS_FILEPATH);
 
         if (cmdLine.hasOption("create-configfile")) {
             try {
@@ -57,39 +59,29 @@ public class Main {
         }
 
         try {
-            settings.load(new File(settingsFilePath));
+            settings.loadSettingsFile(new File(settingsFilePath));
+        } catch (InvalidConfigFileFormatException e) {
+            logErrorAndExit(
+                    "Failed to load configuration file. The invalid configuration file format.");
         } catch (IOException e) {
             logErrorAndExit("Failed to load configuration file.", e);
         }
 
-
-        GooglePhotos gPhotos;
-        try {
-            gPhotos = GooglePhotos.newBuilder()
-                    .setRefreshToken(
-                            settings.getValue("database", "remote_googlephotos_refreshtoken"))
-                    .setLocalPhotoFolder(
-                            Path.of(settings.getValue("configuration", "local_photos_folder")))
-                    .setStartDate(settings.getValue("database", "start_date"))
-                    .setClientId(settings.getValue("configuration", "client_id"))
-                    .setClientSecret(settings.getValue("configuration", "client_secret"))
-                    .build();
-
-        } catch (IllegalArgumentException | DateTimeParseException e) {
-            logger.error("Failed to create GooglePhotos object. ", e);
-            return;
-        } catch (IllegalStateException | NullPointerException e) {
-            logger.error("Failed to create GooglePhotos object. ", e);
-            return;
+        IView view;
+        if (settings.isConsole()) {
+            view = new ConsoleView();
+        } else {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            view = new SwingView();
         }
 
-        if (!gPhotos.downloadPhotos()) {
-            logger.error(gPhotos.getLastError());
-            return;
-        }
+        Controller controller = new Controller();
+        view.setConfigurationFilePath(settingsFilePath);
+        view.setLocalFolder(settings.getLocalPhotosFolder());
+        controller.setView(view);
+        view.setController(controller);
+        view.startView();
 
-
-        logger.info("Application finished successfully.");
     }
 
     private static void logErrorAndExit(String errorText) {

@@ -16,7 +16,7 @@ public interface IGooglePhotosBuilder {
      *
      * @param startDate Only accepts the following format "yyyy-MM-DD".
      *
-     * @return
+     * @return itself
      */
     IGooglePhotosBuilder setStartDate(String startDate);
 
@@ -27,9 +27,9 @@ public interface IGooglePhotosBuilder {
     /**
      * The local folder to download photos to.
      *
-     * @param localPhotoFolder
+     * @param localPhotoFolder Target file system folder for the downloaded files
      *
-     * @return
+     * @return itself
      */
     IGooglePhotosBuilder setLocalPhotoFolder(Path localPhotoFolder);
 
@@ -42,8 +42,11 @@ public interface IGooglePhotosBuilder {
     /**
      * Creates {@link GooglePhotos} object
      *
-     * @return
+     * @return created new GooglePhotos Object
+     *
+     * @throws IllegalStateException Upon object creation failure.
      */
-    GooglePhotos build() throws IllegalStateException, NullPointerException;
+    GooglePhotos build()
+            throws IllegalStateException;
 
 }

@@ -1,9 +1,0 @@
-@startuml
-
-class GooglePhotosLibrary {
-    -
-
-    +void setDownloader(FactoryDownloaderType type)
-}
-
-@enduml

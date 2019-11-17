@@ -1,5 +1,7 @@
 package app.photos.downloaders;
 
+import app.MyCommons;
+import app.photos.GooglePhotosCommons;
 import com.google.auth.oauth2.UserCredentials;
 import com.google.protobuf.Timestamp;
 import com.google.type.Date;
@@ -16,7 +18,7 @@ class GooglePhotosCommonsTest {
         String arg1 = "hello";
         String arg2 = "world";
 
-        Assertions.assertFalse(GooglePhotosCommons.isAnyStringNullOrBlank(arg1, arg2));
+        Assertions.assertTrue(MyCommons.areAllArgsNonNull(arg1, arg2));
     }
 
     @Test
@@ -25,7 +27,7 @@ class GooglePhotosCommonsTest {
         String arg1 = null;
         String arg2 = "world";
 
-        Assertions.assertTrue(GooglePhotosCommons.isAnyStringNullOrBlank(arg1, arg2));
+        Assertions.assertFalse(MyCommons.areAllStringsNotNullAndNotBlank(arg1, arg2));
     }
 
     @Test
@@ -34,16 +36,16 @@ class GooglePhotosCommonsTest {
         String arg1 = "     ";
         String arg2 = "world";
 
-        Assertions.assertTrue(GooglePhotosCommons.isAnyStringNullOrBlank(arg1, arg2));
+        Assertions.assertFalse(MyCommons.areAllStringsNotNullAndNotBlank(arg1, arg2));
     }
 
     @Test
     void isUserCredentialsNonBlank_allArgsNonNull() {
         UserCredentials credentials = UserCredentials.newBuilder()
-                .setClientId("clientId")
-                .setClientSecret("clientSecret")
-                .setRefreshToken("refreshToken")
-                .build();
+                                                     .setClientId("clientId")
+                                                     .setClientSecret("clientSecret")
+                                                     .setRefreshToken("refreshToken")
+                                                     .build();
 
         Assertions.assertTrue(GooglePhotosCommons.isUserCredentialsNonBlank(credentials));
     }
@@ -51,10 +53,10 @@ class GooglePhotosCommonsTest {
     @Test
     void isUserCredentialsNonBlank_oneArgIsBlank() {
         UserCredentials credentials = UserCredentials.newBuilder()
-                .setClientId("clientId")
-                .setClientSecret("clientSecret")
-                .setRefreshToken("  ")
-                .build();
+                                                     .setClientId("clientId")
+                                                     .setClientSecret("clientSecret")
+                                                     .setRefreshToken("  ")
+                                                     .build();
 
         Assertions.assertFalse(GooglePhotosCommons.isUserCredentialsNonBlank(credentials));
     }
@@ -75,10 +77,10 @@ class GooglePhotosCommonsTest {
     void getDateFromString_correctFormat() {
         String input = "2001-01-01";
         Date expected = Date.newBuilder()
-                .setYear(2001)
-                .setMonth(1)
-                .setDay(1)
-                .build();
+                            .setYear(2001)
+                            .setMonth(1)
+                            .setDay(1)
+                            .build();
 
         Assertions.assertEquals(expected, GooglePhotosCommons.getDateFromString(input));
     }
@@ -87,14 +89,13 @@ class GooglePhotosCommonsTest {
     void getDateFromString_incorrectFormat_throwsException() {
         String input = "01.01.2001";
         Date expected = Date.newBuilder()
-                .setYear(2001)
-                .setMonth(1)
-                .setDay(1)
-                .build();
+                            .setYear(2001)
+                            .setMonth(1)
+                            .setDay(1)
+                            .build();
 
-        Assertions.assertThrows(
-                DateTimeParseException.class,
-                () -> GooglePhotosCommons.getDateFromString(input)
+        Assertions.assertThrows(DateTimeParseException.class,
+                                () -> GooglePhotosCommons.getDateFromString(input)
         );
     }
 
@@ -106,15 +107,13 @@ class GooglePhotosCommonsTest {
         String expected = "2019-11-04";
 
         Timestamp timestamp = Timestamp.newBuilder()
-                .setSeconds(todaySeconds)
-                .setNanos(todayNanos)
-                .build();
+                                       .setSeconds(todaySeconds)
+                                       .setNanos(todayNanos)
+                                       .build();
 
-        Assertions.assertEquals(
-                expected,
-                GooglePhotosCommons.getStringDateFromGoogleTimestamp(timestamp)
+        Assertions.assertEquals(expected,
+                                GooglePhotosCommons.getStringDateFromGoogleTimestamp(timestamp)
         );
     }
-
 
 }

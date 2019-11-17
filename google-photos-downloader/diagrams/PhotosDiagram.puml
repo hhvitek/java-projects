@@ -1,0 +1,98 @@
+@startuml
+
+package "downloader" {
+    enum FactoryDownloaderType {
+        IO
+        NIO
+    }
+
+    interface IDownloader {
+        +setReplaceExisting(boolean): void
+        +downloadItem(String fromUrl, Path toFolder): void
+    }
+
+    class FactoryDownloader {
+        {static} +getDownloader(FactoryDownloaderType): IDownloader
+    }
+
+    class IODownloader implements IDownloader
+    note left of IODownloader: Files.copy(...)
+
+    class NIODownloader implements IDownloader
+    note left of NIODownloader
+        fileChannel.transferFrom(...);
+    end note
+}
+
+package "photos" {
+    interface IGooglePhotosBuilder {
+        +setStartDate(String startDate): IGooglePhotosBuilder
+        +setEndDate(String endDate): IGooglePhotosBuilder
+        +setRefreshToken(String refreshToken): IGooglePhotosBuilder
+        +setLocalPhotoFolder(Path localPhotoFolder): IGooglePhotosBuilder
+        +setClientId(String clientId): IGooglePhotosBuilder
+        +setClientSecret(String clientSecret): IGooglePhotosBuilder
+        +setDownloaderType(FactoryDownloaderType type):IGooglePhotosBuilder
+        +build(): GooglePhotos
+    }
+
+    class GooglePhotosBuilder implements IGooglePhotosBuilder {
+    }
+
+    class GooglePhotos implements IObservable, IObserver {
+        - gPhotosDownloader : IGooglePhotosDownloader
+        - errorText: String
+
+        {static}+ newBuilder(): IGooglePhotosBuilder
+
+        +attachObserver(IObserver): void
+        +dettachObserver(IObserver): void
+
+        +updateObserver(int count, int total, String fileName, String message, Status status): void
+
+        + downloadPhotos(): void
+        + stop(): void
+        + getErrorText(): String
+        + hasError(): boolean
+    }
+
+    note left of GooglePhotos::attachObserver
+        gPhotosDownloader.attachObserver()
+    end note
+
+    note right of GooglePhotos::updateObserver
+        if status == Status.Error:
+            setErrorMessage()
+    end note
+
+    package downloaders {
+        interface IGooglePhotosDownloader extends IObservable {
+            +downloadPhotos(String startDate, String endDate, Path localFolder, UserCredentials credentials): void
+            +hasError(): boolean
+            +getErrorText(): String
+            +stop(): void
+            +setItemDownloader(FactoryDownloaderType): void
+        }
+
+        class GooglePhotosDownloader implements IGooglePhotosDownloader, IObservable {
+            - itemDownloader : IDownloader
+            - observers: List<IObserver>
+        }
+
+        GooglePhotosDownloader *-- IDownloader
+
+        interface IObservable {
+            +attachObserver(IObserver): void
+            +dettachObserver(IObserver): void
+            +notifyObservers(): void
+        }
+        interface IObserver {
+            +updateObserver(int cout, int total, String name, String message, Status status): void
+        }
+    }
+
+    GooglePhotos *-- IGooglePhotosDownloader
+    GooglePhotos *-- IGooglePhotosBuilder
+}
+
+@enduml

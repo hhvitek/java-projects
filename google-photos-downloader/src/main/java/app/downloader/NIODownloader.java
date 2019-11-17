@@ -30,21 +30,11 @@ public class NIODownloader implements IDownloader {
 
     private static final Logger logger = LoggerFactory.getLogger(NIODownloader.class);
 
-    private boolean replaceExisting = false;
+    private boolean replaceExisting;
 
     @Override
     public void setReplaceExisting(boolean replace) {
-        this.replaceExisting = replace;
-    }
-
-    public NIODownloader() {
-
-    }
-
-    @Override
-    public void setTimeout(int seconds) {
-        throw new UnsupportedOperationException("Invalid operation.");
-
+        replaceExisting = replace;
     }
 
     @Override
@@ -61,8 +51,9 @@ public class NIODownloader implements IDownloader {
         URL u = new URL(url);
         try (ReadableByteChannel readableByteChannel = Channels.newChannel(u.openStream());
              FileOutputStream fileOutputStream = new FileOutputStream(targetPath.toString());
-             FileChannel fileChannel = fileOutputStream.getChannel()) {
-            fileChannel.transferFrom(readableByteChannel, 0, Long.MAX_VALUE);
+             FileChannel fileChannel = fileOutputStream.getChannel()
+        ) {
+            fileChannel.transferFrom(readableByteChannel, 0L, Long.MAX_VALUE);
         }
     }
 
