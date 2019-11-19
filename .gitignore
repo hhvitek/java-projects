@@ -25,5 +25,3 @@ hs_err_pid*
 # .folders
 .*
 *target*
-*resources*
-*.ini

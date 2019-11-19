@@ -52,9 +52,10 @@ public class Main {
                 settings.createDefaultSettingsFile(settingsFilePath);
                 logger.info("Settings file created successfully: {}", settingsFilePath);
                 logger.info("Application finished successfully.");
-                return;
             } catch (IOException e) {
                 logErrorAndExit("IOException cannot create setting file.", e);
+            } finally {
+                return;
             }
         }
 

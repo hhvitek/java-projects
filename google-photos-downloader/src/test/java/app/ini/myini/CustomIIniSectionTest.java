@@ -113,7 +113,7 @@ class CustomIIniSectionTest {
 
         String expected = String.join(System.lineSeparator(), "# The section comment", "[section]",
                                       "# This is the first item comment.",
-                                      "first_key = first_value",
+                                      "first_key = first_value", "",
                                       "# This is the second item comment.",
                                       "second_key = second_value"
         );

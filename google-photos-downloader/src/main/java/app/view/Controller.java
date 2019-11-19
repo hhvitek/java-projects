@@ -74,8 +74,8 @@ public class Controller {
 
             gPhotos.attachObserver(view);
             gPhotos.downloadPhotos();
-        } catch (IllegalStateException e) {
-            view.setStatus(Status.Error, "The configuration file is invalid.");
+        } catch (IllegalArgumentException e) {
+            view.setStatus(Status.Error, "The configuration file is invalid: " + e.getLocalizedMessage());
         }
     }
 

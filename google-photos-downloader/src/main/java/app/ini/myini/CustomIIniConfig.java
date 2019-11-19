@@ -120,6 +120,7 @@ public class CustomIIniConfig implements IIniConfig, Iterable<IIniSection> {
 
     }
 
+    @Override
     public String toString() {
         String toStr = "";
         if (headerComment != null && !headerComment.isBlank()) {
@@ -135,11 +136,6 @@ public class CustomIIniConfig implements IIniConfig, Iterable<IIniSection> {
 
         return toStr.strip();
 
-/*        for (IIniSection section : sections.values()) {
-            toStr += section.toString() + System.lineSeparator();
-        }
-
-        return toStr.strip();*/
     }
 
     @Override

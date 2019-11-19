@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 
 /**
  * <p>
@@ -36,9 +35,7 @@ public final class Settings {
     public void createDefaultSettingsFile(String filePath)
             throws IOException {
 
-        Files.writeString(Path.of(filePath), getDefaultSettingsAsText(),
-                          StandardOpenOption.TRUNCATE_EXISTING
-        );
+        Files.writeString(Path.of(filePath), getDefaultSettingsAsText());
     }
 
     /**
@@ -120,11 +117,10 @@ public final class Settings {
                            "# this account is used to send emails with errors encountered",
                            "source_gmail_username = ", "source_gmail_password = ", "",
                            "# specify an email where to send error emails",
-                           "destination_email_address = ", "",
-                           "# clientId and clientSecret from the credentials.json file.",
-                           "client_id = ", "client_secret = ", "", "[database]",
+                           "destination_email_address = ", "", "# clientId and clientSecret.",
+                           "client_id = <FILL_IN>", "client_secret = <FILL_IN>", "", "[database]",
                            "# https://photos.google.com/ credentials use playground",
-                           "remote_googlephotos_refreshtoken = ", "",
+                           "remote_googlephotos_refreshtoken = <FILL_IN>", "",
                            "# Determine last photo downloaded", "start_date = 2017-11-21", "",
                            "# Determine if the last time application encountered an error.",
                            "was_error = "

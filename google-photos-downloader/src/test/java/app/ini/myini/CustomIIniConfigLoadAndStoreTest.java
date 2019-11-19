@@ -13,7 +13,7 @@ import java.nio.file.Files;
 class CustomIIniConfigLoadAndStoreTest {
 
     @Test
-    void testLoadFile()
+    void testLoadFile_testToStringMethod()
             throws InvalidConfigFileFormatException, IOException {
         File file = new File("src/test/resources/app/ini/myini/default_config_ini.ini");
         CustomIIniConfig ini = new CustomIIniConfig();

@@ -118,14 +118,26 @@ public class CustomIIniSection implements IIniSection, Iterable<CustomItem> {
         }
         toStr += "[" + name + "]" + System.lineSeparator();
 
-        //        items.stream()
-        //                .map(CustomItem::toString)
-        //                .reduce((x, y) -> x + System.lineSeparator() + y)
-        //                .orElse("");
-
+        /*
+            [section] there is no empty line between a section name and the first comment
+            # the first comment
+            key1 = value1
+            <--empty line-->
+            # the second comment
+            key2 = value2
+            <-empty line-->
+            [section2]
+         */
+        String tmpToStr = "";
         for (CustomItem item : items) {
-            toStr += item.toString() + System.lineSeparator();
+            if (item.hasComment()) { // insert empty space before any comment line
+                tmpToStr += System.lineSeparator();
+            }
+
+            tmpToStr += item.toString() + System.lineSeparator();
         }
+        toStr += tmpToStr.stripLeading(); // remove an empty space between a section name and the
+        // first comment if any exists
 
         return toStr;
     }

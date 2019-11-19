@@ -39,6 +39,11 @@ public class CustomItem {
         this.value = value;
     }
 
+    public boolean hasComment() {
+        return comment != null && !comment.isBlank();
+    }
+
+    @Override
     public String toString() {
         String toStr = "";
         if (comment != null && !comment.isBlank()) {
