@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+
+    <div id="configurations">
+        <div>
+            <form action="#" th:action="@{/start_worker}" th:object="${workerForm}" method="post">
+                <table>
+                    <tr>
+                        <td>Seconds:</td>
+                        <td><input type="number" min="1" max="999" th:field="*{seconds}"  /></td>
+                        <td th:if="${#fields.hasErrors('seconds')}" th:errors="*{seconds}">Seconds error message</td>
+                    </tr>
+                    <tr>
+                        <td>Iterations:</td>
+                        <td><input type="number" min="1" max="999" th:field="*{iterations}" /></td>
+                        <td th:if="${#fields.hasErrors('iterations')}" th:errors="*{iterations}">Iterations error message</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Start" /></td>
+                     </tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <form action="#" th:action="@{/stop_worker}" method="get">
+                            <input type="submit" value="Stop" />
+                        </form>
+                    </td>
+                    <td>
+                        <form action="#" th:action="@{/refresh}" method="get">
+                            <input type="submit" value="Refresh" />
+                        </form>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+    <div id="progress_bar">
+        <progress value="0" max="100"></progress>
+    </div>
+</div>
+<div id="statusbar">
+    <table style="width: 100%">
+        <tr>
+            <td style="width: 10%"><p id="statusbar_status" >Status</p></td>
+            <td style=><p id="statusbar_message" >Status text</p></td>
+        </tr>
+    </table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
