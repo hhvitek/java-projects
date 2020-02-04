@@ -1,0 +1,40 @@
+﻿@startuml
+
+package actions {
+    interface IAction {
+        + execute(): void
+    }
+
+    class ShutDownAction implements IAction {
+        + execute(): void
+    }
+}
+
+
+package model {
+    class Model {
+        + setAction(action: IAction): void
+        + performAction(): void
+
+        + setCountDownGoal(timeGoal: LocalTime): void
+        + getCountDownGoal(): LocalTime
+        + getCountDownRemainingFromNow(): Duration
+    }
+
+    class Presenter {
+        + setAction(action: IAction): void
+        + performAction(): void
+
+        + setCountDownGoal(delay: Duration): void
+        + getCountDownGoal(): LocalTime
+        + getCountDownRemaining(): Duration
+    }
+}
+
+package gui {
+
+}
+
+
+
+@enduml
