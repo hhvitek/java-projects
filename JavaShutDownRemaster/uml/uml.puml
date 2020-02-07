@@ -1,40 +1,57 @@
 ﻿@startuml
 
-package actions {
-    interface IAction {
-        + execute(): void
-    }
-
-    class ShutDownAction implements IAction {
-        + execute(): void
-    }
-}
-
 
 package model {
-    class Model {
-        + setAction(action: IAction): void
-        + performAction(): void
 
-        + setCountDownGoal(timeGoal: LocalTime): void
-        + getCountDownGoal(): LocalTime
-        + getCountDownRemainingFromNow(): Duration
+    interface IAction {
+        + getName(): String
+        + getDescription(): String
+        + acceptParameter(): boolean
+        + parametersCount(): int
+        + isProducingResult(): boolean
+        + executeAction(): String
+        + executeAction(String parameter): String
+        + executeAction(String[] parameters): String
+        + executeActionAsync(): Future<String>
+        + executeActionAsync(String parameter): Future<String>
+        + executeActionAsync(String[] parameters): Future<String>
+    }
+
+    class Action implements IAction {
+    }
+
+    class ScheduledAction {
+        - action: IAction
+        - goalTime: String
+        - status: String
+        - result: String
+        - parameters: String[]
+
+        + getUniqueId(): int
+        + getResult(): String
+        + isFinished()
+        + getRemainingTime(): Duration
+        + getGoalTime(): DateTime
+        + getStatus(): String
+        + getParameters(): String[]
+    }
+
+    class Model {
+        - timer: Timer
+
+        + getAction(String actionName): IAction
+        + getScheduledAction(int uniqueId): ScheduledAction
+        + getAllActions(): List<IAction>
+        + getAllScheduledActions(): List<ScheduledAction>
+        + scheduleAction(actionName: String, delay: Duration): ScheduledAction
     }
 
     class Presenter {
-        + setAction(action: IAction): void
-        + performAction(): void
-
-        + setCountDownGoal(delay: Duration): void
-        + getCountDownGoal(): LocalTime
-        + getCountDownRemaining(): Duration
+        + getAllActions(): List<IAction>
+        + getAllScheduledActions(): List<ScheduledAction>
+        + scheduleAction(actionName: String, delay: Duration): ScheduledAction
     }
 }
-
-package gui {
-
-}
-
 
 
 @enduml

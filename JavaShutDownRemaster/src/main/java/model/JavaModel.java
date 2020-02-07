@@ -1,20 +1,18 @@
 package model;
 
-import actions.IAction;
+import actions.ActionAbstract;
 import actions.NoAction;
-import com.sun.tools.javac.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.time.LocalTime;
-import java.time.temporal.Temporal;
 
 public class JavaModel implements IModel {
 
     private static final Logger logger = LoggerFactory.getLogger(JavaModel.class);
 
-    private IAction action;
+    private ActionAbstract action;
 
     private LocalTime goalTime;
 
@@ -24,19 +22,19 @@ public class JavaModel implements IModel {
     }
 
     @Override
-    public void setAction(IAction action) {
+    public void setAction(ActionAbstract action) {
         this.action = action;
     }
 
     @Override
-    public void setAction(IAction action, String parameters) {
+    public void setAction(ActionAbstract action, String parameters) {
         setAction(action);
     }
 
     @Override
     public void performAction() {
         if (action != null)
-            action.execute();
+            action.executeAction();
         else
             logger.warn("Unexpected error: The internal variable action is NULL!");
     }

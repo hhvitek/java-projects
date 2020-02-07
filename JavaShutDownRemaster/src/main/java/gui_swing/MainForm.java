@@ -36,6 +36,7 @@ public class MainForm {
     private JLabel labelCountDown;
     private JLabel labelStatusBarLeft;
     private JLabel labelStatusBarRight;
+    private JPanel panelChooseAction;
 
     // logger
     private static final Logger logger = LoggerFactory.getLogger(MainForm.class);

@@ -1,6 +1,6 @@
 package model;
 
-import actions.IAction;
+import actions.ActionAbstract;
 
 import java.time.Duration;
 import java.time.LocalTime;
@@ -11,13 +11,13 @@ public interface IModel {
      * Sets the specified action to be performed by performAction() method.
      * @param action
      */
-    void setAction(IAction action);
+    void setAction(ActionAbstract action);
 
     /**
      * Sets the specified action to be performed by performAction() method.
      * @param action
      */
-    void setAction(IAction action, String parameters);
+    void setAction(ActionAbstract action, String parameters);
 
     /**
      * Performs the action. If no action has been specified by setAction() method, does nothing.

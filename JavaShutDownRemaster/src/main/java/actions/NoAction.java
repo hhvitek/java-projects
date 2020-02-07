@@ -3,11 +3,18 @@ package actions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NoAction implements IAction {
+public class NoAction extends ActionAbstract {
 
     private static final Logger logger = LoggerFactory.getLogger(NoAction.class);
-    @Override
-    public void execute() {
-        logger.info("NoAction invoked!");
+
+    public NoAction() {
+        super();
+
+        name = "NoAction";
+        description = "NoAction is just example implementation";
+
     }
+
+
+
 }

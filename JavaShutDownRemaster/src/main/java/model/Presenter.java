@@ -1,6 +1,6 @@
 package model;
 
-import actions.IAction;
+import actions.ActionAbstract;
 import gui_swing.MainForm;
 
 import java.time.Duration;
@@ -27,7 +27,7 @@ public class Presenter {
         return model.getCountDownRemainingFromNow();
     }
 
-    public void setAction(IAction action) {
+    public void setAction(ActionAbstract action) {
         model.setAction(action);
     }
 
