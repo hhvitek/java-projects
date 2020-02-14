@@ -7,11 +7,20 @@ public class ShutDownAction extends ActionAbstract {
 
     private static final Logger logger = LoggerFactory.getLogger(ShutDownAction.class);
 
-    public ShutDownAction() {
+    private static ShutDownAction actionSingleton;
+
+    private ShutDownAction() {
         super();
 
         name = "ShutDown";
         description = "This will turn this computer off.";
+    }
+
+    public static ShutDownAction getInstance() {
+        if (actionSingleton == null) {
+            actionSingleton = new ShutDownAction();
+        }
+        return actionSingleton;
     }
 
     @Override

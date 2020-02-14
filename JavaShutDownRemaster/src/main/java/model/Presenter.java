@@ -1,13 +1,12 @@
 package model;
 
 import actions.ActionAbstract;
-import gui_swing.MainForm;
 
 import java.time.Duration;
 import java.time.LocalTime;
 
 public class Presenter {
-
+/*
     private IModel model;
 
     public Presenter(IModel model) {
@@ -34,4 +33,5 @@ public class Presenter {
     public void performAction() {
         model.performAction();
     }
+    */
 }

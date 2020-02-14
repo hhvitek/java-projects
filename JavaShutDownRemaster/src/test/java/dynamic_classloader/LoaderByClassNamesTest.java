@@ -18,7 +18,7 @@ class LoaderByClassNamesTest {
         input.add("actions.ShutDownAction");
 
         try {
-            List<ActionAbstract> output = LoaderByClassNames.load(input);
+            List<ActionAbstract> output = LoaderByClassNames.loadAll(input);
             Assertions.assertEquals(2, output.size());
             ActionAbstract action = output.get(1);
         } catch (ClassLoadingException e) {

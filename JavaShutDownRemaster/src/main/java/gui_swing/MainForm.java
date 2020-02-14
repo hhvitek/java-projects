@@ -1,5 +1,6 @@
 package gui_swing;
 
+import actions.ActionAbstract;
 import actions.ShutDownAction;
 import model.Presenter;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ import java.awt.event.ComponentEvent;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class MainForm {
 
@@ -37,6 +39,8 @@ public class MainForm {
     private JLabel labelStatusBarLeft;
     private JLabel labelStatusBarRight;
     private JPanel panelChooseAction;
+    private JPanel panelScheduledActions;
+
 
     // logger
     private static final Logger logger = LoggerFactory.getLogger(MainForm.class);
@@ -44,20 +48,23 @@ public class MainForm {
     // Swings-JFrame represents main application window
     private final JFrame swingFrame = new JFrame("Automatické vypnutí");
     // backend - re-sends - user request for the processing
-    private final Presenter presenter;
+    //private final Presenter presenter;
     // Application timer, ticks every (tickPeriod) = 1 second, it shows count down to zero
-    private final Timer timer;
+    //private final Timer timer;
     private final int tickPeriod = 1000;
     // Default value to show in the user's input JSpinner
     private final String defaultSpinnerValue = "01:00";
     // Default step in the user's input JSpinner 01:00 -> 01:30 -> 02:00 ...
     private final int defaultSpinnerStep = 30;
 
-    public MainForm(Presenter presenter) {
-        this.presenter = presenter;
+    private final ChooseActionsUI generatedActionsUI = new ChooseActionsUI();
+
+
+    public MainForm(List<ActionAbstract> actions) {
+       // this.presenter = presenter;
 
         // every tick update the count down
-        this.timer = new Timer(
+/*        this.timer = new Timer(
                 tickPeriod, // defaults to every second
                 new ActionListener() {
                     @Override
@@ -74,19 +81,28 @@ public class MainForm {
                         updateCountDown();
                     }
                 }
+
+
         );
+
+
+*/
+        panelChooseAction.add(generatedActionsUI.createActionsUI(actions));
+
 
         setConfigurationState();
 
         spinnerDelay.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent changeEvent) {
-                String delayHHMM = (String) spinnerDelay.getValue();
+                /*String delayHHMM = (String) spinnerDelay.getValue();
                 // convert string to duration
                 Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
                 presenter.setCountDownGoal(delayDuration);
                 updateCountDownGoal();
                 updateCountDown();
+                */
+
             }
         });
         buttonExit.addActionListener(new ActionListener() {
@@ -99,17 +115,20 @@ public class MainForm {
         buttonCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (timer != null && timer.isRunning()) {
+               /* if (timer != null && timer.isRunning()) {
                     timer.stop();
                     setConfigurationState();
                 }
+
+                */
             }
         });
         buttonSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (timer != null && !timer.isRunning()) {
-                    presenter.setAction(new ShutDownAction());
+               /* if (timer != null && !timer.isRunning()) {
+
+                    presenter.setAction(ShutDownAction.getInstance());
                     String delayHHMM = (String) spinnerDelay.getValue();
                     // convert string to Duration
                     Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
@@ -117,7 +136,11 @@ public class MainForm {
 
                     timer.start();
                     setCountingDownState();
+
+
                 }
+
+                */
             }
         });
         panelCountDown.addComponentListener(new ComponentAdapter() {
@@ -128,7 +151,7 @@ public class MainForm {
                 int width = panelCountDown.getWidth() / 2; // width 150 equals 16 font size ... 9.375
                 int height = panelCountDown.getHeight(); // height: 55 equals 16 font size ... 3.4375
 
-                int newFontSize = (int) (height / 3);
+                int newFontSize = (height / 3);
 
                 Font newFont = new Font(labelExactlyWhen.getFont().getName(), labelExactlyWhen.getFont().getStyle(), newFontSize);
 
@@ -145,9 +168,12 @@ public class MainForm {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                /*
                 LocalTime countDownGoalTime = presenter.getCountDownGoal();
                 String countDownGoal = countDownGoalTime.format(DateTimeFormatter.ofPattern("HH:mm"));
                 labelExactlyWhen.setText(countDownGoal);
+
+                 */
             }
         });
     }
@@ -161,8 +187,11 @@ public class MainForm {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                /*
                 Duration countDownRemaining = presenter.getCountDownRemaining();
                 labelCountDown.setText(convertDurationToHHMMSSString(countDownRemaining));
+
+                 */
             }
         });
     }
@@ -190,7 +219,7 @@ public class MainForm {
 
         // sets the default value of count down to 01:00
         Time defaultDelay = Time.parse(defaultSpinnerValue);
-        presenter.setCountDownGoal(defaultDelay.getDuration());
+        //presenter.setCountDownGoal(defaultDelay.getDuration());
 
         buttonSubmit.setEnabled(true);
         buttonCancel.setEnabled(false);
@@ -237,9 +266,11 @@ public class MainForm {
     }
 
     private void stopSwingApplication() {
-        if (timer != null && timer.isRunning()) {
+        /*if (timer != null && timer.isRunning()) {
             timer.stop();
         }
+
+         */
 
         swingFrame.setVisible(false);
         swingFrame.dispose();
@@ -291,4 +322,5 @@ public class MainForm {
         spinnerDelay = new javax.swing.JSpinner(slm);
         spinnerDelay.setValue(defaultSpinnerValue);
     }
+
 }

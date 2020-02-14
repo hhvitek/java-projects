@@ -1,5 +1,8 @@
 package actions;
 
+import dynamic_classloader.ClassLoadingException;
+import dynamic_classloader.LoaderByClassNames;
+
 import java.util.concurrent.Future;
 
 /**
@@ -13,6 +16,13 @@ public abstract class ActionAbstract {
     protected boolean isProducingResult = false;
 
     protected ActionAbstract() {
+    }
+
+    public void load(String name, String description, int parametersCount, boolean isProducingResult) {
+        this.name = name;
+        this.description = description;
+        this.parametersCount = parametersCount;
+        this.isProducingResult = isProducingResult;
     }
 
     public String getName() {
@@ -50,11 +60,16 @@ public abstract class ActionAbstract {
     public Future<String> executeActionAsync() {
         throw new UnsupportedOperationException();
     }
+
     public Future<String> executeActionAsync(String parameter) {
         throw new UnsupportedOperationException();
     }
 
     public Future<String> executeActionAsync(String[] parameters) {
         throw new UnsupportedOperationException();
+    }
+
+    public static ActionAbstract getActionByClassName(String className) throws ClassLoadingException {
+        return LoaderByClassNames.load(className);
     }
 }

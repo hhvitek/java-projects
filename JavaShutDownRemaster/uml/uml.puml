@@ -3,7 +3,7 @@
 
 package model {
 
-    interface IAction {
+    abstract class ActionAbstract {
         + getName(): String
         + getDescription(): String
         + acceptParameter(): boolean
@@ -17,7 +17,7 @@ package model {
         + executeActionAsync(String[] parameters): Future<String>
     }
 
-    class Action implements IAction {
+    class NoAction extends ActionAbstract {
     }
 
     class ScheduledAction {

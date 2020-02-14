@@ -1,17 +1,26 @@
 
+import actions.ActionAbstract;
+import dynamic_classloader.ClassLoadingException;
+import dynamic_classloader.LoaderByClassNames;
 import gui_swing.MainForm;
+import ini.InvalidConfigFileFormatException;
+import model.ConfigIni;
 import model.IModel;
-import model.JavaModel;
 import model.Presenter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
 
 public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    private static String CONFIGURATION_FILEPATH = "configuration.ini";
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
         logger.info("Application has started.");
@@ -19,9 +28,46 @@ public class Main {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         setUIFont (new javax.swing.plaf.FontUIResource("Segoe UI", Font.PLAIN,16));
 
-        IModel model = new JavaModel();
-        Presenter presenter = new Presenter(model);
-        MainForm mainForm = new MainForm(presenter);
+        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+        URL resourceUrl = classLoader.getResource(CONFIGURATION_FILEPATH);
+
+        if (resourceUrl == null) {
+            String errorMessage = "Configuration file has not been found: " + CONFIGURATION_FILEPATH;
+            logger.error(errorMessage);
+            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        File configurationFile = new File(resourceUrl.getFile());
+
+        ConfigIni ini = new ConfigIni();
+        try {
+            ini.load(configurationFile);
+        } catch (IOException e) {
+            String errorMessage = "Error working with the configuration file: " + CONFIGURATION_FILEPATH;
+            logger.error(errorMessage, e);
+            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } catch (InvalidConfigFileFormatException e) {
+            String errorMessage = "Configuration file is invalid. Please check for any format errors: " + CONFIGURATION_FILEPATH;
+            logger.error(errorMessage, e);
+            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        List<String> actionClassNames = ini.getClassNames();
+        List<ActionAbstract> actions;
+        try {
+            actions = LoaderByClassNames.loadAll(actionClassNames);
+        } catch (ClassLoadingException e) {
+            String errorMessage = "Actions class names defined in the configuration file are invalid. "
+                    + actionClassNames.toString();
+            logger.error(errorMessage, e);
+            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        MainForm mainForm = new MainForm(actions);
         mainForm.startSwingApplication();
 
     }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui_swing.MainForm">
-  <grid id="27dc6" binding="panelMainForm" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelMainForm" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="300" height="350"/>
+      <xy x="20" y="20" width="375" height="500"/>
     </constraints>
     <properties>
       <font name="Segoe UI" size="16" style="0"/>
       <inheritsPopupMenu value="false"/>
       <maximumSize width="-1" height="-1"/>
-      <minimumSize width="300" height="350"/>
-      <preferredSize width="300" height="350"/>
+      <minimumSize width="375" height="500"/>
+      <preferredSize width="375" height="500"/>
     </properties>
     <border type="none"/>
     <children>
@@ -136,7 +136,7 @@
       <grid id="6b10c" binding="panelStatusBar" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
         </constraints>
         <properties/>
         <border type="etched" title="Status"/>
@@ -164,13 +164,21 @@
           </component>
         </children>
       </grid>
-      <grid id="47b10" binding="panelChooseAction" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+      <grid id="47b10" binding="panelChooseAction" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
         </constraints>
         <properties/>
         <border type="etched" title="Vyberte Akci"/>
+        <children/>
+      </grid>
+      <grid id="bf58e" binding="panelScheduledActions" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Načasované akce"/>
         <children/>
       </grid>
     </children>
@@ -179,6 +187,10 @@
     <group name="buttonGroupActions">
       <member id="2d135"/>
       <member id="5f159"/>
+    </group>
+    <group name="buttonGroup1">
+      <member id="17e22"/>
+      <member id="9d8b2"/>
     </group>
   </buttonGroups>
 </form>

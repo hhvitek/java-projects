@@ -7,14 +7,21 @@ public class NoAction extends ActionAbstract {
 
     private static final Logger logger = LoggerFactory.getLogger(NoAction.class);
 
-    public NoAction() {
+    private static NoAction actionSingleton;
+
+    private NoAction() {
         super();
 
         name = "NoAction";
         description = "NoAction is just example implementation";
-
     }
 
+    public static NoAction getInstance() {
+        if (actionSingleton == null) {
+            actionSingleton = new NoAction();
+        }
+        return actionSingleton;
+    }
 
 
 }
