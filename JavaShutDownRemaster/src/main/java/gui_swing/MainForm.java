@@ -2,7 +2,11 @@ package gui_swing;
 
 import actions.ActionAbstract;
 import actions.ShutDownAction;
+import model.IModel;
 import model.Presenter;
+import model.ScheduledAction;
+import model.sql.DbConnectionErrorException;
+import org.jetbrains.annotations.Async;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import time.Time;
@@ -40,6 +44,7 @@ public class MainForm {
     private JLabel labelStatusBarRight;
     private JPanel panelChooseAction;
     private JPanel panelScheduledActions;
+    private JButton buttonDelete;
 
 
     // logger
@@ -50,7 +55,7 @@ public class MainForm {
     // backend - re-sends - user request for the processing
     //private final Presenter presenter;
     // Application timer, ticks every (tickPeriod) = 1 second, it shows count down to zero
-    //private final Timer timer;
+    private final Timer timer;
     private final int tickPeriod = 1000;
     // Default value to show in the user's input JSpinner
     private final String defaultSpinnerValue = "01:00";
@@ -58,89 +63,94 @@ public class MainForm {
     private final int defaultSpinnerStep = 30;
 
     private final ChooseActionsUI generatedActionsUI = new ChooseActionsUI();
+    private final ScheduledActionsUI generatedScheduledActionsUI = new ScheduledActionsUI();
+
+    private final IModel model;
 
 
-    public MainForm(List<ActionAbstract> actions) {
-       // this.presenter = presenter;
+    public MainForm(List<ActionAbstract> actions, IModel model) {
+        this.model = model;
 
         // every tick update the count down
-/*        this.timer = new Timer(
+        this.timer = new Timer(
                 tickPeriod, // defaults to every second
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent actionEvent) {
-                        Duration countDownRemaining = presenter.getCountDownRemaining();
-                        if (countDownRemaining.isNegative() || countDownRemaining.isZero()) {
-                            timer.stop();
-                            presenter.performAction();
-
-                            setConfigurationState();
-
-                            stopSwingApplication();
-                        }
-                        updateCountDown();
+                        logger.info("Tick");
+                        updateScheduledActionsUI();
                     }
                 }
-
-
         );
 
-
-*/
+        // generate UI's part - Action panel - RadioButtons to choose action to schedule
         panelChooseAction.add(generatedActionsUI.createActionsUI(actions));
 
-
-        setConfigurationState();
+        createScheduledActionsUI();
 
         spinnerDelay.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent changeEvent) {
-                /*String delayHHMM = (String) spinnerDelay.getValue();
+                String delayHHMM = (String) spinnerDelay.getValue();
                 // convert string to duration
                 Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
-                presenter.setCountDownGoal(delayDuration);
+                //presenter.setCountDownGoal(delayDuration);
                 updateCountDownGoal();
                 updateCountDown();
-                */
+
 
             }
         });
         buttonExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
                 stopSwingApplication();
             }
         });
         buttonCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-               /* if (timer != null && timer.isRunning()) {
-                    timer.stop();
-                    setConfigurationState();
-                }
 
-                */
+               int scheduledActionId = generatedScheduledActionsUI.getSelectedScheduledActionId();
+               if (scheduledActionId < 0) {
+                   showErrorMessage("Unexpected scheduled_action id value. " +
+                           "Expected positive integer. Actual: " + scheduledActionId);
+               } else {
+                   try {
+                       model.cancelScheduledAction(scheduledActionId);
+                       updateScheduledActionsUI();
+                   } catch (DbConnectionErrorException e) {
+                       String errorMessage = "Error extracting scheduled action from DB." + e.getLocalizedMessage();
+                       showErrorMessage(errorMessage);
+                       logger.error(errorMessage, e);
+                   }
+               }
             }
         });
         buttonSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-               /* if (timer != null && !timer.isRunning()) {
-
-                    presenter.setAction(ShutDownAction.getInstance());
-                    String delayHHMM = (String) spinnerDelay.getValue();
-                    // convert string to Duration
-                    Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
-                    presenter.setCountDownGoal(delayDuration);
-
+                if (timer != null && !timer.isRunning()) { // start ticking if not already started
                     timer.start();
-                    setCountingDownState();
-
-
                 }
 
-                */
+                String actionName = generatedActionsUI.getSelectedActionName();
+                List<String> actionParameters = generatedActionsUI.getSelectedParameters();
+                String delayHHMM = (String) spinnerDelay.getValue();
+                // convert string to Duration
+                Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
+
+                try {
+                    model.scheduleAction(actionName, delayDuration, actionParameters);
+                    updateScheduledActionsUI();
+                } catch (DbConnectionErrorException e) {
+                    String errorMessage = "Failed to schedule the Action." + e.getLocalizedMessage();
+                    logger.error(errorMessage, e);
+                    showErrorMessage(errorMessage);
+                    return;
+                }
+
+
             }
         });
         panelCountDown.addComponentListener(new ComponentAdapter() {
@@ -158,6 +168,26 @@ public class MainForm {
                 labelExactlyWhen.setFont(newFont);
                 labelCountDown.setFont(newFont);
             }
+        });
+        buttonDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int scheduledActionId = generatedScheduledActionsUI.getSelectedScheduledActionId();
+                if (scheduledActionId < 0) {
+                    showErrorMessage("Unexpected scheduled_action id value. " +
+                            "Expected positive integer. Actual: " + scheduledActionId);
+                } else {
+                    try {
+                        model.deleteScheduledAction(scheduledActionId);
+                        updateScheduledActionsUI();
+                    } catch (DbConnectionErrorException e) {
+                        String errorMessage = "Error extracting scheduled action from DB." + e.getLocalizedMessage();
+                        showErrorMessage(errorMessage);
+                        logger.error(errorMessage, e);
+                    }
+                }
+            }
+
         });
     }
 
@@ -261,16 +291,25 @@ public class MainForm {
                 swingFrame.pack();
                 setCenteredToGoldenRatio(swingFrame);
                 swingFrame.setVisible(true);
+
+                if (timer != null && !timer.isRunning()) {
+                    try {
+                        if (!model.getAllEnabledScheduledActions().isEmpty()) {
+                            timer.start();
+                        }
+                    } catch (DbConnectionErrorException e) {
+                        logger.error("Failed to call db. ", e);
+                        showErrorMessage(e.getLocalizedMessage());
+                    }
+                }
             }
         });
     }
 
     private void stopSwingApplication() {
-        /*if (timer != null && timer.isRunning()) {
+        if (timer != null && timer.isRunning()) {
             timer.stop();
         }
-
-         */
 
         swingFrame.setVisible(false);
         swingFrame.dispose();
@@ -321,6 +360,39 @@ public class MainForm {
         SpinnerListModel slm = new SpinnerListModel(generateTimeSequence(defaultSpinnerStep));
         spinnerDelay = new javax.swing.JSpinner(slm);
         spinnerDelay.setValue(defaultSpinnerValue);
+    }
+
+    public void showErrorMessage(String errorMessage) {
+        JOptionPane.showMessageDialog(swingFrame, errorMessage, "Chybka", JOptionPane.ERROR_MESSAGE);
+    }
+
+
+    private void updateScheduledActionsUI() {
+        List<ScheduledAction> scheduledActions = null;
+        try {
+            scheduledActions = model.getAllScheduledActions();
+            generatedScheduledActionsUI.updateScheduledActionsUI(scheduledActions);
+            panelScheduledActions.revalidate();
+        } catch (DbConnectionErrorException e) {
+            String errorMessage = "Cannot access ScheduledActions Data" + e.getLocalizedMessage();
+            logger.error(errorMessage, e);
+            showErrorMessage(errorMessage);
+        }
+    }
+
+    private void createScheduledActionsUI() {
+
+        List<ScheduledAction> scheduledActions = null;
+        try {
+            scheduledActions = model.getAllScheduledActions();
+            panelScheduledActions.removeAll();
+            panelScheduledActions.add(generatedScheduledActionsUI.createScheduledActionsUI(scheduledActions));
+            panelScheduledActions.revalidate();
+        } catch (DbConnectionErrorException e) {
+            String errorMessage = "Cannot access ScheduledActions Data" + e.getLocalizedMessage();
+            logger.error(errorMessage, e);
+            showErrorMessage(errorMessage);
+        }
     }
 
 }

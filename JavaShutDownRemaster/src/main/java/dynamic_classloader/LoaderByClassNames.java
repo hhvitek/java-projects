@@ -27,8 +27,8 @@ public class LoaderByClassNames {
         ActionAbstract action = null;
         try {
             Class cls = Class.forName(className);
-            Method method = cls.getDeclaredMethod("getInstance", null);
-            action = (ActionAbstract) method.invoke(null, null);
+            Method method = cls.getDeclaredMethod("getInstance");
+            action = (ActionAbstract) method.invoke(null);
             return action;
         } catch (IllegalAccessException | InvocationTargetException
                 | NoSuchMethodException | ClassNotFoundException e) {

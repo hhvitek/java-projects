@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -150,7 +151,7 @@ public class SqliteDao {
         try {
             int id = rs.getInt("id");
             int actionId = rs.getInt("action_id");
-            String dateTime = rs.getString("goalTime");
+            LocalDateTime dateTime = rs.getTimestamp("goalTime").toLocalDateTime();
             String result = rs.getString("result");
             String status = rs.getString("status");
             String createdTime = rs.getString("created_time");

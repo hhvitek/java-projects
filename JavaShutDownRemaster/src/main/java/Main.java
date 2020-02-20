@@ -6,7 +6,11 @@ import gui_swing.MainForm;
 import ini.InvalidConfigFileFormatException;
 import model.ConfigIni;
 import model.IModel;
+import model.ModelImpl;
 import model.Presenter;
+import model.sql.DbConnectionErrorException;
+import model.sql.ISqlDbDao;
+import model.sql.jdbc_dao.JdbcSqlImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,23 +25,24 @@ public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     private static String CONFIGURATION_FILEPATH = "configuration.ini";
+    private static String DB_DEFAULT_PATH = "jdbc:sqlite:sqlite.sqlite3";
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
         logger.info("Application has started.");
 
+        //UI's looks
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         setUIFont (new javax.swing.plaf.FontUIResource("Segoe UI", Font.PLAIN,16));
 
+        //Let's load the configuration file
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
         URL resourceUrl = classLoader.getResource(CONFIGURATION_FILEPATH);
-
         if (resourceUrl == null) {
             String errorMessage = "Configuration file has not been found: " + CONFIGURATION_FILEPATH;
             logger.error(errorMessage);
             JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
-
         File configurationFile = new File(resourceUrl.getFile());
 
         ConfigIni ini = new ConfigIni();
@@ -55,7 +60,10 @@ public class Main {
             return;
         }
 
+        //get actual values from the configuration file
         List<String> actionClassNames = ini.getClassNames();
+
+        //instantiate ActionAbstract actions
         List<ActionAbstract> actions;
         try {
             actions = LoaderByClassNames.loadAll(actionClassNames);
@@ -67,7 +75,20 @@ public class Main {
             return;
         }
 
-        MainForm mainForm = new MainForm(actions);
+        ISqlDbDao db = new JdbcSqlImpl();
+        try {
+            db.initDbConnection(DB_DEFAULT_PATH);
+            db.saveAllActions(actions);
+        } catch (DbConnectionErrorException e) {
+            String errorMessage = "Failed to save actions into database. "
+                    + e.getLocalizedMessage();
+            logger.error(errorMessage, e);
+            JOptionPane.showMessageDialog(null, errorMessage, "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        IModel model = new ModelImpl(db);
+
+        MainForm mainForm = new MainForm(actions, model);
         mainForm.startSwingApplication();
 
     }
