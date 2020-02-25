@@ -3,17 +3,26 @@ package model;
 import actions.ActionAbstract;
 import model.sql.DbConnectionErrorException;
 import model.sql.ISqlDbDao;
+import org.jetbrains.annotations.NotNull;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class ModelImpl implements IModel {
 
     private ISqlDbDao db;
+    private final ModelImplTask task;
+    private final ScheduledExecutorService executor;
+    private long period = 1L;
 
     public ModelImpl(ISqlDbDao db) {
+        task = new ModelImplTask(db);
         setSqlDb(db);
+        executor = Executors.newSingleThreadScheduledExecutor();
     }
 
     @Override
@@ -24,6 +33,16 @@ public class ModelImpl implements IModel {
     @Override
     public ISqlDbDao getSqlDb() {
         return db;
+    }
+
+    @Override
+    public void start() {
+        executor.scheduleAtFixedRate(task, period, period, TimeUnit.SECONDS);
+    }
+
+    @Override
+    public void stop() {
+        executor.shutdown();
     }
 
     @Override
@@ -67,18 +86,8 @@ public class ModelImpl implements IModel {
     }
 
     @Override
-    public List<ScheduledAction> getAllScheduledActionsByActionName(String name) throws DbConnectionErrorException {
-        return db.getAllScheduledActionsByActionName(name);
-    }
-
-    @Override
     public List<ScheduledAction> getAllEnabledScheduledActions() throws DbConnectionErrorException {
         return db.getAllEnabledScheduledActions();
-    }
-
-    @Override
-    public List<ScheduledAction> getAllEnabledScheduledActionsByActionName(String name) throws DbConnectionErrorException {
-        return getAllEnabledScheduledActionsByActionName(name);
     }
 
     @Override
@@ -97,18 +106,28 @@ public class ModelImpl implements IModel {
     }
 
     @Override
+    public void saveAllScheduledActions(@NotNull List<ScheduledAction> scheduledActions) throws DbConnectionErrorException {
+
+    }
+
+    @Override
     public void saveScheduledAction(ScheduledAction scheduledAction) throws DbConnectionErrorException {
         db.saveScheduledAction(scheduledAction);
     }
 
     @Override
-    public Optional<ScheduledAction> scheduleAction(String actionName, Duration d) throws DbConnectionErrorException {
-        return db.scheduleAction(actionName, d);
+    public Optional<ScheduledAction> createScheduledAction(String actionName, Duration d) throws DbConnectionErrorException {
+        return db.createScheduledAction(actionName, d);
     }
 
     @Override
-    public Optional<ScheduledAction> scheduleAction(String actionName, Duration d, List<String> parameters) throws DbConnectionErrorException {
-        return db.scheduleAction(actionName, d, parameters);
+    public Optional<ScheduledAction> createScheduledAction(String actionName, Duration d, List<String> parameters) throws DbConnectionErrorException {
+        return db.createScheduledAction(actionName, d, parameters);
+    }
+
+    @Override
+    public List<ScheduledAction> getAllExpiredScheduledActions() throws DbConnectionErrorException {
+        return db.getAllExpiredScheduledActions();
     }
 
 

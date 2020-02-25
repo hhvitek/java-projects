@@ -17,10 +17,8 @@ import java.sql.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 import java.util.List;
-import java.util.Optional;
 
 public class JdbcSqlImpl implements ISqlDbDao {
 
@@ -48,7 +46,6 @@ public class JdbcSqlImpl implements ISqlDbDao {
 
     @Override
     public void closeConnection() throws DbConnectionErrorException {
-
         if (this.connection != null) {
             try {
                 connection.close();
@@ -81,6 +78,14 @@ public class JdbcSqlImpl implements ISqlDbDao {
         return actions;
     }
 
+    /**
+     * Creates object of ActionAbstract from ResultSet.
+     * The method is expecting the following columns in the set:
+     * id, name, class_name, description, is_producing_result, parameters_count
+     * @param rs
+     * @return
+     * @throws DbConnectionErrorException
+     */
     private ActionAbstract createAction(ResultSet rs) throws DbConnectionErrorException {
 
         String className = "";
@@ -104,31 +109,10 @@ public class JdbcSqlImpl implements ISqlDbDao {
     }
 
     @Override
-    public void saveAllActions(List<ActionAbstract> actions) throws DbConnectionErrorException {
+    public void saveAllActions(@NotNull List<ActionAbstract> actions) throws DbConnectionErrorException {
 
-        // ignore if already stored in the database
-        String query = "INSERT OR IGNORE INTO action " +
-                "(name, class_name, description, parameters_count, is_producing_result) " +
-                "VALUES (?, ?, ?, ? ,?) ";
-
-        Connection conn = getConnection();
-        try (PreparedStatement preparedStatement = conn.prepareStatement(query);) {
-
-            for(ActionAbstract action: actions) {
-                preparedStatement.setString(1, action.getName());
-                preparedStatement.setString(2, action.getClass().getName());
-                preparedStatement.setString(3, action.getDescription());
-                preparedStatement.setInt(4, action.parametersCount());
-                preparedStatement.setBoolean(5, action.isProducingResult());
-
-                int rowsUpdated = preparedStatement.executeUpdate();
-                if (rowsUpdated != 1) {
-                    logger.warn("Something went wrong during DB insert. Rows updated: {}, Expected 1 row inserted", rowsUpdated);
-                }
-            }
-        } catch (SQLException e) {
-            logger.error(e.getLocalizedMessage());
-            throw new DbConnectionErrorException(e);
+        for(ActionAbstract action: actions) {
+            saveAction(action);
         }
     }
 
@@ -167,8 +151,39 @@ public class JdbcSqlImpl implements ISqlDbDao {
     }
 
     @Override
-    public void saveAction(ActionAbstract action) throws DbConnectionErrorException {
+    public void saveAction(@NotNull ActionAbstract action) throws DbConnectionErrorException {
+        // ignore if already stored in the database
+        // String query = "INSERT OR IGNORE INTO action " +
+        //      "(name, class_name, description, parameters_count, is_producing_result) " +
+        //      "VALUES (?, ?, ?, ? ,?) ";
 
+        // upsert if exist update non-unique
+        String query = "INSERT INTO action " +
+              "(name, class_name, description, parameters_count, is_producing_result) " +
+              "VALUES (?, ?, ?, ? ,?) " +
+              "ON CONFLICT(name) DO UPDATE SET " +
+                  "description = excluded.description, " +
+                  "parameters_count = excluded.parameters_count, " +
+                  "is_producing_result = excluded.is_producing_result ";
+
+        Connection conn = getConnection();
+
+        try (PreparedStatement preparedStatement = conn.prepareStatement(query);) {
+            preparedStatement.setString(1, action.getName());
+            preparedStatement.setString(2, action.getClass().getName());
+            preparedStatement.setString(3, action.getDescription());
+            preparedStatement.setInt(4, action.parametersCount());
+            preparedStatement.setBoolean(5, action.isProducingResult());
+
+            int rowsUpdated = preparedStatement.executeUpdate();
+            if (rowsUpdated != 1) {
+                logger.warn("Something went wrong during DB insert/update. Rows updated: {}, Expected 1 row inserted/updated",
+                        rowsUpdated);
+            }
+        } catch (SQLException e) {
+            logger.error(e.getLocalizedMessage());
+            throw new DbConnectionErrorException(e);
+        }
     }
 
     @Override
@@ -177,27 +192,17 @@ public class JdbcSqlImpl implements ISqlDbDao {
                 "INNER JOIN action as A " +
                 "ON (SA.action_id = A.id)";
 
-        Connection conn = getConnection();
-
-        List<ScheduledAction> scheduledActions = new ArrayList<>();
-        try (PreparedStatement preparedStatement = conn.prepareStatement(query)) {
-            ResultSet rs = preparedStatement.executeQuery();
-            while(rs.next()) {
-
-                ScheduledAction scheduledAction = createScheduledAction(rs);
-
-                scheduledActions.add(scheduledAction);
-          }
-
-        } catch (SQLException e) {
-            logger.error(e.getLocalizedMessage());
-            throw new DbConnectionErrorException(e);
-        }
-        return scheduledActions;
+        return getScheduledActionsByQuery(query);
     }
 
-    private ScheduledAction createScheduledAction(ResultSet rs) throws DbConnectionErrorException {
-
+    /**
+     * Creates ScheduledAction object from ResultSet.
+     * Expects all the columns from both action AND scheduled_action tables.
+     * @param rs
+     * @return
+     * @throws DbConnectionErrorException
+     */
+    private ScheduledAction createScheduledAction(@NotNull ResultSet rs) throws DbConnectionErrorException {
         try {
             ActionAbstract action = createAction(rs);
             int id = rs.getInt("id");
@@ -214,24 +219,25 @@ public class JdbcSqlImpl implements ISqlDbDao {
             return scheduledAction;
 
         } catch (SQLException e) {
+            logger.error(e.getLocalizedMessage());
             throw new DbConnectionErrorException(e);
         }
     }
 
     @Override
-    public List<ScheduledAction> getAllScheduledActionsByActionName(String name) throws DbConnectionErrorException {
-        return null;
-    }
-
-    @Override
     public List<ScheduledAction> getAllEnabledScheduledActions() throws DbConnectionErrorException {
-        // either 1 get ids than call getScheduledActionByScheduledActionId()
-        // or 1 own sql query
+        // either 1 get all ids than call getScheduledActionByScheduledActionId()
+        // or 2 whole own sql query
 
         String query = "SELECT * FROM scheduled_action AS sa " +
                 "INNER JOIN action AS a ON(sa.action_id = a.id) " +
                 "WHERE sa.status IN('SCHEDULED', 'RUNNING', 'FINISHED')";
 
+        return getScheduledActionsByQuery(query);
+    }
+
+    @NotNull
+    private List<ScheduledAction> getScheduledActionsByQuery(String query) throws DbConnectionErrorException {
         Connection conn = getConnection();
 
         List<ScheduledAction> scheduledActions = new ArrayList<>();
@@ -247,12 +253,6 @@ public class JdbcSqlImpl implements ISqlDbDao {
         }
 
         return scheduledActions;
-
-    }
-
-    @Override
-    public List<ScheduledAction> getAllEnabledScheduledActionsByActionName(String name) throws DbConnectionErrorException {
-        return null;
     }
 
     @Override
@@ -272,13 +272,14 @@ public class JdbcSqlImpl implements ISqlDbDao {
                 return Optional.of(scheduledAction);
             } else {
                 logger.warn("No record has been found for scheduled_action id: {}", scheduledActionId);
+                return Optional.empty();
             }
         } catch (SQLException e) {
             logger.error(e.getLocalizedMessage());
             throw new DbConnectionErrorException(e);
         }
 
-        return Optional.empty();
+
     }
 
     @Override
@@ -297,6 +298,7 @@ public class JdbcSqlImpl implements ISqlDbDao {
                 logger.warn("Expected 1 row UPDATED... Expected 1 scheduled action cancelled... Actual is: " + rows);
             }
         } catch (SQLException e) {
+            logger.error(e.getLocalizedMessage(), e);
             throw new DbConnectionErrorException(e);
         }
     }
@@ -314,23 +316,59 @@ public class JdbcSqlImpl implements ISqlDbDao {
                 logger.warn("Expected 1 row DELETED... Expected 1 scheduled action DELETED... Actual is: " + rows);
             }
         } catch (SQLException e) {
+            logger.warn(e.getLocalizedMessage(),e);
             throw new DbConnectionErrorException(e);
         }
     }
 
     @Override
-    public void saveScheduledAction(ScheduledAction scheduledAction) throws DbConnectionErrorException {
-
+    public void saveAllScheduledActions(@NotNull List<ScheduledAction> scheduledActions) throws DbConnectionErrorException {
+        for(ScheduledAction scheduledAction: scheduledActions) {
+            saveScheduledAction(scheduledAction);
+        }
     }
 
     @Override
-    public Optional<ScheduledAction> scheduleAction(@NotNull String actionName,@NotNull Duration d) throws DbConnectionErrorException {
-        return null;
+    public void saveScheduledAction(@NotNull ScheduledAction scheduledAction) throws DbConnectionErrorException {
+
+        String query = "INSERT INTO scheduled_action " +
+                "(id, action_id, goal_time, result, status) " +
+                "VALUES(?, ?, ?, ?, ?) " +
+                "ON CONFLICT(id) DO UPDATE SET " +
+                    "goal_time = excluded.goal_time," +
+                    "result = excluded.result," +
+                    "status = excluded.status ";
+
+        Connection conn = getConnection();
+
+        try (PreparedStatement preparedStatement = conn.prepareStatement(query);) {
+            preparedStatement.setInt(1, scheduledAction.getId());
+
+            int actionId = getActionIdByName(scheduledAction.getAction().getName());
+            // should fail by sqlite foreign key violation action_id not exists...
+/*            if (actionId < 0) {
+                String errorMessage = "Trying to insert scheduled action without the actual Action existing yet.";
+                logger.warn(errorMessage);
+                throw new DbConnectionErrorException(errorMessage);
+            }*/
+            preparedStatement.setInt(2, actionId);
+            preparedStatement.setString(3, scheduledAction.getGoalTime().toString());
+            preparedStatement.setString(4, scheduledAction.getResult());
+            preparedStatement.setString(5, scheduledAction.getStatus());
+
+            int rows = preparedStatement.executeUpdate();
+            if (rows != 1) {
+                logger.warn("Something went wrong during DB insert/update. Rows updated: {}, Expected 1 row inserted/updated",
+                        rows);
+            }
+        } catch (SQLException e) {
+            logger.error(e.getLocalizedMessage(), e);
+            throw new DbConnectionErrorException(e);
+        }
     }
 
     @Override
-    public Optional<ScheduledAction> scheduleAction(@NotNull String actionName,@NotNull Duration d,@Nullable List<String> parameters) throws DbConnectionErrorException {
-
+    public Optional<ScheduledAction> createScheduledAction(@NotNull String actionName,@NotNull Duration d) throws DbConnectionErrorException {
         int actionId = getActionIdByName(actionName);
         if (actionId > 0) {
             return createScheduledAction(actionId, d);
@@ -339,9 +377,30 @@ public class JdbcSqlImpl implements ISqlDbDao {
         return Optional.empty();
     }
 
-    private void createNewParametersForScheduledAction() {}
+    @Override
+    public Optional<ScheduledAction> createScheduledAction(@NotNull String actionName,@NotNull Duration d, @Nullable List<String> parameters) throws DbConnectionErrorException {
 
-    private Optional<ScheduledAction> createScheduledAction(int actionId,@NotNull Duration d) throws DbConnectionErrorException {
+        Optional<ScheduledAction> scheduledActionOptional = createScheduledAction(actionName, d);
+        if (scheduledActionOptional.isPresent() && Objects.nonNull(parameters)) {
+            ScheduledAction scheduledAction = scheduledActionOptional.get();
+            scheduledAction.setParameters(parameters);
+            this.saveScheduledAction(scheduledAction);
+        }
+        return scheduledActionOptional;
+    }
+
+    @Override
+    public List<ScheduledAction> getAllExpiredScheduledActions() throws DbConnectionErrorException {
+
+        String query = "SELECT * FROM scheduled_action AS sa " +
+                "INNER JOIN action AS a ON(sa.action_id = a.id) " +
+                "WHERE sa.status IN('SCHEDULED', 'RUNNING', 'FINISHED') " +
+                "AND strftime('%s', sa.goal_time) <= strftime('%s', 'now', 'localtime') ";
+
+        return getScheduledActionsByQuery(query);
+    }
+
+    private Optional<ScheduledAction> createScheduledAction(int actionId, @NotNull Duration d) throws DbConnectionErrorException {
         String query = "INSERT INTO scheduled_action (action_id, goal_time) " +
                 "VALUES (?, ?)";
 
@@ -372,7 +431,6 @@ public class JdbcSqlImpl implements ISqlDbDao {
         }
         return Optional.empty();
     }
-
 
     private int getActionIdByName(String name) throws DbConnectionErrorException {
 
@@ -407,9 +465,23 @@ public class JdbcSqlImpl implements ISqlDbDao {
 
     private Connection getConnection() throws DbConnectionErrorException {
         if (connection == null) {
-            throw new DbConnectionErrorException("Please call initDbConnection() first!");
+            String errorMessage = "Please call initDbConnection() first!";
+            logger.error(errorMessage);
+            throw new DbConnectionErrorException(errorMessage);
+        } else {
+            try {
+                if(connection.isValid(1)) {
+                    return connection;
+                } else {
+                    String errorMessage = "Current connection is invalid...";
+                    logger.error(errorMessage);
+                    throw new DbConnectionErrorException(errorMessage);
+                }
+            } catch (SQLException e) {
+                String errorMessage = "Current connection is invalid...";
+                logger.error(errorMessage, e);
+                throw new DbConnectionErrorException(errorMessage, e);
+            }
         }
-
-        return connection;
     }
 }

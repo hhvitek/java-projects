@@ -7,4 +7,6 @@ public interface IModel extends ISqlDbDao {
     void setSqlDb(ISqlDbDao db);
     ISqlDbDao getSqlDb();
 
+    void start();
+    void stop();
 }

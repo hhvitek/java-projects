@@ -141,7 +141,7 @@ public class MainForm {
                 Duration delayDuration = Duration.between(LocalTime.MIN, LocalTime.parse(delayHHMM));
 
                 try {
-                    model.scheduleAction(actionName, delayDuration, actionParameters);
+                    model.createScheduledAction(actionName, delayDuration, actionParameters);
                     updateScheduledActionsUI();
                 } catch (DbConnectionErrorException e) {
                     String errorMessage = "Failed to schedule the Action." + e.getLocalizedMessage();
@@ -296,6 +296,7 @@ public class MainForm {
                     try {
                         if (!model.getAllEnabledScheduledActions().isEmpty()) {
                             timer.start();
+                            model.start();
                         }
                     } catch (DbConnectionErrorException e) {
                         logger.error("Failed to call db. ", e);
@@ -311,6 +312,7 @@ public class MainForm {
             timer.stop();
         }
 
+        model.stop();
         swingFrame.setVisible(false);
         swingFrame.dispose();
     }
