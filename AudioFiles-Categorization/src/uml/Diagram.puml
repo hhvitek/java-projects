@@ -1,0 +1,54 @@
+@startuml
+
+interface IModel extends IModelActiveData {
+    +getDefaultInputFolder(): Path
+    +getDefaultOutputFolder(): Path
+    +getDefaultAudioExtensions(): String
+    --
+    +setInputFolder(path: Path): void
+    +setOutputFolder(path: Path): void
+    +setAudioExtensions(extensions: String): void
+    +getInputFolder(): Path
+    +getOutputFolder(): Path
+    +getAudioExtensions(): Path
+    --
+    +countRelevantAudioFiles(): int
+    +validate(): String
+    --
+    +performRenameInPlace(): void
+    +performCopyToOutputFolder(): void
+    +cancel():void
+
+}
+
+interface IModelActiveData {
+    +getNumberOfAudioFilesOverall(): int
+    +getNumberOfAudioFilesProcessed(): int
+    +getNumberOfAudioFilesRemaining(): int
+}
+
+
+
+
+/'
+First idea to use observer pattern. One processed audio file equals one update call
+to all observers ... using swingutils.invokelater and add ModelData...
+I thing this would potentially slower the program performance.
+Better to use polling from UI to extract current status of app every like 1s
+
+interface ModelObserver {
+    +update()
+}
+
+interface ModelObservable {
+    +addObserver(ModelObserver): void
+    +removeObserver(ModelObserver): void
+}'/
+
+class MainForm {
+    +MainForm(IModel)
+
+    +startSwingApplication()
+}
+
+@enduml
