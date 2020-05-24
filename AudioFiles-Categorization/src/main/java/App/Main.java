@@ -1,8 +1,10 @@
 package App;
 
-import Model.IModel;
-import Model.SimpleModel.SimpleModel;
-import UI.MainForm;
+import controller.IController;
+import controller.simplecontroller.SimpleController;
+import model.IModel;
+import model.simplemodel.SimpleModel;
+import view.MainForm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,8 +24,8 @@ public class Main {
         setUIFont(new javax.swing.plaf.FontUIResource("Segoe UI", Font.PLAIN, 14));
 
         IModel model = new SimpleModel();
-        MainForm mainForm = new MainForm(model);
-        mainForm.startSwingApplication();
+        IController controller = new SimpleController(model);
+
     }
 
     public static void setUIFont (javax.swing.plaf.FontUIResource f){

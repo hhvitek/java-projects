@@ -1,53 +1,119 @@
 @startuml
 
-interface IModel extends IModelActiveData {
-    +getDefaultInputFolder(): Path
-    +getDefaultOutputFolder(): Path
-    +getDefaultAudioExtensions(): String
-    --
-    +setInputFolder(path: Path): void
-    +setOutputFolder(path: Path): void
-    +setAudioExtensions(extensions: String): void
+interface IModelActiveData {
+    +getNumberOfRelevantFilesOverall(): int
+    +getNumberOfFilesAlreadyProcessed(): int
+    +getNumberOfFilesRemaining(): int
+    +getCurrentlyProcessedFile(): Path
+    +getListOfProcessedFiles(): List<Path>
+    +getListOfRemainingFiles(): List<Path>
+    +getListOfOverallFiles(): List<Path>
+    +setters()...
+}
+
+interface IModelDecoratedActiveData {
+    +getResult()
+}
+
+interface IModelObserver {
+    +update(IModelActiveData)
+}
+
+interface IModelObservable {
+    +addObserver(IModelObserver)
+    +removeObserver(IModelObserver)
+    +notifyObservers()
+}
+
+interface IModelPerformAction {
+    +performAction(IModel) throws Exception
+    +abort()
+}
+
+interface IModel {
+    +setInputFolder(Path): void
+    +setOutputFolder(Path): void
+    +addFileSuffix(String): void
     +getInputFolder(): Path
     +getOutputFolder(): Path
-    +getAudioExtensions(): Path
+    +getFileSuffixes(): List<String>
     --
-    +countRelevantAudioFiles(): int
-    +validate(): String
+    +isRunning(): boolean
+    +abort():void
     --
-    +performRenameInPlace(): void
-    +performCopyToOutputFolder(): void
-    +cancel():void
+    +getModelActiveData(): IModelActiveData
+}
+
+IModelPerformAction -> IModel
+
+class PerformCopy implements IModelPerformAction
+class PerformMove implements IModelPerformAction
+class PerformRename implements IModelPerformAction
+class PerformTestRun implements IModelPerformAction
+class PerformCountRelevantFiles implements IModelPerformAction
+class PerformValidate implements IModelPerformAction
+
+interface IModelFilter {
+    +isRelevant(String): boolean
+}
+
+package simple_model {
+
+    class SimpleModel implements IModel {
+        -Path inputPath
+        -Path outputPath
+        -List<String> fileSuffixes
+        --
+        -IFindFiles findFiles
+        -IModelActiveData activData
+    }
+
+    interface IFindFiles {
+        +List<Path> findFilesBySuffix(String)
+        +List<Path> findFilesBySuffixes(List<String>)
+    }
+    class SimpleFindFiles implements IFindFiles
+    class SimpleModelActiveData implements IModelActiveData {
+        -List<Path> overallFiles
+        -int numberOfAlreadyProcessedFiles
+    }
 
 }
 
-interface IModelActiveData {
-    +getNumberOfAudioFilesOverall(): int
-    +getNumberOfAudioFilesProcessed(): int
-    +getNumberOfAudioFilesRemaining(): int
+
+
+
+enum EModelAction {
+    RENAME
+    COPY
+    MOVE
 }
 
-
-
-
-/'
-First idea to use observer pattern. One processed audio file equals one update call
-to all observers ... using swingutils.invokelater and add ModelData...
-I thing this would potentially slower the program performance.
-Better to use polling from UI to extract current status of app every like 1s
-
-interface ModelObserver {
-    +update()
+interface IModelFacade {
+    +performModelAction(Path, Path, List<String>, EModelAction)
 }
 
-interface ModelObservable {
-    +addObserver(ModelObserver): void
-    +removeObserver(ModelObserver): void
-}'/
+IModelFacade -> EModelAction
 
-class MainForm {
+
+interface IController {
+
+}
+
+interface IView {
+    +createView()
+}
+
+class SimpleController implements IController
+
+class Main {
+    IModel model = new SimpleModel();
+    IController controller = new SimpleController(model);
+}
+
+class MainForm implements IView {
     +MainForm(IModel)
-
+    +createView()
     +startSwingApplication()
 }
 

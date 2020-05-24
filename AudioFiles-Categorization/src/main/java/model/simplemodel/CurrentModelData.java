@@ -1,4 +1,4 @@
-package Model.SimpleModel;
+package model.simplemodel;
 
 import java.nio.file.Path;
 import java.util.List;

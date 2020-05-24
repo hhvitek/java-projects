@@ -1,6 +1,6 @@
-package Model.SimpleModel;
+package model.simplemodel;
 
-import Model.IModel;
+import model.IModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -95,7 +95,7 @@ public class SimpleModel implements IModel {
 
     @Override
     public void cancel() {
-        
+
     }
 
     @Override

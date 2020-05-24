@@ -1,4 +1,4 @@
-package Model.SimpleModel;
+package model.simplemodel;
 
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;

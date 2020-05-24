@@ -1,6 +1,7 @@
-package UI;
+package view;
 
-import Model.IModel;
+import controller.IController;
+import model.IModel;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,11 +49,13 @@ public class MainForm {
 
     // IModel
     private final IModel model;
+    private final IController controller;
 
     //################END CUSTOM VARIABLES
 
-    public MainForm(@NotNull IModel model) {
+    public MainForm(@NotNull IModel model, @NotNull IController controller) {
         this.model = model;
+        this.controller = controller;
 
         buttonInputFolderChoose.addActionListener(new ActionListener() {
             @Override
@@ -111,6 +114,12 @@ public class MainForm {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 setAudioExtensions(textFieldAudioExtensions.getText());
+            }
+        });
+        buttonStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setStatusBarMessage("Mission started!");
             }
         });
     }
