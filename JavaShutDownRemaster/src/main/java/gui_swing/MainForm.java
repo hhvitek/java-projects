@@ -1,12 +1,9 @@
 package gui_swing;
 
 import actions.ActionAbstract;
-import actions.ShutDownAction;
 import model.IModel;
-import model.Presenter;
 import model.ScheduledAction;
 import model.sql.DbConnectionErrorException;
-import org.jetbrains.annotations.Async;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import time.Time;
@@ -21,7 +18,6 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.time.Duration;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class MainForm {
@@ -283,7 +279,7 @@ public class MainForm {
             @Override
             public void run() {
                 swingFrame.setContentPane(panelMainForm);
-                swingFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                //swingFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
                 // disables frame's maximization button
                 // swingFrame.setResizable(false);
