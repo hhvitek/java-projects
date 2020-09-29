@@ -13,11 +13,11 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <junit.jupiter.version>5.6.1</junit.jupiter.version>
+        <junit.jupiter.version>5.6.2</junit.jupiter.version>
         <maven-javadoc-plugin-version>3.2.0</maven-javadoc-plugin-version>
-        <umldoclet-version>2.0.8</umldoclet-version>
-        <maven-surefire-plugin-version>3.0.0-M4</maven-surefire-plugin-version>
-        <org.apache.logging.log4j.version>2.13.1</org.apache.logging.log4j.version>
+        <umldoclet-version>2.0.11</umldoclet-version>
+        <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+        <org.apache.logging.log4j.version>2.13.3</org.apache.logging.log4j.version>
 
     </properties>
 
