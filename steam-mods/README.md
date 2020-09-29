@@ -1,0 +1,3 @@
+Simple rework of bash script to java.
+
+To test how to in Java...
