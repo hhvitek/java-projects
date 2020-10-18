@@ -1,7 +1,5 @@
 import gui.MainWindow;
 import gui.SwingViewUtils;
-import model.ModModel;
-import model.stellaris.StellarisModModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +15,8 @@ public class Main {
         SwingViewUtils.setLookAndFeelToSystemDefault();
         SwingViewUtils.setDefaultFont();
 
-        ModModel modModel = new StellarisModModel();
-        MainWindow mainWindow = new MainWindow(modModel);
+
+        MainWindow mainWindow = new MainWindow();
         mainWindow.startView();
 
         System.out.println(System.getProperty("os.name"));

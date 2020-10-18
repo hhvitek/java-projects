@@ -1,0 +1,41 @@
+{
+    "app":
+        {
+            "default_mod_folder": "%USERPROFILE%\\Documents\\",
+            "unknown_app_additional_field": "additional app data"
+        },
+    "modifications": [
+        {
+            "id": "EXTRACT_ALL",
+            "name": "Extract All",
+            "description": "Extract all .zip files in the given folder.",
+            "class": "model.modifications.ExtractAllModifications",
+            "unknown_mod_additional_field": "additional data"
+        },
+        {
+            "id": "MODIFY_MOD_DESCRIPTOR_FILES",
+            "name": "Modify mod descriptors",
+            "description": "Modify all mod descriptor files in place.",
+            "class": "model.modifications.InPlaceModDescriptorFilesModification",
+            "unknown_mod_additional_field": "additional data"
+        },
+        {
+            "id": "COPY_MOD_DESCRIPTOR_FILES",
+            "name": "Copy mod descriptors",
+            "description": "Copy all mod descriptor files into mod folder root. Replacing any existing files.",
+            "class": "model.modifications.CopyModDescriptorFilesToModFolderRoot",
+            "unknown_mod_additional_field": "additional data"
+        }
+    ],
+    "modifications-chains": [
+        {
+            "id": "BASIC",
+            "name": "Basic chain",
+            "modifications-ids": [
+                "EXTRACT_ALL",
+                "MODIFY_MOD_DESCRIPTOR_FILES",
+                "COPY_MOD_DESCRIPTOR_FILES"
+            ]
+        }
+    ]
+}

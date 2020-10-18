@@ -1,0 +1,64 @@
+@startuml
+left to right direction
+
+title Class diagram
+
+interface Modification {
+    +getModificationName()
+    +performModification(Path modFolder)
+}
+
+class ExtractAllModsModification implements Modification {
+    +performModification(Path modFolder)
+}
+
+class InPlaceModDescriptorFilesModification implements Modification {
+    +performModification(Path modFolder)
+}
+
+class CopyModDescriptorFilesToModFolderRoot implements Modification {
+    +performModification(Path modFolder)
+}
+
+
+class BasicModificationChain {
+    +addModification(Modification modification)
+    +performAllModifications()
+}
+
+interface Game {
+    +String getName()
+    +Path getStandardModFolder()
+    ..
+    +void setSelectedModFolder(Path modFolder)
+    +Path getSelectedModFolder()
+    ..
+    +void performModFolderModifications() throws SteamModModificationException, IOException
+}
+
+class BasicGame implements Game {
+    -String name
+    -Path standardFolder
+    -Path selectedFolder
+    -BasicModificationChain modificationChain
+    ..
+    +Game(String name, Path standardFolder, Modification modification)
+    ..
+}
+
+interface SteamModModel {
+    +List<String> getSupportedGamesNames()
+    +void setSelectedGame(String gameName)
+    +String getSelectedGameName()
+    +Path getSelectedModFolder()
+    +void setSelectedModFolder(Path selectedModFolder)
+    ..
+    +void performModificationsOnSelectedGame() throws ModificationException, IOException
+}
+
+class BasicSteamModModel implements SteamModModel {
+    -Modification modification
+}
+
+
+@enduml
