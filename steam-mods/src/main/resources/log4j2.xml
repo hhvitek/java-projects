@@ -9,8 +9,9 @@
             <!--disableAnsi="false" fixes the colour highlight on the Windows platform -->
         </Console>
     </Appenders>
+
     <Loggers>
-        <Root level="debug" additivity="false">
+        <Root level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>

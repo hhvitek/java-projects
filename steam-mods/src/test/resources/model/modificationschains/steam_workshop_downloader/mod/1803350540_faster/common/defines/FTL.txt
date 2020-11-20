@@ -1,0 +1,6 @@
+NShip = {
+	HYPERLANE_WINDUP 					= 70	# In micro updates ( 10/day ). Default 150
+	HYPERLANE_WINDDOWN					= 0	# In micro updates
+	HYPERLANE_WINDUP_OUTSIDE_BORDER				= 0	# No additional windup time outside of borders. 
+	HYPERDRIVE_INTERSTELLAR_TRAVEL_SPEED 			= 2.0 	# Near instantaneous! In micro updates ( 10/day )
+}

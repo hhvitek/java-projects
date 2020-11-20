@@ -1,0 +1,6 @@
+#Ships are about 2x faster out of combat
+cruising_speed = {
+	ship_speed_mult = 0.5
+}
+
+

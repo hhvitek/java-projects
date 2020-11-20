@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+
+title Class diagram
+
+interface Modification {
+    +getId()
+    +getName()
+    +setName(name)
+    +getDesc()
+    +setDesc(desc)
+    ..
+    +execute(Path modFolder)
+}
+
+class ExtractAllModsModification implements Modification {
+    +execute(Path modFolder)
+}
+
+class InPlaceModDescriptorFilesModification implements Modification {
+    +execute(Path modFolder)
+}
+
+class CopyModDescriptorFilesToModFolderRoot implements Modification {
+    +execute(Path modFolder)
+}
+
+
+interface ModificationsChain {
+    +getId()
+    +getName()
+    +setName(name)
+    +getDesc()
+    +setDesc(desc)
+    ..
+    +List<Modification> getAllModifications()
+    ..
+    +removeAllModificationsById(modificationId) throws ModificationNotFound
+    +setModifications(List<> modificationId)
+    +addModification(modificationId)
+    ..
+    +execute()
+}
+
+class Model {
+    +load() throws IOException, ConfigurationException
+    +save() throws IOException, ConfigurationException
+    ..
+    +List<Modification> getAllModifications()
+    +List<ModificationsChain> getAllModificationsChains()
+    ..
+    +modifyModification(Modification)
+    +modifyModificationsChain(Chain)
+
+    +executeChain(chainId)
+}
+
+
+
+@enduml

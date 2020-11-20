@@ -1,6 +1,7 @@
 package gui;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -14,6 +15,8 @@ import java.util.Enumeration;
 import java.util.Optional;
 
 public final class SwingViewUtils {
+
+
 
     private SwingViewUtils() {
     }
@@ -66,7 +69,34 @@ public final class SwingViewUtils {
     }
 
     public static void showErrorMessageDialog(@NotNull JFrame parentFrame, @NotNull String message) {
-        JOptionPane.showMessageDialog(parentFrame, message, "Error", JOptionPane.ERROR_MESSAGE);
+        if (message.length() > 250) {
+            showErrorMessageDialogLong(parentFrame, message);
+        } else {
+            showErrorMessageDialogSmall(parentFrame, message);
+        }
+
+    }
+
+    private static void showErrorMessageDialogLong(@NotNull JFrame parentFrame, @NotNull String message) {
+
+        JTextArea textArea = new JTextArea(message, 8, 50);
+        textArea.setEditable(false);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setBorder(null);
+
+        JOptionPane.showMessageDialog(parentFrame, scrollPane, "Error", JOptionPane.ERROR_MESSAGE);
+    }
+
+
+    private static void showErrorMessageDialogSmall(@NotNull JFrame parentFrame, @NotNull String message) {
+
+        JTextArea textArea = new JTextArea(message);
+        textArea.setEditable(false);
+
+        JOptionPane.showMessageDialog(parentFrame, textArea, "Error", JOptionPane.ERROR_MESSAGE);
     }
 
     public static void addChangeListenerToJTextComponentOnChange(@NotNull JTextComponent text, @NotNull Runnable runnable) {
@@ -84,12 +114,18 @@ public final class SwingViewUtils {
 
     /**
      * Show folder choosing standard dialog and returns the chosen folder...
-     * @param currentDirectory default directory to show
+     * @param currentDirectory default directory to show, if null shows user's default directory.
      * @return the chosen folder
      */
-    public static @NotNull Optional<Path> showFileChooserAndGetFolder(@NotNull Path currentDirectory) {
+    public static @NotNull Optional<Path> showFileChooserAndGetFolder(@Nullable Path currentDirectory) {
+        // constructs chooser pointing to default user's directory
         final JFileChooser fc = new JFileChooser();
-        fc.setCurrentDirectory(currentDirectory.toFile());
+
+        if (currentDirectory != null) {
+            // requesting non-default pointing directory
+            fc.setCurrentDirectory(currentDirectory.toFile());
+        }
+
         fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
         int returnVal = fc.showOpenDialog(null);

@@ -1,0 +1,42 @@
+namespace = faster
+
+
+
+
+ship_event = {  ### ACTIVATE CRUISING SPEED
+	id = faster.1
+	hide_window = yes
+	
+	trigger = {
+		is_in_combat = no
+		NOT = { has_ship_flag = cruising } ### If not already cruising, set cruising. This is needed or else an infinite loop will occur. 
+	}
+	
+	immediate = {
+		set_ship_flag = cruising
+		add_modifier = { modifier = cruising_speed }
+	}
+}
+
+
+ship_event = {   ### ACTIVATE COMBAT SPEED - Civilian vessels are not impacted by this
+	id = faster.2
+	hide_window = yes
+
+	trigger = {
+		is_in_combat = yes
+		or = {
+			is_ship_class = shipclass_military
+			is_ship_class = shipclass_military_special
+		}
+		NOT = { has_ship_flag = combatspeed }
+	}
+
+	immediate = {
+		remove_modifier = cruising_speed
+		remove_ship_flag = cruising
+		set_ship_flag = combatspeed
+		
+	}
+}
+	

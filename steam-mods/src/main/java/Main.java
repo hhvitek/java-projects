@@ -1,9 +1,16 @@
 import gui.MainWindow;
 import gui.SwingViewUtils;
+import model.AppModel;
+import model.JavaAppModelImpl;
+import model.JavaModificationModelImpl;
+import model.ModificationModel;
+import model.persistent.PersistentStorageManager;
+import model.persistent.json.JsonConfigurationManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
+import java.nio.file.Path;
 
 public class Main {
 
@@ -15,11 +22,13 @@ public class Main {
         SwingViewUtils.setLookAndFeelToSystemDefault();
         SwingViewUtils.setDefaultFont();
 
+        Path storagePath = Path.of("src/main/resources/configuration.json");
+        PersistentStorageManager storageManager = new JsonConfigurationManager(storagePath);
+        ModificationModel modificationModel = new JavaModificationModelImpl(storageManager);
+        AppModel appModel = new JavaAppModelImpl(storageManager);
 
-        MainWindow mainWindow = new MainWindow();
+        MainWindow mainWindow = new MainWindow(appModel, modificationModel);
         mainWindow.startView();
-
-        System.out.println(System.getProperty("os.name"));
 
         logger.info("Finished...");
     }
