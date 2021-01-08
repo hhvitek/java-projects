@@ -8,9 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 @JsonPropertyOrder({
         "default_mod_folder"
@@ -19,37 +17,50 @@ public class JsonAppPojo extends AbstractPojoAdditionalProperty {
 
     private static final Logger logger = LoggerFactory.getLogger(JsonAppPojo.class);
 
-    @JsonProperty("default_mod_folder")
     private Path defaultModFolder;
 
-    @JsonProperty("default_mod_folder")
+    private Path chosenModFolder;
+
+    private String selectedModificationsChain;
+
+    private List<Integer> managedModIds;
+
     public @NotNull Path getDefaultModFolder() {
         return defaultModFolder;
     }
 
-    @JsonProperty("default_mod_folder")
     public void setDefaultModFolder(Path defaultModFolder) {
         this.defaultModFolder = defaultModFolder;
     }
 
-    /**
-     * Returns shallow copy, so changes to returned map structure does not impact original map.
-     */
-    @JsonIgnore
-    public Map<String, String> getAllProperties() {
+    public Path getChosenModFolder() {
+        return chosenModFolder;
+    }
 
-        Map<String, String> appAdditionalProperties = getAdditionalProperties();
-        appAdditionalProperties.put("default_mod_folder", defaultModFolder.toString());
+    public void setChosenModFolder(Path chosenModFolder) {
+        this.chosenModFolder = chosenModFolder;
+    }
 
-        return appAdditionalProperties;
+    public String getSelectedModificationsChain() {
+        return selectedModificationsChain;
+    }
+
+    public void setSelectedModificationsChain(String selectedModificationsChain) {
+        this.selectedModificationsChain = selectedModificationsChain;
+    }
+
+    public List<Integer> getManagedModIds() {
+        return managedModIds;
+    }
+
+    public void setManagedModIds(List<Integer> managedModIds) {
+        this.managedModIds = managedModIds;
     }
 
     @JsonIgnore
-    public void setAllProperties(Map<String, String> allProperties) {
-        defaultModFolder = Path.of(allProperties.get("default_mod_folder"));
-
-        allProperties.remove("default_mod_folder");
-
-        additionalProperties = allProperties;
+    public void setAllProperties(Map<String, Object> allProperties) {
+        defaultModFolder = Path.of((String)allProperties.get("default_mod_folder"));
+        chosenModFolder = Path.of((String)allProperties.get("chosen_mod_folder"));
+        selectedModificationsChain = (String)allProperties.get("selected_modifications_chain");
     }
 }

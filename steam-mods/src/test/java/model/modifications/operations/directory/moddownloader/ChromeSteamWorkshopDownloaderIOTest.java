@@ -10,7 +10,7 @@ class ChromeSteamWorkshopDownloaderIOTest extends AbstractDownloaderTest{
 
     public ChromeSteamWorkshopDownloaderIOTest() {
         super();
-        WebDriver webDriver = WebDriverFactory.getDriver(WebDriverFactory.SupportedWebDrivers.CHROME, downloaderFolder);
+        WebDriver webDriver = WebDriverFactory.getDriver(WebDriverFactory.SupportedWebDrivers.CHROME, DOWNLOAD_FOLDER);
         downloader = new SteamWorkshopDownloaderIOImpl(webDriver);
     }
 

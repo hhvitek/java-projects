@@ -1,24 +1,21 @@
 {
   "app" : {
-    "default_mod_folder" : "file:///C:/Utilities/Git/java-projects/steam-mods/%25USERPROFILE%25/Documents",
-    "chosen_mod_folder" : "C:\\Utilities\\Git\\java-projects\\steam-mods\\%USERPROFILE%\\Documents",
-    "selected_modifications_chain" : "BASIC"
   },
   "modifications" : [ {
     "id" : "EXTRACT_ALL",
     "name" : "Extract All",
     "description" : "Extract all .zip files in the given folder.",
-    "class" : "model.modifications.operations.ExtractAllOperation"
+    "class" : "model.modifications.operations.directory.ExtractAllDirOperation"
   }, {
     "id" : "MODIFY_MOD_DESCRIPTOR_FILES",
     "name" : "Modify mod descriptors",
     "description" : "Modify all mod descriptor files in place.",
-    "class" : "model.modifications.operations.InPlaceModDescriptorFilesModification"
+    "class" : "model.modifications.operations.directory.InPlaceModDescriptorDirOperation"
   }, {
     "id" : "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES",
     "name" : "Copy mod descriptors",
     "description" : "Copy all mod descriptor files into mod folder root. Replacing any existing files.",
-    "class" : "model.modifications.operations.CopyModDescriptorFilesToModFolderRoot"
+    "class" : "model.modifications.operations.directory.CopyModDescriptorFilesToModFolderRootDirOperation"
   } ],
   "modifications-chains" : [ {
     "id" : "BASIC",
@@ -29,12 +26,6 @@
     "id" : "steam_workshop_downloader",
     "name" : "Steam workshop downloader",
     "modifications-ids" : [ "EXTRACT_ALL", "MODIFY_MOD_DESCRIPTOR_FILES", "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES" ],
-    "description" : "https://steamworkshopdownloader.io/"
-  }, {
-    "id" : "smods_ru",
-    "name" : "Stellaris.Smods.Ru",
-    "modifications-ids" : [ "EXTRACT_ALL"],
-    "description" : "https://stellaris.smods.ru/"
-  }
-  ]
+    "description" : "Steam workshop downloader"
+  } ]
 }

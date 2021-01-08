@@ -1,0 +1,289 @@
+### Historiae Culturis - Hindu (Indian)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+hindu_names = {
+	randomized = no
+	alias = "Hindu"
+
+	ship_names = {
+		science = {
+		###Philosophy (15)
+			Astika Nastika Samkhya Nyaya Vaisesika Mimamsa Vedanta Carvaka Ajivika Shaivism Siddhanta Rasesvara Ramanuja Purnaprajna Paniniya 
+			}
+		
+		constructor = {
+		###Mountains (40)	
+			Kangchenjunga "Nanda Devi" Kamet Saltoro Saser Teram Mamostong Jongsong Kabru Ghent Rimo "Kirat Chuli" Mana Apsarasas "Mukut Parbat" Hardeol Chaukhamba Badrinath "Nun-Kun" Pauhunri 
+			Pathibhara Trisul Satopanth Tirsuli Dunagiri Kangto "Nyegyi Kangsang" Padmanabh "Shudu Tsempa" "Tughmo Zarpo" "Aq Tash" "Rishi Pahar" "Thalay Sagar" Lakshmi Kedarnath Langpo Saraswati Shahi "Sri Kailas" Kalanka 
+			}
+		
+		colonizer = {
+		###Lakes (25)
+			Kolleru Kaniari Nagarjuna Cumbum Pulicat Hamirsar Kankaria Narayan Thol Vastrapur Saron Chapnala Deepor Rudrasagar Sivasagar Mansar Marsar Kausar Agara Madiwala 
+			Chilka Surag "Tso Moriri" "Suraj Tal" Tsongmo
+			}
+		
+		transport = {
+		###Islands (60)
+			Andaman Nicobar Cleugh Pocock Tatle Curlew Aves Karlo Murga Baratang Porlob Talakaicha Garacharma Cinque Tarmugli Battimalv Chowra Bompuka Katchal Camorta 
+			Laouk Tillanhchong Kondul Bhavani Diviseema Konaseema Irukkam Sriharikota Venadu Majuli Umananda Diu Divar Vanxim Piram Pirotan Shiyalbet "Zainul Lank" Kothad Gundu 
+			Kavvayi Vypin Venduruthy Sathar Pizhala Parumala Nedungad Agatti Amini Bitra Chetlat Kiltan Minicoy Viringili Ambu Gowalkot Marve Panju Underi Kakdwip
+			}
+		
+		corvette = {
+		###Minor Cities (180)
+			Dhule Tirupati Rohtak Korba Bhilwara Berhampur Muzaffarpur Ahmednagar Mathura Kollam Avadi Kadapa Kamarhati Sambalpur Bilaspur Shahjahanpur Satara Bijapur Rampur Shivamogga 
+			Chandrapur Junagadh Thrissur Alwar Bardhaman Kulti Kakinada Nizamabad Parbhani Tumkur Khammam Ozhukarai "Bihar Sharif" Panipat Darbhanga Bally Aizawl Dewas Ichalkaranji Karnal
+			Bathinda Jalna Eluru Kirari Barasat Purnia Satna Mau Sonipat Farrukhabad Sagar Nagar Durg Imphal Ratlam Hapur Arrah Karimnagar Anantapur Etawah 
+			Ambernath Suleman Bharatpur Begusarai Gangtok Ganghidham Baranagar Tiruottiyur Pondicherry Sikar Thoothukudi Rewa Mirzapur Raichur Pali Ramagundam Haridwar Vijayanagaram Kathihar Nagercoil
+			Ganganagar Karawal Mango Thanjavur Bulandshahr Uluberia Murwara Sambhal Singrauli Nadiad Secunderabad Naihati Yamunanagar Bidhan Pallavaram Bidar Munger Panchkula Burhanpur Raurkela
+			Kharagpur Dindigul Gandhinagar Hospet "Nagloi Jat" Buxar Amaravati Ongole Deoghar Chapra Haldia Khandwa Nandyal Chittoor Morena Amroha Anand Bhind Bhalswa Jahangir 
+			Madhyamgram Bhiwani "Panvel Raigad" Baharampur Ambala Morvi Fatehpur "Rae Bareli" Khora Bhusawal Orai Bahraich Vellor Mahesana Sambalpur Raiganj Sirsa Danapur Serampour Guna 
+			Jaunpur Panvel Shivpuri Dudhrej Unnao Hugli Chinsurah Alappuzha Kottayam Machilipatnam Shimla Adoni Udupi Tenali Prodddatur Saharsa Hindupur Sasaram Hajipur Dehri 
+			Siwan Kavli Bhimavaram Kumbakonam Madanapalle Bettiah Guntakal Srikakulam Motihari Dharmavaram Tadipatri Bagaha Suryapet Karaikudi Kishanganj Jehanabad Tadepalligudem Phagwara Gudivada Narasaraopet
+			}
+		
+		destroyer = {
+		###Rivers (180)	
+			Ganga Hooghly Damodar Barakar Churni Jahanavi Jalangi Ichamati Rupnarayan Ajay Mayurakshi Dwarakeswar Mundeswari Meghna Padma Punarbhaba Atrai Mahanandra Kosi Bagmati 
+			Phalgu "Bhurhi Gandak" Gandaki Koel Amanat Rihand Gopad Goini Neur Banas Johilla Ghaghara Rapti Rohni Sarda Ladhiya Sarayu Gori Darma Gomati 
+			Sarayan Kathna Yamuna Ban Ken Betwa Dhasan Halali Kaliasote Sindh Kwari Hindon Karban Pahuj Chambal Kuno Berach Bandi Mashi Morel 
+			Kotari Shipra Ahar Kali Parbati Gambhir Ramganga Khoh Mandal Alaknanda Mandakini Pindar Nandakini Dhauliganga Rishiganga Bhagirathi Bhilangna Kharkai Hughli Thenad		
+			Surma Feni Dakatia Gumti Titas Kangsha Someshwari Kushiyara Manu Barak Tuivai Irang Baitarani Bhargavi Drahmani Daya Hasdeo Ib Jonk Kathajodi 
+			Koina Kuakhai Kushabhadra Man Karo Ong Pairi Sankh Shivnath Sondur Surubalijora Subarnarekha Budhabalanga Baitarni Mahanadi Rushikulya Godavari Purna Pranahita Wainganga 
+			Kanhan Kolar Pench Kulbehra Nag Wardha Penganga "Pedda Vagu" Indravati Sabari Pravara Manjira Manair Taliperu Kinnerasani Darna Sindphana Bhima Agrani Yerala
+			Kharmer Silgi Burhner Banjar Balai Temur Gaur Soner Hiran Sher Biranjo Shakkar Dudhi Sukhri Tendoni Barna Tawa Hather Ganjal Sip 
+			Jamner Chankesher Anjal Machak Chhota Khari Kenar Kaveri Kharkia Kundi Karan Uri Goi Hatni Orsang Karjan Mahi Wakal Harnav Sabarmati  
+			}
+		
+		cruiser = {
+		###Major Cities (120)	
+			Mumbai Delhi Bangalore Hyderabad Ahmedabad Chennai Kolkata Surat Pune Jaipur Lucknow Kanpur Nagpur Visakhapatnam Indore Thane Bhopal "Pimpri-Chinchwad" Patna Vadodara
+			Ghaziabad Ludhiana Coimbatore Agra Madurai Nashik Faridabad Meerut Rajkot "Kalyan-Dombivali" "Vasai-Virar" Varanasai Srinagar Aurangabad Dhanbad Amritsar Navi Allahabad Ranchi Howrah 
+			Jabalpur Gwalior Vjayawada Jodhpur Raipur Kota Guwahati Chandigarh Solapur "Hubballi-Dharward" Tiruchirappalli Bareilly Mysore Tiruppur Gurgaon Aligarh Jalandhar Bhubaneswar Salem "Mira-Bhayandar" 
+			Warangal Thiruvananthapuram Guntur Bhiwandi Saharanpur Gorakhpur Bikaner Amravati Noida Jamshedpur Bhilai Cuttak Firozabad Kochi Nellore Bhavnagar Dehradun Durgapur Asansol Rourkela 
+			Nanded Jolhapur Ajmer Akola Gulbarga Jamnagar Ujjain Loni Siliguri Jhansi Ulhasnagar Jammu "Sangli-Miraj" Mangalore Erode Belgaum Ambattur Tirunelveli Malegaon Kupwad
+			Gaya Jalgaon Udaipur Maheshtala Davanagere Kozhikode Kurnool "Rajpur Sonarpur" Rajahmundry Bokaro Dumdum Bellary Patiala Gopalpur Agartala Bhagalpur Muzaffarnagar Bhatpara Panihati Latur
+			}
+		
+		battleship = {
+		###Minor Deities (110)
+			Vakratunda Ekadanta Mahodara Gajavaktra Lambodara Vikata Vighnaraja Dhumravarna Hanuman Veerabhadra Bhairava Khandoba Nataraja Ashwatthama Valki Kashyapa Sukra Kalidasa Chandra Samudra 
+			Jamvanta Agastya Durvasa Matsya Kurma Varaha Narasimha Vamana Parashurama "Sri Ramachandra" "Sri Krishna" Kalki Sridevi Sita Dharini Rukmini Padmavati Radha Yashodhara Lakshmana 
+			Balarama Ramanuja Durga Kamalatmika Mahakali Kali Bhadrakali Chandi Chamunda Bagalamukhi Chhinnamasta Rudrani Mhalsa Yami Nandi Tulsi Annapoorna "Santoshi Mata" Abirami Ardhanarishvara
+			Muneeswarar Muthappan Pashupati Harihara Rudra Lingam Dakshinamurthy Ravananugraha Vaidheeswara Lingodbhava Somaskanda Bhikshatana "Sri Manjunatha" Vaidhyanatha Mahakaleshwara Tryambak Bholenath Valmiki Kalidasa Dattatreya 
+			Brahmanarayana Bhagya Vidhata Vednatha Chaturmukha Viranchi Parampita Prajapati Achyutaputra Narayana Thirumal Perumal Jagannath Hayagriva Venkateshwara "Vaikuntha Chaturmurti" "Vaikuntha Kamalaja" Mohini "Lakshmi Narayan" Vishvarupa 
+			Ranganatha Dasavatara Padmanabha "Ananta Shayana" Hari Upulwan Ganesh Kartikeya Ayyappan Shesha   
+			}
+		
+		titan = {
+		###Major Deities	
+			Saraswati Lakshmi Parvati Brahma Vishnu Shiva 
+			}
+
+		colossus = {
+		###Hindu Trinity	
+			"Brahma the Creator" "Vishnu the Preserver" "Shiva the Destroyer"
+			}
+		
+		military_station_small = {
+		###LunarCalender (12)	
+			Vaisakha Jyeshtha Ashadha Shraavana Bhadra Ashvin Kartik Agahana Pausha Magha Phalguna Chaitra 
+			}
+
+		ion_cannon = {
+		###SolarCalender (12)	
+			Mesa Vrsabha Mithuna Karkata Simhar Kanya Tula Vrscika Dhanu Makara Kumbha Mina
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Nausena %R%"
+		}
+	
+	army_names = {
+		defense_army = { 
+			sequential_name = "Sena %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Aakrasena %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Dassena %R%"
+		}
+		
+		clone_army = {
+			sequential_name = "Klonsena %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Maksena %R%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Makshasena %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Endrosena %R%"
+		}
+
+		android_defense_army = {
+			sequential_name = "Endroshasena %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Jaivik %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Videsena %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Sandsena %R%"
+		}
+
+		occupation_army = {
+			sequential_name = "Vyanasena %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Makvyanasena %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Endrovyanasena %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Planets/Deties (120)
+				Vakratunda Ekadanta Mahodara Gajavaktra Lambodara Vikata Vighnaraja Dhumravarna Hanuman Veerabhadra Bhairava Khandoba Nataraja Ashwatthama Valki Kashyapa Sukra Kalidasa Chandra Samudra 
+				Jamvanta Agastya Durvasa Matsya Kurma Varaha Narasimha Vamana Parashurama "Sri Ramachandra" "Sri Krishna" Kalki Sridevi Sita Dharini Rukmini Padmavati Radha Yashodhara Lakshmana 
+				Balarama Ramanuja Durga Kamalatmika Mahakali Kali Bhadrakali Chandi Chamunda Bagalamukhi Chhinnamasta Rudrani Mhalsa Yami Nandi Tulsi Annapoorna "Santoshi Mata" Abirami Ardhanarishvara
+				Muneeswarar Muthappan Pashupati Harihara Rudra Lingam Dakshinamurthy Ravananugraha Vaidheeswara Lingodbhava Somaskanda Bhikshatana "Sri Manjunatha" Vaidhyanatha Mahakaleshwara Tryambak Bholenath Valmiki Kalidasa Dattatreya 
+				Brahmanarayana Bhagya Vidhata Vednatha Chaturmukha Viranchi Parampita Prajapati Achyutaputra Narayana Thirumal Perumal Jagannath Hayagriva Venkateshwara "Vaikuntha Chaturmurti" "Vaikuntha Kamalaja" Mohini "Lakshmi Narayan" Vishvarupa 
+				Ranganatha Dasavatara Padmanabha Hari Upulwan Kartikeya Ayyappan Shesha Ghahas Surya Chandra Mangala Budha Shukra Shani Rahu Ketu Saraswati Lakshmi Parvati 
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+							
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				#103
+				Aachalendra Aachuthan Aadesh Aadhev Aadhi Aadhish Aaditya Aadved Aadyot Aaghosh Aakarshan Abhi Aadi Aarav Aarush Abdul Abeer Abhimanyu Abhiramnew Aditya 
+				Advaith Advay Advik Agastya Akshay Amol Anay Anirudhnew Anmol Ansh Arin Arjun Arnav Aryan Atharv Avi Ayaan Ayush Ayushman Azaan 
+				Azad Daksh Darsh Dev Devansh Dhruv Farhan Gautam Harsh Harshil Hredhaan Jainew Kabir Kalpit Kiaan Krish Krishna Laksh Lakshay Manannew 
+				Nachiket Naksh Nakul Neel Om Parth Pranav Praneel Pranit Pratyush Rachit Raghav Ranbir Ranveer Rehaannew Reyansh Rishi Rogan Ronith Rudranew 
+				Rushil Ryan Sai Saksham Samaksh Samar Samarth Samesh Sarthak Sathviknew Shaurya Shivansh Siddharth Tejas Vedant Veer Viaannew Vihaan Viraj Vivaan 
+				Yash Yug Zayan 
+				}
+			first_names_female = {
+				#96
+				Aadhya Ananya Saanvi Aaradhya Anaya Aanya Anika Pari Myra Shanaya Diya Riya Aarna Aditi Kiara Aahana Kyra Aalia Aarohi Prisha 
+				Sai Khushi Maryam Oliva Anvi Shreya Angayla Akshara Sarayh Vanya Meera Mishka Krisha Saumya Amaira Advika Zarya Lakshmi Dhriti Sahana 
+				Vedhika Trisha Navya Tanvi Jhanvi Kavya Avni Anaisha Ira Aria Meher Pihu Andraya Anushka Ishita Ishanvi Kashvi Zoya Vaishnavi Arunima 
+				Ridhi Manya Shravya Pratyusha Vansha Rachita Adya Adweta Mitali Nisha Saira Anya Nitara Nayantara Samaira Suhana Suhani Gauri Sneha Bhavna 
+				Hiral Amrita Amruta Jasmiya Mahika Megha Meghana Vinaya Raveen Daksha Isha Ishani Niharika Ahana Divya Naira 
+				}
+			second_names = {
+				#100
+				Acharya Agarwal Khatri Ahuja Anand Laghari Patel Reddy Bakshi Babu Arya Balakrishnan Banerjee Burman Bhatt Basu Bedi Varma Dara Dalal 
+				Chowdhury Chabra Chadha Chakrabarti Chawla Ahluwalia Amin Apte Datta Deol Deshpande Dewan Lal Kohli Mangal Malhotra Jha Joshi Kapadia Iyer 
+				Jain Khanna Grovar Kaur Kashyap Gokhale Ghosh Garg Dhar Gandhi Gupta Das Chopra Dhawan Dixit Dubey Haldar Kapoor Khurana Kulkarni 
+				Madan Bajwa Bhasin Chandra Chauhan Deshmukh Dayal Dhillon Goswami Goel Mallick Mahajan Kumar Mani Gil Biswas Batra Bawa Mehta Mukherjee 
+				Saxena Zacharia Shah Ray Rao Purohit Parekh Thakur Singh Sharma Setha Sachdev Ranganathan Puri Pandey Naidu Modi Dutta Ganti Haksar
+				}
+			regnal_first_names_male = {
+				Aachalendra Aachuthan Aadesh Aadhev Aadhi Aadhish Aaditya Aadved Aadyot Aaghosh Aakarshan Abhi Aadi Aarav Aarush Abdul Abeer Abhimanyu Abhiramnew Aditya 
+				Advaith Advay Advik Agastya Akshay Amol Anay Anirudhnew Anmol Ansh Arin Arjun Arnav Aryan Atharv Avi Ayaan Ayush Ayushman Azaan 
+				Azad Daksh Darsh Dev Devansh Dhruv Farhan Gautam Harsh Harshil Hredhaan Jainew Kabir Kalpit Kiaan Krish Krishna Laksh Lakshay Manannew 
+				Nachiket Naksh Nakul Neel Om Parth Pranav Praneel Pranit Pratyush Rachit Raghav Ranbir Ranveer Rehaannew Reyansh Rishi Rogan Ronith Rudranew 
+				Rushil Ryan Sai Saksham Samaksh Samar Samarth Samesh Sarthak Sathviknew Shaurya Shivansh Siddharth Tejas Vedant Veer Viaannew Vihaan Viraj Vivaan 
+				Yash Yug Zayan 
+				}
+			regnal_first_names_female = {
+				Aadhya Ananya Saanvi Aaradhya Anaya Aanya Anika Pari Myra Shanaya Diya Riya Aarna Aditi Kiara Aahana Kyra Aalia Aarohi Prisha 
+				Sai Khushi Maryam Oliva Anvi Shreya Angayla Akshara Sarayh Vanya Meera Mishka Krisha Saumya Amaira Advika Zarya Lakshmi Dhriti Sahana 
+				Vedhika Trisha Navya Tanvi Jhanvi Kavya Avni Anaisha Ira Aria Meher Pihu Andraya Anushka Ishita Ishanvi Kashvi Zoya Vaishnavi Arunima 
+				Ridhi Manya Shravya Pratyusha Vansha Rachita Adya Adweta Mitali Nisha Saira Anya Nitara Nayantara Samaira Suhana Suhani Gauri Sneha Bhavna 
+				Hiral Amrita Amruta Jasmiya Mahika Megha Meghana Vinaya Raveen Daksha Isha Ishani Niharika Ahana Divya Naira 
+				}
+			regnal_second_names = {
+				Acharya Agarwal Khatri Ahuja Anand Laghari Patel Reddy Bakshi Babu Arya Balakrishnan Banerjee Burman Bhatt Basu Bedi Varma Dara Dalal 
+				Chowdhury Chabra Chadha Chakrabarti Chawla Ahluwalia Amin Apte Datta Deol Deshpande Dewan Lal Kohli Mangal Malhotra Jha Joshi Kapadia Iyer 
+				Jain Khanna Grovar Kaur Kashyap Gokhale Ghosh Garg Dhar Gandhi Gupta Das Chopra Dhawan Dixit Dubey Haldar Kapoor Khurana Kulkarni 
+				Madan Bajwa Bhasin Chandra Chauhan Deshmukh Dayal Dhillon Goswami Goel Mallick Mahajan Kumar Mani Gil Biswas Batra Bawa Mehta Mukherjee 
+				Saxena Zacharia Shah Ray Rao Purohit Parekh Thakur Singh Sharma Setha Sachdev Ranganathan Puri Pandey Naidu Modi Dutta Ganti Haksar
+			}
+		}
+	}
+}

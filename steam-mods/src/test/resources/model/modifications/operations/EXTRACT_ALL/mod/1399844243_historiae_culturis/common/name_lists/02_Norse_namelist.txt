@@ -1,0 +1,259 @@
+﻿### Historiae Culturis - Norse (Scandinavian)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+norse_names = {
+	randomized = no
+	alias = "Norse"
+
+	ship_names = {
+		science = {
+		###Constellations (13)
+			Nidhogg Dain Eagle Dvalin Vedrfolnir Ratatosk Hellewagen Duneyr Friggerock Durathror Fiskikarlar Karlvagn "Asar Bardagi"		
+			}
+		
+		constructor = {
+		###Mountains (10)
+			Galdhøpiggen Glittertind Skagastølstind Styggedalstinden Skarstind Galdhøpiggen Surtningssue Memurutinden Jervvasstind Sentraltind 
+			}
+		
+		colonizer = {
+		###Rivers (10)
+			"Göta älv" Dalälven Torneälven Umeälven Ångermanälven Gudenå Kongeåen Varde Suså Vidå
+			}
+		
+		transport = {
+		###Glaciers (20)
+			Jostedalsbreen Vestre Svartisen Søndre Folgefonna Østre Svartisen Blåmannsisen Hardangerjøkulen Myklebustbreen Okstindbreen Øksfjordjøkelen Harbardsbreen Salajekna Frostisen Gihtsejiegŋa Sikilbreen Tindefjellbreen Simlebreen Tystigbreen 
+			}
+		
+		corvette = {
+		###Creatures (60)
+			Auðumbla Brunnmigi Dáinn Dvalinn Duneyrr Duraþrór Draugr Eikþyrnir Fafnir Fylgja Garmr Gullinbursti Hafgufa Hamingja Heiðrún Hildisvíni Jörmungandr Landvættir Lindworm Lyngbakr
+			Marmennill Níðhöggr Ratatoskr Sæhrímnir Tanngrisnir Tanngnjóstr Vættir Vörðr Warg Gullinkambi Hábrók Hræsvelgr Huginn Muninn Veðrfölnir Víðópnir Árvakr Alsviðr Blóðughófi Falhófnir
+			Gísl Glad Glær Gná Hófvarpnir Grani Gullfaxi Gulltroppr Gyllir Hamskerpir Garðrofa Helhest Skinfaxi Hrímfaxi Sleipnir Svaðilfari Fenrir Geri Freki Hróðvitnisson 
+			Sköll 
+			}
+		
+		destroyer = {
+		###Lesser Deities (80)
+			Jotunn Ægir Alvaldi Angrboða Aurboða Baugi Beli Bergelmir Bestla Billingr Bölþorn Brimir Býleistr Dúrnir Eggthér Fárbauti Fjölvar Fjörgyn Fjörgynn
+			Fornjót Gangr Geirröðr Gerðr Gilling Gjálp Greip Glöð Gríðr Gunnlöð Gymir Harðgreipr Helblindi Helreginn Hljod Hraudung Hrímgerðr Hrimgrimnir Hrimnir Hroðr 
+			Hrungnir Hrym Hymir Hyrrokkin Iði Im Járnsaxa Jörð Leikn Litr Logi Mímir Móðguðr Móði Magni Mögþrasir Narfi Nótt Rindr Skaði 
+			Sökkmímir Starkad Surtr Suttungr Þjazi Þökk Þrívaldi Þrúðgelmir Þrúðgelmir Útgarða Vafþrúðnir Váli Víðblindi Vörnir Vosud Ymir
+			}
+		
+		cruiser = {
+		###Lesser Deities (80)
+			Vopnafjörður Mýrdal Varmahlíð Tjarnabyggð Þórshöfn Þingeyri Tálknafjörður Svalbarðseyri Suðureyri Súðavík Stokkseyri Stöðvarfjörður Sólheimar Grímsnesi Skagaströnd Seyðisfjörður Rif Reykjahlíð Reykhólar Raufarhöfn 
+			Rauðalækur Patreksfjörður Ólafsfjörður Nesjahverfi Hornafirði Melahverfi Hvalfirði Lónsbakki Árskógssandur Laugarvatn Laugarbakki Laugarás Laugar Kristnes Kópasker Kleppjárnsreykir Kirkjubæjarklaustur Innnes Hvolsvöllur Hvanneyri
+			Hvammstangi Hrísey Hrafnagil Hólmavík Hólar Hjaltadal Hofsós Hnífsdalur Hellissandur Hella Hauganes Hafnir Grundarhverfi Kjalarnesi Grundarfjörður Grímsey Grenivík Flúðir Flateyri Fellabær 
+			Fáskrúðsfjörður Eyrarbakki Drangsnes Djúpivogur Byggðakjarni Þykkvabæ Mosfellsdal Búðardalur Brúnahlíð Eyjafirði Breiðdalsvík Brautarholt Skeiðum Borgarfjörður Grímsnesi Bolungarvík Blönduós Bíldudalur Bakkafjörður Árbæjarhverfi
+			Ölfusi 
+			}
+		
+		battleship = {
+		###Important Deities (60)
+			Baldr Bragi Dellingr Forseti Freyr Heimdallr Hermóðr Sif Sigyn Lóðurr Loki Máni Meili Njörðr Óðr Saxnōt Viðarr Vé Vili Baduhenna 
+			Bil Beyla Eir Ēostre Freyja Frigga Fulla Gefjun Þrúðr "Þorgerðr Hölgabrúðr" Vár Hlín Hnoss Hretha Ilmr Iðunn Irpa Lofn Nanna Nerthus 
+			Njörun Rán Rindr Sága Sandraudiga Sinthgunt Sjöfn Snotra Sól Syn Tanfana Vör Zisa Gersemi Gullveig Hariasa Hóðr Hœnir
+			}
+		
+		titan = {
+			"Might of Mjölnir" "Strength of Thor" "Odin's Wisdom" Gjallarhorn "Váli's Chosen"
+			}
+
+		colossus = {
+			"Eye of Odin" "Týr's Judgement" "Glory of Ullr"
+			}
+		
+		military_station_small = {
+		###Numerals 12
+			Einn Tveir Þrir Fjórir Fimm Sex Sjö Atta Níu Tíu Ellefu Tólf 
+			}
+
+		ion_cannon = {
+		###Runes 24
+			Fehu Uruz Thurisaz Ansuz Raidho Kaunaz Gebo Wunju Hagalaz Naudiz Isa Jara Eihwaz Perthy Akgiz Sowulo Teiwaz Berkana Ehwaz Mannaz 
+			Laguz Ingwaz Dagaz Othala
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "%O% Flade"
+		}
+	
+	army_names = {
+		defense_army = {
+			sequential_name = "%O% Skjolmo"
+		}
+
+		assault_army = {
+			sequential_name = "%O% Kriger"
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Indrykeket Haer"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Klon Haeren"
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Livelos Haer"
+		}
+		
+		robotic_defense_army = {
+			sequential_name = "%0% Livelos Skjolmo"
+		}
+		
+		android_army = {
+			sequential_name = "%O% Kunstig Haer"
+		}
+		
+		android_defense_army = {
+			sequential_name = "%0% Kunstig Skjolmo"
+		}
+		
+		psionic_army = { 
+			sequential_name = "%O% Magi"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Uhyres"
+		}
+		
+		gene_warrior_army = {
+			sequential_name =  "%O% Valkyries"
+		}
+		
+		occupation_army = {
+			sequential_name = "%0% Starf Kriger"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%0% Starf Livelos"
+		}
+
+		android_occupation_army = {
+			sequential_name = "%0% Starf Kunstig"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Real & Mythical Locations (80)
+			Gylfaginning Haasauge Fyris Leipterheim Kormet Islandir Komsa Fosna Hordaland Karelia Uppsala Lysa Rogaland Roskilde Oseberg Humber Jotumheim Hjaoningavig Valhalla Asgard 
+			Alfheim Bilskirnir Breidablik Elivagar Gandvik Ginnungagap Hlidskjalf Hvergelmir Midgard Jötumheimr Muspelheim Naströnd Nioavellir Nilfheim Ormet Reidgotaland Slidr Svartafaheim Vanaheim Vimus 
+			Yggdrasil Nyborg Hedeby Vibjerg Rauma Turku Foula Fladda Flugga Baa Bratta Stack Brattibreck Kate Fell Stellafirth Forse Ramnageo Grobust Heog 
+			Hestwall Hoy Hus Nebister Ness Silwick Strand Swart Hamar Evertaft Northulm Vatsland Snarrevoe Hagerholm Kattagat Gokstad Borrehaugene Birka Gettlinge Valsgarde 
+			"Eilean Mhoir" Hulterstad Oland Mammen Hov Mosfellsbaer Vatnsdalur Gnezdovo Hel 
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+			
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+	
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Gunnar Harald Sweyn Ragnar Arne Eirik Geir Gisle Hakon Inge Ivar Knut Leif Magnus Olav Rolf Sigurd Snorre Steinar Torstein 
+				Ulf Valdemar Vidar Yngve Halfdan Guthrum Oleson Olson Sigrunarson Jukanpoika Sadunpoika Arnason Önnason Andersson Ingeborson Erikson Idasson Arn Yngvi  
+				Arni Árni Baldr Balder Baldur Bjørn Haraldr Hákon Hákonr Eirikr Ragnarr Floki Hvitserk Ívarr Geirr Rörik Leifur Ubba Agnarr Eirekr 
+				Cnut Ferking Flosi Bolli Thorbjörn Bjarke Skarthi Borg Sigvard Ingstad Bjarni Knutr Óláfr Óleifr Aleifr Anleifr Osmo Ogvaldr Dalk Kokko 
+				Ulfr Turo Sigtryggr Gunnlaugr Thorfinn Bodvar Snorri Hródolf Steinarr Þórstæinn þurstin þorstain þurstain Tryggvi Valrmar Víðarr  
+				}
+			first_names_female = {
+				Freydis Astrid Brynhild Gudrun Gunnhild Gunnvor Hilde Ingrid Ragnhild Ranveig Sigrid Sigrunn Siv Solveig Svanhild Torhild Torunn Turid Vigdis Yngvild 
+				Freya Oledattr Karensdatter Sigurdardottir Sigrunardottir Jukantytär Saduntytär Arnadottir Önnudottir Andersdatter Andersdotter Ingeborgdatter Ingeborgdotter Eriksdotter Idasdotter Freyasdottir Aslaug Asta Audr Brenna 
+				Brida Brynhildr Eir Gunnr Helga Herja Hervarar Hildigunnur Thora Gunhildr Gunilla Hervor Thornbjorg Hed Helle Visna Veborg Oda Skade Svanhildr 
+				Skuld Bera Drífa Finna Hildr Ingríðr Ingifríðr Ingridr Fríða Frieda Freida Freda Ragnhildr Rannveig Sigridr Sigfríðr Sigríða Sigríðr Sif Sólveig
+				}
+			second_names = {
+				Bloodaxe Eriksdottir Forkbeard Ironside Hamundarson Lodbrok Ragnarsson Haraldson Eriksson Hardrade Sigurdsson Sigurdarson Eiriksdottir Vidfamne Hildetand Gjukadottir Budladottir Jornsida Harfagri Ormstunga 
+				Haakonsson Haakonsdottir Storrada Tjuguskegg Hausakljufr Borgarhjört Djupudga Ketilsdottir Yngling Ylving Skilfingar Volsung Sturluson Eysteinsdóttir Karensen Andersen Lindberg Lindström Lindquist Lindgren
+				Lundberg Berström Lundgren Lundquist Berglund Sandberg Forsberg Sjöberg Engström Eklund Berman Wikström Bergqvist Nyström Holmberg Löfgren Hardrada Rudbeck         
+				}
+			regnal_first_names_male = {
+				Gunnar Harald Sweyn Ragnar Arne Eirik Geir Gisle Hakon Inge Ivar Knut Leif Magnus Olav Rolf Sigurd Snorre Steinar Torstein 
+				Ulf Valdemar Vidar Yngve Halfdan Guthrum Oleson Olson Sigrunarson Jukanpoika Sadunpoika Arnason Önnason Andersson Ingeborson Erikson Idasson Arn Yngvi  
+				Arni Árni Baldr Balder Baldur Bjørn Haraldr Hákon Hákonr Eirikr Ragnarr Floki Hvitserk Ívarr Geirr Rörik Leifur Ubba Agnarr Eirekr 
+				Cnut Ferking Flosi Bolli Thorbjörn Bjarke Skarthi Borg Sigvard Ingstad Bjarni Knutr Óláfr Óleifr Aleifr Anleifr Osmo Ogvaldr Dalk Kokko 
+				Ulfr Turo Sigtryggr Gunnlaugr Thorfinn Bodvar Snorri Hródolf Steinarr Þórstæinn þurstin þorstain þurstain Tryggvi Valrmar Víðarr  
+				}
+			regnal_first_names_female = {
+				Freydis Astrid Brynhild Gudrun Gunnhild Gunnvor Hilde Ingrid Ragnhild Ranveig Sigrid Sigrunn Siv Solveig Svanhild Torhild Torunn Turid Vigdis Yngvild 
+				Freya Oledattr Karensdatter Sigurdardottir Sigrunardottir Jukantytär Saduntytär Arnadottir Önnudottir Andersdatter Andersdotter Ingeborgdatter Ingeborgdotter Eriksdotter Idasdotter Freyasdottir Aslaug Asta Audr Brenna 
+				Brida Brynhildr Eir Gunnr Helga Herja Hervarar Hildigunnur Thora Gunhildr Gunilla Hervor Thornbjorg Hed Helle Visna Veborg Oda Skade Svanhildr 
+				Skuld Bera Drífa Finna Hildr Ingríðr Ingifríðr Ingridr Fríða Frieda Freida Freda Ragnhildr Rannveig Sigridr Sigfríðr Sigríða Sigríðr Sif Sólveig
+				}
+			regnal_second_names = {
+				Bloodaxe Eriksdottir Forkbeard Ironside Hamundarson Lodbrok Ragnarsson Haraldson Eriksson Hardrade Sigurdsson Sigurdarson Eiriksdottir Vidfamne Hildetand Gjukadottir Budladottir Jornsida Harfagri Ormstunga 
+				Haakonsson Haakonsdottir Storrada Tjuguskegg Hausakljufr Borgarhjört Djupudga Ketilsdottir Yngling Ylving Skilfingar Volsung Sturluson Eysteinsdóttir Karensen Andersen Lindberg Lindström Lindquist Lindgren
+				Lundberg Berström Lundgren Lundquist Berglund Sandberg Forsberg Sjöberg Engström Eklund Berman Wikström Bergqvist Nyström Holmberg Löfgren Hardrada Rudbeck  
+				}
+		}
+
+	}
+}

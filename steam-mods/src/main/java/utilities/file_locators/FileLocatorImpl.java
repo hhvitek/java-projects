@@ -94,7 +94,7 @@ public class FileLocatorImpl implements IFileLocator {
         }
     }
 
-    private Stream<Path> findAllRegularFilesFromRootFolderRecursively(Path rootFolder)
+    private Stream<Path> findAllRegularFilesFromRootFolderRecursively(@NotNull Path rootFolder)
             throws IOException
     {
         return Files.find(

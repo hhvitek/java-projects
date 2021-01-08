@@ -1,0 +1,278 @@
+﻿### Historiae Culturis - Hellenic (Greek)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+hellenic_names = {
+	randomized = no
+	alias = "Hellenic"
+
+	ship_names = {
+		science = {
+		###Philosophers (20)
+			Plato Aristotle Pythagoras Heraclitus Parmenides Democritus Zeno Epicurus Anaxagoras Diogenes Antisthenes Hippocrates Archimes Solon Anaximander Empedocles Socrates Thales
+		###Oracles (20)
+			Amphilochus Anius Bakis Branchus Calchas Carnus Carya Cassandra Ennomus Halitherses Helenus Iamus Idmon Manto Mopsus Polyeidos Pythia Telemus Theoclymenus Tiresias
+			}
+		
+		constructor = {
+		###Mountains (20)
+			Pindus Parnassus Pelion Smolikas Parnitha Ida Kajmakcalan Helicon Gramos Kyllini Cithaeron Hymettus Fengari Ossa Oeta Falakro Ilias Cynthus 
+			}
+		
+		colonizer = {
+		###Rivers (20)
+			Haliacmon Nestos Maritsa Alfeios Pineios Vardar Struma Thyamis Evinos Neda Louros Megdovas Cephissus Angitis Titarisios Asopus Pineios 
+			}
+		
+		transport = {
+		###Islands (40)
+			Thera Zakynthos Corfu Kos Mykonos Naxos Skiathos Paros Samos Tilos Ios Lefkada Milos Paxi Delos Ithaca Patmos Symi Andros Leipsoi
+			Amorgos Folegandros Icaria Antiparos Euboea Karpathos Aegina Kougonisia Alonnisos Chios Leros Skyros Kalymnos Thasos Lemnos Kythira Spetses Halki Nisyros Antipaxos
+			}
+		
+		corvette = {
+		###Earth Deities (160 - Total)
+			Aetna Amphictyonis Anthousai Britomartis Cabeiri Aitnaios Alkon Eurymedon Onnes Tonnes Asbolus Chariclo Chiron Eurytion Nessus Pholus Cercopes Akmon Passalos Chloris
+			Comus Corymbus Curetes Cybele Dindymene Dactyle Acmon Delas Epimedes Iasios Kelmis Skythes Titias Cyllenus Dryades Epimeliades Hamadryades Hecaterus Horae Eunomia 
+			Dike Eirene Thallo Auxo Karpo Pherousa Euporie Orthosia Auge Anatole Mousika Gymnastika Nymphe Mesembria Sponde Elete Akte Hesperis Dysis Arktos 
+			Eiar Theros Pthinoporon Cheimon Korybantes Damneus Idaios Kyrbas Okythoos Prymneus Pyrrhichos Ma Maenades Methe Meliae Naiades Daphne Metope Minthe Hekaerge 
+			Loxo Oupis Oreades Adrasteia Echo Palici Pan Potamoi Acis Alpheus Cladeus Cocytus Eurotas Nilus Peneus Scamander Priapus Satyrs Silenus Telete 
+		#Agriculture Deities 
+			Adonis Aphaea Carme Carmanor Chrysothemis Cyamites Despoina Philomelus Plutus Triptolemus 
+		###Health Deities 
+			Aceso Aegle Epione Hygieia Iaso Paean Panacea Telesophorus Hermaphroditus Himeros 
+		###Other Deities 
+			Acratopotes Adrastea Agdistis Alexiares Anicetus Aphroditus Astraea Auxesia Charites Aglaea Euphrosyne Thalia Antheia Pasithea Cleta Phaenna Eudaimonia Euthymia Calleis Paidia 
+			Pandaisia Pannychis Ceraon Chrysus Circe Smaragos Sabaktes Omodamos Deipneus Eiresione Eileithyia Enyaliys Glycon Harpocrates Hymenaios Ichnaea Iynx Matton Muses Aoide 
+			}
+		
+		destroyer = {
+		###Sea Deities (140 - Total)
+			Aegaeon Achelous Amphitrite Benthesikyme Brizo Ceto Charybdis Cymopoleia Delphin Eidothea Glaucus Euryale Stheno Graeae Deino Enyo Pemphredo Aello Celaeno Ocythoe 
+			Podarge Nicothoe Hippocampi Ichthyocentaurs Aphros Bythos Karkinos Ladon Leucothea Nereides Arethusa Dynamene Galene Psamathe Thetis Nereus Nerites Oceanides Idyia Metis 
+			Palaemon Oceanus Phorcys Pontus Proteus Sangarius Aglaope Himerope Ligeia Molpe Parthenope Peisinoe Raidne Teles Thelchtereia Thelxiope Telchines Actaeus Argyron Atabyrius 
+			Chalcon Chyson Damon Damnameneus Dexithea Lycos Lysagora Makelo Megalesius Mylas Nikon Ormenos Skelmis Tethys Thalassa Thaumas Thoosa Triteia Triton Tritones
+		###Other Deities 
+			Arche Melete Mneme Thelxinoe Calliope Clio Euterpe Erato Melpomene Polyhymnia Terpsichore Urania Cephisso Apoloonis Borysthenis Hypate Mese Nete Polymatheia Palaestra 
+			Rhapso Taraxippus Adephagia Adikia Aergia Agathodaemon Agon Aidos Aisa Alala Alastor Aletheia Algea Achos Ania Lupe Alke Amechania Amphilogiai Anaideia 
+			Angelia Apate Apheleia Aporia Arete Ate Bia Caerus Corus Dikaiosyne Dolos Dysnomia Dyssebeia Ekecheiria Eleos Elpis Epiphron Erotes Anteros Hedylogos 
+			}
+		
+		cruiser = {
+		###Sky Deities (125 - Total)
+			Achelois Aeolus Aether Alectrona Anemoi Aparctias Apheliotes Argestes Boreas Caicias Circios Euronotus Eurus Lips Notus Skeiron Zephyrus Arke Astraios Stilbon 
+			Eosphorus Hesperus Pyroeis Phaethon Phaenon Aurai Chione Eos Ersa Hemera Hesperides Men Nephelai Pandia Pleiades Alcyone Sterope Electra Maia Merope 
+			Taygete Sabazios Selene 
+		###Underworld Deities 
+			Angelos Askalaphos Empusa Erebos Erinyes Alecto Tisiphone Megaera Hecta Aiakos Rhadamanthys Keuthonymos Lamia Lampades Gorgyra Orphne Macaria Melinoe Menoetes Mormo 
+			Persephone Acheron Kokytos Lethe Phlegethon Zagreus  
+		###Other Deities 
+			Eucleia Eulabeia Eunomia Eupheme Eupraxia Eusebeia Euthenia Gelos Geras Harmonia Hebe Hedone Heimarmene Homados Homonia Horkos Horme Hybris Hysminai Ioke 
+			Kakia Kalkagathia Keres Koalemos Kydoimos Lethe Limos Litae Lyssa Poros Momus Neikea Oizys Oneiroi Phantasos Phobetor Peitho Penia Penthus Pepromene 
+			Pheme Philophrosyne Philotes Tyche Thrasos Techne Sophrosyne Soteria Soter Ptocheia Prophasis Phthonus Phobos Palioxis Tantalus Pothos
+			}
+		
+		battleship = {
+		##Titans (80 - Total)
+			Coeus Crius Cronos Hyperion Iapetus Mnemosyne Asteria Astaeus Atlas Helios Pallas Perses Styx Erebus Nemesis Tartatus Thanatos Chaos Achlys Kratos
+		##Gigantes 
+			Alcyoneus Chthonius Damysus Enceladus Mimas Polybotes Porphyrion Thoas Aloadae Otos Ephialtes Anax Antaeus Antiphates Argus Asterius Cacus Arges Brontes Steropes
+			Polyphemus Gegenees Geryon Hekatonkheires Briareus Cottus Gyges Laestrygonians Tityos Orion Zelos Scylla Triton Iris Krotos Deimos Eris Arae Androktasiai 
+		###Other Deities 
+			Machai Mania Moirai Clotho Atropos Lachesis Moros Nike Nomos Epiales Morpheus Peitharchia Phonoi Phrike Pistis Poine Polemos Ponos Praxidike Proioxis 
+			}
+		
+		titan = {
+		###Deities (6)
+			Olympia Talos Titan Typhon Cerberus Hegemone 
+			}
+
+		colossus = {
+		###Deities (4)
+			Charon Prometheus Chronos Hydra
+			}
+		
+		military_station_small = {
+		###Weapons (10)
+			Sarrisae Xiphos Kopis Toxa Akontia Sfendonai Linothorax Hoplon Xyston Doru 
+			}
+
+		ion_cannon = {
+		###Alphabet (17)
+			Alpha Beta Gamma Epsilon Zeta Omega Iota Sigma Omicron Tau Upsilon Theta Kappa Mu Iambda Eta Rho 
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Nautikos %R%"
+		}
+	
+	army_names = {
+		defense_army = {
+			sequential_name = "Peltastes %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Stratia %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Eilotes %R%"
+		}
+		
+		clone_army = { 
+			sequential_name = "Klonoi %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Asbetos %R%"
+		}
+		
+		robotic_defense_army = {
+			sequential_name = "Asbestos Peltastes %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Syntribos %R%"
+		}
+		
+		android_defense_army = {
+			sequential_name = "Syntribos Peltastes %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Psychonikoi %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Xenomorfoi %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name =  "%Neohomoioi %R%"
+		}
+		
+		occupation_army = {
+			sequential_name = "Katolknis %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Asbestos Katolknis %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Syntribos Katolknis %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Deities & Cities (80)
+				Oceanus Theia Tethys Rhea Phoebe Aura Clymene Dione Selene Eos Epimetheus Eurybia Eurynome Lelantos Leto Menoetius Metis Ophion Demter Eros
+				Gaia Hemera Nesoi Phanes Thalassa Atlantia Aether Aion Ourea Pontus Syracuse Rhodes Massalia Dionysus Hephaestus Hermes Hestia Triton Iris Choine
+				Delphi Oceanides Sparta Athenai Corinth Boreas Despoina Arcadia Hera Europa Themis Epirus Macedonia Thessalia Ionia Attica Thracia Aegea Peloponnesia Cretia 
+				Thebes Argos Chalcis Pylos Marathon Thessaloniki Pella Antioch Apollonia Kyrene Neopolis Odessos Salamis Sinope Taras Troy Zakros Tyros Tripolis Theodosia  
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+							
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Cyrus Darius Mithridates Alexander Antigonus Seleucus Cleomenese Conon Damastes Demetrius Diocles Diodorus Epictetus Eudamidas Eudoxus Heliocles Hiero Karanus Leonidas Lycurgus 
+				Menander Metrodorus Milo Moeris Nicomedes Perdiccas Phalaris Philip Philoxenos Polybius Procles Pyrrhus Solon Strabo Theodorus Thucydides Xenophon Zeno Theagenes Nicias 
+				Pytheas Pyrrho Ptolemy Thermistokles Hippias Pericles Plutarch 
+				}
+			first_names_female = {
+				Laodice Monime Berenice Stratonice Hypsicratea Cleopatra Drypentina Athenais Xiphares Aedesia Aesara Agallis Aglaonike Agnodike Alcisthene Anaxandra Axiothea Cynisca Diotima Daphne Delia Chloe
+				Helen Cassandra Diana Ariadne Andromeda Electra Europa Hermione Penelope Pandora Medea Ismene Briseis Praxilla Sappho Phryne Olympias Myrtis Myia Melinno 
+				Glaphya Erinna Eirene Arachidamia Chilonis Euryleonis 
+				}
+			second_names = {
+				"of Oceanus" "of Theia" "of Tethys" "of Rhea" "of Phoebe" "of Aura" "of Clymene" "of Dione" "of Selene" "of Eos" "of Epimetheus" "of Eurybia" "of Eurynome" "of Lelantos" "of Leto" "of Menoetius" "of Metis" "of Ophion" "of Demter" "of Eros"
+				"of Gaia" "of Hemera" "of Nesoi" "of Phanes" "of Thalassa" "of Atlantia" "of Aether" "of Aion" "of Ourea" "of Pontus" "of Syracuse" "of Rhodes" "of Massalia" "of Dionysus" "of Hephaestus" "of Hermes" "of Hestia" "of Triton" "of Iris" "of Choine"
+				"of Delphi" "of Oceanides" "of Sparta" "of Athenai" "of Corinth" "of Boreas" "of Despoina" "of Arcadia" "of Hera" "of Europa" "of Themis" "of Epirus" "of Macedonia" "of Thessalia" "of Ionia" "of Attica" "of Thracia" "of Aegea" "of Peloponnesia" "of Cretia" 
+				"of Thebes" "of Argos" "of Chalcis" "of Pylos" "of Marathon" "of Thessaloniki" "of Pella" "of Antioch" "of Apollonia" "of Kyrene" "of Neopolis" "of Odessos" "of Salamis" "of Sinope" "of Taras" "of Troy" "of Zakros" "of Tyros" "of Tripolis" "of Theodosia" 
+				}
+			regnal_first_names_male = {
+				Cyrus Darius Mithridates Alexander Antigonus Seleucus Cleomenese Conon Damastes Demetrius Diocles Diodorus Epictetus Eudamidas Eudoxus Heliocles Hiero Karanus Leonidas Lycurgus 
+				Menander Metrodorus Milo Moeris Nicomedes Perdiccas Phalaris Philip Philoxenos Polybius Procles Pyrrhus Solon Strabo Theodorus Thucydides Xenophon Zeno Theagenes Nicias 
+				Pytheas Pyrrho Ptolemy Thermistokles Hippias Pericles Plutarch
+				}
+			regnal_first_names_female = {
+				Laodice Monime Berenice Stratonice Hypsicratea Cleopatra Drypentina Athenais Xiphares Aedesia Aesara Agallis Aglaonike Agnodike Alcisthene Anaxandra Axiothea Cynisca Diotima Daphne Delia Chloe
+				Helen Cassandra Diana Ariadne Andromeda Electra Europa Hermione Penelope Pandora Medea Ismene Briseis Praxilla Sappho Phryne Olympias Myrtis Myia Melinno 
+				Glaphya Erinna Eirene Arachidamia Chilonis Euryleonis 
+				}
+			regnal_second_names = {
+				"of Oceanus" "of Theia" "of Tethys" "of Rhea" "of Phoebe" "of Aura" "of Clymene" "of Dione" "of Selene" "of Eos" "of Epimetheus" "of Eurybia" "of Eurynome" "of Lelantos" "of Leto" "of Menoetius" "of Metis" "of Ophion" "of Demter" "of Eros"
+				"of Gaia" "of Hemera" "of Nesoi" "of Phanes" "of Thalassa" "of Uranus" "of Aether" "of Aion" "of Ourea" "of Pontus" "of Syracuse" "of Rhodes" "of Massalia" "of Dionysus" "of Hephaestus" "of Hermes" "of Hestia" "of Triton" "of Iris" "of Choine"
+				"of Delphi" "of Oceanides" "of Sparta" "of Athenai" "of Corinth" "of Boreas" "of Despoina" "of Arcadia" "of Hera" "of Europa" "of Themis" "of Epirus" "of Macedonia" "of Thessalia" "of Ionia" "of Attica" "of Thracia" "of Aegea" "of Peloponnesia" "of Cretia" 
+				"of Thebes" "of Argos" "of Chalcis" "of Pylos" "of Marathon" "of Thessaloniki" "of Pella" "of Antioch" "of Apollonia" "of Kyrene" "of Neopolis" "of Odessos" "of Salamis" "of Sinope" "of Taras" "of Troy" "of Zakros" "of Tyros" "of Tripolis" "of Theodosia" 
+				}
+		}
+
+	}
+}

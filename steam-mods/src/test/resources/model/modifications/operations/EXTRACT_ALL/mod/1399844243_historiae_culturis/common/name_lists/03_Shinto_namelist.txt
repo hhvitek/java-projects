@@ -1,0 +1,262 @@
+﻿### Historiae Culturis - Shinto (Japanese)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+shinto_names = {
+	randomized = no
+	alias = "Shinto"
+
+	ship_names = {
+		science = {
+		###Philosophers (20)
+			Dogen Norinaga Bishida Watsuji Nishitani Tanabe Miki Sorai Jinsai Razan Soko Ekaku Chomin Toju Banzan Seika Hakuseki Ansai Atsutane Mabuchi
+			}
+		
+		constructor = {
+		###Mountains (20)
+			Fuji Kita Haku Yari Norikura Kaimondake Aso Tate Hotakadake Aino Takao Zao Tsurugi Ontake Bandai Warusawa Daisen Tanigawa Chokai Asama
+			}
+		
+		colonizer = {
+		###Rivers (20)
+			Shinano Tone Yoshino Shimanto Sumida Tenyru Yodo Mogami Kiso Ishikari Kuma Arakawa Kitakami Agano Omono Kamo Abukama Nagara Kushiro
+			}
+		
+		transport = {
+		###Islands (20)
+			Kyushu Honshu Shikoku Okinawa Ishigaki Yakushima Iromote "Amami Oshima" Iturup "Iwo Jima" Liancourt Yonaguni Okinotorishima Hashima "Hachijo-jima" Tsushima "Miyako-jima" Itsukushima Rishiri "Izu Oshima"
+			}
+		
+		corvette = {
+		###Creatures (160)
+			"Abumi-guchi" "Abura-akago" "Abura-sumashi" Akabeko Akaname Akashita Akateko Akkorokamui "Akurojin-no-hi" Amabie Amaburakosagi Amamehagi Amanojaku Amanozako "Amazake-babaa" Amefurikozo Amemasu Ameonna Amikiri Amoronagu
+			Buruburu Byakko Byobunozoki Chochinobake Chochinbi Daidarabotchi Daitengu "Danzaburou-danuki" "Datsue-ba" Dodomeki Enenra Enko Fujin Furi Funayurei Furaribi "Furutsubaki-no-rei" "Furu-utsubo" "Futakuchi-onna" Gagoze
+			Gaki Gashadokuro Genbu Goryo Gozu Mezu Guhin Gyuki Hakanohi "Hakuja no Myojin" Hakutaku "Hanako-san" Hannya Harionago Hashihime Heikegani Hibagon Hiderigami Hihi Hikeshibaba 
+			"Karasu-tengu" Karura "Kasa-obake" Kasha Katawaguruma Kawauso Kawaakago Kechibi Keneo Keukegen Kijimuna Kirin Kitsune Kitsunebi "Kitsune no yomeiri" Kiyohime Kodama Kokakucho Komainu "Konaki-jiji"
+			"Konoha-tengu" Koropokkuru Kosenjobi "Kosode-no-te" Kubikajiri "Kuchisake-onna" "Kuda-gitsune" Kudan Kyonshī "Kumo Yokai" Kyokotsu Kyorinrin Mekurabe "Miage-nyudo" Mikaribaba "Mikoshi-nyudo" Misaki Mizuchi Mokumokuren Magi
+			Mononoke "Morinji-no-kama" Moryo Mujina "Mu-onna" Myobu Namahage Namazu Nekomata Nuppeppo Ningyo Nobusuma Noderabo "Noppera-bo" Nozuchi Nogitsune Nue Nukekubi Nuppeppo "Nure-onna" 
+			"Sessho-seki" Seiryu Shachihoko "Shibaemon-tanuki" "Shichinin misaki" Shidaidaka Shikigami Shikome Shinigami Shiranui Shirime Shironeri Shiryo Shisa Shishi Shojo Shokera Sojobo Suiko "Son Goku"
+			"Te-no-me" Teratsutsuki Tesso "Tofu-kozo" Tsuchigumo Ubume "Uma-no-ashi" Umibozu "Umi-nyobo" Ungaikyo Ushirogami Uwan Yadokai "Yama-biko" Yamajijii Yamaoroshi "Yashima no Hage-tanuki" Yatagarasu "Yato-no-kami" Yobuko
+			}
+		
+		destroyer = {
+		###Creatures (140)
+			Amaterasu Anmo Aoandon Aobozu Aonyobo Aosaginohi "Arikura-no-baba" Ashimagari Ashinagatenaga Ayakashi Azukiarai "Bake-kujira" Bakeneko Bakezori Baku Basan Bashonosei "Betobeto-san" Binbogami "Biwa-bokuboku"
+			Hinode Hitodama "Hitotsume-kozo" "Hitotsume-nyudo" Hiyoribo Hoji "Hone-onna" "Ho-o" "Hoshi-no-Tama" "Hososhi" Hotoke "Hyakki Yako" Hyosube "Ibaraki-doji" "Ichiren-Bozu" Ikiryo Ikuchi Inugami "Inugami Gyoubu" Isonade
+			Issie Itsumade "Ittan-momen" Iyaya Jami Janjanbi Jibakurei Jikininki Jinmenju "Jishin-namazu" Jorogumo Jatai Jubokko Kahaku Kakurezato Kamaitachi Kambarinyodo Kameosa Kanedama Kappa
+			Nuribotoke Nurikabe Nurarihyon "Nyudo-bozu" Nyunaisuzume Obake Obariyon Oboroguruma Oiwa Okaburo Ogama Okami Okiku Okubi "Okuri-inu" Omagatoki Omukade Oni Onibaba Onibi 
+			Onihitokuchi Onikuma Onmoraki Onyudo Onryo Otoroshi Onmyoji Osakabe Raijin Raiju Rojinbi Rokurokubi Ryuu "Sa Gojo" Samebito Sankai Sansei Sarakazoe Satori "Sazae-oni"
+			"Sunakake Baba" Sunekosuri "Shuten-doji" Suzaku "Suzuri-no-tamashii" "Taka-onna" "Tamamo-no-Mae" Tanuki "Teke Teke" Ten Tengu Tenjokudari Tenka Tenko Tennin Tsuchinoko Tsukinowaguma Tsukuyomi Tsukumogami "Tsurube-otoshi"
+			"Ushi-no-tokimairi" "Ushi-oni" "Ushi-onna" Waira Wani Wanyudo Yamako "Yamata no Orochi" "Yama-inu" "Yama-uba" Yokai "Yomotsu-shikome" Yonakinoishi Yosei Yosuzume "Yuki-onna" Yurei "Zennyo Ryuo" Zuijin "Zunbera-bo" 
+			}
+		
+		cruiser = {
+		###Clans (180)
+			Minamoto Taira Fujiwara Tachibana Genji Heishi Daigo Fukakusa Ninjo Saga Sanjo Shirakawa Juntoku Kameyama Kazan Koko Montoku Murakami Ninmyo Ogimachi 
+			Reizei Seiwa Kawachi Settsu Yamato Uda Yozei Kanmu Bando Ise Hokke Kyoke Nanke Shikike Abe Aya Hashiji Imube Ki Kusakabe 
+			Mononobe Nakatomi Chiba Ochi Otomo Ozutsuki Soga Sugawara Takahashi Tokugawa Hojo Mori Oda Shimazu Takeda Ryukyu Uesugi Ashikage Chosokabe Date 
+			Toyotomi Asukabe Fuha Funa Hayashi Hirota Ka Kaguyama Kazurai Kikuchi Akahoshi Higo Jo Kai Mirauji Okobira Saigo Shiki Toyoto Uto 
+			Yatsushiro Takano Kifumi Koma Kikkawa Kuwabara Inoue Sena Torii Toyohara Yasaka Fushimaru Hine Itoi Maki Miyake Tachibanamori Tajima Unabara Arara 
+			Hirata Karabito Michita Ochi Tatara Toyotsu Hata Choshi Fujiki Hakura Higashi Hirata Ishikawa Kada Kawakatsu Matsumuro Matsuo Matsushita Mikami Minami 
+			Nishioji Obata Oishi Okura Onishi Seo Togi Tsuchiyama Koremune Shiba Takamuko Akizuki Haruda Sakanoue Tamura Okura 
+			Fuso Ise Negato Tosa Kii Kaga Mutsu Hyuga Yamashiro Aki Katori Kashima Iwami Hizen Sagami Suwo Mikasa Asahi Shikishima Hatsuse 
+			Izumi Naniwa Takachiho Unebi Yaeyama Chishima Matsushima Suma Otowa Akashi Takasago Akitsushima Niitaka Hashidate Suzuya Soya Tsugaru Saien Natori Kinu 
+			}
+		
+		battleship = {
+		###Important Deities (70)
+			"Amaterasu-O-Mi-Kami" "Ame-no-Uzume" Fujin Hachiman "Inari Okami" Izanagi Izanami Kuninotokotachi "Ninigi-no-Mikoto" Okuninushi Omoikane Raijin Ryujin Suijin "Susanoo-no-Mikoto" Tenjin "Toyotama-hime" "Tsukuyomi-no-Mikoto" Takemikazuchi Takeminakata
+			"Amatsu-Mikaboshi" Ajisukitakahikone "Ame-no-hohi" "Ame-no-Koyane" "Ame-no-oshihomimi" "Ame-no-wakahiko" "Azumi-no-isora" Futsunushi "Iwai-nushi-no-kami" Isetsuhiko "Ishikori-dome no Mikoto" "Kagu-tsuchi" Kotoshironushi Kuebiko Kuraokami "Kukurihime no Kami" Kojin "Konohanasakuya-hime" Moreya "Nigihayahi-no-mikoto"
+			Omoikane Oyamatsumi "Sukuna-Biko-Na" "Sarutahiko Okami" "Shotoku Taishi" "Seidai Myojin" Satimasuma Tajimamori "Ta-no-Kami" Ugajin Ukanomitama "Uke Mochi" "Yama-no-kami" "Aizen Myo-o" "Amida Nyorai" Daruma "Fudo Myoo" Idaten Jizo Kangiten
+			Kannon "Yakushi Nyorai" Benzaiten Bishamonten Daikokuten Ebisu Fukurokuju Hotei Jurojin 
+			}
+			
+		titan = {
+		###Periods (13)
+			Jomon Yayoi Asuka Nara Heian Kamakura Muromachi Sengoku Edo Meiji Taisho Showa Heisei 
+			}
+
+		colossus = {
+		###Phrases
+			"Kamino Purotekutaa" "Saigo Shudan" "Saigo Messeeji" 
+			}
+		
+		military_station_small = {
+		###Numerals (12)
+			Ichi Ni San Shi Go Roku Shichi Hachi Kyuu Juu Hyaku Sen 
+			}
+
+		ion_cannon = {
+		###Heavenly Stems (10)
+			Kinoe Kinoto Hinoe Hinoto Tsuchinoe Tsuchinoto Kanoe Kanoto Mizunoe Mizunoto 
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "%O% Kantai"
+		}
+	
+	army_names = {
+		defense_army = {
+			sequential_name = "%O% Chuutonchi"
+		}
+
+		assault_army = {
+			sequential_name = "%O% Buryoku"
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Doreigun"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Kuroongun"
+		}
+		
+		robotic_army = {
+			sequential_name = "%O% Robottogun"
+		}
+		
+		robotic_defense_army = {
+			sequential_name = "%0% Chuutonchi Robottogun"
+		}
+		
+		android_army = {
+			sequential_name = "%O% Gouseigun"
+		}
+		
+		android_defense_army = {
+			sequential_name = "%0% Chuutonchi Gouseigun"
+		}
+		
+		psionic_army = { 
+			sequential_name = "%O% Majikku"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Sonzei"
+		}
+		
+		gene_warrior_army = {
+			sequential_name =  "%O% Hachi"
+		}
+		
+		occupation_army = {
+			sequential_name = "%0% Shinchuugun"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%0% Shinchuu Robottogun"
+		}
+
+		android_occupation_army = {
+			sequential_name = "%0% Shinchuu Gouseigun"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+		###Prefectures
+			Aichi Akita Aomori Chiba Ehime Fukui Fukuoka Fukushima Gifu Gunma Hiroshima Hyogo Ibaraki Ishikawa Iwate Kagawa Kagoshima Kanagawa Kochi Kumamoto 
+			Kyoto Mie Miyagi Miyazaki Nagano Nagasaki Nara Niigata oita Okayama Okinawa Osaka Saga Saitama Shiga Shimane Shizuoka Tochigi Tokushima Tokyo 
+			Tottori Toyama Wakayama Yamagata Yamaguchi Yamanashi
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+			
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Ieyasu Hideyoshi Nobunaga Shingen Kenshin Yoshitsune Musashi Chikanaga Takayoshi Fujitaka Bokuden Yoshiteru Yoshiaki Nagayoshi Montonaga Yoshikata Fuyuyasu Nobuyasu Kazumasa Nagayasu 
+				Masayasu Tomomichi Hisahide Hisamichi Nagaharu Nagafusa Michikatsu Masamoto Kanbei Mitsuhide Hidemitsu Shigetomo Toshimitsu Sadaoki Tadaoki Kaneaki Yasui Nobuharu Katsusade 
+				Masachika Yukimasa Kunitsugu Kyubei Okura Yoshiharu Yoshihide Hidetade Iehisa Sorin Akizane Genba Joun Dosetsu Nobutora Katsuyori Hirotada Tadayo Shigetsugu Naomori 
+				}
+			first_names_female = {
+				Shikibu Himiko "Li Naotora" "Ikeda Sen" Kaihime Komatsuhime Matsu Tsuruhime Ginchiyo Otsune Myorin Asahihime Chacha "Chikurin-in" Gotokuhime Gracia Kitsuno Maria Tatsuko Nene 
+				Nohime Oeyo Oichi Ohatsu Kasuga Saigo Tsukiyama Senhime Sentoin "Tobai-in" Tokuhime Aika Akeno Asami Azusa Chiyoko Emiko Fukimi Hatsue Hiroko 
+				Mikuru Masako Jitsuko Ichiko Hitomi Risako Yukina Sachiko Tsuru Yukari Sumika Sawako Sakiko Saori Satomi Mutsumi Nanase Nozomi Nonoka Otoha 
+				}
+			second_names = {
+				Murasaki Ashikaga Isshiki Odate Ninagawa Kyogoku Hosokawa Tsukahara Miyoshi Atagi Sogo Iwanari Matsunaga Shinnohara Inoue Kodera Kuroda Akechi Saito Ise 
+				Mimaki Namikawa Tsumaki Tsuda Shibata Matsuda Toda Yasuda Minora Tokugawa Oda Toyotomi Maeda Dota Izumo Takeda Date Uesugi Hojo Shimazu 
+				Chosokabe Kotaro Hanzo Goemon Mori Danzo Shikaemon Sasuke Chobei Kagetaka Magoroku Doshun Kojiro Akiyama Munenori Munetoshi Bungoro Yozei Nara Kashiwabara
+				}
+			regnal_first_names_male = {
+				Ieyasu Hideyoshi Nobunaga Shingen Kenshin Yoshitsune Musashi Chikanaga Takayoshi Fujitaka Bokuden Yoshiteru Yoshiaki Nagayoshi Montonaga Yoshikata Fuyuyasu Nobuyasu Kazumasa Nagayasu 
+				Masayasu Tomomichi Hisahide Hisamichi Nagaharu Nagafusa Michikatsu Masamoto Kanbei Mitsuhide Hidemitsu Shigetomo Toshimitsu Sadaoki Tadaoki Kaneaki Yasui Nobuharu Katsusade 
+				Masachika Yukimasa Kunitsugu Kyubei Okura Yoshiharu Yoshihide Hidetade Iehisa Sorin Akizane Genba Joun Dosetsu Nobutora Katsuyori Hirotada Tadayo Shigetsugu Naomori 
+				}
+			regnal_first_names_female = {
+				Shikibu Himiko "Li Naotora" "Ikeda Sen" Kaihime Komatsuhime Matsu Tsuruhime Ginchiyo Otsune Myorin Asahihime Chacha "Chikurin-in" Gotokuhime Gracia Kitsuno Maria Tatsuko Nene 
+				Nohime Oeyo Oichi Ohatsu Kasuga Saigo Tsukiyama Senhime Sentoin "Tobai-in" Tokuhime Aika Akeno Asami Azusa Chiyoko Emiko Fukimi Hatsue Hiroko 
+				Mikuru Masako Jitsuko Ichiko Hitomi Risako Yukina Sachiko Tsuru Yukari Sumika Sawako Sakiko Saori Satomi Mutsumi Nanase Nozomi Nonoka Otoha
+				}
+			regnal_second_names = {
+				"Go-Yozei" "Go-Sai" "Go-Komyo" "Go-Kashiwabara" "Go-Tsuchimikado" "Go-Komatsu" "Go-Hanazono" "Go-Kameyama" "Go-Nara" "Go-Daigo" "Go-Murakami" "Go-Kogon" "Go-En'yu" "Go-Nijo" "Go-Fushimi" "Go-Uda" "Go-Saga" "Go-Horikawa" "Go-Toba" "Go-Sakuramachi" 
+				}
+		}
+
+	}
+}

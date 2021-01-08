@@ -55,15 +55,4 @@ class BasicChainTest extends AbstractOperationTest {
         chain.execute(workingDirectory);
     }
 
-    @Test
-    public void stellarisSmodsRuTest() throws IOException, ConfigurationException, ModificationException {
-        ModificationsChain chain = chains.get(2);
-        Assertions.assertEquals("smods_ru", chain.getId());
-
-        setTemplateAndWorkingDirectoriesBasedOnDirectoryName("smods_ru");
-        super.init();
-
-        chain.execute(workingDirectory);
-    }
-
 }

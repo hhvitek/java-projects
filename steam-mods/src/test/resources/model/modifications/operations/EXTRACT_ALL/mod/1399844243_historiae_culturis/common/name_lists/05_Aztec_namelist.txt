@@ -1,0 +1,253 @@
+﻿### Historiae Culturis - Aztec (Mesoamerican)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+aztec_names = {
+	randomized = no
+	alias = "Aztec"
+
+	ship_names = {
+		science = {
+		###Calendar (19)	
+			Atlcahualo Tlacaxipehualiztli Tozoztontli "Huey Tozoztli" Toxcatl Etzacualiztli Tecuilhuitontli "Huey Tecuilhuitl" Tlaxochimaco "Xocotl Huetzi" Ochpaniztli "Teteo Eco" Tepeilhuitl Quecholli Panquetzaliztli Atemoztli Tititl Izcalli Nemontemi 
+			}
+		
+		constructor = {
+		###Mountains (14)	
+			Citlaltepetl Popcatepetl Iztaccihuatl Xinantecatl Atlitzin Matlalcueye Ajusco Jocotitlan Tancitaro Colima Teotepec Jabalin Zempoaltepetl Tapanco 
+			}
+		
+		colonizer = {
+		###Rivers (20)
+			Tamesi Chicayan Tempoal Amajac Tuxpan Tecolutla Necaxa Papaloapan Tesechoacan Tonto Coatzacoalcos Uxpanapa Jaltepec Tonala Lacantun Tacotalpa Champoton Culican Teacapan Acaponeta 
+			}
+		
+		transport = {
+		###Constellations (14)
+			Citlaxonecuilli Citlaltlachtli Citlalcolotl Citlalozomahtli Citlalmiquiztli Citlalhuitzitzilin Citlalmazatl Citlalolli Citlalcuetzpalli Citlaltecpatl Citlalxonecuilli Tianquiztli Mimixcoa Huitznahuac
+			}
+		
+		corvette = {
+		###Fictional (120)
+			Ocecatyl Itzcuintli Ihuitcatl Itzcalix Citahaultli Xiloxochitl Paqui Mahuinan Necanoch Tonaltzin Mecatl Xocoyotli Chipahuatl Toltecatl Toltecatli Etalcuintli Cipactica Ehehual Yoaciutl Cuixtecuhtli
+			Itotia Teiucat Teicatli Tianquitl Necahualtli Macauhit Macauhuitli Coatli Coatlicuit Tlexictli Itohautl Cauhtli Coxopilli Atlecatli Uappatauhtl Amaxotli Yolyamanitzin Zipactonal Zolin Zuma 
+			Acuecucyoticihuati Ahuic Amoxtli Anacaona Apozanolotl Atlacamani Atlacoya Atlatonin Atzi Ayauhteotl Chalchihuitlcua Chalmecacihuilt Chicomecoatl Chiconahui Chipahua Cihuaton Citlalic Citlalicue 
+			Coaxoch Cozamalotl Cuicatl Etapalli Eztli Ilamatecuhtli Ixcuiname Ixtli Maxcuilxochitl Metztli Mixcoatl Miyaoaxochitl Mizquixaual Nahuatl Necahual Nenetl Nochtli 
+			Ohtli Patli Quetzalli Tayanna Teicuih Teiuc Tlachinolli Tlazohtzin Tonalnan Tonantzin Tozi Xiloxoch Xitllali Xiuhcotal Xiuhtonal Xochicotzin Xochil Xochilt 
+			Xochiyotl Xoco Xocotzin Xocoyotl Yaotyl Yaretzi Yolihuani Yoloxochitl Zeltzin Zyanya Tehuantepec Atoyac Ometepec Atoyaquillo Colotepec Copalita Suchiate Zahuapan Mixteco Nexapa  
+			}
+		
+		destroyer = {
+		###Fictional (100)
+			Acalan Acatl Ahuatzi Chimalley Chimalli Citlalee Coatl Cuahuteemoc Cuallea Cualee Cuetzpallea Cuetzpallee Eztli Guatemoc Huitzilin Ichtacka Ilhicamina Itzcali Itzcoatl 
+			Itzli Itztli Matlalihuitl Montezuma Nahuatl Netzahualcoyotl Nochehuatl Ocotlan Ohtli Patlea Patlee Tenoch Tezcacoatl Tlanextic Tlanectli Tlilpotonqui Tochtlea Tochtlee 
+			Tochtli Toltecatl Tonauac Tototl Tupack Tupoc Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiutecuhtli Xochitl Yaotel Yaotl Yaotyl Yolotil Tacotauhtli Panquetautl Cotautli
+			Tlapaneco Yautepec Amacuzac Bejucos Temascaltepec Ixtapan Cutzamala Cupatitz Tepealcatepec Coalcoman Tuxpanam Chacalautl Tomatlan Ameca Huaynamota Mezquital Teacapanam Acaponetli Tamazula Humaya 
+			Culiacan Choix Oteros Tomochic Papigochic Tutuaca Moctezuma Sahuaripa Yaqui Matape Horcastiatl Champoxo Taxamautl Tacautli Huatmanitli Ehecatautli Ehehaultli Zacatoxo Quechautli Quetzalcat 
+			}
+		
+		cruiser = {
+		###Minor Deities (80)
+			Ahuiateteo Macuilcozcacuauhtli Macuilcuetzpalin Macuilmalinalli Macuiltochtli Macuilxochitl Mayahuel Patecatl Ixtlilton Centzontotochtin Ometochtli Tezcatzoncatl Tlilhua Tepoztecatl Texcatzonatl Colhuatzincatl Cinteteo Iztacuhca Tlatlauhca Cozauhca 
+			Yayauhca Cinteotl Cipactonal Oxomo Cihuateteo Tzitzimitl Coatlicue Xochitilicue Temazcakteci Cihuacoatl Quauhciuatl Yoaciuatl Tzitziminciuatl Ehecatotontli Michtlanpachecatl Cihuatecayotl Tlalocayotl Vitztlampaehecatl Huehuecoyotl Huehueteotl 
+			Xiuhetecuhtli Xiuhtotontli Inaquizcaotl Nappatecutli Ilamatecuthli Camaxtli Techlotl Nextepeua Micapetlacalli Iixpuzteque Nesoxochi Tzontemoc Chalmeccacihuatl Ometeotl Ometecuhtli Omecihuatl Nanauatzin Tecciztecatl Painal Tlacahuepan 
+			Itzcaque Ixquitecatl Itztlacoliuhqui Ixquimilli Macuiltotec Atlatoman Amapan Uappatzin Itzpaplotltotec Itzpapalotlcihuatl Tlaloque Atlaua Tlaltecayoa Ppilimtec Xippilli Xochipilli Xochiquetzal Yacatecuhtli Zacatzontli Malinalxochitl    
+			}
+		
+		battleship = {
+		###Important Deities (35)
+			Tlaloc Chalchiuhtlicue Huixtocihuatl Opochtli Xiuhtecuhtli Chantico Xolotl Mictlantecuhtli Michtecacihuatl Tezcatlipoca "Xipe-Totec" Quetzalcoatl Huitzilopochtli Ehecatl Coyolxauhqui Meztli Tonatiuh Centzonmimixcoa Centzonhuitznahua Tlahuizcalpantecuhtli
+			Piltzintecuhtli Centeotl Tlazolteotl Tepeyollotl Tlatltecuhtli Mictecacihuatl Citlalatonac Tonacatecuhtli Tonacacihuatl Tlaltecuhtli Xilonen Xochitlicue Toci Itzpapalotl Chimalma    
+			}
+		
+		titan = {
+		###Heavens (13)
+			"Ilhuicatl-Meztli" "Ilhuicatl-Tetlaliloc" "Ilhuicatl-Tonatuh" "Ilhuicatl-Huitztlan" "Ilhuicatl-Mamaloaco" "Ilhuicatl-Yayauhco" "Ilhuicatl-Xoxoauhco" "Ilhuicatl-Nanatzcayan" "Ilhuicatl-Teoiztac" "Ilhuicatl-Teocozauhco" "Ilhuicatl-Teteocan" "Ilhuicatl-Omeyocan" 
+			}
+
+		colossus = {
+		###Fire Deities (4)
+			Xiuhiztacuhqui Xiuhtlatlauhqui Xiuhcozauhqui Xiuhxoxoauhqui
+			}
+		
+		military_station_small = {
+		###Weapons (12)
+			Ahtlatl Tlacochtli Tlahhuitolli Micomitl Yaomitl Tematlatl Cuahuitl Tepoztopilli Tlaximaltepoztli Macauhuitzoctli Huitzauhqui Tecpatl 
+			}
+
+		ion_cannon = {
+		###Alphabet (23)
+			Chan Winik Witz "K'in" "B'alam" "K'ak" Bak Way Juun "Ja" Ajaw Muyal Ix "Ch'am" "K'uk" "Ch'ul" Chok "Jaab" Yax Pakal Tok Naj "K'al" 
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Macuahuitl %R%"
+		}
+	
+	army_names = {
+		defense_army = { 
+			sequential_name = "Yaoquizqueh %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Ocelotl %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Otontin %R%"
+		}
+		
+		clone_army = {
+			sequential_name = "Quauhololli %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Chimalli %R%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Tepo Chimalli %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Ichcahuipilli %R%"
+		}
+
+		android_defense_army = {
+			sequential_name = "Tepo Ichcahuipilli %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Cuauhocelotl %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Yaogui %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Cuachicqueh %R%"
+		}
+
+		occupation_army = {
+			sequential_name = "Ehuatl Tlamanih %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Ehuatl Chimalli %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Ehuatl Ichcahuipilli %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Provinces (55)
+				Tenochtitlan Texcoco Tlacopan Aztlan Atotonilco Axocopan Cihuatlan Coixtlahuaca Cotaxtla Cuahuacan Cuauhnahuac Cuilapan Huatusco Huaxtepec Malinalco Ocuilan Oxitipan Quiauhteopan Soconusco Tepeaca 
+				Tepecoacuilco Tlachco Tlacozauhtitlan Tlapacoyan Tlapan Tlatlauhquitepec Tlaxiaco Tochpan Tochtepec Toluca Tzicoac Xilotepec Xocotilan Yoaltepec Acatlan Ahautlan Ayotlan Chiapan Chiauhtlan Cuauhchinanco 
+				Huexotla Ixtepexi Ixtelahuaca Miahuatlan Misantla Ocuituco Tecomaixtlahuacan Tecpantepec Temaxcaltepec Teozacoalco Teozapotlan Tetela Xalapa Cempoalatl Zompaynco 
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Acalan Acatl Ahuatzi Chimalley Chimalli Citlalee Coatl Cuahuteemoc Cuallea Cualee Cuetzpallea Cuetzpallee Eztli Guatemoc Huitzilin Ichtacka Ilhicamina Itzcali Itzcoatl 
+				Itzli Itztli Matlalihuitl Montezuma Nahuatl Netzahualcoyotl Nochehuatl Ocotlan Ohtli Patlea Patlee Tenoch Tezcacoatl Tlanextic Tlanectli Tlilpotonqui Tochtlea Tochtlee 
+				Tochtli Toltecatl Tonauac Tototl Tupack Tupoc Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiutecuhtli Xochitl Yaotel Yaotl Yaotyl Yolotil 
+				Yolyamanitzin Zipactonal Zolin Zuma 
+				}
+			first_names_female = {
+				Acuecucyoticihuati Ahuic Amoxtli Anacaona Apozanolotl Atlacamani Atlacoya Atlatonin Atzi Ayauhteotl Chalchihuitlcua Chalmecacihuilt Chicomecoatl Chiconahui Chipahua Cihuaton Citlalic Citlalicue 
+				Coaxoch Cozamalotl Cuicatl Etapalli Eztli Ilamatecuhtli Ixcuiname Ixtli Maxcuilxochitl Metztli Mixcoatl Miyaoaxochitl Mizquixaual Nahuatl Necahual Nenetl Nochtli 
+				Ohtli Patli Quetzalli Tayanna Teicuih Teiuc Tlachinolli Tlazohtzin Tonalnan Tonantzin Tozi Xiloxoch Xitllali Xiuhcotal Xiuhtonal Xochicotzin Xochil Xochilt 
+				Xochiyotl Xoco Xocotzin Xocoyotl Yaotyl Yaretzi Yolihuani Yoloxochitl Zeltzin Zyanya 
+				}
+			second_names = {
+				" "
+				}
+			regnal_first_names_male = {
+				Acalan Acatl Ahuatzi Chimalley Chimalli Citlalee Coatl Cuahuteemoc Cuallea Cualee Cuetzpallea Cuetzpallee Eztli Guatemoc Huitzilin Ichtacka Ilhicamina Itzcali Itzcoatl 
+				Itzli Itztli Matlalihuitl Montezuma Nahuatl Netzahualcoyotl Nochehuatl Ocotlan Ohtli Patlea Patlee Tenoch Tezcacoatl Tlanextic Tlanectli Tlilpotonqui Tochtlea Tochtlee 
+				Tochtli Toltecatl Tonauac Tototl Tupack Tupoc Ueman Xicohtencatl Xihuitl Xipil Xipilli Xiutecuhtli Xochitl Yaotel Yaotl Yaotyl Yolotil 
+				Yolyamanitzin Zipactonal Zolin Zuma 
+				}
+			regnal_first_names_female = {
+				Acuecucyoticihuati Ahuic Amoxtli Anacaona Apozanolotl Atlacamani Atlacoya Atlatonin Atzi Ayauhteotl Chalchihuitlcua Chalmecacihuilt Chicomecoatl Chiconahui Chipahua Cihuaton Citlalic Citlalicue 
+				Coaxoch Cozamalotl Cuicatl Etapalli Eztli Ilamatecuhtli Ixcuiname Ixtli Maxcuilxochitl Metztli Mixcoatl Miyaoaxochitl Mizquixaual Nahuatl Necahual Nenetl Nochtli 
+				Ohtli Patli Quetzalli Tayanna Teicuih Teiuc Tlachinolli Tlazohtzin Tonalnan Tonantzin Tozi Xiloxoch Xitllali Xiuhcotal Xiuhtonal Xochicotzin Xochil Xochilt 
+				Xochiyotl Xoco Xocotzin Xocoyotl Yaotyl Yaretzi Yolihuani Yoloxochitl Zeltzin Zyanya 
+				}
+			regnal_second_names = {
+				" "
+				}
+		}
+
+	}
+}

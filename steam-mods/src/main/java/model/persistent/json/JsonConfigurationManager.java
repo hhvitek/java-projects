@@ -96,7 +96,7 @@ public class JsonConfigurationManager implements FileStorageManager {
     @Override
     public void save(@Nullable List<Modification> modifications,
                      @Nullable List<ModificationsChain> chains,
-                     @Nullable Map<String, String> appProperties) throws IOException, ConfigurationException {
+                     @Nullable Map<String, Object> appProperties) throws IOException, ConfigurationException {
 
         if (modifications != null) {
             pojoToAppContainer.setModifications(modifications);
@@ -149,7 +149,7 @@ public class JsonConfigurationManager implements FileStorageManager {
     }
 
     @Override
-    public @NotNull Map<String, String> getAppProperties() throws NotInitializedException {
+    public @NotNull Map<String, Object> getAppProperties() throws NotInitializedException {
         ifManagerNotInitializedYetThrowException();
 
         JsonAppPojo appPojo = jsonConfiguration.getApp();

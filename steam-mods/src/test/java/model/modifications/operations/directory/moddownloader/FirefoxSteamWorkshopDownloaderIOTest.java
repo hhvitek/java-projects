@@ -10,7 +10,7 @@ public class FirefoxSteamWorkshopDownloaderIOTest extends AbstractDownloaderTest
 
     public FirefoxSteamWorkshopDownloaderIOTest() {
         super();
-        WebDriver webDriver = WebDriverFactory.getDriver(WebDriverFactory.SupportedWebDrivers.FIREFOX, downloaderFolder);
+        WebDriver webDriver = WebDriverFactory.getDriver(WebDriverFactory.SupportedWebDrivers.FIREFOX, DOWNLOAD_FOLDER);
         downloader = new SteamWorkshopDownloaderIOImpl(webDriver);
     }
 }

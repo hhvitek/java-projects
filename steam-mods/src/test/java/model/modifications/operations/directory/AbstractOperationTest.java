@@ -36,7 +36,9 @@ abstract public class AbstractOperationTest {
         try {
             createAndPrepareTestDirectory();
         } catch (IOException e) {
-            fail("Cannot recreate test directory", e);
+            fail("Cannot recreate test directory. " +
+                    "Please check if the following folder exists and is not empty: " + templateDirectory.toAbsolutePath(),
+                    e);
         }
     }
 

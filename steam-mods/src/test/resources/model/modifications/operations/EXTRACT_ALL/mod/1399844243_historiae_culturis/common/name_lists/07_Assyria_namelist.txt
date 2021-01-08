@@ -1,0 +1,276 @@
+﻿### Historiae Culturis - Assyria (Mesopotamia)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+assyria_names = {
+	randomized = no
+	alias = "Assyria"
+
+	ship_names = {
+		science = {
+		###Constellations (22)
+			Zappu Aluis Sitaddaru Sibu Gamlu Masu Allutu Urgulu Zibanitu Zuqaqipu Pabilsag Suhurmasu Sinundu Zibbatu Sinunutu Anunitu Agru Rammanu Seru Nesu 
+			Tuamu Sidallu 
+			}
+		
+		constructor = {
+		###Mountains (20)	
+			"Zardkuh" Dena Zagros "Oshtoran Kuh" Hamrin Shaho Garrin Behistun "Shir Kuh" Halgurd "Cheekha Dar" Qandil Hazaran Derak Alvand Paraw "Qaleh Gorikhteh" Atashkadeh Menar "Hezar Darreh"
+			}
+		
+		colonizer = {
+		###Tells (12)	
+			Brak Hamoukar Chuera Qatna Ebla Mardikh Acharneh Atchana Halaf Tweni Asmar Tepe
+			}
+		
+		transport = {
+		###Tributaries 	(20)
+			"Kara Su" Murat Sajur Balikh Khabur Devegecedi Havar Yenice Karasu Ambar Kuru Pamuk Salat Batman Garzan Goksu Savur Botan Adhaim Diyala
+			}
+		
+		corvette = {
+		###Names (115)
+			Atturayeh Warda Younan Pityou Iyyar Dayan Alakko Mamo Yaqu Shlaimun Yokhannah Giwargis Givargis Odishu Odichou Hormizd 
+			Hormis Qawila Dinkha Denha Kinkha Dadishu Ruwal Agassi Thoma Mansur Guzi Sliwa Sliwo Aziz Choushino Kasha Khano Parto Sargis Shmuni 
+			Sabbaya Bishu Sawa Sabrishu Zaya Ishaq Esho Saliba Hibraius Mokats Malek Qinyana Arab Shinu Malka Malki Neesan Sabaee Haydoo Khoshaba 
+			Sharo Balu Jannu Belo Akkad Khamur Sorishu Dudashu Mishail Moushe Malishu Sulawa Khanna Naby Yaqub Khnanisho Bazi Enwiya Awia Shimun 
+			Shlemun Ezekiel Ochana Oraha Elia Yokhanis Murza Homeh Lazar Tamraz Mikho Sayad Aho Oshalim Kako Kakku Kanna Adamo Rasho Bassoo 
+			Khanaishu Ashita Khaya Mannu Khamu Birko Yona Chikko Keno Kinu Babu Baba Rasho Tyareh Eshtarzin Kasri Tkhoma Yalda Nochiya Hadodo
+			}
+		
+		destroyer = {
+		###Minor Deities (88)	
+			"Ama-arhus" Amasagnul Amashilama Antu Anunitu Asarluhi Ashgi Ashnan Aruru Bel "Belet-Seri" Birtum Bunene Damu Dingirma "Dumu-zi-abzu" Enkimdu Enmesharra Ennugi Enzag 
+			Erra Erragal Gareus Gatumdug Gibil Gugalanna Hahanu Hanbi Hani Haya Hayasum "Hegir-Nuna" Hendursag "Ig-alima" Ilaba Ilabrat Imdugud Ishara Isimud Ishum 
+			Kakka Kittu Kus Lahar Lahmu Lamashtu Lisin Lugalbanda "Lugal-irra" "Meslamta-ea" Lulal Mami Mandanu Martu Misharu Nanya Neti Ningikuga "Nin-imma" Ningilin 
+			Ningirima Ninkurra Ninmena Ninmug Ninnisig Ninsar Ninsianna Ninsikila Ninsun Nintu Nirah Numushda Nungal Nusku Pabilshag Pazuzu "Sarrat-Deri" Shara Sherida "Shul-pa-e"
+			"Sul-sagana" Siduri Silili Sumugan Tashmetu Uras Uttu Zababa 
+		###Foreign Deities (28)
+			Astarte Atargatis Aglibol Baalshamin Bes Humban Hutran Inshushinak Inzak Lagamal Ishmekerab Malakbel Meskilak Muati Nahhunte Napir Pienenkir Lahamun Manzat Ruhurater
+			Kilahsupir Tirutir Siyasum Narunte Niarzina Simut Yahweh Yarhibol 
+		}
+		
+		cruiser = {
+		###Kings (76)	
+			Tudiya Adamu Yangi Suhlamu Harharu Mandaru Imsu Harsu Didanu Hana Zuabu Nuabu Abazu Belu Azarah Ushpia Apiashal Hale Samani Hayani 
+			"Ilu-Mer" Yakmesi Yakmeni "Yazkur-el" "Ila-kabkabu" Aminu Sulili Kikkiya Akiya Puzur Shalim "Ilu-shuma" Erishum Ikunum Sargon "Naram-Suen" "Shamshi-Adad" "Ishme-Dagan" "Mut-Ashkur" Rimush
+			Asinum "Ashur-Dugul" "Ashur-apla-idi" "Nasir-Sin" "Sin-namir" "Ipqi-Ishtar" "Adad-salulu" Adasi "Bel-bani" Libaya "Sharma-Adad" "Iptar-Sin" Bazaya Lullaya "Shu-Ninua" "Enlil-nasir" "Ashur-nirari" "Ashur-rabi" "Nur-ili" "Ashur-shaduni"
+			"Eriba-Adad" "Ashur-Uballit" "Enlil-nirari" "Arik-den-ili" "Adad-nirari" Shalmaneser "Tukulti-Ninurta" "Nadin-apli" Ekur Mutakkil Tiglath Esarhaddon Ashurbanipal Sennacherib "Ashur-etil-ilani" "Sin-shumu-lishir"
+		###Provinces (30)
+			Laqe Rasappa Hindanu Hatallu Moab Edom Juda Amon Galaad Guzana Nasabima Que "Sam'alla" Amedi Tushan Lahiru Kilzi Isana Tile Sahuppa 
+			Barsip "Tu'ammu" Simira Sidon Suburu Tabal Urartu Elarm Chaldea Gambulu 
+			}
+		
+		battleship = {
+		###Major Deities (30)	
+			Ashur Dagan Dumuzid Ereshkigal Geshtinanna Gilgamesh Gula Ishkur Istaran Nanshe Ninazu Ningal Ningishzida Ninhursag Ninlil Ninshubur Nisaba Anu Ishtar Shamash 
+			Tammuz Hadad Kur Dagon Ninurta Nisroch Nergal Tishpak Marduk Sin 
+		###Cities (40)
+		Assur Mari Terqa Tuttul Belan Eridu Lagash Isin Adab Nippur Kish Akshak Der Sippar Rapiqum Eshnunna Nineveh Kahat Nagar Urkish 
+		Harran Qatna Hazor Byblos Ebla Samal Alalakh Anshan Suse Girsu Akkad Gasur Ninive Mozan Leilan Beydar Alep Tadmer Nuzi Arbeles
+			}
+		
+		titan = {
+		###Primordial Beings (6)		
+			Abzu Anshar Kishar Ki Nammu Tiamat
+			}
+
+		colossus = {
+		###Triad of Heaven	(3)
+			"Wrath of An" "Will of Enlil" "Enki's Rapture"
+			}
+		
+		military_station_small = {
+		###Calender	(15)
+			Nisanu Aru Simanu Dumuzu Abu Ululu Tisritum Samnu Kislimu Tebetum Sabatu Addaru Makarusa Adar Addari 
+			}
+
+		ion_cannon = {
+		###Canals (11)	
+			Zubi Izubi Akkadian Izubitum Irnina Gibil Issinitum Iturungal Nanagugal Ninagina Susuka
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Albahria %R%"
+		}
+	
+	army_names = {
+		defense_army = { 
+			sequential_name = "Jaysh %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Hujum %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Shariha %R%"
+		}
+		
+		clone_army = {
+			sequential_name = "Aistinsakh %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Falaz Hujum %R%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Falaz Jaysh %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Dhuki-Falaz Hujum %R%"
+		}
+
+		android_defense_army = {
+			sequential_name = "Dhuki-Falaz Jaysh %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Ayqiz %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Kayin %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Khas %R%"
+		}
+
+		occupation_army = {
+			sequential_name = "Alaihilal %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Falaz Alaihilal %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Dhuki-Falaz Alaihilal %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Planetary Deities (7)
+				Marduk Ninurta Nergal Inanna Nabu "Nanna-Suen" Utu
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+							
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Awa Awiya "Awi eil" "Awi bail" Awidan Awimalich Awinam Awiseen Awiqam Awiram Awitar Auneir Awrahim Awshalim Ajdina Ador "Ador Eil" "Ador Palasar" Awbaleet Aulada 
+				Aumana Aurnina Akhiban Akhiseen Akhiqar Eil Eilbra Eilbroon Aileen Eliya Eilmar Eilram Ammina Anokeen Anlel Aprim Aram "Aram seen" Arseen Ashur 
+				"Ashur ban" "Ashur dan" "Ashur leed" "Ashur ram" "Ashur seen" Asor "Asor Khadon" Bibla Borseen Bail Bailbrone Baildan Bailnam Bailseen Bailram Bailshar Bineil Binatour Bareil Bardeen
+				Baryoom Barseen Barsheen Bardisan "Gbar eil" "Gawri eil" Goreil "Gamri eil" Giliana Domara Dorara "Dem eil" "Dem ashur" "Dem atour" "Dem seen" Dinkha "Dani eil" "Ha wail" Hawil "Hda eil" 
+				Hadirseen Hanodeen "Ward eil" Warda Wardeen "Ward seen" "Zah eil" "Zah seen" Zomaya Zaia "Zda eil" Khonayn "Khza eil" Khammo "Khnan eil" Khnanya Khnanishoa "Khnan seen" "Ttwa eil" Yadida 
+				"Yaw eil" "Yaw bail" "Yau seen" Yomadan "Lammo eil" "Lammo bail" Madsa "Mekha eil" Meesha "Man'nah" "Mar eil" "Mar bail" Mardokh Mardeen "Maro eil" Marodeen Marona Maron Mlimar Nabo 
+				"Nabo eil" "Nabo bail" "Nabo ram" "Nabo pal" "Nabo need" "Naheer seen" Nahroona "Nosard eil" "Neen eil" Nineel "Nin seen" Nirar Nasir Nasirpal Nardeen "Naram eil" "Naram seen" "Natni eil" Seen Seena
+				"Seen eil" Sennacherib "Sard eil" Sardanapal Pol Paldeen "Pnu eil" Paseena Pera "Rab eil" "Rab bail" Rabila Rabona "Rab seen" "Ram eil" "Ram bail" Raman "Ram seen" Romrama "Rafa eil" 
+				Shalmanisar "Shmou eil" "Sha'ol" Shimmokeen Shammina "Shar eil" Sharo Shnina Shaybo Sharokeen Sharona 
+				}
+			first_names_female = {
+				Awijil Awita "Aur ur" Aurhai Aurya Akhita Achadina Eilina Emmita Anochina Arbella Ashourina Aramina "Ari eil" Ishtar Atourina Adorina Biblina Baila Baileet 
+				Beerta "Bet eil" "Brat eil" "Brat bail" "Brat youm" Domarina Damrina Hano "Hani'ata" Wardiya Walita Wardina Khannah Yayota Yaeeta Yata Lwita Lawita Lolita Larsa 
+				Milta Marbita Marjanita Mardina Marina Marnita Martha Nahrina Nineveh Ninsina Nasibin Nardina Naramsina Nashiram Sawrina Sahdina Sorme Simta Paldina Panna 
+				Ramina Ramsina Rashomta Rdita Shamiram Shamura Shirat Shamrina Shamreta Sharokina Shimta 
+				}
+			second_names = {
+				Ashur Hadad Shamash Atturayeh Warda Younan Yona Pityou Iyyar Dayan Alakko Mamo Yaqu Shlaimun Yokhannah Giwargis Givargis Odishu Odichou Hormizd 
+				Hormis Qawila Dinkha Denha Kinkha Dadishu Ruwal Agassi Thoma Mansur Guzi Sliwa Sliwo Aziz Choushino Kasha Khano Parto Sargis Shmuni 
+				Sabbaya Bishu Sawa Sabrishu Zaya Ishaq Esho Saliba Hibraius Mokats Malek Qinyana Arab Shinu Malka Malki Neesan Sabaee Haydoo Khoshaba 
+				Sharo Balu Jannu Belo Akkad Khamur Sorishu Dudashu Mishail Moushe Malishu Sulawa Khanna Naby Yaqub Khnanisho Bazi Enwiya Awia Shimun 
+				Shlemun Ezekiel Ochana Oraha Elia Yokhanis Murza Homeh Lazar Tamraz Mikho Sayad Aho Oshalim Kako Kakku Kanna Adamo Rasho Bassoo 
+				Khanaishu Ashita Khaya Mannu Khamu Birko Yona Chikko Keno Kinu Babu Baba Rasho Tyareh Eshtarzin Kasri Tkhoma Yalda Nochiya Hadodo
+				}
+			regnal_first_names_male = {
+				Tudiya Adamu Yangi Suhlamu Harharu Mandaru Imsu Harsu Didanu Hana Zuabu Nuabu Abazu Belu Azarah Ushpia Apiashal Hale Samani Hayani 
+				"Ilu-Mer" Yakmesi Yakmeni "Yazkur-el" "Ila-kabkabu" Aminu Sulili Kikkiya Akiya Puzur Shalim "Ilu-shuma" Erishum Ikunum Sargon "Naram-Suen" "Shamshi-Adad" "Ishme-Dagan" "Mut-Ashkur" Rimush
+				Asinum "Ashur-Dugul" "Ashur-apla-idi" "Nasir-Sin" "Sin-namir" "Ipqi-Ishtar" "Adad-salulu" Adasi "Bel-bani" Libaya "Sharma-Adad" "Iptar-Sin" Bazaya Lullaya "Shu-Ninua" "Enlil-nasir" "Ashur-nirari" "Ashur-rabi" "Nur-ili" "Ashur-shaduni"
+				"Eriba-Adad" "Ashur-Uballit" "Enlil-nirari" "Arik-den-ili" "Adad-nirari" Shalmaneser "Tukulti-Ninurta" "Nadin-apli" Ekur Mutakkil Tiglath Esarhaddon Ashurbanipal Sennacherib "Ashur-etil-ilani" "Sin-shumu-lishir"
+				}
+			regnal_first_names_female = {
+				Awijil Awita "Aur ur" Aurhai Aurya Akhita Achadina Eilina Emmita Anochina Arbella Ashourina Aramina "Ari eil" Ishtar Atourina Adorina Biblina Baila Baileet 
+				Beerta "Bet eil" "Brat eil" "Brat bail" "Brat youm" Domarina Damrina Hano "Hani'ata" Wardiya Walita Wardina Khannah Yayota Yaeeta Yata Lwita Lawita Lolita Larsa 
+				Milta Marbita Marjanita Mardina Marina Marnita Martha Nahrina Nineveh Ninsina Nasibin Nardina Naramsina Nashiram Sawrina Sahdina Sorme Simta Paldina Panna 
+				Ramina Ramsina Rashomta Rdita Shamiram Shamura Shirat Shamrina Shamreta Sharokina Shimta 
+				}
+			regnal_second_names = {
+				Ashur Hadad Shamash Atturayeh Warda Younan Yona Pityou Iyyar Dayan Alakko Mamo Yaqu Shlaimun Yokhannah Giwargis Givargis Odishu Odichou Hormizd 
+				Hormis Qawila Dinkha Denha Kinkha Dadishu Ruwal Agassi Thoma Mansur Guzi Sliwa Sliwo Aziz Choushino Kasha Khano Parto Sargis Shmuni 
+				Sabbaya Bishu Sawa Sabrishu Zaya Ishaq Esho Saliba Hibraius Mokats Malek Qinyana Arab Shinu Malka Malki Neesan Sabaee Haydoo Khoshaba 
+				Sharo Balu Jannu Belo Akkad Khamur Sorishu Dudashu Mishail Moushe Malishu Sulawa Khanna Naby Yaqub Khnanisho Bazi Enwiya Awia Shimun 
+				Shlemun Ezekiel Ochana Oraha Elia Yokhanis Murza Homeh Lazar Tamraz Mikho Sayad Aho Oshalim Kako Kakku Kanna Adamo Rasho Bassoo 
+				Khanaishu Ashita Khaya Mannu Khamu Birko Yona Chikko Keno Kinu Babu Baba Rasho Tyareh Eshtarzin Kasri Tkhoma Yalda Nochiya Hadodo
+				}
+		}
+
+	}
+}

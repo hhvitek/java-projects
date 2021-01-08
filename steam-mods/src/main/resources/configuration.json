@@ -3,9 +3,16 @@
     "default_mod_folder" : "file:///C:/Utilities/Git/java-projects/steam-mods/%25USERPROFILE%25/Documents",
     "chosen_mod_folder" : "C:\\Users\\vitek\\Documents\\Test",
     "selected_modifications_chain" : "BASIC",
-    "managed_mods": [
-      1712760331,
-      2219070393
+    "managed_mod_ids": [
+      1159014317,
+      1376337924,
+      1182188528,
+      1234481316,
+      1150214282,
+      1157274821,
+      1470815758,
+      1523125314,
+      1171645200
       ]
   },
   "modifications" : [ {

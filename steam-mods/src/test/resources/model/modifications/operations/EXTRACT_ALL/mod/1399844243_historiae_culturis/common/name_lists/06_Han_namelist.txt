@@ -1,0 +1,287 @@
+﻿### Historiae Culturis - Han (Chinese)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+han_names = {
+	randomized = no
+	alias = "Han"
+
+	ship_names = {
+		science = {
+		###Philosophers	(20)
+			Confucius "Zhuang Zhou" Mencius Laozi "Xun Kuang" Mozi "Feng Youlan" "Zhu Xi" "Wang Yangming" "Han Fei" Zongsan "Gongsun Long" "Cheng Yi" "Wang Chong" "Zhang Zai" "Dong Zhongshu" "Shang Yang" "Sun Tzu" "Wang Bi" "Zou Yan"
+			}
+		
+		constructor = {
+		###Rivers (40)
+			Yangtze Mekong Huai Amur Brahmaputra Songhua Hai Qiantang Lancang Liao Xi Min Tarim Irtysh Jinsha Han Dong Wei Bei Huangpu 
+			Yalu Jialing Nen Yongding Wuding Hongshui Beipan Aksu Hotan Taizi Lishui Tumen Mudan "Xar Moron" Luo Gui Qian Guo Lushui Ussuri
+			}
+		
+		colonizer = {
+		###Mountains (10)
+			Shishapangma "Kongur Tagh" "Muztagh Ata" "Skyang Kangri" Jongsong "Teram Kangri" "Jengish Chokusu" "Labuche Kang" "Siguang Ri" "Porong Ri"
+			}
+		
+		transport = {
+		###Islands (20)
+			Weizhou Shangchuan Xiachuan Xieyang Chongming Hengqin Zhifu Damang Hebao Gulangyu Meizhou Xiamen Haidian Dazhou Wuzhizhou Putuo Hailing Changshan Zhongsha Wanshan
+			}
+		
+		corvette = {
+		###Battles (123)
+			Banquan Zhuolo Mingtiao Muye Xuge Changshao Chengpu Xiao Bi An Yangling Boju Fujiao Liza Jinyang Guiling Maling Guailing Yique Yanyu 
+			Changping Handan Xiongnu Yue Dazexiang Julu Pengcheng Xingyang Jingxing Wei Gaixia Baideng Minyue Mayi Mobei Nanyue Dian Gojoseon "Tian Shan" "Ikh Bayan"
+			Yiwulu Jushi Zhizhi Kunyang Trung Jiequiao Jiangdong Xiapi Yijing Guandu Bowang Ye Xiakou Changban Jiangling Tong Xiaoyao Yangping Ruxu Hanzhong 
+			Fancheng Xiaoting Yiling Guangling Xincheng Shiting Jieting Wuzhang Xingshi Dongxing Yongjia Youzhou "Chang'an" Junyi Jicheng Luoyang Xiangguo Lukou Guanggu Yewang 
+			Fangtou Liangzhou Dajie Canhe Bosi Fuzhoushan Henan Tongwang Yongzhou Shaancheng Qingzhou Jiankang Shouyang Huaihan Nanyang Yiyang Hefei Shaanshi Ye Shayuan 
+			Mang Yubi Fenbei Heyin Lizhou Wushe Liangjun Jinxiang Shizhou Wagang Huoyi Hulao Xuanwu Yinshan Tuyuhun Songzhou Xueyantuo Karakhoja Karasahr Kucha 
+			Peking Yangxia Langfang 
+			}
+		
+		destroyer = {
+		###Battles (120)	
+			Irtysh Baekgang Dafei Kaoyu Dongxiashi Tianmenling Aksu Shibao Talas Yongqiu "An-Shi" Suiyang Xiangjisi Xiangzhou Yanzhou "Ting-Hsien" Gaoliang Qigou Chanzhou Haoshui 
+			"Pei-Chou" Dongjing Fuping Yancheng Tangdao Caishi Caizhou Diaoyu Xiangyang Yamen Hequ Yehuling Kaifeng "Bach Dang" Java Yingtian Poyang Buir Ho Kotte 
+			Tumu Tamao Pyongyang Ulsan Sacheon Noryang Sarhu Ningyuan Songjin Tongguan Shanhai Altishahr Penghu "Ulan Butung" "Jao Modo" Salween Ningpo "Afaqi Khoja" Kowloon Chuenpi 
+			Chusan Bogue Whampoa Canton Amoy Chinhai Keelung Tzeki Chapu Woosung Chinkiang Jintian Changsha Nanjing Dongting Wuhan Tai Sanhe Jiujiang Anqing 
+			Guanzhong Cixi Hubei Dungan Urumqi Gaolozai Inlon Ganyu Shouguang Fatshan Taku Palikao Tonkin "Son Tay" "Bac Ninh" "Bac Le" Fuzhou Tamsui Kep "Lang Son" 
+			Shipu Zhenhai "Tuyen Quang" "Hoa Moc" "Bang Bo" "Phu Lam Tao" Gapsin Pungdo Seonghwan Yalu Jiuliancheng Lushunkou Weihaiwei Yingkou Dagu Tientsin Beicang Yangcun "Pai-t'ou-tzu" Amur 
+			}
+		
+		cruiser = {
+		###Deities (120)
+			Wen Wu Wendi Kuixing Guandi Guangong Guanyu Zhanshen Chiyou Xingtian Baoshengdadi Baxian Canshen Canmu Leizu Cangu Qingyishen Cancong Caishen Cangjie 
+			Chenghuangshen Chenjinggu Cheshen Erlangshen "Guangze Zunwang" Guanyin "Huang Daxian" Jigong Jiushen "Jiutan Xuannu" Longmu Luban Lushen Mazu "Ping'anshen" "Qingshui zushi" Taoshen Tuershen "Tuotali Tianwang" Wuxian
+			Jinzha Muzha Nazha Xishen Yaoshen Yaowang "Yuexia Laoren" Zaoshen Sanxing Fuxing Luxing Shouxing Huashen Huxian Mashen Niushen Langshen Shushen Wugushen Yuanshen 
+			Zhimashen Mawang Niuwang Yuanwang "Sun Wukong" Huangxian Shexian Mangxian Baixian Heixian Liuxian Changxian Wuyaxian Huixian Simianshen Xiangtoushen Gesaer Gesier Taizu "Fatian Qiyun"			
+			Daoji Fangfend "Gao Yao" "Gong Gong" "Guan Yu" Hanba Houyi "Hung Shing" "Kau Fu" "Lung Mo" "Meng Po" Nezha Siming "Tam Kung" "Zao Jun" Zhurong Yuqiang Xiangfei "Nu ying" "E huang" 
+			}
+		
+		battleship = {
+		###Important Deities (85)
+			Tiandi Tianzhu Tianhuang Tiangong Tianjun Tianzun Tianshen Shenhuang Laotianye "Huang Tian" "Hao Tian" "Min Tian" "Shang Tian" "Cang Tian" Yudi Yuhuang Doumu Pangu Xiwangmu Yangwang 
+			Yinyanggong Wudi Huangdi Cangdi Heidi Chidi Baidi Sanguan Sanguandadi Tianguan Deguan Shuiguan Longshen Baoshen Bala Doushen Fengshen Haishen Heshen Gushen 
+			Huoshen Hushen Jinshen Jingshen Leishen Mushen Shanshen Shuishen Tudishen Wenshen Xiangshuishen Xueshen Yushen Xihe Longwang Chongshen Chongwang Haiye Hebo Qiushen 
+			Leigong Dianmu Chunshen Jumang Tushen Tudigong Houtu Taiyangshen Shirizhimu Yueshen Changxi Tianxian Taishan Juitian Iaomu Shengmu Niangniang Nainai Mu Nushen 
+			Dizang "Da Yu" 
+			}
+		
+		titan = {
+		###Five Emperors (5)
+			Shaohao Zhuanxu Ku Yao Shun 
+			}
+
+		colossus = {
+		###Three August Ones (3)
+			Fuxi Nuwa Shennong  
+			}
+		
+		military_station_small = {
+		###Numerals	(10)
+			Yi Er San Si Wu Liu Qi Ba Jiu Ling
+			}
+
+		ion_cannon = {
+		###Eight Immortals (8)
+			"Cao Guojiu" "Han Xiangzi" "Han Zhongli" "He Xiangu" "Lan Caihe" "Lu Dongbin" "Li Tieguai" "Zhang Guolao" 
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Shui Jun %R%"
+		}
+	
+	army_names = {
+		defense_army = { 
+			sequential_name = "Shu Shi %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Gong Shi %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Nu Shi %R%"
+		}
+		
+		clone_army = {
+			sequential_name = "Kelong Shi %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Kai Shi %R%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Shu Kai Shi %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Jiqi'Ren Shi %R%"
+		}
+
+		android_defense_army = {
+			sequential_name = "Shu Jiqi'Ren Shi %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Mei Shi %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Wai'Xing Shi %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Zong'Mu Shi %R%"
+		}
+
+		occupation_army = {
+			sequential_name = "Zhan Shi %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Zhan Kai Shi %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Zhan Jiqi'Ren Shi %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Provinces + Extra (40)	
+			Anhui Beijing Chongqing Fujian Guangdong Gansu Guangxi Guizhou Henan Hebei Hainan "Hong Kong" Heilongjiang Hunan Jilin Jiangsu Jiangxi Liaoning Macau "Ningxia Hui" 
+			Qinghai Sichuan Shandong Shanghai Shaanxi Shanxi Tianjin "Xinjiang Uyghur" Yunnan Zhejiang Tiantang Xuanpu Yaochi Buzhou Youdu Penglai Kunlun Fusang Queqiao Yushan	
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+							
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+		default = {
+			first_names_male = {
+				Wang Li Zhang Liu Chen Yang Huang Zhao Wu Zhou Xu Sun Ma Zhu Hu Guo He Gao Lin Luo 
+				Zheng Liang Xie Song Tang Xu Han Feng Deng Cao Peng Zeng Xiao Tian Dong Yuan Pan Yu Jiang Cai 
+				Du Ye Cheng Su Wei Lu Ding Ren Shen Yao Cui Tan Fan Jin Shi Liao Jia Xia Bai Zou 
+				Meng Xiong Qin Qiu Yin Xue Yan Duan Lei Hou Long Tao Gu Mao Hao Gong Shao Wan Qian Dai  
+				Mo Kong Xiang Kang Chang Qiao Lai Wen 
+				}
+			first_names_female = {
+				Wang Li Zhang Liu Chen Yang Huang Zhao Wu Zhou Xu Sun Ma Zhu Hu Guo He Gao Lin Luo 
+				Zheng Liang Xie Song Tang Xu Han Feng Deng Cao Peng Zeng Xiao Tian Dong Yuan Pan Yu Jiang Cai 
+				Du Ye Cheng Su Wei Lu Ding Ren Shen Yao Cui Tan Fan Jin Shi Liao Jia Xia Bai Zou 
+				Meng Xiong Qin Qiu Yin Xue Yan Duan Lei Hou Long Tao Gu Mao Hao Gong Shao Wan Qian Dai  
+				Mo Kong Xiang Kang Chang Qiao Lai Wen 
+				}
+			second_names_male = {
+				Aiquo An Anguo Bai Bingwen Bo Bohai Bojing Bolin Boqin Changpu Chanming Chao Chaoxiang Chen Cheng Chenglei Cheung Chi Chongan 
+				Chongkun Chonglin Chuanli Chung Deli Deshi Dewei Da Dai Delun Deming Dingbang Dingxiang Dong Donghai Duyi Enlai Fa Fai Fang
+				Feng Fengge Fu Fuhua Gan Gang Geming Gen Guang Guangli Gui Guiren Guoliang Guotin Guozhi Guowei Hai He Heng Ho 
+				Hong Honghui Hongqi Hop Huan "Huang Fu" Hui Hulin Hung Huojin "Jaw-long" Jian Jiang Jianguo Jianyu Jin Jing Jingguo Jinhai Jinjing 
+				Jun Junjie Kang Keung Kong Li Lei Liang Liko Ling Liu Liwei Lok Longwei Manchu "Ming-hua" Mingli "Ming-tun" Minsheng Minzhe 
+				Nianzu On Park Peng Pengfei Ping Qi Qianfan Qiang Qingshan Qingsheng Qiquiang Qiu Quan Quon Renshu Rong Ru Shaoqiang Shilin 
+				Shan Shanyuan Shen Shi Shing Shining Shirong "Shoi-ming" Shoushan Shunyuan "Shu-sai-chong" Siyu "Sueh-yen" Sying Tao Tengfei Tingzhe "Tsun-chung" Tung Wang 
+				Wei Weimin Weisheng Weiyuan Weizhe Wencheng Wenyan Wing Wuzhou Xiang Xianliang Xiaobo Xiodan Xiaojian Xiaosi Xiaowen Xiasheng Xin Xing Xiu 
+				Xue Xueqin Xueyou Yang Yanlin Yaochuan Yaoting Yaozu Ye Yi Yingjie Yingpei Yong Yongliang Yongnian Yongrui Yongzheng You Yuanjun Yunxu 
+				Yusheng Zedong Zemin Zenguang Zhixin Zhiyuan Zhen Zhengzhong Zhensheng Zhihuan Zhiqiang Zhong Zian Zihao Zixin 
+				}
+			second_names_female = {
+				"Ah Lam" An "Chu Hua" Chun Fang "Mei Hua" Jing Changchang "Tung-Mei" Hong Ruolan "Mei Lien" Song Wenling Fangsu Baozhai Ehuang Qingling "Mei Xing" Nuying
+				Suyin Rong Huian Peizhi Fan Daiyu Mie "O-Huang" Yingtai "Mei Zhen" Fenfang Jiayi Huan Jinghua Lan Meili Xiaofan Qiuyue Liling Chenguang
+				Liqin Jiaying Meihui Guang Mei Qing Niu Chen Lin Jiao Cuifen Ling Xiurong Ya Hualing Xiulan Qiang Ning Dandan Qi
+				Xiuying Changying Jia Yu Lifen Huiling Xiaohui Dongmei Xiu Shuang Yun Qingge "Mei Xiang" Jia Meirong Yanyu Luli Yanmei Mingzhu Lanfen
+				Huifang Yue Zhilan "Ngo-Kwang" Lihua Yuan Mingxia Lijuan Juan Huiqing Shu Yuanjun Zhenzhen Xue Ju Li Xiaodan Shan Lanying Zongying 
+				}
+			regnal_first_names = {
+				Wang Li Zhang Liu Chen Yang Huang Zhao Wu Zhou Xu Sun Ma Zhu Hu Guo He Gao Lin Luo 
+				Zheng Liang Xie Song Tang Xu Han Feng Deng Cao Peng Zeng Xiao Tian Dong Yuan Pan Yu Jiang Cai 
+				Du Ye Cheng Su Wei Lu Ding Ren Shen Yao Cui Tan Fan Jin Shi Liao Jia Xia Bai Zou 
+				Meng Xiong Qin Qiu Yin Xue Yan Duan Lei Hou Long Tao Gu Mao Hao Gong Shao Wan Qian Dai  
+				Mo Kong Xiang Kang Chang Qiao Lai Wen 
+				}
+			regnal_second_names_male = {
+				Aiquo An Anguo Bai Bingwen Bo Bohai Bojing Bolin Boqin Changpu Chanming Chao Chaoxiang Chen Cheng Chenglei Cheung Chi Chongan 
+				Chongkun Chonglin Chuanli Chung Deli Deshi Dewei Da Dai Delun Deming Dingbang Dingxiang Dong Donghai Duyi Enlai Fa Fai Fang
+				Feng Fengge Fu Fuhua Gan Gang Geming Gen Guang Guangli Gui Guiren Guoliang Guotin Guozhi Guowei Hai He Heng Ho 
+				Hong Honghui Hongqi Hop Huan "Huang Fu" Hui Hulin Hung Huojin "Jaw-long" Jian Jiang Jianguo Jianyu Jin Jing Jingguo Jinhai Jinjing 
+				Jun Junjie Kang Keung Kong Li Lei Liang Liko Ling Liu Liwei Lok Longwei Manchu "Ming-hua" Mingli "Ming-tun" Minsheng Minzhe 
+				Nianzu On Park Peng Pengfei Ping Qi Qianfan Qiang Qingshan Qingsheng Qiquiang Qiu Quan Quon Renshu Rong Ru Shaoqiang Shilin 
+				Shan Shanyuan Shen Shi Shing Shining Shirong "Shoi-ming" Shoushan Shunyuan "Shu-sai-chong" Siyu "Sueh-yen" Sying Tao Tengfei Tingzhe "Tsun-chung" Tung Wang 
+				Wei Weimin Weisheng Weiyuan Weizhe Wencheng Wenyan Wing Wuzhou Xiang Xianliang Xiaobo Xiodan Xiaojian Xiaosi Xiaowen Xiasheng Xin Xing Xiu 
+				Xue Xueqin Xueyou Yang Yanlin Yaochuan Yaoting Yaozu Ye Yi Yingjie Yingpei Yong Yongliang Yongnian Yongrui Yongzheng You Yuanjun Yunxu 
+				Yusheng Zedong Zemin Zenguang Zhixin Zhiyuan Zhen Zhengzhong Zhensheng Zhihuan Zhiqiang Zhong Zian Zihao Zixin 
+				}
+			regnal_second_names_female = {
+				"Ah Lam" An "Chu Hua" Chun Fang "Mei Hua" Jing Changchang "Tung-Mei" Hong Ruolan "Mei Lien" Song Wenling Fangsu Baozhai Ehuang Qingling "Mei Xing" Nuying
+				Suyin Rong Huian Peizhi Fan Daiyu Mie "O-Huang" Yingtai "Mei Zhen" Fenfang Jiayi Huan Jinghua Lan Meili Xiaofan Qiuyue Liling Chenguang
+				Liqin Jiaying Meihui Guang Mei Qing Niu Chen Lin Jiao Cuifen Ling Xiurong Ya Hualing Xiulan Qiang Ning Dandan Qi
+				Xiuying Changying Jia Yu Lifen Huiling Xiaohui Dongmei Xiu Shuang Yun Qingge "Mei Xiang" Jia Meirong Yanyu Luli Yanmei Mingzhu Lanfen
+				Huifang Yue Zhilan "Ngo-Kwang" Lihua Yuan Mingxia Lijuan Juan Huiqing Shu Yuanjun Zhenzhen Xue Ju Li Xiaodan Shan Lanying Zongying 
+			}
+		}
+	}
+}

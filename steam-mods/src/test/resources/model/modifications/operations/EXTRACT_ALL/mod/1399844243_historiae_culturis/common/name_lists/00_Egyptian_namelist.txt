@@ -1,0 +1,290 @@
+﻿### Historiae Culturis - Kemet (Egypt)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+egyptian_names = {
+	randomized = no
+	alias = "Ancient Egyptian"
+
+	ship_names = {
+	
+		science = {
+		###Viziers (33)
+			Ankhu Aperel Amethu Amenmose Pairy Babaef Bakenrenef Bebi Dagi Djau Duaenre Hepu Hewernef Ibiaw Intefiqer Iunmin Iuty Iymeru Khaemtir Khaemwaset 
+			Khay Kheti Mereruka Merefnebef Nebet Nebit Nikaure Panehesy Paser Pentu Zamonth Usermontu Siese Shemay 
+			}
+		
+		constructor = {
+		###Wadi's (9)
+			"Wadi Allaqui" "Wadi Hammamor" "Wadi Gabgaba" "Wadi Natrun" "Wadi Dakhla" "Wadi Kharga" "Wadi Bahariya" "Wadi Mukattab" "Wadi Feiran"
+			}
+		
+		colonizer = {
+		###Mountains (8)
+			Sinai Serbal Tingar Helal "Hashem El Tarif" "Gebal Sha'ib El Banat" "Jabal Umm Shumar" "El Qurn" 
+			}
+		
+		transport = {
+		###Oases (9)
+			Bahariya Baris Dakhla Faiyum Farafra Kharga Moghra Qara Siwa 
+			}
+		
+		corvette = {
+		###Lesser Deities (160)
+			Aakhu "Aakhu-hetch-t" "Aakhu-ra" "Aakhu-sa-ta-f" Aakhui "Ami-beq" "Ami-haf" "Ami-Serqet-Ka" "Ami-kar" "Ami-kehau" "Ami-naut-f" "Ami-neht-f" "Ami-neter" "Ami-nu" "Ami-Pe" "Ami-ret" "Ami-sehseh" "Ami-sekhet-f" "Ami-sepa-f" "Ami-suht-f"
+			"Ami-ta" "Ami-ut" "Anmut-fabesh" Antywy Ari "Ari-em-aua" "Ari-hetch-f" "Arit-Amen" Athpi Ati Ba "Ba-aakhu-ha-f" "Ba-em-uar-ur" "Ba-pefi" "Ba-ta" "Ba-tau" "Ba-utcha-hau-f" Heb "Hun-sahu" Hutchai 
+			"Khenti-en-Sa-t" "Khenti-heh-f" "Khenti-henthau" "Khenti-Het Anes" "Khenti-kha-t" "Khenti-Khas" "Maa-ab-khenti" "Maa-atht-f" "Maa-en-Ra" "Maa-f-ur" "Maa-ha-f" "Maa-mer-f" "Men-t" Meni Menu "Menu-nesu-Heru" "Menu-qet" "Met-en-Asar" "Met-her" Metes 
+			"Metes-ab" "Metes-neshen" Meti Metni "Metu-ta-f" Neb "Neb aa" "Neb amakh" "Neb ankh" "Neb aq-t" "Neb Kheper-Tuat" "Neb-Khert-ta" "Neb pat" "Neb utchat-ti" "Neb-seb-t" "Neb Uast" "Neb-Un" "Neb user" Nebti Nekenher 
+			Neter Neterti "Neter bah" "Neter neferu" "Neter-hau" "Neter-ka-qetqet" "Neter-kha" "Netrit-ta-meh" "Netrit-Then" Serq Unnti Unta Up "Up-hai" "Up-shat-taui" "Up-uatu" "Upi-sekhemti" "Upt-heka" Upast Upu 
+			Ur "Ur-ares" "Ur-at" "Ur-heka" "Ur-henhenu" "Ur-henu" "Ur-khert" "Ur-maati-f" "Ur-metuu-f" "Ur-pehti" "Ur-pehui-f" Urrta Medjed "Neb au-t-ab" "Netrit fent" "Ami-khent-aat" "Ami-pet-seshem" "Ami-urt" "Ami-Atemt"
+			"Amit-Qetem" "Ami-Saakhu" "Amit-she-t-urt" Apertra "Arit-aakhu" "Ba-khati" Ariti "Baiut-s-amiu" Hebit Hetemit Hunit "Hunit Pe" "Hunit urit" Hunteth "Hurit urit" "Maa-a" "Maa-neter-s" "Neb-Aa-t" "Neb-abui" "Neb akeb"
+			"Neb Atur" "Neb Aut" "Neb Baa-t" "Neb pehti" "Neb Sa" "Neb Septi" "Neb Sam" Unnit Unnuit Upit "Ur-a" Urit "Nebt-Annu" "Urit-en-kru" "Urit-hekau" "Urit-hethati" "Neb-t Atu" "Neb t-Kheper" "Neb-t usha" "Neb-t aakhu"
+			}
+		
+		destroyer = {
+		###Lesser Deities (100)
+			Ash Astennu Ba "Ba-Ra" Shai Babi Banebdjedet "Ba-Pef" Bes Buchis Dedun Dedwen Denwen Djebuty Djefa Dua Fa Fetket "Gengen Wer" Ha 
+			"Nebt-Setau" "Nebt-Shat" "Nebt-Shefshefet" Nefertary Nehmetawy Pelican Persit Pesi Qebhet Qererti Qerhet "Raet-Tawy" Rekhit Renenet Renpet Sait Satet "Sefkhet-Abwy" Sehith "Sekhat-Hor"
+			Peteese Pihor "Ptah-hotep" Qebehsenuf Reshpu "Ra-Herakhty" Sah Sebeg Sekhemus Sepa Sepes Sopd Sothis Tuamutef Wenenu Wepwawet Yah Ahti Amathaunta Amentet
+			Anhefta Anit Anput Antd Anuke Apet Astarte Ausaas Besna Esna "Hert-ketit-s" "Hert-Nemmat-Set" "Hert-sefy-s" "Heru-pa-kaut" Hesat Heset "Hetepes-Sekhus" Iw Kabechet Kebehut
+			Ken Septu Shed Shezmu Anat Anqet Anta Matit "Mehet-Weret" Mekhit "Meht-urt" Menhit Meretseger Merit Meskhenet Nakith Nebethetepet "Nebt-Ankhiu" "Nebt-Khu" "Nebt-Mat" 
+			}
+		
+		cruiser = {
+		###Minor Deities (100)
+			Aani Aati "Am-heh" "Amu-Aa" "An-a-f" "An-hetep-f" "An-mut-f" "An-tcher-f" Andjety Anhert Ani Anti Apedemak Tjenenyet Apep Apesh Tjenmyt Arensniphis Asclepius Thoeris
+			Joh Kagemni Khenmu Khnum "Khenti-Amenti" "Khenti-qerer" Khesfu Khentamentiu Khentekhtai Kherty Kneph Mahes Mandulis Mehen Mesta Imset Mihos Min Mnevis "Nefer Hor"
+			Hapi "Hapy-Wet" Hardedef "Heru-em-akbet" Harmachis Harsomtus Jaurun Heka Hike Heneb Henkhisesui "Heru-Khu" "Hery-sha-duat" Heryshaf Hu Iah Ihy Ihu Imhotep Ishtar
+			Neferhotep Nefertum "Nehebu-Kau" Nun Panebtawy Petbe Qebui "Ra-ateni" Reshep Sebek Sebiumeker Sed Seker Sia Tutu Uneg Weneg Yam Ammit Amn  
+			"Sekhet-Metu" Seret "Sesenet-Khu" Seshat "Shemat-Khu" Shentayet Shenty Shesmetet Sopdet Swenet "Ta-Bitjet" "Ta-Sent-Nefert" Tafner Tayt Temet Temtith Tenenet Themath Thmei Thermuthis
+			}
+		
+		battleship = {
+		###Minor Deities (40)
+			"Ba'alat Gebal" Hatmehit Hedetet Heptet "Here-Kau" Horea Iat Iabet Ipy Iusaaset Khefthernebes Mafdet Mehit Hedjhotep Qetesh Nu Unut Taweret Wepset Werethekau
+			Serket Baal Apis Apep Abu "Ab-ta" "Ermen-ta" Kauket Kuk Hauhet Naunet Heh Aai Ennead Hemuset "Her-Hequi" Khnemiu Ogdoad Renniu "Setheniu-Tep" Thoueris 
+			}
+		
+		titan = {
+			"Ra's Glory" "Servant of Osiris" "Justice of Ma'at" "Jaws of Sobek" "Roar of Maahes" "Vengeance of Apophis"
+			}
+
+		colossus = {
+			"Eye of Horus" "Amun's Wrath" "Embrace of Anubis" "Wadjet's Shield" "Bringer of the Duat"
+			}
+		
+		military_station_small = {
+		###Numerals (18)
+			Wa Sn Xmt Fdn Dj Sjs Sfx Xmn Psd Md Dwt Maba Hmw Snt Xa Dba Hfn Hha
+			}
+
+		ion_cannon = {
+		###Alphabet (20)
+			Shen Shenu Tiet Ankh Sa Djed Kheper Ka Ba Seba Bit Khepri Nebet "Sa Ra" Udjat Seshen Mehyt Imn Tut 
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Shuwadj %R%"
+		}
+	
+	army_names = {
+		defense_army = {
+			sequential_name = "Medjays %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Khopesh %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Hyksos %R%"
+		}
+		
+		clone_army = { 
+			sequential_name = "Mitanni %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Hykcomp %R%"
+		}
+		
+		robotic_defense_army = {
+			sequential_name = "Medjays Hykcomp %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Sykn %R%"
+		}
+		
+		android_defense_army = {
+			sequential_name = "Medjays Sykn %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Ourarit %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Hittites %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name =  "Maryannu %R%"
+		}
+		
+		occupation_army = {
+			sequential_name = "Girard %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Hykcomp Girard %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Sykn Girard %R%"
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+			###Important Deities (50)
+				Aker Aten Atum Bennu Geb Hapi Amun Anubis Horus Khepri Khnum Khonsu Maahes Montu Nefertum Nemty Neper Osiris Ra Ptah 
+				Set Shu Sobek Sopdu Thoth "Wadj-wer" Amunet Anuket Bast Bat Hathor Heket Hesat Imentet Isis Maat Menhit Mut Neith Nekhbet
+				Nephthys Nepit Nut Pakhet Renenutet Satet Sekhmet Tefnut Wadjet Wosret 
+				}
+		}
+		
+		pc_desert = {
+			names = {
+			
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+			
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			
+			}
+		}
+		
+		pc_nuked = {
+			names = {
+			
+			}
+		}
+		
+		pc_ai = {
+			names = {
+			
+			}
+		}
+		
+		pc_machine = {
+			names = {
+			
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+
+		default = {
+			first_names_male = {
+				Djedefre Baka Bauefre Menkaure Shepseskaf Thamphthis Userkaf Sahure Neferirkare Kakai Neferefre Shepseskare "Nyuserre Ini" "Menkauhor Kaiu" "Djedkare Isesi" Unas Teti Userkare "Meryre Pepi" Sewadjenre 
+				Merenre Nemtyemsaf "Neferkare Pepi" Neferka Siptah "Neitiqerty Siptah" Menkare Neby Shemai Khendu Merenhor Neferkamin Nikare Tereru Pepiseneb "Neferkamin Anu" "Qakare Ibi" Khuwihapi Meryibre Nebkaure 
+				Nerikare Sekhemkare Ameny Qemau Hotepibre Siharnedjheritef Iufni Semenkare Nebnuni Sehetepobre Sewesektawy Sewadjkare Nedjemibre Khaankhre Sobekhotep Renseneb Awybre Khabaw Sebkay Djedkheperew 
+				Sehetepkare Meribre Sekhemresewadjtawy Khasekhemre Menwadjre Sihathor Khaneferre Merhotepre Khahotepre "Wahibre Ibiau" "Merhotepre Ini" Sankhenre Sewadjtu Mersekhemre Ined Hori Merkawre Merkare Merkheperre Sehequenre 
+				Sankhptahi Dedumose Senebmiu Snaaib Mershepsesre Yakbim Sekhaenre "Ya'ammu" Nubwoserre Qareh Khawoserre Ammu Ahotepre Sheshi Nehesy Khakherewe Nebefawre Sehebre Merdjefare Nebdjefare 
+				Arses Khababash Arrhidaeus Soter Arsinoe Euergetes Ankhmakis Hugronaphor Apiphanes Memphitis Harsiesi Auletes Neos Tryphaena Setepenre Meryamun Weserkare Philadelphos Nekhtnebef Hsekiu 
+				Seka Khayu Tiu Teyew Thesh Tjesh Neheb Wazner Mekh Naqada "Iry-Hor" "Hor-Aha" Djer Djet Den Anedjib Semerkhet "Qa'a" Mentuhotepi Sneferka 
+				}
+			first_names_female = {
+				Sankhptahi Dedumose Senebmiu Snaaib Mershepsesre Yakbim Sekhaenre "Ya'ammu" Nubwoserre Qareh Khawoserre Ammu Ahotepre Sheshi Nehesy Khakherewe Nebefawre Sehebre Merdjefare Nebdjefare 
+				Arses Khababash Arrhidaeus Soter Berenice Arsinoe Euergetes Ankhmakis Hugronaphor Apiphanes Memphitis Harsiesi Auletes Neos Tryphaena Setepenre Meryamun Weserkare Philadelphos Nekhtnebef
+				}
+			second_names = {
+				Hotepsekhemwy Nebra Nynetjer "Weneg-Nebty" Senedj "Seth-Peribsen" "Sekhemib-Perenmaat" Neferkara Neferkasokar Hudjefa Khasekhem Khasekhemwy Sekhemkhet Sanakht Khaba Huni Mentuhotep Sehertawy Djehuti Acthoes 
+				Senenh Setut Meryhathor Wankare Merykare "Iry-pat" Intef Wahankh Nekhtnebtepnefer Nebtawyre Segerseni Iyibkhentre Nubkaure Khakheperre Nimaatre Maakherure Seankhibtawy Khutawy Sonbef Webenre 
+				Nebsenre Sekheperenre Anati Bebnum Apepi Nuya Wazad Sheneh Shenshek Khamure Yakareb "Yaqub-Har" Semqen "Aper-Anat" "Sakir-Har" Khyan Khamudi Pantjeny Woseribre Senebkay 
+				Nebiryraw Semenre Bebiankh Seuserenre Djedhotepre Montemsaf Shedwast Rahotep Wadjkhaw Sobekemsaf Wepmaat Senakhtenre Sekhemre Kamose Wadjkheperre Tao Seqenenre Nubkheperre Ahmosis Nebpehtire 
+				Aakheperkare Djeserkare Merneptah Userkheperure Tausret Akhenre Merenamun Userkhaure Setnakhte Heqamaatre Setpenamun Akhenamun Smendes Montuherkhopshef Hedjkeperre Pasebakhenniut Amenemope Psusennes Osorkon Shoshenq 
+				Pinedjem Titkheperure Siamun Herihor Piankh Masaharta Sekhemkheperre Heqakheperre Tutkheperre Harsiese Takelot Setepenamun Pami Aakheperre Pedubast Iuput Rudamun Shepsesre Tefnakhte Wahkare 
+				Bekenrenef Bocchoris Piye Shebitku Shabaka Djedkaure Taharqa Khuinefertemre Bakare Tantamani Necho Psamtik Psammetichus Apries Amasis Haaibre Khenemibre Ankhkaenre Cambyses Smerdis 
+				Bardiya Petubastis Artabanus Artaxerses Sogdianus Amyretaeus Nefaarud Baenre Achoris Hakor Khenemmaatre Psammuthes Nectanebo Teos Djedher Irimaatenre Senedjemibre Nakhthorhebyt "Neferkare Pepi" Khafre 
+				Nitocris Ahmose Akhenaten Neferneferuaten Seti Merenptah Nebmaatre Menkheperurre Aakheperrure Menkheperre Maatkare Aakhperkare Smenkhkare Ankhkheperure Tutankhaten Kheperkheperure Horemheb Amarna Meritaten Menpehtire 
+				Menmaatre Usermaatre Setpenre Banenre Amenmesse
+				}
+			regnal_first_names_male = {
+				Khufu Amenhotep Thutmose Tutankhamun Ramses Menes Sneferu Narmer Djoser 
+				}
+			regnal_first_names_female = {
+				Sobekneferu Nefertiti Hatshepsut Cleopatra Twosret MerNeith Berenice Isetnofret
+				}
+			regnal_second_names = {
+				Hotepsekhemwy Nebra Nynetjer "Weneg-Nebty" Senedj "Seth-Peribsen" "Sekhemib-Perenmaat" Neferkara Neferkasokar Hudjefa Khasekhem Khasekhemwy Sekhemkhet Sanakht Khaba Huni Mentuhotep Sehertawy Djehuti Acthoes 
+				Senenh Setut Meryhathor Wankare Merykare "Iry-pat" Intef Wahankh Nekhtnebtepnefer Nebtawyre Segerseni Iyibkhentre Nubkaure Khakheperre Nimaatre Maakherure Seankhibtawy Khutawy Sonbef Webenre 
+				Nebsenre Sekheperenre Anati Bebnum Apepi Nuya Wazad Sheneh Shenshek Khamure Yakareb "Yaqub-Har" Semqen "Aper-Anat" "Sakir-Har" Khyan Khamudi Pantjeny Woseribre Senebkay 
+				Nebiryraw Semenre Bebiankh Seuserenre Djedhotepre Montemsaf Shedwast Rahotep Wadjkhaw Sobekemsaf Wepmaat Senakhtenre Sekhemre Kamose Wadjkheperre Tao Seqenenre Nubkheperre Ahmosis Nebpehtire 
+				Aakheperkare Djeserkare Merneptah Userkheperure Tausret Akhenre Merenamun Userkhaure Setnakhte Heqamaatre Setpenamun Akhenamun Smendes Montuherkhopshef Hedjkeperre Pasebakhenniut Amenemope Psusennes Osorkon Shoshenq 
+				Pinedjem Titkheperure Siamun Herihor Piankh Masaharta Sekhemkheperre Heqakheperre Tutkheperre Harsiese Takelot Setepenamun Pami Aakheperre Pedubast Iuput Rudamun Shepsesre Tefnakhte Wahkare 
+				Bekenrenef Bocchoris Piye Shebitku Shabaka Djedkaure Taharqa Khuinefertemre Bakare Tantamani Necho Psamtik Psammetichus Apries Amasis Haaibre Khenemibre Ankhkaenre Cambyses Smerdis 
+				Bardiya Petubastis Artabanus Artaxerses Sogdianus Amyretaeus Nefaarud Baenre Achoris Hakor Khenemmaatre Psammuthes Nectanebo Teos Djedher Irimaatenre Senedjemibre Nakhthorhebyt "Neferkare Pepi" Khafre 
+				Nitocris Ahmose Akhenaten Neferneferuaten Seti Merenptah Nebmaatre Menkheperurre Aakheperrure Menkheperre Maatkare Aakhperkare Smenkhkare Ankhkheperure Tutankhaten Kheperkheperure Horemheb Amarna Meritaten Menpehtire 
+				Menmaatre Usermaatre Setpenre Banenre Amenmesse
+				}
+		}
+	}
+}

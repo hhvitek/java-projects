@@ -3,36 +3,27 @@
         "default_mod_folder": "%USERPROFILE%\\Documents\\"
     },
 
-    "modifications": [
-        {
-            "id": "EXTRACT_ALL",
-            "name": "Extract All",
-            "description": "Extract all .zip files in the given folder.",
-            "class": "model.modifications.operations.ExtractAllOperation"
-        },
-        {
-            "id": "MODIFY_MOD_DESCRIPTOR_FILES",
-            "name": "Modify mod descriptors",
-            "description": "Modify all mod descriptor files in place.",
-            "class": "model.modifications.operations.InPlaceModDescriptorFilesModification"
-        },
-        {
-            "id": "COPY_MOD_DESCRIPTOR_FILES",
-            "name": "Copy mod descriptors",
-            "description": "Copy all mod descriptor files into mod folder root. Replacing any existing files.",
-            "class": "model.modifications.operations.CopyModDescriptorFilesToModFolderRoot"
-        }
-    ],
+    "modifications" : [ {
+        "id" : "EXTRACT_ALL",
+        "name" : "Extract All",
+        "description" : "Extract all .zip files in the given folder.",
+        "class" : "model.modifications.operations.directory.ExtractAllDirOperation"
+    }, {
+        "id" : "MODIFY_MOD_DESCRIPTOR_FILES",
+        "name" : "Modify mod descriptors",
+        "description" : "Modify all mod descriptor files in place.",
+        "class" : "model.modifications.operations.directory.InPlaceModDescriptorDirOperation"
+    }, {
+        "id" : "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES",
+        "name" : "Copy mod descriptors",
+        "description" : "Copy all mod descriptor files into mod folder root. Replacing any existing files.",
+        "class" : "model.modifications.operations.directory.CopyModDescriptorFilesToModFolderRootDirOperation"
+    } ],
 
-    "modifications-chains": [
-        {
-            "id": "BASIC",
-            "name": "Basic chain",
-            "modifications-ids": [
-                "EXTRACT_ALL",
-                "MODIFY_MOD_DESCRIPTOR_FILES",
-                "COPY_MOD_DESCRIPTOR_FILES"
-            ]
-        }
-    ]
+    "modifications-chains" : [ {
+        "id" : "BASIC",
+        "name" : "Basic chain",
+        "modifications-ids" : [ "EXTRACT_ALL", "MODIFY_MOD_DESCRIPTOR_FILES", "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES" ],
+        "description" : "Basic chain"
+    }]
 }

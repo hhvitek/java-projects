@@ -24,7 +24,7 @@ class InPlaceModDescriptorFilesModificationTest extends AbstractOperationTest {
     public void modifyModFileTest() throws IOException, ModificationException {
         executableOperation.execute(workingDirectory);
 
-        String expectedMd5sum = "c50df5ea82a72c94995199f76121ed41";
+        String expectedMd5sum = "e3d55ec2151ce5701edc993aa2ea19df";
 
         String actualMd5sum = DigestUtils.md5Hex(
                 new FileInputStream(

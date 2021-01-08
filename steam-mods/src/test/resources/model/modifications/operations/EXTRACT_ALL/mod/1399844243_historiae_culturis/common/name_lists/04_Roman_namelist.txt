@@ -1,0 +1,438 @@
+﻿### Historiae Culturis - Roman (Latin)
+### Created by LostInACave
+### SCX Compatible 
+
+#Each line = 20~ Names#
+
+roman_names = {
+	randomized = no
+	alias = "Roman"
+
+	ship_names = {
+		science = {
+		###Translations (20)
+			Obstinatio Diligens Zephyrus Aenigma Scylla Sanctor Aspera Eminentia Astutia Alacritas Prosperitas Perseverantia Apex Lumen Memoria Peregrinatio Vagabundus Viator Legatus Emissarius
+			}
+		
+		constructor = {
+		###Mountains (20)
+			Paradiso Sasso Vesuvius Marmolada Etna Corno Amiata Viso Tofane Lavaredo Terminillo Aspromonte Vettore Cimone Civetta Maiella Catria Velino Dolcedorme Miletto
+			Cervino Zupo Grivola Ortler Zebru Cevedale Singla Presanella Adamello Tersiva Busazza Sobretta Sestriere Tambo Gavia Sorapiss Cristallo Rebbio Pelmo Popena
+			}
+		
+		colonizer = {
+		###Rivers (20)
+			Po Tiber Arno Adige Piave Adda Tanaro Brenta Oglio Sesia Tagliamento Rubicon Mincio Cohinas Savio Soca Trebbia Flumendosa Tirso Panaro
+			}
+		
+		transport = {
+		###Translations (10)
+			Exodia Motus Increbsesco Onerariis Adveho Migro Transversa Supera Supra Oblicum
+			}
+		
+		corvette = {
+		###Battles (206)
+			Regilus Aricia Antium Longula Algidus Corbio Veii Cremera Colline Allia Gaurus Suessula Trifanum Caudine Lautukae Bovianum Vadimon Camerinum Tifernum Sentinum 
+			Aquilionia Arretium Populonia Heraclea Asculum Beneventum Agrigentum Lipara Mylae Sulci Tyndaris Ecnomus Adys Tunis Panormus Lilbaeum Drepana Aegates Cissa Ticinus 
+			Trbia Ebro Trasimene Falernus Cannae Nola Capua Silarus Herdonia Baetis Baecula Grumentum Metaurus Carmona Ilipa Gaudalquivir Carteia Crotona Bagbrades Zama 
+			Faesulae Telamon Clastidum Cremona Aous Cynoscephalae Gythium Placentia Mutina Thermopylae Euromedon Myonessus Magnesia Olympus Ancyra Manlian Callicinus Pydna Numantia Carthage 
+			Neferis Corinth Noreia Rhone Burdigala Arausio "Aquae Sextiae" Vercellae Muthul Fucine Piraeus Chaeronea Orchomenus Tifata Asio Sacriporto Clusium Faventia Fidentia Cyzicus 
+			Cabira Tigranocerta Artaxata Lycus Picenum Campania Siler Pistoria Arar Bibracte Axona Sabis Octodurus Alesia Carrhae Ilerda Bagradas Dyrrhachium Pharsalus Nile 
+			Ruspina Thapsus Munda Zela Gallorum Philippi Naulochus Perugia Actium Vellica Aracillum Lolliana Lupia Teutoburg Weser Medway Caradoc Graupius Artaxata Uspe 
+			Rhandeia Camulodunum Watling "Beth-Horon" Masada Bedriacum Tapae Adamclisi Sarmisegetusa Carnuntum Ctesiphon Laugaricio Nicaea Issus Lugdunum Nisibis Resaena Edessa Callinicum Antioch 
+			Chalon Margus Philippopolis Abrittus Mediolanum Naissus Benacus Fano Pavio Lingones Vindonissa Immae Emesa Turin Verona Milvian Tzirallum Cibalae Mardia Adrianople 
+			Hellespont Chrysopolis Singara Amida "Mursa Major" Seleucus Reims Strasbourg Solicinium Thyatira Willows Argentovaria Thessalonica Save Frigidus Pollentia Mainz "Cap Bon" Nervasos Ravenna 
+			Narbonne Utus Catalaunian Orleans Soissons Badonicus 
+			}
+		
+		destroyer = {
+		###Minor Deities (140)
+			Abundantia "Acca Larentia" Acis Aerecura Aequitas Aesculapius Aeternitas Aion "Aius Locutius" Alernus Angerona Angitia "Anna Perenna" Annona Antevorta Arimanius Aura Aurora Averruncus Bacchus 
+			Bellona "Bona Dea" "Bonus Eventus" Bubona Caca Cacus Caelus Camenae Cardea Carmenta Carmentes Carna Clementia Cloacina Concordia Consus Cupid Cura Cybele "Dea Dia" 
+			"Dea Tacita" Decima Devera Discordia "Dius Fidius" "Dis Pater" Engeria Empanda Epona Fama Fascinus Fauna Faunus Faustitas Februus Febris Fecunditas Felicitas Ferentina Feronia 
+			Fides Flora Fornax Fontus Fufluns Fulgora Gratiae Hercules Hermaphroditus Honos Hora Indiges Intercidona Inuus Invidia Juturna Juventas Laverna Latona Lemures 
+			Levana Libera Liberalitas Libertas Libitina Lua Lucifer Lucina Lupercus Lympha "Mana Genita" Manes Mania Mantus "Mater Matuta" Meditrina Mefitis Mellona Mena Mithras 
+			Molae Moneta Mors Morta Murcia "Mutunus Tutunus" Naenia Nascio Necessitas Nemesis Nerio Neverita Nixi Nona Nortia Nox Parcae Pax Penates Picumnus 
+			Picus Pietas Pilumnus Poena Porrima Vediovis Summanus Larunda Terminus Lares Lucina Postverta Priapus Proserpina Providentia Pudicitia Querquetulanae Quiritis Robigo Roma 
+			}
+		
+		cruiser = {
+		###Translations (100)
+			Unificationis Imperator Venator Justitia Inquisitor Exsequor Coercitor Lustitiae Immortalis Authoritix Angoria Domandix Vincix Evincia Vinco Titanus Judicator Infernalis Heros Vindex
+			Incolumitas Triumphus Imperium Excelsior Supremus Praevalens Exemplaris Memorandus Incorruptibilis Integritas Probitas Prudentia Obstinatio Diligentia Valor Perseverantia Disciplina Strenuus Fortunata Victrix
+			Executor Resistens Firmus Indefatigabilis Efficax Pius Mixta Diligens Atrox Malignus Invidiosus Terminator Triturator Mantichora Interdictor Intrusus Vexator Versipellis Studiosus Zelus
+			Contundor Malitia Minax Immitis Immisericors Pestis Maleficium Civis Adversarius Sicarius Sica Pertinax Officium Strages Secutor Incursor Arcus Caelestis Rapidus Redemptio 
+			Implacabilis Superbus Strictus Robustus Machaera Salvatio Magnificentior Impetus Injuria Domitor Vehemens Basiliscum Talentum Ingenium Fascinum Unguis Tenax Filius Agilis Velox  
+			}
+		
+		battleship = {
+		###Important Deities (77)
+			Jupiter Quirinus Mars Carmentis Ceres Falacer Flora Furrina Palatua Pomona Portunus Vulcan Volturnus Pluto Janus Saturn Genius Mercury Virtus Voluptas 
+			Apollo Neptune Sol Orcus Liber Tellus Juno Luna Diana Minerva Venus Vesta Feronia Novensides Pales Salus Fortuna Fons Fides Ops 
+			Rumina Salacia Salus Sancus Securitas Silvanus Somnus Soranus Sors Spes "Stata Mater" Sterquilinus Suadela "Sulis Minerva" Tellumo Tempestas "Terra Mater" Tiberinus Tibertus Transquillitas 
+			Trivia Ubertas Unxia Vacuna Vagitanus Vediovus Venilia Venti Veritas Verminus Vertumnus "Vica Pota" Victoria Viduus Virbius Romulus Remus 
+			}
+		
+		titan = {
+		###Translations (8)
+			Invictus Fortis Indomitus Audax Imperito Victor Validus Grandis 
+			}
+
+		colossus = {
+		###Translations (4)
+			Retributio Justitia Puritas Gloria 
+			}
+		
+		military_station_small = {
+		###Equipment (15)
+			Pugio Gladius Spatha Hasta Javelin Pilum Dolabra Falx Scutum Parma Caetra Manica Squamata Hamata Segmentata Ballista Scorpio  
+			}
+
+		ion_cannon = {
+		###Alphabet (20)
+			Alpha Beta Gamma Epsilon Zeta Omega Iota Sigma Omicron Tau Upsilon Theta Kappa Mu Iambda Eta Rho Kio Liopa Dixca
+			}
+	}
+		
+	fleet_names = {
+		sequential_name = "Classis %R%"
+		}
+	
+	army_names = {
+		defense_army = { 
+			sequential_name = "Limitanei %R%"
+		}
+
+		assault_army = {
+			sequential_name = "Legio %R%"
+		}
+		
+		slave_army = {
+			sequential_name = "Auxilia %R%"
+		}
+		
+		clone_army = {
+			sequential_name = "Clonandi %R%"
+		}
+		
+		robotic_army = {
+			sequential_name = "Robotum %R%"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "Limitanei Robotum %R%"
+		}
+		
+		android_army = {
+			sequential_name = "Robotum Superior %R%"
+		}
+
+		android_defense_army = {
+			sequential_name = "Limitanei Robotum Superior %R%"
+		}
+		
+		psionic_army = { 
+			sequential_name = "Legio Psychica %R%"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "Bestia Auxilia %R%"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "Legio Praetoriae %R%"
+		}
+
+		occupation_army = {
+			sequential_name = "Cohort Vigilum %R%"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "Robotum Vigilum %R%"
+		}
+
+		android_occupation_army = {
+			sequential_name = "Robotum Superior Vigilum %R%"
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+			###Provinces 
+				Italia Latinum Sicilia Sardinia Corsica Africa Numidia Cyrenaica Aegyptus Syria Judea Cyprus Mauretania Tingitania Hispania Baetica Luistania Tarraconensis Gallia Britannia 
+				Belgica Germania Aquitania Narbonensis Illyricum Noricum Raetia Dacia Pannonia Thracia Macedonia Epirus Achaea Creta Asia Birthynia Sarmatia Lycia Galatia Armenia 
+				Media Assyria Cappadocia Mesopotamia Taurica Pontus Arabia Hibernia Elysium Arcadia 
+				}
+		}
+		
+		pc_desert = {
+			names = {
+				
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+							
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+				
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+				
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+				
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+				
+			}
+		}
+		
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = { 
+			}
+		}
+	}
+
+	### CHARACTERS
+	character_names = {
+
+		default = {
+			first_names_male = {
+				Abercius Abito Acacius Acaunus Achaicus Acilianus Adauctus Adepphius Adjutor Adranos Adventus Aeacus Aebutus Aemilianus Aetius Afer Agaptus Agatopus Agelastus Agorix 
+				Agricola Agrippa Agustalis Ahala Ahenobarbus Albanus Albinius Albinus Albucius Alethius Allectus Aloysius Aluredes Alypius Amandus Amantius Ambrosius Amor Amphion Anatolius 
+				Ancus Andronicus Angelus Antias Antius Anullinus Apelles Apellinus Aper Apollonarius Aponius Aquila Aquilius Aquillius Aratus Arcadius Arcavius Archarius Arius Armiger 
+				Arminus Arpagius Arrianus Arruntius Aruns Arvina Asellio Asina Asprenas Asprenus Assanius Audaios Audens Augendus Augurnus Augurius Augustalis Augustanus Augustus Auila 
+				Aurelianus Aurelius Ausonius Auspex Auxentius Auxientius Auxilius Avienus Avitus Balbillus Balbus Balduinus Bambalio Bamballio Banquerius Barbatus Baro Bassus Bato Belenus 
+				Belisarius Bellator Belletor Bellicus Bellus Bestia Betto Bibaculus Bibulus Bitucus Blandus Bodenius Bolanus Bonifatius Bonosus Bonus Bradua Britannicus Brocchus Bromidus 
+				Bruccius Brucetus Bruscius Brutus Bubo Buccio Bulla Burcanius Burrus Buteo Caecilianus Caecina Caecus Caelistis Caelestius Caelianus Caelinus Caepio Caerellius Caesar Calacicus 
+				Calatinus Caldus Calenus Calerus Caletus Caligula Callisunus Calogerus Calpurnius Calpurnianus Calpurnis Calvinus Calvus Camerius Camillus Campanus Candidianus Candidus 
+				Candidius Canio Canisius Cantaber Capito Capiton Caprarius Caracturus Carantus Carbo Carinus Carius Carnifex Carus Casca Cassianus Castinus Castorius Castus Catianus Catilina 
+				Cato Catonius Catullus Catulus Catus Cecilianus Celatus Celer Celsus Cenaeus Cencius Censorinus Censorius Centumalus Cerialis Cerinthus Cerularius Cervianus Cervidus Cethegus 
+				Chlorus Christianus Cicero Cico Cimber Cinna Cinnianus Cita Cittinus Civilis Clarus Classicianus Claudianus Clemens Clementis Clodianus Cogitatus Colias Collatinus Columbanus 
+				Columella Comes Comitianus Comitinus Commidius Commidus Commius Commodus Concessus Congrio Constans Constantius Corbulo Cordus Cornix Cornutus Corvinus Corvus Cosmas Cotentinus 
+				Cotta Crassus Cremutius Crescentius Cresces Crispinus Crispus Crito Crotilo Cucuphas Culleolus Cumanus Cunobarrus Cupitas Curio Cyprianus Cyprias Cyricus Dacianus Dalmatius Dama 
+				Damasippus Damasus Damianus Dannicus Dardanius Dardanus Decentius Decianus Decmitius Decmus Dexion Dexippus Didicus Dignus Dio Diocletianus Diocourides Disertus Docilinus Docilus 
+				Dolabella Dominicus Domitianus Donatianus Donatus Donicus Dorotheus Draco Drusillus Drusus Dubitatius Dulcitius Durio Durus Duvianus Eborius Eburnus Ecdicius Eclectus Egbuttius 
+				Egnatius Elerius Eliphas Elpidius Elvorix Emeritus Encratis Ennecus Ennius Ennodius Eonus Epidianus Epimachus Epolonius Erasinus Esdras Eudomius Eudoxius Eugenius Eugenus Eulogius 
+				Eumenius Eunapius Euphemius Eustacius Eutherius Evodius Excingus Exsupereus Exuperantius Exupertus Fabianus Fabillus Facilis Fadus Fagus Falco Falconius Falx Famia Familiaris 
+				Fastidius Farus Faustillus Faustinianus Faustinius Faustus Faventinus Felicissimus Felissimus Felix Ferentinus Ferreolius Festus Fidelis Figulus Fimbria Fimus Firminus Firmus Flaccus 
+				Flamma Flavianus Flavillus Flavinus Florens Florentius Florianus Florus Forianus Fortunatus Fraucus Fredisius Frigidianus Frontalis Frontinus Fronto Fructosis Frugi Frugius Frumentius 
+				Fullofaudes Fulvianus Furius Fuscinus Fuscus Gaianus Gaius Gala Galarius Galenus Galerus Gallio Gallus Galvisius Garilianus Gaurus Gavros Gavrus Gelasius Gellius Gemellus Geminianus 
+				Generidus Genesius Genialis Gennadius Gerardus Germanus Germanicus Gessius Geta Getha Glabrio Glaucia Globulus Gluvias Glycia Gordianus Gordio Gorgonius Gracchus Gracilis Gratianus 
+				Gratidianus Grattus Gregorius Grumio Gualterus Gryllus Habitus Hadrianus Hardalio Haterius Helvius Herculius Herenus Herma Hermina Hesychius Hiberus Hilario Hilaris Hilarius Hirpinius 
+				Hirrus Homullus Honoratus Horatius Hortensis Hortensius Hortensus Hosidius Humilus Hybrida Iacomus Igennus Ignatius Indaletius Indus Ingenuus Ingenvinus Jocundus Jovinus Irenaeus 
+				Isatis Isauricus Italicus Ivmarus Januarius Javolenus Jovinianus Jovinus Jovius Juba Julianus Juncinus Juncus Junianus Justianus Justinianus Justinus Justus Juvenlis Labienus Lactantius
+				Laeca Laenas Laetinianus Laevinus Larcius Lartius Lateranus Latinius Laurentius Leddicus Lentullus Lentulus Leo Leontius Lepidus Lepontus Leptis Libanius Liberalis Libo Licinianus Licinius
+				Ligur Ligustinus Limetanus Linus Litorius Littera Litumaris Livianus Livigenus Longinus Lovernianus Lovernius Lucanus Lucianus Lucius Luccius Lucceius Lucilianus Lucretius Luctacus 
+				Lucullus Lunaris Luonercus Lupercus Lupicinus Lupinus Lupis Lurco Lurio Lutherius Lutorius Maccalus Macrinus Macro Macrobius Mactator Maecenus Maecius Magnentius Magnus Magunnus Maius 
+				Major Majus Malchus Mallus Maltinus Mancinus Manlius Mansuetus Marcallas Marcellinus Marcellus Marcialis Marcipor Margarita Marinianus Marinus Maritialis Maritimus Marius Maro 
+				Marsallas Marsicus Marsus Marsyas Martial Martialis Martianus Martinus Martius Martyrius Marullinus Marullus Maternus Matho Mauricius Maursus Maximianus Maximinius Maximinus 
+				Maximus Medullinus Megellus Melissus Melitus Mellitus Melus Meminius Memmius Memor Mercator Mercurialis Mercurinus Merula Messala Messor Metellus Metilius Metunus Micianus Mico 
+				Micon Milonius Minervalis Minianus Minicianus Moderatus Molacus Momus Montanus Montaus Mordanticus Mucianus Muco Muncius Murena Mus Musa Musicus Mutilus Mutius Nabor Naevius Narcissus 
+				Narses Nasica Naso Natalinus Natalis Naucratius Nazarius Nectaridus Nelius Nemesianus Nemnogenus Neneus Nennius Nepos Nero Nertomarus Nerva Nicasius Nicetius Nigellus Niger Nigidius 
+				Nigrinus Niraemius Nolus Nonius Noster Novatianus Novellius Numerianus Numonis Oceanus Octavianus Octobrianus Olennius Olympicus Opilio Opimius Opis Optatus Ordius Orientalis 
+				Orientius Orissus Orosius Osterianus Otho Ovidus Pacatianus Pachomius Pacuvianus Paenula Paetinus Paetus Palicamus Pamphilius Panaetius Pansa Pantensus Pantera Panthera Papinianus 
+				Papus Paratus Parnesius Pascentius Pastor Paterculus Paternus Patiens Patricius Paulinus Paullus Pavo Pelagius Pennus Peregrinus Perennis Perpenna Perperna Pertacus Pertinax Petasius 
+				Petreius Petronax Petrus Philippus Photius Pictor Pilatus Pilus Piso Pius Placidus Planta Plautis Plautius Plautus Pleminius Pollienus Pollio Polus Polybius Pompolussa Pomponius Poplicola
+				Porcus Porphyrius Postumianus Postumus Potitus Praetextus Prilidianus Primanus Primulus Primus Prisca Priscianus Priscillianus Priscus Probus Processus Proceus Proculus Procyon 
+				Profuterius Propertius Protacius Protus Proxsimus Publianus Publicola Publicus Pudens Pudentius Pulcher Pulcherius Pullus Pusinnus Pustula Quartinus Quarto Quatruus Quintinus Quietus
+				Quintilianus Quintilius Quintillius Quintillus Quiriac Quiricus Quirinalis Ramio Ramirus Ravilla Reburrus Receptus Rectus Regillus Reginus Regulus Remigius Remus Renatus Respectus
+				Restitutus Rex Rhesus Ripanus Rogatus Rogelius Romanus Romulianus Romulus Roscius Rufinianus Rufinus Rufrius Rufus Rullus Ruricius Ruso Rusticus Rutilianus Sabellius Sabinianus 
+				Sabinus Sacerdos Saenus Salinator Salonianus Saloninus Salonius Salvianus Sanctus Sandilianus Sanga Sarimarcus Sarrius Saturninus Saunio Scaevola Scapula Scaro Scato Scaurus Schlerus
+				Scipio Scribonianus Scrofa Sebastianus Secundas Segestes Sejanus Sellic Seneca Senecianus Senecio Senilis Senna Senopianus Sentius Septimianus Septimus Seronatus Serranus Servanus 
+				Servatius Seuso Severlinus Severus Sevso Siculus Sidonius Sigilis Silanus Silius Silo Silus Silvanus Similis Simo Simplex Simplicianus Siricus Sisenna Sisinnius Sita Sollemnis 
+				Sorex Sorio Sosius Sotericus Soulinus Spartacus Spendius Speratus Statius Stichus Strabo Sudrenus Suilius Sulinus Sulla Super Superbus Superstes Sura Surinus Surius Surus 
+				Sylla Sylvianus Sylvius Symmachus Symphorianus Sympronianus Synistor Synnodus Tacitus Taenaris Tancinus Tanicus Tarsicius Tatianus Taurinus Telesinus Terenteianus Tertulus Tetricus 
+				Tetullianus Thrasea Thurinus Tiberillus Tiberinus Tibullus Tiburs Titianus Titillus Torquatus Traianus Trailus Tranio Tranquillus Trebonianus Tremerus Tremorinus Trenico Trenus Triarius 
+				Trifer Triferus Trimalchio Trogus Trupo Tuccianus Tuditanus Turibius Turpilianus Turpilinus Tuticanus Tutor Ulpianus Urbicus Ursinus Ursus Uticensis Vala Valens Valentinus 
+				Valerianus Valgus Varialus Varro Varus Vatia Vedrix Venantius Venator Ventor Venustinius Vepgenus Verecundus Verinus Verres Verrucosus Verullus Verus Vespasianus Vespillo 
+				Vestinus Vetranio Vettonianus Vetus Viator Vibennis Vibius Victor Victoricus Victorinus Victricius Vincentius Vindex Vinicianus Viridio Virilis Vitalinus Vitalis Vitulus Vitus 
+				Vocula Volusianus Vopiscus Vulso
+				}
+			first_names_female = {
+				Abercia Abita Acacia Acauna Achaica Aciliana Adaucta Adepphia Adventa Aeaca Aebuta Aemiliana Aetia Afer Agapta Agatopa Agelasta Agorix Agricola Agrippa Agustalis Ahala Ahenobarba 
+				Albana Albinia Albina Albucia Alethia Allecta Aloysia Aluredes Alypia Amanda Amantia Ambrosia Amor Amphion Anatolia Anca Andronica Angela Antias Antia Anullina Apelles Apellina
+				Aper Apollonaria Aponia Aquila Aquilia Aquillia Arata Arcadia Arcavia Archaria Aria Armiger Armina Arpagia Arriana Arruntia Aruns Arvina Asellia Asina Asprenas Asprena Assania
+				Audens Augenda Augurna Auguria Augustalis Augustana Augusta Auila Aureliana Aurelia Ausonia Auspex Auxentia Auxientia Auxilia Aviena Avita Balbilla Balba Balduina Bambalia Bamballia
+				Banqueria Barbata Bara Bassa Bata Belena Belisaria Bellica Bella Bestia Betta Bibacula Bibula Bituca Blanda Bodenia Bolana Bonifatia Bonosa Bona Bradua Britannica Broccha Bromida 
+				Bruccia Bruceta Bruscia Bruta Buba Buccia Bulla Burcania Burra Butea Caeciliana Caecina Caeca Caelistis Caelestia Caeliana Caelina Caepia Caerellia Caesar Calacica Calatina Calda 
+				Calena Calera Caleta Caligula Callisuna Calogera Calpurnia Calpurniana Calpurnis Calvina Calva Cameria Camilla Campana Candidiana Candida Candidia Cania Canisia Cantaber Capita Capiton
+				Capraria Caractura Caranta Carba Carina Caria Carnifex Cara Casca Cassiana Castina Castoria Casta Catiana Catilina Cata Catonia Catulla Catula Cata Ceciliana Celata Celer Celsa 
+				Cenaea Cencia Censorina Censoria Centumala Cerialis Cerintha Cerularia Cerviana Cervida Cethega Chlora Christiana Cicera Cica Cimber Cinna Cinniana Cita Cittina Civilis Clara Classiciana
+				Claudiana Clemens Clementis Clodiana Cogitata Colias Collatina Columbana Columella Comes Comitiana Comitina Commidia Commida Commia Commoda Concessa Congria Constans Constantia 
+				Corbula Corda Cornix Cornuta Corvina Corva Cosmas Cotentina Cotta Crassa Cremutia Crescentia Cresces Crispina Crispa Crita Crotila Cucuphas Culleola Cumana Cunobarra Cupitas Curia 
+				Cypriana Cyprias Cyrica Daciana Dalmatia Dama Damasippa Damasa Damiana Dannica Dardania Dardana Decentia Deciana Decmitia Decma Dexion Dexippa Didica Digna Dia Diocletiana Diocourides
+				Diserta Docilina Docila Dolabella Dominica Domitiana Donatiana Donata Donica Dorothea Draca Drusilla Drusa Dubitatia Dulcitia Duria Dura Duviana Eboria Eburna Ecdicia Eclecta 
+				Egbuttia Egnatia Eleria Eliphas Elpidia Elvorix Emerita Encratis Enneca Ennia Ennodia Eona Epidiana Epimacha Epolonia Erasina Esdras Eudomia Eudoxia Eugenia Eugena Eulogia Eumenia
+				Eunapia Euphemia Eustacia Eutheria Evodia Excinga Exsuperea Exuperantia Exuperta Fabiana Fabilla Facilis Fada Faga Falca Falconia Falx Famia Familiaris Fastidia Fara Faustilla
+				Faustiniana Faustinia Fausta Faventina Felicissima Felissima Felix Ferentina Ferreolia Festa Fidelis Figula Fimbria Fima Firmina Firma Flacca Flamma Flaviana Flavilla Flavina Florens 
+				Florentia Floriana Flora Foriana Fortunata Frauca Fredisia Frigidiana Frontalis Frontina Fronta Fructosis Frugi Frugia Frumentia Fullofaudes Fulviana Furia Fuscina Fusca Gaiana
+				Gaia Gala Galaria Galena Galera Gallia Galla Galvisia Gariliana Gaura Gavra Gelasia Gellia Gemella Geminiana Generida Genesia Genialis Gennadia Gerarda Germana Germanica Gessia 
+				Geta Getha Glabria Glaucia Globula Gluvias Glycia Gordiana Gordia Gorgonia Graccha Gracilis Gratiana Gratidiana Gratta Gregoria Grumia Gualtera Grylla Habita Hadriana Hardalia 
+				Hateria Helvia Herculia Herena Herma Hermina Hesychia Hibera Hilaria Hilaris Hilaria Hirpinia Hirra Homulla Honorata Horatia Hortensis Hortensia Hortensa Hosidia Humila Hybrida Iacoma 
+				Igenna Ignatia Indaletia Inda Ingenua Ingenvina Jocunda Jovina Irenaea Isatis Isaurica Italica Ivmara Januaria Javolena Joviniana Jovina Jovia Juba Juliana Juncina Junca Juniana 
+				Justiana Justiniana Justina Justa Juvenlis Labiena Lactantia Laeca Laenas Laetiniana Laevina Larcia Lartia Laterana Latinia Laurentia Leddica Lentulla Lentula Lea Leontia Lepida Leponta
+				Leptis Libania Liberalis Liba Liciniana Licinia Ligur Ligustina Limetana Lina Litoria Littera Litumaris Liviana Livigena Longina Loverniana Lovernia Lucana Luciana Lucia Luccia Lucceia 
+				Luciliana Lucretia Luctaca Luculla Lunaris Luonerca Luperca Lupicina Lupina Lupis Lurca Luria Lutheria Lutoria Maccala Macrina Macra Macrobia Maecena Maecia Magnentia Magna Magunna
+				Maia Major Malcha Malla Maltina Mancina Manlia Mansueta Marcallas Marcellina Marcella Marcialis Margarita Mariniana Marina Maritialis Maritima Maria Mara Marsallas Marsica Marsa Marsyas
+				Martial Martialis Martiana Martina Martia Martyria Marullina Marulla Materna Matha Mauricia Maursa Maximiana Maximinia Maximina Maxima Medullina Megella Melissa Melita Mellita 
+				Mela Meminia Memmia Mercurialis Mercurina Merula Messala Metella Metilia Metuna Miciana Mica Micon Milonia Minervalis Miniana Miniciana Moderata Molaca Moma Montana Montaa Mordantica
+				Muciana Muca Muncia Murena Ma Musa Musica Mutila Mutia Naevia Narcissa Nasica Nasa Natalina Natalis Naucratia Nazaria Nectarida Nelia Nemesiana Nemnogena Nenea Nennia Nepos Nera
+				Nertomara Nerva Nicasia Nicetia Nigella Niger Nigidia Nigrina Niraemia Nola Nonia Noster Novatiana Novellia Numeriana Numonis Oceana Octaviana Octobriana Olennia Olympica Opilia Opimia
+				Opis Optata Ordia Orientalis Orientia Orissa Orosia Osteriana Otha Ovida Pacatiana Pachomia Pacuviana Paenula Paetina Paeta Palicama Pamphilia Panaetia Pansa Pantensa Pantera Panthera
+				Papiniana Papa Parata Parnesia Pascentia Patercula Paterna Patiens Patricia Paulina Paulla Pava Pelagia Penna Peregrina Perennis Perpenna Perperna Pertaca Pertinax Petasia Petreia
+				Petronax Petra Philippa Photia Pilata Pila Pisa Pia Placida Planta Plautis Plautia Plauta Pleminia Polliena Pollia Pola Polybia Pompolussa Pomponia Poplicola Porca Porphyria Postumiana 
+				Postuma Potita Praetexta Prilidiana Primana Primula Prima Prisca Prisciana Priscilliana Prisca Proba Processa Procea Procula Procyon Profuteria Propertia Protacia Prota Proxsima 
+				Publiana Publicola Publica Pudens Pudentia Pulcher Pulcheria Pulla Pusinna Pustula Quartina Quarta Quatrua Quintina Quieta Quintiliana Quintilia Quintillia Quintilla Quiriac Quirica
+				Quirinalis Ramia Ramira Ravilla Reburra Recepta Recta Regilla Regina Regula Remigia Rema Renata Respecta Restituta Rex Rhesa Ripana Rogata Rogelia Romana Romuliana Romula Roscia 
+				Rufiniana Rufina Rufria Rufa Rulla Ruricia Rusa Rustica Rutiliana Sabellia Sabiniana Sabina Sacerdos Saena Saloniana Salonina Salonia Salviana Sancta Sandiliana Sanga Sarimarca Sarria
+				Saturnina Saunia Scaevola Scapula Scara Scata Scaura Schlera Scipia Scriboniana Scrofa Sebastiana Secundas Segestes Sejana Sellic Seneca Seneciana Senecia Senilis Senna Senopiana Sentia
+				Septimiana Septima Seronata Serrana Servana Servatia Seusa Severlina Severa Sevsa Sicula Sidonia Sigilis Silana Silia Sila Sila Silvana Similis Sima Simplex Simpliciana Sirica 
+				Sisenna Sisinnia Sita Sollemnis Sorex Soria Sosia Soterica Soulina Spartaca Spendia Sperata Statia Sticha Straba Sudrena Suilia Sulina Sulla Super Superba Superstes Sura Surina Suria
+				Sura Sylla Sylviana Sylvia Symmacha Symphoriana Symproniana Synnoda Tacita Taenaris Tancina Tanica Tarsicia Tatiana Taurina Telesina Terenteiana Tertula Tetrica Tetulliana Thrasea
+				Thurina Tiberilla Tiberina Tibulla Tiburs Titiana Titilla Torquata Traiana Traila Trania Tranquilla Treboniana Tremera Tremorina Trenica Trena Triaria Trifer Trifera Trimalchia Troga
+				Trupa Tucciana Tuditana Turibia Turpiliana Turpilina Tuticana Ulpiana Urbica Ursina Ursa Uticensis Vala Valens Valentina Valeriana Valga Variala Varra Vara Vatia Vedrix Venantia 
+				Venustinia Vepgena Verecunda Verina Verres Verrucosa Verulla Vera Vespasiana Vespilla Vestina Vetrania Vettoniana Veta Vibennis Vibia Victorica Victorina Victricia Vincentia Vindex
+				Viniciana Viridia Virilis Vitalina Vitalis Vitula Vita Vocula Volusiana Vopisca Vulsa
+				}
+			second_names = {
+				Agrippa Appius Aulus Decimus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Numerius Octavius Paullus Publius Postumus Proculus Quintus Septimus Servius 
+				Sextus Spurius Statius Tiberius Titus Vibius Volesus Vopiscus
+				}
+			regnal_first_names_male = {
+				Abercius Abito Acacius Acaunus Achaicus Acilianus Adauctus Adepphius Adjutor Adranos Adventus Aeacus Aebutus Aemilianus Aetius Afer Agaptus Agatopus Agelastus Agorix 
+				Agricola Agrippa Agustalis Ahala Ahenobarbus Albanus Albinius Albinus Albucius Alethius Allectus Aloysius Aluredes Alypius Amandus Amantius Ambrosius Amor Amphion Anatolius 
+				Ancus Andronicus Angelus Antias Antius Anullinus Apelles Apellinus Aper Apollonarius Aponius Aquila Aquilius Aquillius Aratus Arcadius Arcavius Archarius Arius Armiger 
+				Arminus Arpagius Arrianus Arruntius Aruns Arvina Asellio Asina Asprenas Asprenus Assanius Audaios Audens Augendus Augurnus Augurius Augustalis Augustanus Augustus Auila 
+				Aurelianus Aurelius Ausonius Auspex Auxentius Auxientius Auxilius Avienus Avitus Balbillus Balbus Balduinus Bambalio Bamballio Banquerius Barbatus Baro Bassus Bato Belenus 
+				Belisarius Bellator Belletor Bellicus Bellus Bestia Betto Bibaculus Bibulus Bitucus Blandus Bodenius Bolanus Bonifatius Bonosus Bonus Bradua Britannicus Brocchus Bromidus 
+				Bruccius Brucetus Bruscius Brutus Bubo Buccio Bulla Burcanius Burrus Buteo Caecilianus Caecina Caecus Caelistis Caelestius Caelianus Caelinus Caepio Caerellius Caesar Calacicus 
+				Calatinus Caldus Calenus Calerus Caletus Caligula Callisunus Calogerus Calpurnius Calpurnianus Calpurnis Calvinus Calvus Camerius Camillus Campanus Candidianus Candidus 
+				Candidius Canio Canisius Cantaber Capito Capiton Caprarius Caracturus Carantus Carbo Carinus Carius Carnifex Carus Casca Cassianus Castinus Castorius Castus Catianus Catilina 
+				Cato Catonius Catullus Catulus Catus Cecilianus Celatus Celer Celsus Cenaeus Cencius Censorinus Censorius Centumalus Cerialis Cerinthus Cerularius Cervianus Cervidus Cethegus 
+				Chlorus Christianus Cicero Cico Cimber Cinna Cinnianus Cita Cittinus Civilis Clarus Classicianus Claudianus Clemens Clementis Clodianus Cogitatus Colias Collatinus Columbanus 
+				Columella Comes Comitianus Comitinus Commidius Commidus Commius Commodus Concessus Congrio Constans Constantius Corbulo Cordus Cornix Cornutus Corvinus Corvus Cosmas Cotentinus 
+				Cotta Crassus Cremutius Crescentius Cresces Crispinus Crispus Crito Crotilo Cucuphas Culleolus Cumanus Cunobarrus Cupitas Curio Cyprianus Cyprias Cyricus Dacianus Dalmatius Dama 
+				Damasippus Damasus Damianus Dannicus Dardanius Dardanus Decentius Decianus Decmitius Decmus Dexion Dexippus Didicus Dignus Dio Diocletianus Diocourides Disertus Docilinus Docilus 
+				Dolabella Dominicus Domitianus Donatianus Donatus Donicus Dorotheus Draco Drusillus Drusus Dubitatius Dulcitius Durio Durus Duvianus Eborius Eburnus Ecdicius Eclectus Egbuttius 
+				Egnatius Elerius Eliphas Elpidius Elvorix Emeritus Encratis Ennecus Ennius Ennodius Eonus Epidianus Epimachus Epolonius Erasinus Esdras Eudomius Eudoxius Eugenius Eugenus Eulogius 
+				Eumenius Eunapius Euphemius Eustacius Eutherius Evodius Excingus Exsupereus Exuperantius Exupertus Fabianus Fabillus Facilis Fadus Fagus Falco Falconius Falx Famia Familiaris 
+				Fastidius Farus Faustillus Faustinianus Faustinius Faustus Faventinus Felicissimus Felissimus Felix Ferentinus Ferreolius Festus Fidelis Figulus Fimbria Fimus Firminus Firmus Flaccus 
+				Flamma Flavianus Flavillus Flavinus Florens Florentius Florianus Florus Forianus Fortunatus Fraucus Fredisius Frigidianus Frontalis Frontinus Fronto Fructosis Frugi Frugius Frumentius 
+				Fullofaudes Fulvianus Furius Fuscinus Fuscus Gaianus Gaius Gala Galarius Galenus Galerus Gallio Gallus Galvisius Garilianus Gaurus Gavros Gavrus Gelasius Gellius Gemellus Geminianus 
+				Generidus Genesius Genialis Gennadius Gerardus Germanus Germanicus Gessius Geta Getha Glabrio Glaucia Globulus Gluvias Glycia Gordianus Gordio Gorgonius Gracchus Gracilis Gratianus 
+				Gratidianus Grattus Gregorius Grumio Gualterus Gryllus Habitus Hadrianus Hardalio Haterius Helvius Herculius Herenus Herma Hermina Hesychius Hiberus Hilario Hilaris Hilarius Hirpinius 
+				Hirrus Homullus Honoratus Horatius Hortensis Hortensius Hortensus Hosidius Humilus Hybrida Iacomus Igennus Ignatius Indaletius Indus Ingenuus Ingenvinus Jocundus Jovinus Irenaeus 
+				Isatis Isauricus Italicus Ivmarus Januarius Javolenus Jovinianus Jovinus Jovius Juba Julianus Juncinus Juncus Junianus Justianus Justinianus Justinus Justus Juvenlis Labienus Lactantius
+				Laeca Laenas Laetinianus Laevinus Larcius Lartius Lateranus Latinius Laurentius Leddicus Lentullus Lentulus Leo Leontius Lepidus Lepontus Leptis Libanius Liberalis Libo Licinianus Licinius
+				Ligur Ligustinus Limetanus Linus Litorius Littera Litumaris Livianus Livigenus Longinus Lovernianus Lovernius Lucanus Lucianus Lucius Luccius Lucceius Lucilianus Lucretius Luctacus 
+				Lucullus Lunaris Luonercus Lupercus Lupicinus Lupinus Lupis Lurco Lurio Lutherius Lutorius Maccalus Macrinus Macro Macrobius Mactator Maecenus Maecius Magnentius Magnus Magunnus Maius 
+				Major Majus Malchus Mallus Maltinus Mancinus Manlius Mansuetus Marcallas Marcellinus Marcellus Marcialis Marcipor Margarita Marinianus Marinus Maritialis Maritimus Marius Maro 
+				Marsallas Marsicus Marsus Marsyas Martial Martialis Martianus Martinus Martius Martyrius Marullinus Marullus Maternus Matho Mauricius Maursus Maximianus Maximinius Maximinus 
+				Maximus Medullinus Megellus Melissus Melitus Mellitus Melus Meminius Memmius Memor Mercator Mercurialis Mercurinus Merula Messala Messor Metellus Metilius Metunus Micianus Mico 
+				Micon Milonius Minervalis Minianus Minicianus Moderatus Molacus Momus Montanus Montaus Mordanticus Mucianus Muco Muncius Murena Mus Musa Musicus Mutilus Mutius Nabor Naevius Narcissus 
+				Narses Nasica Naso Natalinus Natalis Naucratius Nazarius Nectaridus Nelius Nemesianus Nemnogenus Neneus Nennius Nepos Nero Nertomarus Nerva Nicasius Nicetius Nigellus Niger Nigidius 
+				Nigrinus Niraemius Nolus Nonius Noster Novatianus Novellius Numerianus Numonis Oceanus Octavianus Octobrianus Olennius Olympicus Opilio Opimius Opis Optatus Ordius Orientalis 
+				Orientius Orissus Orosius Osterianus Otho Ovidus Pacatianus Pachomius Pacuvianus Paenula Paetinus Paetus Palicamus Pamphilius Panaetius Pansa Pantensus Pantera Panthera Papinianus 
+				Papus Paratus Parnesius Pascentius Pastor Paterculus Paternus Patiens Patricius Paulinus Paullus Pavo Pelagius Pennus Peregrinus Perennis Perpenna Perperna Pertacus Pertinax Petasius 
+				Petreius Petronax Petrus Philippus Photius Pictor Pilatus Pilus Piso Pius Placidus Planta Plautis Plautius Plautus Pleminius Pollienus Pollio Polus Polybius Pompolussa Pomponius Poplicola
+				Porcus Porphyrius Postumianus Postumus Potitus Praetextus Prilidianus Primanus Primulus Primus Prisca Priscianus Priscillianus Priscus Probus Processus Proceus Proculus Procyon 
+				Profuterius Propertius Protacius Protus Proxsimus Publianus Publicola Publicus Pudens Pudentius Pulcher Pulcherius Pullus Pusinnus Pustula Quartinus Quarto Quatruus Quintinus Quietus
+				Quintilianus Quintilius Quintillius Quintillus Quiriac Quiricus Quirinalis Ramio Ramirus Ravilla Reburrus Receptus Rectus Regillus Reginus Regulus Remigius Remus Renatus Respectus
+				Restitutus Rex Rhesus Ripanus Rogatus Rogelius Romanus Romulianus Romulus Roscius Rufinianus Rufinus Rufrius Rufus Rullus Ruricius Ruso Rusticus Rutilianus Sabellius Sabinianus 
+				Sabinus Sacerdos Saenus Salinator Salonianus Saloninus Salonius Salvianus Sanctus Sandilianus Sanga Sarimarcus Sarrius Saturninus Saunio Scaevola Scapula Scaro Scato Scaurus Schlerus
+				Scipio Scribonianus Scrofa Sebastianus Secundas Segestes Sejanus Sellic Seneca Senecianus Senecio Senilis Senna Senopianus Sentius Septimianus Septimus Seronatus Serranus Servanus 
+				Servatius Seuso Severlinus Severus Sevso Siculus Sidonius Sigilis Silanus Silius Silo Silus Silvanus Similis Simo Simplex Simplicianus Siricus Sisenna Sisinnius Sita Sollemnis 
+				Sorex Sorio Sosius Sotericus Soulinus Spartacus Spendius Speratus Statius Stichus Strabo Sudrenus Suilius Sulinus Sulla Super Superbus Superstes Sura Surinus Surius Surus 
+				Sylla Sylvianus Sylvius Symmachus Symphorianus Sympronianus Synistor Synnodus Tacitus Taenaris Tancinus Tanicus Tarsicius Tatianus Taurinus Telesinus Terenteianus Tertulus Tetricus 
+				Tetullianus Thrasea Thurinus Tiberillus Tiberinus Tibullus Tiburs Titianus Titillus Torquatus Traianus Trailus Tranio Tranquillus Trebonianus Tremerus Tremorinus Trenico Trenus Triarius 
+				Trifer Triferus Trimalchio Trogus Trupo Tuccianus Tuditanus Turibius Turpilianus Turpilinus Tuticanus Tutor Ulpianus Urbicus Ursinus Ursus Uticensis Vala Valens Valentinus 
+				Valerianus Valgus Varialus Varro Varus Vatia Vedrix Venantius Venator Ventor Venustinius Vepgenus Verecundus Verinus Verres Verrucosus Verullus Verus Vespasianus Vespillo 
+				Vestinus Vetranio Vettonianus Vetus Viator Vibennis Vibius Victor Victoricus Victorinus Victricius Vincentius Vindex Vinicianus Viridio Virilis Vitalinus Vitalis Vitulus Vitus 
+				Vocula Volusianus Vopiscus Vulso
+				}
+			regnal_first_names_female = {
+				Abercia Abita Acacia Acauna Achaica Aciliana Adaucta Adepphia Adventa Aeaca Aebuta Aemiliana Aetia Afer Agapta Agatopa Agelasta Agorix Agricola Agrippa Agustalis Ahala Ahenobarba 
+				Albana Albinia Albina Albucia Alethia Allecta Aloysia Aluredes Alypia Amanda Amantia Ambrosia Amor Amphion Anatolia Anca Andronica Angela Antias Antia Anullina Apelles Apellina
+				Aper Apollonaria Aponia Aquila Aquilia Aquillia Arata Arcadia Arcavia Archaria Aria Armiger Armina Arpagia Arriana Arruntia Aruns Arvina Asellia Asina Asprenas Asprena Assania
+				Audens Augenda Augurna Auguria Augustalis Augustana Augusta Auila Aureliana Aurelia Ausonia Auspex Auxentia Auxientia Auxilia Aviena Avita Balbilla Balba Balduina Bambalia Bamballia
+				Banqueria Barbata Bara Bassa Bata Belena Belisaria Bellica Bella Bestia Betta Bibacula Bibula Bituca Blanda Bodenia Bolana Bonifatia Bonosa Bona Bradua Britannica Broccha Bromida 
+				Bruccia Bruceta Bruscia Bruta Buba Buccia Bulla Burcania Burra Butea Caeciliana Caecina Caeca Caelistis Caelestia Caeliana Caelina Caepia Caerellia Caesar Calacica Calatina Calda 
+				Calena Calera Caleta Caligula Callisuna Calogera Calpurnia Calpurniana Calpurnis Calvina Calva Cameria Camilla Campana Candidiana Candida Candidia Cania Canisia Cantaber Capita Capiton
+				Capraria Caractura Caranta Carba Carina Caria Carnifex Cara Casca Cassiana Castina Castoria Casta Catiana Catilina Cata Catonia Catulla Catula Cata Ceciliana Celata Celer Celsa 
+				Cenaea Cencia Censorina Censoria Centumala Cerialis Cerintha Cerularia Cerviana Cervida Cethega Chlora Christiana Cicera Cica Cimber Cinna Cinniana Cita Cittina Civilis Clara Classiciana
+				Claudiana Clemens Clementis Clodiana Cogitata Colias Collatina Columbana Columella Comes Comitiana Comitina Commidia Commida Commia Commoda Concessa Congria Constans Constantia 
+				Corbula Corda Cornix Cornuta Corvina Corva Cosmas Cotentina Cotta Crassa Cremutia Crescentia Cresces Crispina Crispa Crita Crotila Cucuphas Culleola Cumana Cunobarra Cupitas Curia 
+				Cypriana Cyprias Cyrica Daciana Dalmatia Dama Damasippa Damasa Damiana Dannica Dardania Dardana Decentia Deciana Decmitia Decma Dexion Dexippa Didica Digna Dia Diocletiana Diocourides
+				Diserta Docilina Docila Dolabella Dominica Domitiana Donatiana Donata Donica Dorothea Draca Drusilla Drusa Dubitatia Dulcitia Duria Dura Duviana Eboria Eburna Ecdicia Eclecta 
+				Egbuttia Egnatia Eleria Eliphas Elpidia Elvorix Emerita Encratis Enneca Ennia Ennodia Eona Epidiana Epimacha Epolonia Erasina Esdras Eudomia Eudoxia Eugenia Eugena Eulogia Eumenia
+				Eunapia Euphemia Eustacia Eutheria Evodia Excinga Exsuperea Exuperantia Exuperta Fabiana Fabilla Facilis Fada Faga Falca Falconia Falx Famia Familiaris Fastidia Fara Faustilla
+				Faustiniana Faustinia Fausta Faventina Felicissima Felissima Felix Ferentina Ferreolia Festa Fidelis Figula Fimbria Fima Firmina Firma Flacca Flamma Flaviana Flavilla Flavina Florens 
+				Florentia Floriana Flora Foriana Fortunata Frauca Fredisia Frigidiana Frontalis Frontina Fronta Fructosis Frugi Frugia Frumentia Fullofaudes Fulviana Furia Fuscina Fusca Gaiana
+				Gaia Gala Galaria Galena Galera Gallia Galla Galvisia Gariliana Gaura Gavra Gelasia Gellia Gemella Geminiana Generida Genesia Genialis Gennadia Gerarda Germana Germanica Gessia 
+				Geta Getha Glabria Glaucia Globula Gluvias Glycia Gordiana Gordia Gorgonia Graccha Gracilis Gratiana Gratidiana Gratta Gregoria Grumia Gualtera Grylla Habita Hadriana Hardalia 
+				Hateria Helvia Herculia Herena Herma Hermina Hesychia Hibera Hilaria Hilaris Hilaria Hirpinia Hirra Homulla Honorata Horatia Hortensis Hortensia Hortensa Hosidia Humila Hybrida Iacoma 
+				Igenna Ignatia Indaletia Inda Ingenua Ingenvina Jocunda Jovina Irenaea Isatis Isaurica Italica Ivmara Januaria Javolena Joviniana Jovina Jovia Juba Juliana Juncina Junca Juniana 
+				Justiana Justiniana Justina Justa Juvenlis Labiena Lactantia Laeca Laenas Laetiniana Laevina Larcia Lartia Laterana Latinia Laurentia Leddica Lentulla Lentula Lea Leontia Lepida Leponta
+				Leptis Libania Liberalis Liba Liciniana Licinia Ligur Ligustina Limetana Lina Litoria Littera Litumaris Liviana Livigena Longina Loverniana Lovernia Lucana Luciana Lucia Luccia Lucceia 
+				Luciliana Lucretia Luctaca Luculla Lunaris Luonerca Luperca Lupicina Lupina Lupis Lurca Luria Lutheria Lutoria Maccala Macrina Macra Macrobia Maecena Maecia Magnentia Magna Magunna
+				Maia Major Malcha Malla Maltina Mancina Manlia Mansueta Marcallas Marcellina Marcella Marcialis Margarita Mariniana Marina Maritialis Maritima Maria Mara Marsallas Marsica Marsa Marsyas
+				Martial Martialis Martiana Martina Martia Martyria Marullina Marulla Materna Matha Mauricia Maursa Maximiana Maximinia Maximina Maxima Medullina Megella Melissa Melita Mellita 
+				Mela Meminia Memmia Mercurialis Mercurina Merula Messala Metella Metilia Metuna Miciana Mica Micon Milonia Minervalis Miniana Miniciana Moderata Molaca Moma Montana Montaa Mordantica
+				Muciana Muca Muncia Murena Ma Musa Musica Mutila Mutia Naevia Narcissa Nasica Nasa Natalina Natalis Naucratia Nazaria Nectarida Nelia Nemesiana Nemnogena Nenea Nennia Nepos Nera
+				Nertomara Nerva Nicasia Nicetia Nigella Niger Nigidia Nigrina Niraemia Nola Nonia Noster Novatiana Novellia Numeriana Numonis Oceana Octaviana Octobriana Olennia Olympica Opilia Opimia
+				Opis Optata Ordia Orientalis Orientia Orissa Orosia Osteriana Otha Ovida Pacatiana Pachomia Pacuviana Paenula Paetina Paeta Palicama Pamphilia Panaetia Pansa Pantensa Pantera Panthera
+				Papiniana Papa Parata Parnesia Pascentia Patercula Paterna Patiens Patricia Paulina Paulla Pava Pelagia Penna Peregrina Perennis Perpenna Perperna Pertaca Pertinax Petasia Petreia
+				Petronax Petra Philippa Photia Pilata Pila Pisa Pia Placida Planta Plautis Plautia Plauta Pleminia Polliena Pollia Pola Polybia Pompolussa Pomponia Poplicola Porca Porphyria Postumiana 
+				Postuma Potita Praetexta Prilidiana Primana Primula Prima Prisca Prisciana Priscilliana Prisca Proba Processa Procea Procula Procyon Profuteria Propertia Protacia Prota Proxsima 
+				Publiana Publicola Publica Pudens Pudentia Pulcher Pulcheria Pulla Pusinna Pustula Quartina Quarta Quatrua Quintina Quieta Quintiliana Quintilia Quintillia Quintilla Quiriac Quirica
+				Quirinalis Ramia Ramira Ravilla Reburra Recepta Recta Regilla Regina Regula Remigia Rema Renata Respecta Restituta Rex Rhesa Ripana Rogata Rogelia Romana Romuliana Romula Roscia 
+				Rufiniana Rufina Rufria Rufa Rulla Ruricia Rusa Rustica Rutiliana Sabellia Sabiniana Sabina Sacerdos Saena Saloniana Salonina Salonia Salviana Sancta Sandiliana Sanga Sarimarca Sarria
+				Saturnina Saunia Scaevola Scapula Scara Scata Scaura Schlera Scipia Scriboniana Scrofa Sebastiana Secundas Segestes Sejana Sellic Seneca Seneciana Senecia Senilis Senna Senopiana Sentia
+				Septimiana Septima Seronata Serrana Servana Servatia Seusa Severlina Severa Sevsa Sicula Sidonia Sigilis Silana Silia Sila Sila Silvana Similis Sima Simplex Simpliciana Sirica 
+				Sisenna Sisinnia Sita Sollemnis Sorex Soria Sosia Soterica Soulina Spartaca Spendia Sperata Statia Sticha Straba Sudrena Suilia Sulina Sulla Super Superba Superstes Sura Surina Suria
+				Sura Sylla Sylviana Sylvia Symmacha Symphoriana Symproniana Synnoda Tacita Taenaris Tancina Tanica Tarsicia Tatiana Taurina Telesina Terenteiana Tertula Tetrica Tetulliana Thrasea
+				Thurina Tiberilla Tiberina Tibulla Tiburs Titiana Titilla Torquata Traiana Traila Trania Tranquilla Treboniana Tremera Tremorina Trenica Trena Triaria Trifer Trifera Trimalchia Troga
+				Trupa Tucciana Tuditana Turibia Turpiliana Turpilina Tuticana Ulpiana Urbica Ursina Ursa Uticensis Vala Valens Valentina Valeriana Valga Variala Varra Vara Vatia Vedrix Venantia 
+				Venustinia Vepgena Verecunda Verina Verres Verrucosa Verulla Vera Vespasiana Vespilla Vestina Vetrania Vettoniana Veta Vibennis Vibia Victorica Victorina Victricia Vincentia Vindex
+				Viniciana Viridia Virilis Vitalina Vitalis Vitula Vita Vocula Volusiana Vopisca Vulsa
+				}
+			regnal_second_names = {
+				Agrippa Appius Aulus Decimus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Numerius Octavius Paullus Publius Postumus Proculus Quintus Septimus Servius 
+				Sextus Spurius Statius Tiberius Titus Vibius Volesus Vopiscus
+				}
+		}
+	}
+}
