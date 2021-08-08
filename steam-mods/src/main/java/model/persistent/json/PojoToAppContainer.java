@@ -2,6 +2,7 @@ package model.persistent.json;
 
 import model.exceptions.UnknownModification;
 import model.modifications.BasicModification;
+import model.modifications.operations.Operation;
 import model.modifications.operations.directory.AbstractDirectoryOperation;
 import model.modifications.Modification;
 import model.modificationschains.BasicChain;
@@ -30,7 +31,7 @@ public class PojoToAppContainer {
         chains = new LinkedHashMap<>();
 
         for (var modificationPojo: jsonConfiguration.getModifications()) {
-            Modification modification = fromPojoToModification(modificationPojo);
+            Modification modification = fromPojoToModification(modificationPojo, jsonConfiguration);
             modifications.put(modification.getId(), modification);
         }
 
@@ -40,12 +41,20 @@ public class PojoToAppContainer {
         }
     }
 
-    private Modification fromPojoToModification(JsonModificationPojo pojoModification) throws UnknownModification {
+    private Modification fromPojoToModification(JsonModificationPojo pojoModification, JsonConfiguration jsonConfiguration) throws UnknownModification {
 
         try {
-            AbstractDirectoryOperation operation = (AbstractDirectoryOperation) reflectionApi.instantiateFromStringPackageNameClassName(
-                    pojoModification.getClazz()
-            );
+            Operation operation;
+            if (pojoModification.getId().equals("MOD_DOWNLOAD_STEAM_WORKSHOP")) {
+                operation = (Operation) reflectionApi.instantiateWithParametersFromStringPackageNameClassName(
+                        pojoModification.getClazz(),
+                        jsonConfiguration.getApp().getManagedModIds()
+                );
+            } else {
+                operation = (Operation) reflectionApi.instantiateFromStringPackageNameClassName(
+                        pojoModification.getClazz()
+                );
+            }
 
             return new BasicModification(
                     pojoModification.getId(),

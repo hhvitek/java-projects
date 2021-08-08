@@ -96,7 +96,7 @@ public class JsonConfigurationManager implements FileStorageManager {
     @Override
     public void save(@Nullable List<Modification> modifications,
                      @Nullable List<ModificationsChain> chains,
-                     @Nullable Map<String, Object> appProperties) throws IOException, ConfigurationException {
+                     @Nullable Map<String, String> appProperties) throws IOException, ConfigurationException {
 
         if (modifications != null) {
             pojoToAppContainer.setModifications(modifications);
@@ -149,20 +149,32 @@ public class JsonConfigurationManager implements FileStorageManager {
     }
 
     @Override
-    public @NotNull Map<String, Object> getAppProperties() throws NotInitializedException {
+    public @NotNull Map<String, String> getAppProperties() throws NotInitializedException {
         ifManagerNotInitializedYetThrowException();
 
         JsonAppPojo appPojo = jsonConfiguration.getApp();
 
         Map<String, String> appAdditionalProperties = appPojo.getAdditionalProperties();
         appAdditionalProperties.put("default_mod_folder", appPojo.getDefaultModFolder().toString());
+        appAdditionalProperties.put("chosen_mod_folder", appPojo.getChosenModFolder().toString());
+        appAdditionalProperties.put("selected_modifications_chain", appPojo.getSelectedModificationsChain());
 
         return appAdditionalProperties;
     }
 
     @Override
+    public @NotNull Path getSelectedModFolder() throws NotInitializedException {
+        return jsonConfiguration.getApp().getChosenModFolder();
+    }
+
+    @Override
     public @NotNull Path getDefaultModFolder() throws NotInitializedException {
         return jsonConfiguration.getApp().getDefaultModFolder();
+    }
+
+    @Override
+    public @NotNull String getSelectedModificationChain() throws NotInitializedException {
+        return jsonConfiguration.getApp().getSelectedModificationsChain();
     }
 
 

@@ -30,7 +30,12 @@
     "name" : "Copy mod descriptors",
     "description" : "Copy all mod descriptor files into mod folder root. Replacing any existing files.",
     "class" : "model.modifications.operations.directory.CopyModDescriptorFilesToModFolderRootDirOperation"
-  } ],
+  }, {
+    "id" : "MOD_DOWNLOAD_STEAM_WORKSHOP",
+    "name" : "Download mod using steamworkshop",
+    "description" : "Download all mods using steamworkshop.io",
+    "class" : "model.modifications.operations.directory.moddownloader.ModDownloaderOperation"
+  }  ],
   "modifications-chains" : [ {
     "id" : "BASIC",
     "name" : "Basic chain",
@@ -39,7 +44,7 @@
   }, {
     "id" : "steam_workshop_downloader",
     "name" : "Steam workshop downloader",
-    "modifications-ids" : [ "EXTRACT_ALL", "MODIFY_MOD_DESCRIPTOR_FILES", "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES" ],
+    "modifications-ids" : [ "MOD_DOWNLOAD_STEAM_WORKSHOP", "EXTRACT_ALL", "MODIFY_MOD_DESCRIPTOR_FILES", "COPY_AND_RENAME_MOD_DESCRIPTOR_FILES" ],
     "description" : "Steam workshop downloader"
   } ]
 }

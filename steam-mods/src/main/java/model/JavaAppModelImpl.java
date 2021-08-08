@@ -33,9 +33,9 @@ public class JavaAppModelImpl extends AbstractObservableModel implements AppMode
     private void loadValuesFromStorage() {
         defaultModFolder = storageManager.getDefaultModFolder();
 
-        Map<String, Object> appValues = storageManager.getAppProperties();
-        chosenModFolder = Path.of(appValues.get("chosen_mod_folder"));
-        selectedModificationsChainId = appValues.get("selected_modifications_chain");
+        Map<String, String> appValues = storageManager.getAppProperties();
+        chosenModFolder = storageManager.getSelectedModFolder();
+        selectedModificationsChainId = storageManager.getSelectedModificationChain();
     }
 
     private void ifNoModFolderIsChosenChoseDefaultModFolder() {

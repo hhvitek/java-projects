@@ -23,7 +23,7 @@ public class BasicModification implements Modification {
 
     public BasicModification(@NotNull String id,
                              @NotNull String name,
-                             @NotNull AbstractDirectoryOperation executableOperation,
+                             @NotNull Operation executableOperation,
                              @NotNull Class<?> clazz) {
         this.id = id;
         this.name = name;
@@ -33,7 +33,7 @@ public class BasicModification implements Modification {
 
     public BasicModification(@NotNull String id,
                              @NotNull String name,
-                             @NotNull AbstractDirectoryOperation executableOperation,
+                             @NotNull Operation executableOperation,
                              @NotNull Class<?> clazz,
                              @NotNull String description) {
         this(id, name, executableOperation, clazz);

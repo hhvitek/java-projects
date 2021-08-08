@@ -70,7 +70,9 @@ public interface PersistentStorageManager {
 
     @NotNull List<ModificationsChain> getModificationsChains() throws NotInitializedException;
 
-    @NotNull Map<String, Object> getAppProperties() throws NotInitializedException;
+    @NotNull Map<String, String> getAppProperties() throws NotInitializedException;
+
     @NotNull Path getSelectedModFolder() throws NotInitializedException;
     @NotNull Path getDefaultModFolder() throws NotInitializedException;
+    @NotNull String getSelectedModificationChain() throws NotInitializedException;
 }

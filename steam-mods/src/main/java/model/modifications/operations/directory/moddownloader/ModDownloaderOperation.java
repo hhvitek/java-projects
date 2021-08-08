@@ -2,6 +2,7 @@ package model.modifications.operations.directory.moddownloader;
 
 import model.exceptions.ModificationException;
 import model.modifications.operations.Operation;
+import model.modifications.operations.directory.AbstractDirectoryOperation;
 import model.modifications.operations.directory.moddownloader.drivers.WebDriverFactory;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebDriver;
@@ -12,16 +13,24 @@ import utilities.file_locators.IFileLocator;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.sql.Driver;
+import java.util.ArrayList;
 import java.util.List;
 
-public class ModDownloaderOperation implements Operation {
+public class ModDownloaderOperation extends AbstractDirectoryOperation {
 
     private static int MAX_WAIT_TIME_IN_SEC = 30;
 
     private List<Integer> modIds;
     private SteamWorkshopDownloaderIO downloader;
 
-    private static WebDriverFactory.SupportedWebDrivers DEFAULT_DRIVER = WebDriverFactory.SupportedWebDrivers.FIREFOX;
+    private static WebDriverFactory.SupportedWebDrivers DEFAULT_DRIVER = WebDriverFactory.SupportedWebDrivers.CHROME;
+
+    /**
+     * reflectionAPI only @see PojoToAppContainer
+      */
+    public ModDownloaderOperation(ArrayList<Integer> modIds) {
+        this.modIds = modIds;
+    }
 
     public ModDownloaderOperation(@NotNull List<Integer> modIds) {
         this.modIds = modIds;
@@ -48,6 +57,16 @@ public class ModDownloaderOperation implements Operation {
         } catch (ModDownloaderTimeoutException ex) {
             throw new ModificationException("Failed to download all mod zip files. Timeout error." + ex.getMessage());
         }
+    }
+
+    @Override
+    protected String getFileRegexToSearchFor() {
+        return "";
+    }
+
+    @Override
+    protected void performRequestedOperationOnFile(@NotNull Path file) throws IOException, ModificationException {
+        execute(file);
     }
 
     private SteamWorkshopDownloaderIO createDownloader(Path downloadFolder) {

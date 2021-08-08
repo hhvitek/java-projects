@@ -17,12 +17,13 @@ public class JsonAppPojo extends AbstractPojoAdditionalProperty {
 
     private static final Logger logger = LoggerFactory.getLogger(JsonAppPojo.class);
 
+    @JsonProperty("default_mod_folder")
     private Path defaultModFolder;
-
+    @JsonProperty("chosen_mod_folder")
     private Path chosenModFolder;
-
+    @JsonProperty("selected_modifications_chain")
     private String selectedModificationsChain;
-
+    @JsonProperty("managed_mod_ids")
     private List<Integer> managedModIds;
 
     public @NotNull Path getDefaultModFolder() {
@@ -58,9 +59,9 @@ public class JsonAppPojo extends AbstractPojoAdditionalProperty {
     }
 
     @JsonIgnore
-    public void setAllProperties(Map<String, Object> allProperties) {
-        defaultModFolder = Path.of((String)allProperties.get("default_mod_folder"));
-        chosenModFolder = Path.of((String)allProperties.get("chosen_mod_folder"));
-        selectedModificationsChain = (String)allProperties.get("selected_modifications_chain");
+    public void setAllProperties(Map<String, String> allProperties) {
+        defaultModFolder = Path.of(allProperties.get("default_mod_folder"));
+        chosenModFolder = Path.of(allProperties.get("chosen_mod_folder"));
+        selectedModificationsChain = allProperties.get("selected_modifications_chain");
     }
 }

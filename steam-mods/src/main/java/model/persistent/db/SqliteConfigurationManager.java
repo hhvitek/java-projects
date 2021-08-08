@@ -49,7 +49,17 @@ public class SqliteConfigurationManager implements PersistentStorageManager {
     }
 
     @Override
+    public @NotNull Path getSelectedModFolder() throws NotInitializedException {
+        return null;
+    }
+
+    @Override
     public @NotNull Path getDefaultModFolder() throws NotInitializedException {
+        return null;
+    }
+
+    @Override
+    public @NotNull String getSelectedModificationChain() throws NotInitializedException {
         return null;
     }
 }
