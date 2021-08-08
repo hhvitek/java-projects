@@ -17,7 +17,7 @@
         <maven-javadoc-plugin-version>3.1.1</maven-javadoc-plugin-version>
         <umldoclet-version>2.0.7</umldoclet-version>
         <maven-surefire-plugin-version>3.0.0-M4</maven-surefire-plugin-version>
-        <org.apache.logging.log4j.version>2.13.0</org.apache.logging.log4j.version>
+        <org.apache.logging.log4j.version>2.13.2</org.apache.logging.log4j.version>
     </properties>
 
     <dependencies>
